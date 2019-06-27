@@ -9,65 +9,51 @@
 <%namespace name='static' file='static_content.html'/>
 
 <div class="wrapper wrapper-footer">
-
-  <div class="footer_section footer_section-contact-us">
-    <div class="footer_section-holder">
-      <span class="footer_text">If you have some questions please contact us</span>
-      <a class="footer_btn__contact" href="/contact">Contact us</a>
-    </div>
-  </div>
-
-  <footer id="footer-openedx" class="grid-container"
-    ## When rendering the footer through the branding API,
-    ## the direction may not be set on the parent element,
-    ## so we set it here.
-    % if bidi:
-      dir=${bidi}
-    % endif
-  >
-    <div class="colophon">
-      <div class="footer-nav-wrapper">
-        <div class="footer-col">
-          <div class="footer-title">About the university</div>
-          <ul>
-            <li><a href="https://raccoongang.com/en/raccoon-university/" target="_blank">Raccoon Gang University</a></li>
-            <li><a href="https://raccoongang.com/en/about-us/" target="_blank">About Us</a></li>
-            <li><a href="https://raccoongang.com/#our_services" target="_blank">eDX Services</a></li>
-            <li><a href="https://raccoongang.com/en/blog/" target="_blank">Blog</a></li>
-          </ul>
+    <footer class="theme-footer" id="footer-openedx">
+        <div class="theme-footer_holder theme-footer_holder__color d-none d-lg-block">
+          <div class="theme-footer_wrapper">
+              <div class="theme-footer_col">
+                <a class="theme-footer_col-header" href="/"><img class="theme-footer_logo" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/home/LogoMadrasaConv1_white.png" alt="white logo"> </a>
+              </div>
+              <div class="theme-footer_col d-">
+                  <a class="theme-footer_col-header" href="/about">אודות</a>
+              </div>
+              <div class="theme-footer_col">
+                  <a class="theme-footer_col-header" href="/community">הקהילה הלומדת</a>
+              </div>
+              <div class="theme-footer_col">
+                  <a class="theme-footer_col-header" href="/supporters">תומכים ושותפים</a>
+              </div>
+              <div class="theme-footer_col">
+                  <a class="theme-footer_col-header" href="/language-services">שירותי שפה</a>
+              </div>
+              <div class="theme-footer_col">
+                  <a class="theme-footer_col-header" href="https://www.facebook.com/madrasafree/" target="_blank"> <span class="icon fa fa-facebook" aria-hidden="true"></span> </a>
+                </div>
+                <div class="theme-footer_col">
+                    <a class="theme-footer_col-header" href="/tos" target="_blank"> תנאי שימוש ותקנון</a>
+                  </div>
+              <div class="theme-footer_col">
+                  <a class="theme-footer_col-header" href="/contact" target="_blank"> צור קשר</a>
+                </div>
+                <!-- <div class="theme-footer_col">
+                    <a class="theme-footer_col-header" href="/contact" target="_blank"> <span class="icon fa fa-search" aria-hidden="true"></span> </a>
+                  </div> -->
+                  <div class="theme-footer_col">
+                      <a class="theme-footer_col-header" href="/contact" target="_blank"> <span class="icon fa fa-life-ring" aria-hidden="true"></span> </a>
+                  </div>
         </div>
-
-        <div class="footer-col">
-          <div class="footer-title">courses</div>
-          <ul>
-            <li><a href="https://studio-marvel-hawthorn.raccoongang.com/" target="_blank">Create Course Now</a></li>
-            <li><a href="https://raccoongang.com/en/about-us/" target="_blank">About Us</a></li>
-            <li><a href="https://raccoongang.com/#our_services" target="_blank">eDX Services</a></li>
-            <li><a href="https://raccoongang.com/en/blog/" target="_blank">Blog</a></li>
-          </ul>
         </div>
-
-        <div class="footer-col">
-          <div class="footer-title">Contact us</div>
-          <ul>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="https://raccoongang.com/en/contact-us/" target="_blank">Help</a></li>
-          </ul>
+        <div class="mob-footer d-lg-none">
+          <div class="theme-footer_holder__color text-center">
+            <a class="theme-footer_col-header" href="/"><img class="theme-footer_logo" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/home/LogoMadrasaConv1_white.png" alt="white logo"> </a>
+          </div>
+          <p>© כל הזכיות שמורות למדרסה - בית ספר לערבית </p>
         </div>
-      </div>
-
-      <div class="footer_section">
-        <div class="footer_copyright-holder">
-          © 2016 Racoongang. All Rights Reserved
-          <a href="${footer['openedx_link']['url']}">
-            <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </footer>
+      </footer>
 </div>
+
+
 % if include_dependencies:
   <%static:js group='base_vendor'/>
   <%static:css group='style-vendor'/>

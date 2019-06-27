@@ -46,11 +46,11 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
         </ul>
     
     
-        <%include file="bootstrap/navbar-logo-header.html" args="online_help_token=online_help_token"/>
+        <%include file="navbar-logo-header.html" args="online_help_token=online_help_token"/>
         % if user.is_authenticated():
-          <%include file="bootstrap/navbar-authenticated.html" args="online_help_token=online_help_token"/>
+          <%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
         % else:
-          <%include file="bootstrap/navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
+          <%include file="navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
         % endif
     </nav>
 

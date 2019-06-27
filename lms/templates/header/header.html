@@ -55,7 +55,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
     </nav>
 
 <header class="global-header theme-header ${'slim' if course else ''}">
-    <div class="theme-header-info">
+    <!-- <div class="theme-header-info">
         <div class="theme-header-info_contact">
             <span class="theme-header-info_text">Have any question?</span>
             <span class="theme-header-info_phone"><i class="fa fa-phone" aria-hidden="true"></i> +1 857 4533328</span>
@@ -69,7 +69,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
                 <li class="social-list_item"><a class="social-list_link" href="https://www.linkedin.com/company/raccoon-gang" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <div class="holder">
         % if use_cookie_banner:
             ${static.renderReact(
@@ -99,11 +99,11 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
         <div class="theme-main-nav_logo">
             <a href="${marketing_link('ROOT')}">
           <span class="theme-nav-wrapper_logo-holder theme-nav-wrapper_logo-holder_small">
-              <img src="/static/${settings.FEATURES.get('MARVEL_DEFAULT_HAWTHORN_SITE_THEME', settings.DEFAULT_SITE_THEME)}/images/logo.png" alt="logo">
+              <img src="/static/${settings.FEATURES.get(settings.DEFAULT_SITE_THEME)}/images/logo.png" alt="logo">
           </span>
             </a>
         </div>
-        <nav class="theme-main-nav_holder">
+        <!-- <nav class="theme-main-nav_holder">
             <ul class="theme-main-nav_list">
                 <li class="theme-main-nav_item"><a href="/about" class="theme-main-nav_link">${_("About The University")}</a></li>
                 <li class="theme-main-nav_item"><a href="/blog" class="theme-main-nav_link">${_("Blog")}</a></li>
@@ -146,7 +146,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
         </%block>
         %endif
         </ul>
-        </nav>
+        </nav> -->
     </div>
 </header>
 

@@ -751,7 +751,7 @@ section.home {
         display: block;
         color: #4B4B4B !important;
         @media all and (min-width: 860px){
-            @include inline-block;
+            // @include inline-block;
             text-align: center;
         }
 

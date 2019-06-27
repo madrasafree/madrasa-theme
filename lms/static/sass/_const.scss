@@ -100,7 +100,8 @@ $header-info-social-icon-color: $base-color;
 //header nav bar
 $theme-main-mobile-logo-height: 60px;
 $theme-main-mobile-logo-width: 55px;
-$theme-main-nav: #1e1a4d;
+$theme-main-nav-link-hover: #85C559;;
+$theme-main-nav: #4a509d;
 $theme-main-nav-link-color: #fff;
 $theme-main-nav-item-border-color: #2f343b;
 // footer contact us
@@ -112,7 +113,15 @@ $promo-text-color: #fff;
 $promo-teacher-title-color: #333;
 $promo-teacher-text-color: #ababab;
 
+// font sizes
 $font-size-base: 1rem;
+$font-size-regular: 27px;
+$font-size-base : 27px;
+$font-size-h1 : 52px;
+$font-size-h2 : 48px;
+$font-size-h3 : 38px;
+$font-size-smaller: 23px;
+$font-size-smallest: 18px;
 
 $red: #E65D5D !default;
 $blue: #34479B !default;

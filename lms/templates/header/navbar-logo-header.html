@@ -13,6 +13,13 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 from branding import api as branding_api
 %>
 
+<a class="navbar-brand" href="${marketing_link('ROOT')}">
+    <span class="theme-nav-wrapper_logo-holder theme-nav-wrapper_logo-holder_small">
+        <img src="${static.url("images/home/madrasa-beta.png")}" alt="logo" />
+    </span>
+</a>
+
+<!-- 
 <h1 class="header-logo">
   <a href="/">
     <%block name="navigation_logo">
@@ -41,4 +48,4 @@ from branding import api as branding_api
       ${tagline}
     % endif
   </div>
-% endif
+% endif -->

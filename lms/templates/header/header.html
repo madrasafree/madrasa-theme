@@ -29,6 +29,31 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
     </%block>
 % endif
 
+<nav class="navbar navbar-expand-lg py-0">
+        <ul>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle theme-main-nav_link small" style="font-size:18px;" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    He
+                </a>
+                <div class="dropdown-menu dropdown-menu-right theme-main-nav_dd" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/">He</a>
+                    <a class="dropdown-item" href="/about-en">En</a>
+                    <a class="dropdown-item" href="/about-ar">Ar</a>
+                </div>
+    
+            </li>
+        </ul>
+    
+    
+        <%include file="bootstrap/navbar-logo-header.html" args="online_help_token=online_help_token"/>
+        % if user.is_authenticated():
+          <%include file="bootstrap/navbar-authenticated.html" args="online_help_token=online_help_token"/>
+        % else:
+          <%include file="bootstrap/navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
+        % endif
+    </nav>
+
 <header class="global-header theme-header ${'slim' if course else ''}">
     <div class="theme-header-info">
         <div class="theme-header-info_contact">

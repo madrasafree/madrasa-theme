@@ -112,3 +112,19 @@ $promo-text-color: #fff;
 $promo-teacher-title-color: #333;
 $promo-teacher-text-color: #ababab;
 
+$font-size-base: 1rem;
+
+$red: #E65D5D !default;
+$blue: #34479B !default;
+$orange: rgb(66, 65, 63) !default ;
+$yellow: #FFCC43 !default;
+$green: #85C559 !default;
+$cyan: #56C1E9 !default;
+
+
+$primary: $blue !default;
+$secondary: $green !default;
+$success: $green !default;
+// $info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;

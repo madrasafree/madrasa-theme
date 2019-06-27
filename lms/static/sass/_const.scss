@@ -106,6 +106,8 @@ $theme-main-mobile-logo-height: 60px;
 $theme-main-mobile-logo-width: 55px;
 $theme-main-nav-link-hover: #85C559;
 $theme-color-main-hover: #A9E580;
+$theme-color-main: #85C559;
+
 $theme-main-nav: #4a509d;
 $theme-main-nav-link-color: #fff;
 $theme-main-nav-item-border-color: #2f343b;
@@ -117,6 +119,29 @@ $footer-contact-us-border-color: #ececec;
 $promo-text-color: #fff;
 $promo-teacher-title-color: #333;
 $promo-teacher-text-color: #ababab;
+
+// from legacy
+$theme-header-bg: #34479B;
+$theme-text-color: #4B4B4B;
+$theme-footer-bg: #33383f;
+$link-hover: lighten($theme-color-main, 20%);
+$theme-main-nav: #4a509d;
+$theme-main-nav-link-hover: #85C559;
+$disable-text-color: #3b3b3b;
+$disable-text-bg: #e8e8e8;
+$theme-color-main-80: rgba( $theme-color-main, .8 );
+$mobile-indent: 15px;
+$icon-color: #85C559;
+$my-font-path: "../fonts" !default;
+$img-path: "../images" !default;
+
+$theme-color-grey: #a3a3a6;
+$theme-color-main: #85C559;
+$theme-color-main-hover: #A9E580;
+$theme-color-special: #56C1E9;
+$theme-color-special-hover: #8DD5F0;
+$text-color: #4B4B4B;
+$warning-color: #FFCC43;
 
 // font sizes
 $font-size-base: 1rem;

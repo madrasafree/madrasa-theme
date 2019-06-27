@@ -8,8 +8,14 @@
 <% footer = get_footer(is_secure=is_secure) %>
 <%namespace name='static' file='static_content.html'/>
 
-<div class="wrapper wrapper-footer">
     <footer class="theme-footer" id="footer-openedx">
+        ## When rendering the footer through the branding API,
+        ## the direction may not be set on the parent element,
+        ## so we set it here.
+        % if bidi:
+          dir=${bidi}
+        % endif
+      >
         <div class="theme-footer_holder theme-footer_holder__color d-none d-lg-block">
           <div class="theme-footer_wrapper">
               <div class="theme-footer_col">
@@ -51,7 +57,6 @@
           <p>© כל הזכיות שמורות למדרסה - בית ספר לערבית </p>
         </div>
       </footer>
-</div>
 
 
 % if include_dependencies:

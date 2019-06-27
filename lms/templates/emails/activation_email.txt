@@ -1,0 +1,24 @@
+<%! from django.utils.translation import ugettext as _ %>
+
+תודה שהצטרפת לקהילה הלומדת של מדרסה!
+
+כל מה שצריך לעשות כדי להתחיל ללמוד זה ללחוץ על הקישור כדי לאשר את ההרשמה:
+
+% if is_secure:
+https://${ site }/activate/${ key }
+% else:
+http://${ site }/activate/${ key }
+% endif
+
+
+אל תשכחו גם לעקוב אחרינו בפייסבוק (https://www.facebook.com/madrasafree) ולהיכנס לקבוצת התרגול (https://www.facebook.com/groups/MadrasaFree/).
+
+בִִּ(אל)נַّגַ'אח! בהצלחה!
+
+צוות מדרסה
+
+
+
+-----------
+
+אימייל זה נשלח אוטומטית מאתר "מדרסה" 

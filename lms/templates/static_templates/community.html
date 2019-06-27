@@ -1,0 +1,118 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">לומדים ביחד | Learning Together</%block>
+
+<%block name="headextra">
+
+<title>לומדים ביחד | Learning Together</title>
+<!-- Search Engine -->
+<meta name="description" content="בשביל ללמוד לתקשר צריך קודם כל… לתקשר… מוזמנים להצטרף לקהילה שלנו בפייסבוק, לערוצי התוכן שלנו בווטסאפ ובטלגרם, לניוזלטר חודשי ועוד ועוד!">
+<meta name="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="לומדים ביחד | Learning Together">
+<meta itemprop="description" content="בשביל ללמוד לתקשר צריך קודם כל… לתקשר… מוזמנים להצטרף לקהילה שלנו בפייסבוק, לערוצי התוכן שלנו בווטסאפ ובטלגרם, לניוזלטר חודשי ועוד ועוד!">
+<meta itemprop="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="לומדים ביחד | Learning Together">
+<meta name="og:description" content="בשביל ללמוד לתקשר צריך קודם כל… לתקשר… מוזמנים להצטרף לקהילה שלנו בפייסבוק, לערוצי התוכן שלנו בווטסאפ ובטלגרם, לניוזלטר חודשי ועוד ועוד!">
+<meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+
+</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="community">
+		<div class="container">
+			<h1 class="mt-5">הקהילה הלומדת של מדרסה היא הלב הפועם של המיזם.</h1>
+			<div class="row mx-0 mb-4">
+				<div class="col-md text-center">
+					<p>החיבור בין התלמידים ברשתות השונות ובכלל הוא קודם כל כלי לימודי משמעותי (כי הרי אי אפשר ללמוד לתקשר בלי לתקשר) אבל הוא גם מימוש של המטרה שלנו - מפגש, שיח, חיבור.</p>
+				</div>
+				<div class="col-md-auto text-center">
+					<i class="fa fa-graduation-cap fa-3x m-auto"></i>
+					<h3 class="lead2 font-weight-bold">170,000</h3>
+					<p class="lead my-3">תלמידים</p>
+				</div>
+				<div class="col-md text-center">
+					<p>מוזמנים לעקוב אחרינו בפייסבוק, להצטרף לקבוצות התרגול השונות (פייסבוק, ווטסאפ, טלגרם), לקבל ניוזלטר חודשי מלא כל טוב, ולהצטרף למפגשי שיח ותרגול קרוב למקום מגוריכם (בקרוב מאד!)</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="community-grid m-auto px-3 pt-3 pb-5">
+			<div class="row m-0">
+				<div class="col-md-8 text-center p-2 d-flex">
+					<div class="community-grid-box p-4 d-flex align-items-center">
+						<div>
+							<div class="row m-0 align-items-center">
+								<div class="col-md-6 text-center">
+									<i class="fa fa-facebook fa-2x"></i>
+									<p class="community-grid-box-text mb-3">הצטרפי לקבוצת התרגול בפייסבוק לשאלות ודיונים עם תלמידים אחרים מהקהילה ועם המורים של מדרסה!</p>
+									<a target="_blank"  class="btn btn-warning m-2" href="https://www.facebook.com/groups/MadrasaFree">הצטרפ.י</a>
+								</div>
+								<div class="col-md-6 text-center">
+									<!--<p>עקבו אחרינו בפייסבוק</p>-->
+									<!-- start -->
+									  <div id="fb-root"></div>
+									  <script>(function (d, s, id) {
+											var js, fjs = d.getElementsByTagName(s)[0];
+											if (d.getElementById(id)) return;
+											js = d.createElement(s); js.id = id;
+											js.src = 'https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v3.0&appId=552970425097669&autoLogAppEvents=1';
+											fjs.parentNode.insertBefore(js, fjs);
+										}(document, 'script', 'facebook-jssdk'));</script>
+									  <div class="fb-page" data-href="https://www.facebook.com/madrasafree/" data-height="320" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/madrasafree/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/madrasafree/">‎מדרסה - לימוד ערבית מדוברת בחינם‎</a></blockquote></div>
+									<!-- end -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center p-2 d-flex">
+					<div class="community-grid-box p-4 d-flex align-items-center">
+						<div>
+							<i class="fa fa-newspaper-o fa-2x"></i>
+							<p class="community-grid-box-text mb-3">הרשם.י לניוזלטר החודשי (אח׳באר מדרסה) לעדכונים, פינות העשרה וקישורים מגניבים.</p>
+							<a target="_blank"  class="btn btn-warning m-2" href="https://docs.google.com/forms/d/1PTsHVqH08YTB7aXFEgO6AbnzIsKzYkjrKhLoO63RJaw/viewform?edit_requested=true">הרשמ.י</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row m-0">
+				<div class="col-md-4 text-center p-2 d-flex">
+					<div class="community-grid-box p-4 d-flex align-items-center">
+						<div>
+							<i class="fa fa-comments fa-2x mx-2"></i>
+							<i class="fa fa-send fa-2x mx-2"></i>
+							<p class="community-grid-box-text mb-3">הצטרף לערוץ התוכן שלנו - בטלגרם או בווטסאפ כדי לקבל תכנים מגניבים, חידות, פתגמים, והמלצות. (כמה פעמים בשבוע, בלי חפירות!)</p>
+							<a target="_blank"  class="btn btn-warning m-2" href="https://chat.whatsapp.com/BTf036AsnR21qViSET31QL">הצטרפ.י לווטסאפ</a>
+							<a target="_blank"  class="btn btn-warning m-2" href="https://t.me/madrasafree">הצטרפ.י לטלגרם</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center p-2 d-flex">
+					<div class="community-grid-box p-4 d-flex align-items-center">
+						<div>
+							<i class="fa fa-instagram fa-2x"></i>
+							<p class="community-grid-box-text mb-3">רוצה לעקוב אחר ההתפתחות של הפרויקט והצוות? (וגם ללמוד קצת על הדרך) בשביל זה יש אינסטגרם!</p>
+							<a target="_blank"  class="btn btn-warning m-2" href="https://www.instagram.com/madrasafree">עקוב.י</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center p-2 d-flex">
+					<div class="community-grid-box community-grid-box-img p-4 d-flex align-items-center">
+						<div>
+							<!--<i class="fa fa-handshake-o fa-2x"></i>-->
+							<img class="community-grid-box-img-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/community/handshake.png" alt="handshake icon">
+							<h3>מפגשי שיח ותרגול</h3>
+							<p>לומדים במסך, נפגשים ומתרגלים יחד! 2019 coming soon</p>
+							<div class="btn btn-warning transform-10-deg btn-disabled mt-4 ml-3 float-left">בקרוב</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    </section>
+</main>

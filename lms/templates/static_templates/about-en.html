@@ -1,0 +1,200 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">About</%block>
+
+
+<%block name="headextra">
+<!-- Search Engine -->
+<meta name="description" content="">
+<meta name="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="About">
+<meta itemprop="description" content="">
+<meta itemprop="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="About">
+<meta name="og:description" content="">
+<meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+
+</%block>
+
+
+
+
+<main id="main" aria-label="Content" tabindex="-1" style="direction: ltr;">
+
+	<section class="about-top">
+        <div class="container text-center p-5">
+			<h1 class="pt-5">Madrasa’s story</h1>
+			<h3>A social, technological, community-oriented initiative for learning Colloquial Arabic. For everyone, for free.</h3>
+			<p class="pb-5">Our goal is to promote better communication between the different parts of Israeli society. Our project combines online studies through interactive courses and a rich content library, with ongoing community activity in social media and study groups throughout the country.</p>
+		</div>
+	</section>
+	
+	<nav>
+		<ul class="about-nav nav justify-content-center">
+			<li class="nav-item"><a class="nav-link active" href="#story">Our Story</a></li>
+			<li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
+			<li class="nav-item"><a class="nav-link" href="#managment">Board of Directors</a></li>
+			<li class="nav-item"><a class="nav-link" href="#thanks">Thanks</a></li>
+		</ul>
+	</nav>
+	
+	<section class="about-story" style="direction:ltr;">
+		<div class="about-story-img"></div>
+		<a name="story"></a>
+		<div class="container">
+			<div class="about-story-wrap mb-5 px-3 text-left">
+				<p class="heading">We can’t communicate in Arabic, even though it should actually be pretty natural…</p>
+				<p>Society in Israel and in the Middle East is steeped in the Arabic language. It is the mother tongue of 22% of the population of Israel. Moreover, many of the Jewish citizens whose families came from North Africa and Arab countries have a cultural and historic connection with the language. And yet, the overwhelming majority (97%!) of Jewish people in Israel can’t speak Arabic, and the connection with the language is gradually dwindling. Furthermore, Arabic studies in schools and universities are very limited and focus almost exclusively on Classical and Modern Standard Arabic. So that instead of the partnership and understanding that language has the power to create, we have a language barrier that perpetuates the estrangement, animosity, and fear between the communities. </p>
+			</div>
+			<div class="about-story-wrap mb-5 px-3 text-left">
+				<p class="heading">Our story began in Jerusalem, at the end of 2014 </p>
+				<p> In late 2014, Gilad began giving free Arabic lessons in his parents’ living room. The students begged him to upload the videos to the internet… and, as the saying goes, the rest is history! A group of friends came together to film, edit, write, and upload the videos, and so the first Madrasa website and Facebook page were born - open and accessible to everyone for free. It was an immediate success. In a very short time, we had thousands of people learning from our website, and we continued working, as volunteers, to supply our community’s growing demand  for new lessons and educational content. In 2016 we became a registered NGO, and in 2017 we decided to take our initiative to the next level: developing a new, cutting-edge interactive course to fit the needs of our students. A course that will not only give access to content to anyone who wishes to learn, but will also provide an educational program and enable continuous study and use of the language. </p>
+			</div>
+			<div class="about-story-wrap mb-5 px-3 text-left">
+				<p class="heading">Learning to communicate is not just our goal, it’s the gist of our social and pedagogical approach </p>
+				<p>The choices we’ve made of teaching Colloquial Arabic, and focusing on the urban Palestinian dialect and on everyday topics, all spring from here. This is also the basis for our teaching method, which caters for students who have many other demands on their time. For such students, persevering in their studies and finding opportunities for continuous practice often pose a serious challenge. This is why we use short, clear educational videos and put great emphasis on various exercises and games.
+                    The most important element that supports the learning process is our student community. When you practice together everywhere (Facebook, Whatsapp, newsletter, study groups, chats, forums, etc.) - you practice more, and you find it easier to persevere.</p>
+			</div>
+			<div class="about-story-wrap mb-5 px-3 text-left">
+				<p class="heading">The project is growing at a rapid pace</p>
+				<p> While developing new courses (which we hope to publish during 2019), we are also working on creating physical and virtual spaces where our community can meet and practice: practice meetings (based on our course) that we plan to organize in Israel’s central cities; and a video chat platform (under development) where students can speak with each other and with Arabic speakers from all over the country.  And it doesn’t stop here. We are working on creating study groups in society’s most central junctions: large employers, public servants (workers of the health system, for example), and social activists. </p>
+			</div>
+		</div>
+	</section>
+	<section class="about-team text-center">
+			<a name="team"></a>
+			<div class="container">
+				<h3 class="mb-4">Our Team</h3>
+				<div class="about-team-wrap d-flex justify-content-center">
+					<div class="about-team-item">
+						<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/michal-rosen.png" alt="מיכל רוזן" width="185">
+						<div class="about-team-content">
+							<p class="heading">Michal Rosen</p>
+							<p>
+							Director of digital media at Madrasa team. Holds a BA in East Asian Studies and Likes languages. Learns Arabic and engages in creating content for networks, graphic design and teaching. practices Yoga and is a creative musician.
+							</p>
+						</div>
+					</div>		
+				<div class="about-team-item">
+						<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/gilad.png" alt="גילעד סוויט">
+						<div class="about-team-content">
+							<p class="heading">Gilad Sevitt </p>
+							<p>Founder and R&D director. Holds a BA in Sociology, Anthropology, Arabic, and Buddhism. Lives in Jerusalem and is interested in ecology, music, and (obviously) languages. </p>
+						</div>
+				</div>
+				<div class="about-team-item">
+						<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/aya.png" alt="איה ח׳לאילה">
+						<div class="about-team-content">
+							<p class="heading">Aia Khalaily</p>
+							<p>Translator, teacher, and content editor. MA student in International Development, likes to travel around the world and play board games!  </p>			
+						</div>
+				</div>
+			</div>
+			<div class="about-team-wrap d-flex justify-content-center">		
+				<div class="about-team-item">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/daniel.png" alt="דניאל דותן">
+					<div class="about-team-content">
+				  		<p class="heading">Daniel Dotan</p>
+						<p>Lawyer and social activist. Founder and CEO of Madrasa. A football addict, photographer, and writer of cryptic crosswords (only in Hebrew for now), and father of Alma.</p>
+					</div>
+				</div>
+				<div class="about-team-item">
+						<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/vered.png" alt="ורד קיסר">
+						<div class="about-team-content">
+							<p class="heading">Vered Keasar</p>
+							<p> 27 years old and lives in Jerusalem, content writer and administrator at Madrasa. Holds a BA in Arabic Language and literature and is currently studying for a Master’s degree in Public Health. Likes languages, nice views, and cats.
+							</p>
+						</div>
+				</div>		
+					<div class="about-team-item">
+						<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/yaniv.png" alt="יניב גרשון" width="185">
+						<div class="about-team-content">
+							<p class="heading">Yaniv Gershon</p>
+							<p>
+							Website manager and content writer at madrasa. Holds a BA in Information Science and Arabic at Bar Ilan University. Has knowledge of both Arabic and computer languages. His Holy Trinity is Arabic, technology and social change.  Likes board game and healthy food.
+							</p>
+						</div>
+					</div>	
+							
+				</div>
+				<div class="about-team-wrap d-flex justify-content-center">		
+						<div class="about-team-item">
+								<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/naam.png" alt="נע׳ם אבו ליל">
+								<div class="about-team-content">
+									<p class="heading">Nagham Abu Leil</p>
+									<p>Content editor at Madrasa. BA student in Middle Eastern Studies and  Linguistics. Lives in Jerusalem and is always late </p>
+								</div>
+							</div>
+					
+					<div class="about-team-item">
+						<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/amit.png" alt="עמית בנדור" width="185">
+						<div class="about-team-content">
+							<p class="heading">Amit Bendor</p>
+							<p>
+									The chief technologist of Madrasa. In daily life he is an expert on artificial intelligence and language processing. Holds an engineering degree from the Technion.
+							</p>
+						</div>
+					</div>		
+					<div class="about-team-item">
+							<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/thanaajawaabre.png" alt="ת'נא ג'ואברי">
+							<div class="about-team-content">
+								<p class="heading">Thana Jawabreh</p>
+								<p> 
+									Social activist, head of the unit for the advancement of Arab students at Shenkar College, and translator at Madrasa. Likes to translate to Arabic and observe the similarities between texts in Arabic and in Hebrew. Thanaa is especially interested in creating Colloquial Arabic translations that are comprehensible to speakers of different Arabic dialects all over the world. It's challenging, but fun.
+								</p>
+							</div>
+						</div>										
+				</div>
+			</div>
+		</section>
+	
+	<section class="about-team text-center">
+		<a name="managment"></a>
+		<div class="container">
+			<h3 class="mb-4">Board of Directors</h3>
+			<div class="about-team-wrap d-flex justify-content-center">
+				<div class="about-team-item">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/netanel.png" alt="נתנאל כץ">
+					<div class="about-team-content">
+						<p class="heading">Nathaniel Katz</p>
+						<p>Chairman of the organization. Organizational psychologist, founder and co-CEO of “Machon Manhigut”. Has worked with Madrasa since it’s beginning</p>
+					</div>
+				</div>
+				<div class="about-team-item">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/alon.png" alt="אלון פרגמן">
+					<div class="about-team-content">
+						<p class="heading">Dr. Alon Fragman</p>
+						<p>Translator and researcher of Arabic language teaching, trains Arabic teachers at the Tel Aviv University School of Education. </p>
+					</div>
+				</div>
+				<div class="about-team-item">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/daniel-s.png" alt="דניאל שפע">
+					<div class="about-team-content">
+						<p class="heading">Daniel Shefa</p>
+						<p>Senior editor and producer at the Sports Channel</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="about-thanks text-center">
+		<a name="thanks"></a>
+		<div class="container">
+			<h3>
+				Thanks 
+				<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/namaste.png" alt="Thanks">
+			</h3>
+			<p> Michal and Dror Winograd, Shem Barashi, Oren Feld, Michal Porat, Matan Eshed, Yuval Katz, Gal Kramarski, Noa Finkelstein, Yarden Lichterman, Shachar Gilan, Sharon Komash, Matan Serry, Mahmoud Shehada, Rajaa Haj Yahia, Maya David, Mo’tasam Bakirat (deceased), Aya Khayria, Rawi Musa, Zada Haj, Ariel Kedem, Omer Erlich, Hanan Hussein Dabah, Jihad Abu Snina, Ronen Rothfarb, Itai Katz, Irit Shaham, Menachem Dotan, Miri Hazut, Ohad Weber, Matan Gez, Van Leer Institute, The American Center in Jerusalem, Alliance House, Mazkeka recording studio, Carousela center,STUDIO PO , Meshulam print.
+            </p>
+			<a class="theme-btn-special mt-5" href="/supportus-en">And of course, everyone who supports or has supported the project over the years</a>
+		</div>
+	</section>
+</main>
+	
+<!-- smooth scroll JS -->
+<script src="/static/marvel/js/smooth-scroll.js"></script>

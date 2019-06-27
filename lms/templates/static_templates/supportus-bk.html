@@ -1,0 +1,269 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">תמכו במהפכה | ٍJoin the Revolution </%block>
+<%block name="headextra">
+
+
+<!-- Search Engine -->
+<meta name="description" content="מדרסה קיים בזכות שותפים כמוך. יחד אנחנו יוצרים חברה מתקשרת וטובה יותר. הצטרפו עכשיו!">
+<meta name="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content=" תמכו במהפכה | ٍJoin the Revolution">
+<meta itemprop="description" content="מדרסה קיים בזכות שותפים כמוך. יחד אנחנו יוצרים חברה מתקשרת וטובה יותר. הצטרפו עכשיו!">
+<meta itemprop="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content=" תמכו במהפכה | ٍJoin the Revolution">
+<meta name="og:description" content="מדרסה קיים בזכות שותפים כמוך. יחד אנחנו יוצרים חברה מתקשרת וטובה יותר. הצטרפו עכשיו!">
+<meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+
+</%block>
+
+<main id="main" aria-label="Content" tabindex="-1" class="content-wrapper">
+	<div class="content-wrapper">
+		
+		<section class="support-us-top">
+			<div class="support-us-top-wrap">
+				<div class="row align-items-center">
+				  <div class="col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+					  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/LYK6Jr_fRK4?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=0&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false&amp;enablejsapi=0" allowfullscreen></iframe>
+					</div>
+				  </div>
+				  <div class="col-md-6 pr-5">
+					  <div class="support-us-top-phrase support-us-top-phrase-01">
+						מדרסה קיים בזכות תומכים כמוך
+					  </div>
+					  <div class="support-us-top-phrase support-us-top-phrase-02">
+						  הצטרפו עכשיו!
+					  </div>
+					  <div class="support-us-top-phrase support-us-top-phrase-03">
+						  יוצרים יחד חברה מתקשרת יותר וטובה יותר!
+					  </div>
+				  </div>
+				</div>
+			</div>
+		</section>
+
+		<section class="support-us-features">
+			<div class="support-us-features-wrap">
+				<div class="support-us-features-phrase support-us-features-phrase-01">
+					בונים יחד את הבית של לימודי הערבית בישראל:
+				</div>
+				<div class="row m-0">
+					<div class="col-md p-0">
+						<div class="support-us-features-phrase support-us-features-phrase-02">
+							ספרית תכנים ייחודית - סדנאות ייחודיות על עולמות תוכן שונים, סדנת להגים בעולם הערבי, הכתב הערבי, ועוד ועוד 
+						</div>
+					</div>
+					<div class="col-md-auto p-0">
+						<div class="support-us-features-phrase support-us-features-phrase-03">
+							קורסים בכל הרמות 
+						</div>
+					</div>
+					<div class="col-md p-0">
+						<div class="support-us-features-phrase support-us-features-phrase-04">
+							מקימים רשת מפגשים מקומית בכל הארץ - כך שלכל אחד תהיה האפשרות לפגוש ולתרגל ליד הבית!  
+						</div>
+					</div>
+					<div class="col-md p-0">
+						<div class="support-us-features-phrase support-us-features-phrase-05">
+							מפתחים פלטפורמת שיחות ותרגול בוידאו  
+						</div>
+						<div class="support-us-features-phrase support-us-features-phrase-06">
+							כל חבר קבוע (תומך באופן חודשי) של מדרסה יקבל את הזכות להשפיע על החזון והדרך של מדרסה 
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="support-us-form">
+			<div class="support-us-form-bg"></div>
+
+			<div class="support-us-form-wrap">
+				<h3 class="theme-color-special mb-3">אף אחד לא יעשה את זה בשבילנו - מצטרפים ולוקחים אחריות על החברה שלנו.</h3>
+				<i class="theme-color-special fa fa- fa-arrow-down fa-2x"></i>
+				<div class="support-us-form-in mt-4">
+					<form id="donation-form" action="" >
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="support-us-form-name" class="sr-only">שם</label>
+									<input type="text" class="form-control" id="support-us-form-name" placeholder="שם" required>
+								</div>
+								<div class="form-group">
+									<label for="support-us-form-email" class="sr-only">מייל</label>
+									<input type="email" class="form-control" id="support-us-form-email" placeholder="מייל" required>
+								</div>
+								<div class="form-group">
+									<label for="support-us-form-city" class="sr-only">עיר</label>
+									<input type="text" class="form-control" id="support-us-form-city" placeholder="עיר">
+								</div>
+								<div class="form-group">
+									<label for="support-us-form-tel" class="sr-only">מספר נייד</label>
+									<input type="tel" class="form-control" id="support-us-form-tel" placeholder="מספר נייד">
+								</div>
+								<div class="form-group w-50 mx-auto mt-5" >
+									<select class="form-control" id="donation-type">
+										<option value="1">תמיכה חודשית</option>
+									  <option value="2">תשלום חד פעמי</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div id="amount1" style="display:none;">
+										<div class="form-group">
+												<div class="support-us-form-radios">
+													<div class="custom-control custom-control-inline">
+													<input class="support-us-form-input" id="sum-50" name="sum" type="radio" value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=2147d08a-4e8e-4d59-b5ad-306d0e652d9f">
+													<label class="support-us-form-label" for="sum-50">
+														 ₪ 50
+													</label>
+													</div>
+			
+													<div class="custom-control custom-control-inline">
+													<input class="support-us-form-input" id="sum-100" name="sum" type="radio" value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=a419387f-63df-4e20-9fca-002cb73c6941">
+													<label class="support-us-form-label" for="sum-100">
+														 ₪ 100
+													</label>
+													</div>
+			
+													<div class="custom-control custom-control-inline">
+													<input class="support-us-form-input" id="sum-250" name="sum" type="radio" value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=72f7657a-006c-4752-88aa-f4792a236b1f">
+													<label class="support-us-form-label" for="sum-250">
+														 ₪ 250
+													</label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="support-us-form-radios">
+													<div class="custom-control custom-control-inline">
+													<input class="support-us-form-input" id="sum-500" name="sum" type="radio" value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=0eb22e10-f907-4899-8575-2593a1a64287">
+													<label class="support-us-form-label" for="sum-500">
+														₪ 500
+													</label>
+													</div>
+			
+													<div class="custom-control custom-control-inline">
+													<input class="support-us-form-input" id="sum-other" name="sum" type="radio" value="https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=d1ca29c9-740d-4f54-b5f8-eceaced09e1b">
+													<label class="support-us-form-label" for="sum-other">
+														סכום אחר
+													</label>
+													</div>
+												</div>
+											</div>
+								</div>
+								<div id="amount2" >
+										<div class="form-group">
+												<div class="support-us-form-radios">
+													<div class="custom-control custom-control-inline">
+													<input class="support-us-form-input" id="sum-25-sub" name="sum" type="radio" value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=407fcb6b-375b-4a00-b61f-aca2bc62ff6a" checked>
+													<label class="support-us-form-label" for="sum-25-sub">
+														 ₪ 25
+													</label>
+													</div>
+			
+													<div class="custom-control custom-control-inline">
+													<input class="support-us-form-input" id="sum-50-sub" name="sum" type="radio" value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=db976d37-2c9d-4247-8f6d-590727d2ced8">
+													<label class="support-us-form-label" for="sum-50-sub">
+														 ₪ 50
+													</label>
+													</div>
+			
+													<div class="custom-control custom-control-inline">
+													<input class="support-us-form-input" id="sum-100-sub" name="sum" type="radio" value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=ca5cfd5b-1f99-45f5-acf6-68cd63026e26">
+													<label class="support-us-form-label" for="sum-100-sub">
+														 ₪ 100
+													</label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="support-us-form-radios">
+													<div class="custom-control custom-control-inline">
+													<input class="support-us-form-input" id="sum-250-sub" name="sum" type="radio" value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=22c9c896-0621-477b-868e-bd3939256283">
+													<label class="support-us-form-label" for="sum-250-sub">
+														₪ 250
+													</label>
+													</div>
+			
+													<div class="custom-control custom-control-inline">
+													<input class="support-us-form-input" id="sum-other-sub" name="sum" type="radio" value="https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=c6b2764c-e4e7-4315-8c5d-c08190176c22">
+													<label class="support-us-form-label" for="sum-other-sub">
+														סכום אחר
+													</label>
+													</div>
+												</div>
+											</div>
+								</div>
+
+
+								<div class="form-row align-items-center">
+									<div class="col-auto my-1">
+									  <div class="custom-control custom-checkbox mr-sm-2">
+										<input type="checkbox" class="custom-control-input" id="customControlAutosizing" required>
+										<label class="custom-control-label" for="customControlAutosizing"> קראתי ואני מאשר את <a href="/tos">התקנון</a></label>
+									  </div>
+									</div>
+									<div class="col text-left my-1">
+									  <button id="submit" type="submit" class="btn btn-warning"> תשלום מאובטח </button>
+									</div>
+								</div>
+								<div class="text-left my-1">
+									<img src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/support-us/visa.png" alt="אמצעי תשלום">
+								</div>
+							</div>
+						</div>	
+					</form>
+				</div>
+				<div class="support-us-bottom-phrase mt-5 mx-auto">
+					צעד צעד, בדרך לחברה ישראלית שמתקשרת גם בערבית.
+				</div>
+			</div>
+		</section>
+
+	</div>
+	<script>
+	$('#donation-type').on('change', function() {
+		if (this.value == '1'){
+			$('#amount2').show();
+		  $('#amount1').hide();
+		}
+		else {
+			$('#amount1').show();
+		  $('#amount2').hide();
+		}
+
+	});
+	function afterValidate(){
+		// $("#donation-form").action = val;
+		// window.location.replace(val);
+		// return false;
+	}
+	// $("#submit").click(function(e) {
+
+	// 		var val = $('input[name=sum]:checked').val();
+	// 		console.log(val);
+	// 		$("#donation-form").action = val;
+	// 		window.location.replace(val);
+	// 		return false;
+		
+	// });
+
+	$('#submit').on('click', function(event) {
+    var isvalidate = $("#donation-form")[0].checkValidity();
+    if (isvalidate) {
+      event.preventDefault();
+	  var val = $('input[name=sum]:checked').val();
+	  $("#donation-form").action = val;
+	  window.location.replace(val);
+	  return false;
+      // HERE YOU CAN PUT YOUR AJAX CALL
+    }
+  });
+</script>
+</main>

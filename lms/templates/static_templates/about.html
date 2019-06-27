@@ -1,0 +1,199 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">אודות | ِAbout</%block>
+
+
+<%block name="headextra">
+<!-- Search Engine -->
+<meta name="description" content="פחות מ-5% מהיהודים בישראל יודעים לנהל שיחה בסיסית בערבית מדוברת, אנחנו כאן כדי לשנות את זה. הסיפור שלנו מתחיל בסלון של ההורים של גילעד, בקיץ 2014">
+<meta name="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="אודות | ِAbout">
+<meta itemprop="description" content="פחות מ-5% מהיהודים בישראל יודעים לנהל שיחה בסיסית בערבית מדוברת, אנחנו כאן כדי לשנות את זה. הסיפור שלנו מתחיל בסלון של ההורים של גילעד, בקיץ 2014">
+<meta itemprop="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="אודות | ِAbout">
+<meta name="og:description" content="פחות מ-5% מהיהודים בישראל יודעים לנהל שיחה בסיסית בערבית מדוברת, אנחנו כאן כדי לשנות את זה. הסיפור שלנו מתחיל בסלון של ההורים של גילעד, בקיץ 2014">
+<meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+
+</%block>
+
+
+
+
+<main id="main" aria-label="Content" tabindex="-1">
+
+	<section class="about-top">
+        <div class="container text-center p-5">
+			<h1 class="pt-5">הסיפור של מדרסה</h1>
+			<h3>מיזם חברתי-קהילתי-טכנולוגי ללימוד ערבית מדוברת בחינם ולכולם.</h3>
+			<p class="pb-5"> המטרה שלנו היא לקדם תקשורת טובה יותר בין המגזרים השונים בחברה הישראלית. המיזם משלב לימוד מקוון באתר באמצעות קורסים אינטראקטיביים וספרית תכנים ענפה, יחד עם פעילות קהילתית יומיומית ברשתות החברתיות וקבוצות לימוד ברחבי הארץ.</p>
+		</div>
+	</section>
+	
+	<nav>
+		<ul class="about-nav nav justify-content-center">
+			<li class="nav-item"><a class="nav-link active" href="#story">הסיפור</a></li>
+			<li class="nav-item"><a class="nav-link" href="#team">הצוות</a></li>
+			<li class="nav-item"><a class="nav-link" href="#managment">הוועד המנהל</a></li>
+			<li class="nav-item"><a class="nav-link" href="#thanks">תודות</a></li>
+		</ul>
+	</nav>
+	
+	<section class="about-story">
+		<div class="about-story-img"></div>
+		<a name="story"></a>
+		<div class="container">
+			<div class="about-story-wrap mb-5 px-3">
+				<p class="heading">אנחנו לא יודעים לתקשר בערבית, למרות שזה בעצם די טבעי…</p>
+				<p> החברה בישראל והמזרח התיכון בכלל רוויים בשפה הערבית. היא מהווה שפת אם עבור 22% מהאוכלוסייה, וגם למרבית מהיהודים בישראל, יוצאי מדינות ערב, ישנו חיבור תרבותי והיסטורי אליה. עם זאת, הרוב המוחלט של היהודים בישראל (97%!) לא דובר את השפה והחיבור אליה נשחק עם השנים. מעבר לכך, המענים הניתנים במערכת החינוך לרבות במוסדות ההשכלה הגבוהה ללימוד ערבית מוגבלים מאד ומתמקדים הלכה למעשה, בערבית ספרותית בלבד. כך, במקום שבו שפה יכולה הייתה לייצר קרבה ושותפות, גורמת אי ידיעת השפה להנצחת נתק, פילוג עוינות, זרות וחשש בין הקהילות.</p>
+			</div>
+			<div class="about-story-wrap mb-5 px-3">
+				<p class="heading">הסיפור שלנו התחיל בירושלים בסוף שנת 2014.</p>
+				<p> גילעד לימד שיעורים חינם בסלון של ההורים שלו ותלמידים התחחנו שהוא יעלה את הסרטונים לרשת… כמו שאומרים, השאר היסטוריה! קבוצה של חברים התגבשה כדי לצלם, לערוך, לכתוב ולהעלות את הסרטונים לרשת, וככה נולדו אתר מדרסה הראשון ועמוד הפייסבוק שלנו - פתוחים ונגישים לכולם ובחינם. ההצלחה הייתה מיידית. תוך זמן קצר כבר למדו באתר אלפי אנשים, ואנחנו המשכנו לייצר שיעורים ותכנים נוספים בהתנדבות, לדרישת הקהילה הגדלה שלנו. ב-2016 כבר הפכנו לעמותה, וב-2017 החלטנו לקחת את המיזם אל השלב הבא - פיתוח קורס אינטראקטיבי חדש ומתקדם, שיתאים לצרכים של התלמידים שלנו וינגיש לכל מי שרוצה לא רק גישה לתוכן - אלא מסגרת לימודית המאפשרת התמדה ושימוש שוטף בשפה.</p>
+			</div>
+			<div class="about-story-wrap mb-5 px-3">
+				<p class="heading">ללמוד לתקשר זו לא רק המטרה. זו תפיסה חברתית ותמצית התפיסה הפדגוגית שלנו.</p>
+				<p> מכאן נובעת הבחירה ללמד ערבית מדוברת, בלהג פלסטיני עירוני, ולהתמקד בתכנים יומיומיים. מכאן גם נגזרת השיטה שלנו, שמכוונת לתלמידים שלומדים ״על הדרך״, ושני האתגרים שמאפיינים אותם - היכולת לתמיד והצורך לתרגול שוטף. לכן סרטוני הלימוד קצרים וקליטים, לכן אנחנו שמים דגש הגדול על תרגול ומשחקים מסוגים שונים.</p>
+				<p> המרכיב הכי חשוב בהתמודדות עם תהליך למידה הוא הקהילה הלומדת שלנו. כשמתרגלים יחד בכל מקום ומכל מקום (פייסבוק, ווטסאפ, ניוזלטר, קבוצות למידה, צ׳טים, פורומים וכו׳ וכו׳) מתרגלים יותר, ומתמידים יותר.</p>
+			</div>
+			<div class="about-story-wrap mb-5 px-3">
+				<p class="heading">המיזם צומח בקצב מסחרר</p>
+				<p> במקביל לפיתוח קורסים נוספים (שיעלו בתקווה לאתר במהלך 2019), אנחנו עמלים על פיתוח זירות בהן תוכל הקהילה שלנו לתרגל ולהיפגש - מפגשי שיח ותרגול (המתבססים על תכני הקורס שלנו) שאנחנו מתכננים לפתוח בערים מרכזיות בארץ; פלטפורמת שיחות בוידאו (בפיתוח), בה יוכלו תלמידים לשוחח ולתרגל אחד עם השני, ועם דוברי שפה מרחבי הארץ. אך זה לא נגמר כאן. אנחנו עמלים על הקמת קבוצות למידה בצמתים הכי מרכזיים בחברה - מעסיקים גדולים, משרתי ציבור (עובדי מערכת הבריאות למשל) ופעילים חברתיים.</p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="about-team text-center">
+		<a name="team"></a>
+		<div class="container">
+			<h3 class="mb-4">הצוות</h3>
+			<div class="about-team-wrap d-flex justify-content-center">
+					<div class="about-team-item">
+							<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/michal-rosen.png" alt="מיכל רוזן" width="185">
+							<div class="about-team-content">
+								<p class="heading">מיכל רוזן</p>
+								<p>
+										מנהלת מדיה דיגיטלית בצוות מדרסה. בעלת תואר ראשון בלימודי מזרח אסיה וחובבת שפות. לומדת ערבית ועוסקת ביצירת תוכן לרשתות, עיצוב גרפי והוראה. מתרגלת יוגה ומוזיקאית יוצרת.
+								</p>
+							</div>
+						</div>		
+				<div class="about-team-item">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/gilad.png" alt="גילעד סוויט">
+					<div class="about-team-content">
+						<p class="heading">גילעד סוויט</p>
+						<p> המייסד והמנהל המקצועי. בעל תואר ראשון בסוציולוגיה, אנתרופולוגיה, ערבית ובודהיזם. גר בירושלים, וחובב שפות (דה), אקולוגיה ומוסיקה.</p>
+					</div>
+				</div>
+				<div class="about-team-item">
+						<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/aya.png" alt="איה ח׳לאילה">
+						<div class="about-team-content">
+							<p class="heading">איה ח׳לאילה</p>
+							<p> מתרגמת, מורה ועורכת תוכן. סטודנטית לתואר שני בפיתוח בין-לאומי, פעילה חברתית, אוהבת לטייל בעולם ולשחק משחקי קופסא!</p>
+						</div>
+					</div>
+				
+			
+			</div>
+			<div class="about-team-wrap d-flex justify-content-center">		
+				<div class="about-team-item">
+							<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/daniel.png" alt="דניאל דותן">
+							<div class="about-team-content">
+								<p class="heading">דניאל דותן</p>
+								<p> עו״ד ופעיל חברתי. מייסד ומנכ״ל העמותה. חולה כדורגל, מצלם, כותב תשבצי היגיון (רק בעברית בינתיים), ואבא של עלמה.</p>
+							</div>
+				</div>
+				<div class="about-team-item">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/vered.png" alt="ורד קיסר">
+					<div class="about-team-content">
+						<p class="heading">ורד קיסר</p>
+						<p> בת 27 מירושלים, כותבת חומרי לימוד ורכזת אדמיניסטרציה. בוגרת תואר ראשון בשפה וספרות ערבית ולומדת לתואר שני בבריאות הציבור. חובבת שפות, נופים וחתולים.</p>
+					</div>
+				</div>	
+				<div class="about-team-item">
+						<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/yaniv.png" alt="יניב גרשון" width="185">
+						<div class="about-team-content">
+							<p class="heading">יניב גרשון</p>
+							<p>
+									מנהל אתר וכותב תוכן במדרסה. בעל תואר ראשון במדעי המידע וערבית בבר אילן. בעל ידע גם בשפה הערבית וגם בשפות המחשב. השילוש הקדוש שלו זה ערבית, טכנולוגיה ושינוי חברתי. חובב משחקי קופסא ואוכל בריא.
+							</p>
+						</div>
+				</div>	
+						
+			</div>
+			<div class="about-team-wrap d-flex justify-content-center">		
+					<div class="about-team-item">
+							<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/naam.png" alt="נע׳ם אבו ליל">
+							<div class="about-team-content">
+								<p class="heading">נע׳ם אבו ליל</p>
+								<p> נע’ם אבו-ליל, עורכת תוכן במדרסה. סטודנטית לתואר ראשון במזרח תיכון ובלשנות. גרה בירושלים ותמיד מאחרת</p>
+							</div>
+						</div>
+				
+				<div class="about-team-item">
+					<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/amit.png" alt="עמית בנדור" width="185">
+					<div class="about-team-content">
+						<p class="heading">עמית בנדור</p>
+						<p>
+								הטכנולוג (הראשי) של מדרסה. ביום יום מומחה לבינה מלאכותית ועיבוד שפה, בעל תואר מהנדס מהטכניון.  
+						</p>
+					</div>
+				</div>		
+				<div class="about-team-item">
+						<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/thanaajawaabre.png" alt="ת'נא ג'ואברי">
+						<div class="about-team-content">
+							<p class="heading">ת'נא ג'ואברי</p>
+							<p> פעילה חברתית, רכזת היחידה לקידום סטודנטים ערבים בשנקר, ומתרגמת בצוות מדרסה. אוהבת לתרגם לערבית ולעשות הקבלה בין הטקסט בערבית לבין הטקסט בעברית. מתעניינת במיוחד בתרגום לערבית מדוברת שתהיה מובנת לערבים שמדברים ניב שונה של ערבית ברחבי העולם, מאתגר אבל מהנה.</p>
+						</div>
+					</div>								
+			</div>
+		</div>
+	</section>
+	
+	<section class="about-team text-center">
+		<a name="managment"></a>
+		<div class="container">
+			<h3 class="mb-4">הוועד המנהל</h3>
+			<div class="about-team-wrap d-flex justify-content-center">
+				<div class="about-team-item">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/netanel.png" alt="נתנאל כץ">
+					<div class="about-team-content">
+						<p class="heading">נתנאל כ״ץ</p>
+						<p> יושב ראש העמותה פסיכולוג ארגוני, מייסד ומנכל משותף ב”מכון מנהיגות”. ליווה את הפרויקט מראשית דרכו</p>
+					</div>
+				</div>
+				<div class="about-team-item">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/alon.png" alt="אלון פרגמן">
+					<div class="about-team-content">
+						<p class="heading">ד״ר אלון פרגמן</p>
+						<p> עוסק בתרגום, בחקר הוראת השפה הערבית ובהכשרת מורים לערבית בבית הספר לחינוך באוניברסיטת תל אביב.</p>
+					</div>
+				</div>
+				<div class="about-team-item">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/daniel-s.png" alt="דניאל שפע">
+					<div class="about-team-content">
+						<p class="heading">דניאל שפע</p>
+						<p> עורך בכיר ומפיק בערוץ הספורט</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="about-thanks text-center">
+		<a name="thanks"></a>
+		<div class="container">
+			<h3>
+				תודות 
+				<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/namaste.png" alt="תודה">
+			</h3>
+			<p>מיכל ודרור וינוגרד, שם בראשי, אורן פלד, מיכל פורת, מתן אשד, יובל כץ, גל קרמרסקי, נועה פינקלשטיין, ירדן ליכטרמן, שחר גילן, שרון קומש, מתן סרי, מחמוד שחאדה, סמירה טאפש, רג’אא חאג’ יחיא, מאיה דוד, מעתצם בכיראת ז”ל, איה ח’יריה, ראוי מוסא, זאדה חאג׳, אריאל קדם, עומר ארליך, חנאן חסין דבאח, ג’האד אבו סנינה, רונן רוטפרב, איתי כץ, עירית שחם, מנחם דותן רו״ח, מירי חזות, אוהד ובר, מתן גז מכון וןליר, המרכז האמריקאי בירושלים, סטודיו פו, בית אליאנס, אולפן הקלטות המזקקה, מרכז קרוסלה, משולם פרינט </p>
+			<a class="theme-btn-special mt-5" href="/supportus">וכמובן, לכל מי שתמך ותומך במיזם</a>
+		</div>
+	</section>
+</main>
+	
+<!-- smooth scroll JS -->
+<script src="/static/marvel/js/smooth-scroll.js"></script>

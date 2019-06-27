@@ -1,0 +1,109 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+<%namespace name='static' file='../static_content.html'/>
+
+<%block name="headextra">
+
+<title> תומכים ושותפים | Supporters</title>
+<!-- Search Engine -->
+<meta name="description" content="מדרסה קיים בזכות שותפים מדהימים שחולקים את החזון שלנו. זה המקום לומר להם תודה.">
+<meta name="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content=" תומכים ושותפים | Supporters">
+<meta itemprop="description" content="מדרסה קיים בזכות שותפים מדהימים שחולקים את החזון שלנו. זה המקום לומר להם תודה.">
+<meta itemprop="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content=" תומכים ושותפים | Supporters">
+<meta name="og:description" content="מדרסה קיים בזכות שותפים מדהימים שחולקים את החזון שלנו. זה המקום לומר להם תודה.">
+<meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+
+
+    <!-- <link rel="manifest" href="${static.url('js/notifications/manifest.json')}" /> -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "e9db2dad-64cc-40e6-8998-545e1783f631",
+        });
+      });
+    </script>
+</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <div class="content-wrapper">
+		<section class="supporters-top">
+			<div class="container text-center p-5">
+				<h1 class="pt-5">תומכים ושותפים</h1>
+				<p class="pb-5">מדרסה היא עמותה, מיזם ללא כוונות רווח לא היה קיים ללא התמיכה הכספית של עשרות גורמים ואלפי אנשים ששותפים ושותפות לדרך שלנו. זה המקום לומר לכולם תודה.</p>
+			</div>
+		</section>
+
+		<nav id="nav">
+			<ul class="supporters-nav nav justify-content-center">
+				<li class="nav-item"><a class="nav-link active" href="#community">תומכים מהקהילה</a></li>
+				<li class="nav-item"><a class="nav-link" href="#orgs">קרנות ומוסדות</a></li>
+				<li class="nav-item"><a class="nav-link" href="#privet">תורמים פרטיים</a></li>
+				<li class="nav-item"><a class="nav-link" href="#shir">לזכרה של שיר</a></li>
+			</ul>
+		</nav>
+
+		<section class="supporters-community">
+			<div class="supporters-community-img"></div>
+			<a name="community"></a>
+			<div class="container text-center">
+				<h3 class="my-5">תומכים מהקהילה</h3>
+				<p>מעל 1,500 אנשים תמכו במדרסה עד כה, באופן עצמאי ובמסגרת <a class="supporters-community-link" href="https://headstart.co.il/project/39772">קמפיין גיוס המונים מוצלח</a> באוקטובר 2017. </p>
+				<p class="mt-0 mb-5"><a class="supporters-community-link" href="/supportus">מוזמנים להצטרף אלינו גם</a></p>
+			</div>
+		</section>
+		
+		<section class="supporters-orgs">
+			<a name="orgs"></a>
+			<div class="container text-center">
+				<h3 class="mt-5">קרנות ומוסדות</h3>
+				<div class="d-flex align-items-center justify-content-center mb-5">
+					<img class="mx-3" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/supporters/leichtag.png" alt="leichtag logo">
+					<img class="mx-3" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/supporters/ihf-logo.png" alt="ihf logo">
+					<img class="mx-3" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/supporters/idc-herzliya-logo.png" alt="idc-herzliya logo">
+					<img class="mx-3" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/supporters/National_Union_of_Israeli_Students.png" alt="National_Union_of_Israeli_Students logo">
+					<img class="mx-3" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/supporters/Mifal_HaPayis_logo.png" alt="Mifal_HaPayis logo">
+				</div>
+			</div>
+		</section>
+		
+		<section class="supporters-privet">
+			<a name="privet"></a>
+			<div class="container text-center">
+				<h3 class="my-5">תורמים פרטיים</h3>
+				<p class="mb-5">תמר ורונן לנדסברג | מיכל צרפתי אפרת אוריקה נכסים | חגית אוזן | מלי בכר | מאיר אוזן | אורה סטיבה | רון פרופר | דנה גרוס</p>
+			</div>
+		</section>
+		
+		<section class="supporters-shir">
+			<a name="shir"></a>
+			<div class="container text-center">
+				<h3 class="mb-4">לזכרה של שיר</h3>
+				<div class="d-flex align-items-start justify-content-center">
+					<img class="ml-4 mt-2" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/supporters/shir.png" alt="shir">
+					<div class="text-right">
+						<p class="pb-4"> שיר בכר ז״ל נהרגה בשנת 2014 במהלך שייט רפטינג בפרו, אליו יצאה במסגרת טיול אחרי הצבא. שיר הייתה מדריכה ומפקדת מוערכת שהאמינה בכוח של ההקשבה, הדיאלוג והמוסיקה כמפתח לקירוב לבבות. 
+							משפחתה וחבריה של שיר מלווים את מדרסה כמעט מהיום הראשון, ומהווים שותפים חשובים בהתפתחות ובצמיחה שלנו. 		
+הקדשנו לזכרה את פרויקט התמונות ״באים לידי ביטוי״, וכן את סרטון לימודי מיוחד שהפקנו לכבוד יום הולדתה ב-2018, אותו תוכלו למצוא כמובן בספרית התכנים. 
+						</p>
+						<div class="supporters-shir-btns">
+							<a class="theme-btn theme-btn__invert ml-5" href="https://madrasafree.net/bayimbitui">עמוד הפרוייקט - באים לידי ביטוי</a>
+							<a class="theme-btn-special ml-5" href="https://www.madrasafree.net/library" >אל ספרית התוכן</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</main>
+	
+<!-- smooth scroll JS -->
+<script src="/static/marvel/js/smooth-scroll.js"></script>

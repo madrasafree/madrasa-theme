@@ -1,0 +1,16 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("FAQ")}</%block>
+<%block name="headextra">
+
+</%block>
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about line-height">
+        <h1>${_("FAQ")}</h1>
+        <h2>מי אתם?</h2>
+        <p>
+            <a href="/about">אפשר לקרוא עלינו ועל הצוות בעמוד אודות</a> </p>
+    </section>
+</main>

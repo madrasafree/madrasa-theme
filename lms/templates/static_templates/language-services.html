@@ -1,0 +1,116 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">שירותי שפה</%block>
+<%block name="headextra">
+
+<title> שירותי שפה | Language Services</title>
+<!-- Search Engine -->
+<meta name="description" content=" הרצאות, תרגום, קורסים לארגונים ומוסדות - אנחנו מספקים שירותי שפה שונים מתוך מטרה כפולה - להנכיח את השפה הערבית ואת מהפכת הלימוד שאנחנו מובילים, וכדי לממן את הפעילות שלנו (כל התכנים שלנו חינמיים לחלוטין).">
+<meta name="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content=" שירותי שפה | Language Services">
+<meta itemprop="description" content=" הרצאות, תרגום, קורסים לארגונים ומוסדות - אנחנו מספקים שירותי שפה שונים מתוך מטרה כפולה - להנכיח את השפה הערבית ואת מהפכת הלימוד שאנחנו מובילים, וכדי לממן את הפעילות שלנו (כל התכנים שלנו חינמיים לחלוטין).">
+<meta itemprop="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content=" שירותי שפה | Language Services">
+<meta name="og:description" content=" הרצאות, תרגום, קורסים לארגונים ומוסדות - אנחנו מספקים שירותי שפה שונים מתוך מטרה כפולה - להנכיח את השפה הערבית ואת מהפכת הלימוד שאנחנו מובילים, וכדי לממן את הפעילות שלנו (כל התכנים שלנו חינמיים לחלוטין).">
+<meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+
+</%block>
+
+	<section class="lang-services-top">
+        <div class="container text-center p-5">
+			<h1 class="pt-5">שירותי שפה</h1>
+			<p  class="pb-5">חושבים לפתוח קורס או קבוצת לימוד בארגון שלכם? זקוקות לעזרה בתרגום? מחפשים הרצאה בנושא ההיסטוריה של השפה הערבית, או הלהגים בעולם הערבי? בשנים האחרונות מדרסה מספקת שירותי שפה מגוונים במחירים הוגנים, בכך אנחנו תופסים כמה ציפורים במכה! יותר אנשים לומדים לתקשר בערבית ועל ערבית, השפה נפוצה יותר במרחב, וכמובן - כל הרווחים חוזרים ישירות לקהילה שלנו - דרך פיתוח תכנים ופעילות שוטפת! הצוות המקצועי שלנו מונה מתרגמים ומדריכים מנוסים, בעלי ידע וניסיון בערבית מדוברת וספרותית, ומשלב דוברי ערבית כשפת אם ובעלי הכשרה אקדמית בתחום.</p>
+		</div>
+	</section>
+	
+	<nav>
+		<ul class="lang-services-nav nav justify-content-center">
+			<li class="nav-item"><a class="nav-link active" href="#courses">קורסים</a></li>
+			<li class="nav-item"><a class="nav-link" href="#lectures">הרצאות</a></li>
+			<li class="nav-item"><a class="nav-link" href="#translation">תרגום</a></li>
+		</ul>
+	</nav>
+	
+	<section class="lang-courses">
+		<a name="courses"></a>
+		<div class="d-md-flex flex-md-equal">
+			<div class="lang-courses-text p-5 d-flex flex-column justify-content-center">
+				<h3>קורסים לארגונים וחברות:</h3>
+				<p>
+				 הקורס המשולב של מדרסה הוא קורס יחיד במינו, כשלמעשה הוא מתבסס על שילוב בין היתרונות של הלימוד בקורסים המקוונים שלנו ליתרונות של קבוצת לימוד ותרגול פרונטלי שנפגשת ברמה השבועית. כך יכול תלמיד להתקדם בלימוד בקצב שלו ובזמן המתאים לו מחד, ולהנות מהמסגרת וההכוונה שמספק מדריך ומהיתרונות של תרגול ושיחה משותפים עם חברים בשגרה. השילוב המושלם כדי להגיע להתמיד ולהגיע לתוצאות!
+				</p>
+			</div>
+			<div class="lang-courses-pict p-5">
+				
+			</div>
+		</div>
+	</section>
+	
+	<section class="lang-lectures">
+		<a name="lectures"></a>
+		<div class="d-md-flex flex-md-equal">
+			<div class="lang-lectures-pict p-5">
+				
+			</div>
+			<div class="lang-lectures-text p-5 d-flex flex-column justify-content-center">
+				<h3>הרצאות:</h3>
+				<p>
+				  מאז שהוקם הפך מדרסה לגוף ידע מגוון בתחום השפה, לימוד השפה, והקשר בין השפה לתהליכים חברתיים מרכזיים. מזמינים אתכם לשמוע הרצאה באחד מהנושאים החשובים שאנו מתמחים בהם: ערבית ולימודי ערבית בחברה הישראלית; ההיסטוריה של השפה הערבית המדוברת; הסיפור של מדרסה ועוד ועוד!
+				</p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="lang-translation">
+		<a name="translation"></a>
+		<div class="d-md-flex flex-md-equal">
+			<div class="lang-translation-text p-5 d-flex flex-column justify-content-center">
+				<h3>תרגום:</h3>
+				<p>
+				 חלק חשוב במהפכה של מדרסה הוא הנוכחות של ערבית מרחב. אנו מאמינים שעצם הנוכחות של השפה במרחב הציבורי מפחית את הניכור ומיידד אותה עם דוברי עברית. על כן, אנו עוסקים בתרגום מעברית לערבית (וגם להיפך), ספרותית או מדוברת. התרגום נעשה על ידי דוברי ערבית שפת אם ותוך הקפדה יתרה על דקדוק וחיבור לשפה העדכנית והמדויקת ביותר.
+				</p>
+			</div>
+			<div class="lang-translation-pict p-5">
+				
+			</div>
+		</div>
+	</section>
+	
+	<section class="lang-services-form">
+			<form method="POST" action="https://formspree.io/admin@madrasafree.com">
+        <div class="container text-center p-5">
+			<div class="lang-services-form-wrap p-5">
+				<h3 class="mb-4">מעוניין לשמוע עוד או לקבל את אחד מהשירותים שאנחנו מציעים?<br>
+					מלא.י את הטופס ונחזור אלייך בהקדם!</h3>
+				<form>
+					<input type="hidden" name="_next" value="https://madrasafree.com/thanks" />
+					<input type="hidden" name="_subject" value="פנייה בנוגע לשירותי שפה" />
+					<div class="form-group">
+						<label for="lang-services-form-name" class="sr-only">שם</label>
+						<input type="text" class="form-control"  name="username" id="lang-services-form-name" placeholder="שם">
+					</div>
+					<div class="form-group">
+						<label for="lang-services-form-email" class="sr-only">מייל</label>
+						<input type="email" name="email" class="form-control" id="lang-services-form-email" placeholder="מייל">
+					</div>
+					<div class="form-group">
+						<label for="lang-services-form-tel" class="sr-only">טלפון</label>
+						<input type="tel" class="form-control"  name="phone" id="lang-services-form-tel" placeholder="טלפון">
+					</div>
+					<div class="form-group">
+						<label for="lang-services-form-textarea" class="sr-only">איך נוכל לעזור?</label>
+						<textarea name="message" class="form-control" id="lang-services-form-textarea" rows="3" placeholder="איך נוכל לעזור?"></textarea>
+					</div>
+					<button class="btn btn-warning"submit">שלח</button>
+				</form>
+			</div>
+		</div>
+	</form>
+	</section>
+	
+<!-- smooth scroll JS -->
+<script src="/static/marvel/js/smooth-scroll.js"></script>		

@@ -1,0 +1,55 @@
+.supporters-top {
+	background-color: $theme-color-main-80;
+	color: $theme-footer-link;
+	h1 {
+		color: $theme-footer-link;
+	}
+}
+
+.supporters-nav {
+	margin: 0;
+	padding: 0;
+	.nav-item {
+		font-size: $font-size-smaller;
+		line-height: 1.5;
+		padding: 0 20px;
+		.nav-link {
+			color: $theme-color-special;
+			padding: 30px 0;
+			fint-size: $font-size-smaller
+			&:hover {
+				color: $text-color;
+			}
+			&.active {
+				border-bottom: 3px solid $text-color;
+			}
+		}
+	}
+}
+
+.supporters-community {
+	.supporters-community-img {
+		min-height: 500px;
+		background-image: url("https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/supporters/supporters-top-img.png");
+		background-position: center;
+		background-size: cover;
+	}
+	.supporters-community-link {
+		color: $theme-color-special;
+		&:hover {
+			color: $theme-color-special-hover;
+		}
+	}	
+}
+
+.supporters-shir-btns {
+	.theme-btn,
+	.theme-btn-special {
+		font-size: $font-size-smaller;
+		padding: 5px 25px;
+		line-height: 1;
+	}
+}
+
+
+

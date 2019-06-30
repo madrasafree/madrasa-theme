@@ -1,0 +1,480 @@
+.support-us-top {
+	background: url("../images/support-us/support-us-top-bg.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: auto 250px;
+	@include respond-to($desktop) {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 400px;
+	}
+	.support-us-top-wrap {
+		max-width: 1440px;
+		padding: 0 15px;
+		margin: auto;
+		@include respond-to($desktop) {
+			padding: 40px 30px;
+		}
+	}
+	.support-us-top-phrase {
+		box-shadow: 0 3px 6px $text-color;
+		padding: 5px 25px;
+		text-align: right;
+		background-color: $theme-footer-link;
+		font-size: 18px;
+		line-height: 1;
+		font-weight: bold;
+		width: fit-content;
+		margin-top: 5px;
+		@include respond-to($desktop) {
+			font-size: 36px;
+		}
+		&.support-us-top-phrase-01 {
+			margin: auto;
+			-ms-transform: rotate(3deg); /* IE 9 */
+			-webkit-transform: rotate(3deg); /* Safari */
+			transform: rotate(3deg);
+			@include respond-to($desktop) {
+				margin-right: -15px;
+			}
+		}
+		&.support-us-top-phrase-02 {
+			margin: auto;
+			margin-top: 5px;
+			@include respond-to($desktop) {
+				margin-right: 230px;
+			}
+		}
+		&.support-us-top-phrase-03 {
+			-ms-transform: rotate(-3deg); /* IE 9 */
+			-webkit-transform: rotate(-3deg); /* Safari */
+			transform: rotate(-3deg);
+		}
+	}
+}
+
+.support-us-body {
+	.support-us-body-wrap {
+		max-width: 1440px;
+		padding: 20px 15px 0;
+		margin: auto;
+		@include respond-to($desktop) {
+			padding: 40px 30px;
+		}
+		h1 {
+			font-size: 24px;
+			line-height: 1.2;
+			color: $theme-color-main;
+			font-weight: 700;
+			font-family: muliregular;
+			text-align: right;
+			margin-bottom: 10px;
+			letter-spacing: normal;
+			@include respond-to($desktop) {
+				font-size: 36px;
+				margin-bottom: 20px;
+			}
+		}
+		h2 {
+			font-size: 20px;
+			color: $text-color;
+			font-weight: 700;
+			font-family: muliregular;
+			text-align: center;
+			margin-bottom: 20px;
+			@include respond-to($desktop) {
+				font-size: 26px;
+				text-align: right;
+			}
+		}
+		h3  {
+			font-size: 24px;
+			line-height: 1.2;
+			color: $theme-color-main;
+			font-weight: 700;
+			font-family: muliregular;
+			text-align: right;
+			margin-bottom: 20px;
+			@include respond-to($desktop) {
+				font-size: 36px;
+			}
+		}
+		h4  {
+			font-size: 24px;
+			line-height: 1.2;
+			color: $theme-color-special;
+			font-weight: 700;
+			font-family: muliregular;
+			text-align: right;
+			@include respond-to($desktop) {
+				font-size: 52px;
+			}
+		}
+		p {
+			font-size: 16px;
+			color: $text-color;
+			font-weight: 400;
+			font-family: muliregular;
+			@include respond-to($desktop) {
+				font-size: 24px;
+			}
+		}
+		ul {
+		    list-style: none;
+			padding: 0 24px 0 0;
+    		margin: 20px 0;
+		}
+		li {
+			font-size: 16px;
+			line-height: 1.2;
+			margin-bottom: 10px;
+			color: $text-color;
+			font-weight: 400;
+			font-family: muliregular;
+			@include respond-to($desktop) {
+				font-size: 24px;
+			}
+			&:before {
+			    content: "\2022";
+			    color: $theme-color-main;
+			    font-weight: bold;
+			    display: inline-block;
+			    vertical-align: middle;
+				width: 24px;
+				font-size: 24px;
+				margin-right: -1em;
+				@include respond-to($desktop) {
+					width: 28px;
+					font-size: 28px;
+				}
+			}
+		}
+		
+		.support-us-form {
+			background-color: $theme-footer-link;
+			box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+			margin-bottom: 20px;
+			padding: 30px 20px;
+			@include respond-to($desktop) {
+				box-shadow: none;
+				padding: 4px 20px 0;
+			}
+			.support-us-form-radios {
+				text-align: center;
+				@include respond-to($desktop) {
+					text-align: right;
+				}
+				.support-us-form-input {
+					display: none;
+					+ .support-us-form-label {
+						color: $theme-footer-link;
+						background-color: $theme-color-main-hover;
+						width: 100%;
+						height: 60px;
+						cursor: pointer;
+						border-radius: 20px;
+						text-align: center;
+						line-height: 60px;
+						font-size: 21px;
+						font-weight: bold;
+						font-family: muliregular;
+						font-style: normal;
+						margin: 0 0 20px;
+						@include respond-to($desktop) {
+							width: 120px;
+							height: 120px;
+							border-radius: 50%;
+							line-height: 120px;
+							font-size: $font-size-regular;
+						}
+					}
+					&:checked + .support-us-form-label  {
+						background-color: $theme-color-main;
+					}
+				}
+			}
+
+			.custom-control {
+				padding-right: 10px;
+				padding-left: 10px;
+				margin: 0;
+				&.offset-3 {
+					margin-right: 25%;
+					@include respond-to($desktop) {
+						margin: 0;
+					}
+				}
+			}
+			.custom-control-label {
+				font-family: muliregular;
+				font-size: 16px;
+				font-weight: normal;
+				padding-right: 34px;
+				color: $theme-color-main;
+				font-style: normal;
+				@include respond-to($desktop) {
+					font-size: 24px;
+					font-weight: bold;
+				}
+				a {
+					color: $theme-color-main;
+				}
+				&:before,
+				&:after {
+					top: 0;
+					left: auto;
+					right: 0;
+					width: 1.5rem;
+					height: 1.5rem;
+				}
+			}
+            //for supportus-en
+			label.custom-control-label-ltr {
+					left:30px;
+					right:initial;
+				&:before,
+				&:after {
+					left: -40px;
+					right:initial;
+				}
+			}
+			
+			.custom-checkbox {
+				.custom-control-label {
+					&:before {
+						background-color: transparent;
+						border: 1px solid $text-color;
+					}
+				}
+			}
+			.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+				background-color: $theme-color-main;
+				border: none;
+			}
+			
+			.custom-select {
+				width: auto;
+				height: calc(2.25em + 2px);
+				padding: .375rem 3.25rem .375rem .75rem;
+				line-height: 1.5;
+				color: #495057;
+				border: 1px solid #4b4b4b;
+				border-radius: 4px;
+				font-size: 16px;
+				background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23343a40' d='M7,10L12,15L17,10H7Z'/%3E%3C/svg%3E") no-repeat right center;
+				font-family: muliregular;
+				@include respond-to($desktop) {
+					border-radius: 10px;
+					font-size: 24px;
+				}
+			}
+			
+			.support-us-btn-wrap {
+				text-align: center;
+				@include respond-to($desktop) {
+					border-top: 1px solid $text-color;
+					text-align: left;
+					padding-top: 20px;
+				}
+			}
+
+			.btn-warning {
+				color: $theme-footer-link;
+				background-image: none;
+				font-size: $font-size-regular;
+				text-shadow: none;
+				border-radius: 8px;
+				box-shadow: none;
+				&:hover, &:active {
+					background: #d39e00;
+					background-image: none;
+				}
+			}
+			#amount1 {
+				display: none;
+			}
+		}
+	}
+}
+
+
+
+/* OLD SUPPORT */
+.support-us-features {
+	.support-us-features-wrap {
+		max-width: 1440px;
+		padding: 40px 30px;
+		margin: auto;
+	}
+	.support-us-features-phrase {
+		box-shadow: 0 3px 6px $text-color;
+		color: #000;
+		padding: 20px 25px;
+		text-align: right;
+		background-color: $theme-footer-link;
+		color: $theme-color-main;
+		font-size: $font-size-smaller;
+		font-weight: bold;
+		position: relative;
+		&.support-us-features-phrase-01 {
+			margin-right: 60px;
+			padding: 15px;
+			margin-bottom: 20px;
+			width: fit-content;
+		}
+		&.support-us-features-phrase-02 {
+			margin-left: -10px;
+			z-index: 5;
+		}
+		&.support-us-features-phrase-03 {
+			margin-top: 20px;
+			z-index: 4;
+		}
+		&.support-us-features-phrase-04 {
+			-ms-transform: rotate(4deg); /* IE 9 */
+			-webkit-transform: rotate(4deg); /* Safari */
+			transform: rotate(4deg);
+			z-index: 3;
+		}
+		&.support-us-features-phrase-05 {
+			max-width: 50%;
+			margin-right: 5px;
+			z-index:2;
+		}
+		&.support-us-features-phrase-06 {
+			margin-right: 40px;
+			z-index: 1;
+		}
+	}
+}
+
+.support-us-form {
+	position: relative;
+	text-align: center;
+	padding: 15px;
+	direction: rtl;
+	margin-bottom: -120px;
+	h3 {
+		font-family: 'muliregular';
+	}
+	.theme-color-special {
+		color: $theme-color-special;	
+	}
+	.support-us-form-bg {
+		background-color: $theme-color-main-hover;
+		position: absolute;
+		top:130px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		-webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+		z-index: 1;
+	}
+	.support-us-form-wrap {
+		max-width: 1440px;
+		padding: 40px 30px;
+		margin: auto;
+		position: relative;
+		z-index: 10;
+		.support-us-form-in {
+			border: 13px solid $theme-color-main;
+			background-color: $theme-footer-link;
+			padding: 40px;
+			box-shadow: 12px 13px 13px rgba(0,0,0,0.16);
+			.form-control {
+				background-color: $theme-footer-link;
+				border: 2px solid $theme-color-main;
+				font-family: 'muliregular';
+				border-radius: 2px;
+				font-size: $font-size-regular;
+				height: auto;
+				box-shadow: none;
+				font-style: normal;
+			}
+			label {
+				font-family: 'muliregular';
+				font-style: normal;
+				font-size: $font-size-regular;
+			}
+		}
+			
+		.support-us-form-radios {
+			text-align: center;
+		  .support-us-form-input {
+			display: none;
+			+ .support-us-form-label {
+				color: $theme-footer-link;
+				background-color: $theme-color-main;
+				width: 120px;
+				height: 120px;
+				cursor: pointer;
+				border-radius: 50%;
+				border: 1px solid #707070;
+				box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+				text-align: center;
+				line-height: 120px;
+				font-size: $font-size-regular;
+				font-weight: bold;
+			}
+			&:checked + .support-us-form-label  {
+				background-color: $theme-color-main-hover;
+			}
+		  }
+		}
+		
+		.custom-control {
+			padding-right: 1.5rem;
+			padding-left: 0;
+		}
+		.custom-control-label::before,
+		.custom-control-label::after {
+			top: 0;
+			left: auto;
+			right: -2rem;
+			width: 1.5rem;
+    		height: 1.5rem;
+		}
+		
+		.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+			background-color: $theme-color-main;
+		}
+		
+		.btn-warning {
+			color: $theme-footer-link;
+			background-image: none;
+			font-size: $font-size-regular;
+			text-shadow: none;
+			border-radius: 8px;
+			box-shadow: none;
+			&:hover, &:active {
+				background: #d39e00;
+				background-image: none;
+			}
+		}
+	}
+	
+}
+
+.support-us-bottom-phrase {
+	box-shadow: 0 3px 6px $text-color;
+	padding: 5px 25px;
+	text-align: right;
+	background-color: $theme-footer-link;
+	font-size: $font-size-h3;
+	line-height: 1;
+	font-weight: bold;
+	width: fit-content;
+	color: $theme-color-special;
+}
+
+.support-us-body {
+	.support-us-body-wrap {
+		max-width: 1440px;
+		padding: 40px 30px;
+		margin: auto;
+	}
+}			
+			
+			

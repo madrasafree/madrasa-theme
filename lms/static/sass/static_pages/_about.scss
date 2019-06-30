@@ -1,0 +1,88 @@
+.about-top {
+	background-color: $theme-color-main-80;
+	color: $theme-footer-link;
+	h1, h3 {
+		color: $theme-footer-link;
+	}
+}
+
+.about-nav {
+	margin: 0;
+	padding: 0;
+	.nav-item {
+		font-size: $font-size-smaller;
+		line-height: 1.5;
+		padding: 0 20px;
+		.nav-link {
+			color: $theme-color-special;
+			padding: 30px 0;
+			fint-size: $font-size-smaller
+			&:hover {
+				color: $text-color;
+			}
+			&.active {
+				border-bottom: 3px solid $text-color;
+			}
+		}
+	}
+}
+
+.about-story {
+	.about-story-img {
+		min-height: 500px;
+		background-image: url("https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/about-story-img.png");
+		background-position: center;
+		background-size: cover;
+	}
+	.about-story-wrap {
+		max-width: 1080px;
+		text-align: right;
+		.heading {
+			font-size: $font-size-h3;
+			line-height: 1;
+		}
+		p, p+p, ul+p, ol+p {
+			margin: 0;
+			font-size: $font-size-smaller;
+		}	 
+	}
+	
+}
+
+.about-team {
+	.about-team-wrap {
+		.about-team-item {
+			padding: 15px;
+			flex: 1 0 0%;
+			max-width: 25%;
+			.about-team-img {
+				width: 185px;
+				height: 185px;
+				border-radius: 50%;
+				margin-bottom: 30px;
+				object-fit: cover;
+			}
+			.about-team-content {
+				text-align: center;
+				.heading {
+					font-size: $font-size-regular;
+					font-weight: bold;
+					line-height: 1;
+				}
+				p, p+p, ul+p, ol+p {
+					margin: 0;
+					font-size: $font-size-smaller;
+				}
+			}
+		}
+	}
+}
+
+.about-thanks {
+	p {
+		margin: 0;
+		font-size: $font-size-smaller;
+	}
+}
+
+

@@ -1,0 +1,123 @@
+.lang-services-top {
+	background-color: $theme-color-main-80;
+	color: $theme-footer-link;
+	h1 {
+		color: $theme-footer-link;
+	}
+}
+.lang-services-nav {
+	margin: 0;
+	padding: 0;
+	.nav-item {
+		font-size: $font-size-smaller;
+		line-height: 1.5;
+		padding: 0 20px;
+		.nav-link {
+			color: $theme-color-special;
+			padding: 30px 0;
+			fint-size: $font-size-smaller
+			&:hover {
+				color: $text-color;
+			}
+			&.active {
+				border-bottom: 3px solid $text-color;
+			}
+		}
+	}
+}
+
+.flex-md-equal > * {
+	flex: 1;
+}
+
+.lang-courses {
+	.flex-md-equal {min-height: 600px;}
+	.lang-courses-pict {
+		background-image: url("https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/language-services/lang-service-courses.png");
+		background-position: center;
+		background-size: cover;
+	}
+	.lang-courses-text {
+		background-color: $theme-color-special;
+		text-align: right;
+		h3 {
+			font-family: muliregular;
+			margin-bottom: 1em;
+		}
+	}
+}
+
+.lang-lectures {
+	.flex-md-equal {min-height: 600px;}
+	.lang-lectures-pict {
+		background-image: url("https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/language-services/lang-service-lectures.png");
+		background-position: center;
+		background-size: cover;
+	}
+	.lang-lectures-text {
+		background-color: transparent;
+		text-align: right;
+		h3 {
+			font-family: muliregular;
+			margin-bottom: 1em;
+		}
+	}
+}
+
+.lang-translation {
+	.flex-md-equal {min-height: 600px;}
+	.lang-translation-pict {
+		background-image: url("https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/language-services/lang-service-translation.png");
+		background-position: center;
+		background-size: cover;
+	}
+	.lang-translation-text {
+		background-color: $warning-color;
+		text-align: right;
+		h3 {
+			font-family: muliregular;
+			margin-bottom: 1em;
+		}
+	}
+}
+
+
+.lang-services-form-wrap {
+	background-color: $theme-color-special;
+	color: $theme-footer-link;
+	border-radius: 8px;
+	h3 {
+		color: $theme-footer-link;
+		font-weight: normal;
+	}
+	.form-control {
+		max-width: 540px;
+		border: none;
+		box-shadow: none;
+		margin: auto;
+    	letter-spacing: 1px;
+	}
+	textarea:last-child, input[type="text"]:last-child, input[type="url"]:last-child, input[type="email"]:last-child, input[type="password"]:last-child, input[type="tel"]:last-child {
+		margin: auto;
+	}
+	.btn-warning {
+		color: $theme-footer-link;
+		background-image: none;
+		font-size: $font-size-regular;
+		text-shadow: none;
+		border-radius: 8px;
+		box-shadow: none;
+		min-width: 160px;
+		&:hover, &:active {
+			color: $theme-footer-link !important;
+			background: #d39e00;
+			border-color: #d39e00;
+			text-decoration: none;
+			background-image: none;
+		}
+	}
+}
+
+
+
+

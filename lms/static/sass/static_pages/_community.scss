@@ -1,0 +1,60 @@
+.community {
+	background-color: $theme-color-main-80;
+	color: $theme-footer-link;
+	margin-bottom: -40px;
+	h1, h3 {
+		color: $theme-footer-link;
+	}
+	.community-grid {
+		max-width: 1600px;
+	}
+	.community-grid-box {
+		background-color: $theme-footer-link;
+		border-radius: 8px;
+		color: $theme-color-main;
+		min-height: 420px;
+		h3 {
+			color: $theme-color-main;
+			font-family: 'muliitalic';
+		}
+		.community-grid-box-text {
+			min-height: 148px;
+		}
+		.btn-warning {
+			min-width: 160px;
+			color: $theme-footer-link;
+			padding: .375rem .75rem;
+		}
+		.btn-warning:hover, .btn-warning:active, .btn-warning:focus {
+			color: $theme-footer-link;
+		}
+		&.community-grid-box-img {
+			color: $theme-footer-link;
+			background-image: url("https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/community/meetings.png");
+			background-size: cover;
+			background-position: center;
+			h3 {
+				color: $theme-footer-link;
+			}
+			.community-grid-box-img-img {
+				width: 80px;
+				height: auto;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+.transform-10-deg {
+    -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Safari */
+    transform: rotate(10deg);
+}
+
+.btn-disabled {
+	pointer-events: none;
+}
+
+
+
+

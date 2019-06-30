@@ -155,32 +155,34 @@ from student.models import CourseEnrollment
 </div>
 
 <main id="main" aria-label="Content" tabindex="-1">
+    <section class="reg-user">
+        <div class="container">
+          <div class="reg-user-header">
+            <h1 class="text-right">מרחבא ${user}!</h1>
+            <a href="courses/course-v1:madrasa+course1+2018/course" class="theme-btn theme-btn__invert w-100">המשך בקורס ״מדרסה מתחילים״</a>
+          </div>		
+          <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+            <div class="text-center p-3">
+              <!-- <p>כמה שעורים סיימתי?</p>
+              <p class="big-num-text mt-1">5 / 20</p> -->
+            </div>
+            <div class="reg-user-progress text-center text-md-right p-3">
+              <p>כמה התקדמתי?</p>
+              <div class="progress mt-3 ml-md-3">
+                <div class="progress-bar bg-warning" id="course-progress" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <!--<div class="text-center p-3">
+               <p>כמה מילים למדתי?</p>
+              <p class="big-num-text mt-1">35 / 490</p> 
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <%include file="dashboard/common.html"/>
     <div class="dashboard holder" id="dashboard-main">
       <div class="main-container">
-          <div class="reg-user-header">
-              <h1 class="text-right">מרחבא ${user}!</h1>
-              <a href="courses/course-v1:madrasa+course1+2018/course" class="theme-btn theme-btn__invert w-100">המשך בקורס ״מדרסה מתחילים״</a>
-            </div>		
-            <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
-              <div class="text-center p-3">
-                <!-- <p>כמה שעורים סיימתי?</p>
-                <p class="big-num-text mt-1">5 / 20</p> -->
-              </div>
-              <div class="reg-user-progress text-center text-md-right p-3">
-                <p>כמה התקדמתי?</p>
-                <div class="progress mt-3 ml-md-3">
-                  <div class="progress-bar bg-warning" id="course-progress" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <!--<div class="text-center p-3">
-                 <p>כמה מילים למדתי?</p>
-                <p class="big-num-text mt-1">35 / 490</p> 
-              </div> -->
-            </div>
-          </div>
-        </section>
-        <%include file="dashboard/common.html"/>
-        
+
         <div class="my-courses" id="my-courses">
           % if display_dashboard_courses:
           <%include file="learner_dashboard/_dashboard_navigation_courses.html"/>

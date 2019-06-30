@@ -1,0 +1,35 @@
+.reg-user {
+	background: url("../images/reg-user/reg-user-bg.png");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	min-height: 600px;
+	.reg-user-header {
+		margin: auto;
+		padding: 120px 1rem;
+		max-width: 540px;
+	}
+	.reg-user-progress {
+		max-width: 360px;
+		width: 100%;
+		.progress {
+			height: 30px;
+			direction: ltr;
+			border: 2px solid #707070;
+			border-radius: 8px;
+		}
+	}
+	.big-num-text {
+		font-size: $font-size-h2;
+		line-height: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+

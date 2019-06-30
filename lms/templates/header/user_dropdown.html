@@ -20,6 +20,31 @@ resume_block = retrieve_last_sitewide_block_completed(username)
 displayname = get_enterprise_learner_generic_name(request) or username
 %>
 
+
+
+<ul class="navbar-nav align-items-center">
+    <li class="nav-item px-4">
+      <a class=" btn btn-warning my-2 my-sm-0" href="/supportus" style="border-radius: 39px; padding-right: 20px; padding-left: 20px; ">תמכו
+        בנו</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle profile-picture-link" href="${reverse('dashboard')}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <% profile_image_url = get_profile_image_urls_for_user(self.real_user)['medium'] %>
+            <img class="profile-picture" src="${profile_image_url}" alt="תמונת משתמש">
+        </a>
+        <div class="dropdown-menu dropdown-menu-left text-right" id=" Usermenu" aria-labelledby="dropdownMenuLink" tabindex="-1">
+            <a class="dropdown-item" href="${reverse('learner_profile', kwargs={'username': self.real_user.username})}">פרופיל</a>
+            <a class="dropdown-item" href="${reverse('account_settings')}">חשבון</a>
+            <a class="dropdown-item" href="/help">עזרה</a>
+            <a class="dropdown-item" href="${reverse('logout')}">התנתק</a>
+        </div>
+    </li>
+    <!--<li class="nav-item px-3">
+        <% username = self.real_user.username %>
+        <p class="theme-main-nav_link"> מרחבא ${username}</p>
+     </li>-->
+</ul>
+<!-- 
 <div class="nav-item hidden-mobile nav-item-dashboard">
     <a href="${reverse('dashboard')}" class="menu-title">
         <img class="user-image-frame" src="${profile_image_url}" alt="">
@@ -40,4 +65,4 @@ displayname = get_enterprise_learner_generic_name(request) or username
         <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${reverse('account_settings')}" role="menuitem">${_("Account")}</a></div>
         <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${reverse('logout')}" role="menuitem">${_("Sign Out")}</a></div>
     </div>
-</div>
+</div> -->

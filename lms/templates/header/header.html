@@ -57,21 +57,6 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
     </nav>
 
 <header class="global-header theme-header ${'slim' if course else ''}">
-    <!-- <div class="theme-header-info">
-        <div class="theme-header-info_contact">
-            <span class="theme-header-info_text">Have any question?</span>
-            <span class="theme-header-info_phone"><i class="fa fa-phone" aria-hidden="true"></i> +1 857 4533328</span>
-            <a class="theme-header-info_mail" href="mailto:info@raccoongang.com"><i class="fa fa-envelope" aria-hidden="true"></i>info@raccoongang.com</a>
-        </div>
-        <div class="theme-header-info_social">
-            <span class="theme-header-info_text">Find us in social network</span>
-            <ul class="social-list">
-                <li class="social-list_item"><a class="social-list_link" href="https://twitter.com/raccoongangcom" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-list_item"><a class="social-list_link" href="https://www.facebook.com/raccoongangco" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-list_item"><a class="social-list_link" href="https://www.linkedin.com/company/raccoon-gang" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-    </div> -->
     <div class="holder">
         % if use_cookie_banner:
             ${static.renderReact(

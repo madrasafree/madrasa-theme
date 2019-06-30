@@ -1,0 +1,57 @@
+.theme-btn {
+    @include inline-block;
+    font: 15px/1.3 muliregular;
+    color: $theme-color-main !important;
+    border: 2px solid $theme-color-main-hover;
+    padding: 7px 24px 6px;
+    box-shadow: none;
+    border-radius: 0;
+    background: none;
+    text-transform: uppercase;
+    transition: all .1s;
+    white-space: nowrap;
+    
+    &:hover {
+        color: #fff !important;
+        background: $theme-color-main;
+        border-color: $theme-color-main;
+        text-decoration: none;
+    }
+    @media (max-width: 800px) {
+        margin-bottom: 10px;
+    }
+    &__invert {
+        color: #fff !important;
+        background: $theme-color-main;
+        border: 2px solid $theme-color-main;
+        
+        &:hover {
+            color: $theme-color-main !important;
+            background: #fff;
+            border: 2px solid $theme-color-main-hover;
+        }
+    }
+    &__right {
+        float: right;
+    }
+    &__contact {
+        min-width: 120px;
+        text-align: center;
+    }
+    &__disable {
+        color: $disable-text-color !important;
+        background: $disable-text-bg;
+        border-color: $disable-text-bg;
+        
+        &:hover {
+            color: $disable-text-color !important;
+            background: $disable-text-bg;
+            border-color: $disable-text-bg;
+        }
+    }
+}
+.promo-box_heading + .theme-btn__invert {
+    @media (max-width: 800px) {
+        margin-bottom: 20px;
+    }
+}

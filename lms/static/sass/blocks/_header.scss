@@ -561,30 +561,30 @@ section.home {
 // 			display: flex;
 // 		}
 
-		.theme-main-nav_opener {
-			.line {
-				&:nth-child(1) {
-					top: 18px;
-					width: 0%;
-					left: 50%;
-				}
+	// 	.theme-main-nav_opener {
+	// 		.line {
+	// 			&:nth-child(1) {
+	// 				top: 18px;
+	// 				width: 0%;
+	// 				left: 50%;
+	// 			}
 
-				&:nth-child(2) {
-					transform: rotate(45deg);
-				}
+	// 			&:nth-child(2) {
+	// 				transform: rotate(45deg);
+	// 			}
 
-				&:nth-child(3) {
-					transform: rotate(-45deg);
-				}
+	// 			&:nth-child(3) {
+	// 				transform: rotate(-45deg);
+	// 			}
 
-				&:nth-child(4) {
-					top: 18px;
-					width: 0%;
-					left: 50%;
-				}
-			}
-		}
-	}
+	// 			&:nth-child(4) {
+	// 				top: 18px;
+	// 				width: 0%;
+	// 				left: 50%;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 // 	.theme-main-nav_opener {
 // 		position: absolute;

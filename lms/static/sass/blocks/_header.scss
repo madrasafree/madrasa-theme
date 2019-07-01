@@ -835,7 +835,7 @@ section.home {
 		}
 		&:hover:not(:disabled) {
 			background-image: none;
-			background-color: #85c559;
+			background-color: #85c559 !important;
 			box-shadow: none;
 		}
 	}

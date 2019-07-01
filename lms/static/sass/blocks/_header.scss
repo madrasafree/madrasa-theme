@@ -826,6 +826,7 @@ section.home {
 		background-color: #85c559 !important;
 		box-shadow: none;
 		.navbar-toggler-icon {
+			background-color: #85c559 !important;
 			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' /%3E%3C/svg%3E");
 		}
 		&:active:not(:disabled), 

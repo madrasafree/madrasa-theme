@@ -137,7 +137,7 @@ html, body {
   
   h1, h2, h3, h4, h5, h6 {
     color: $base-font-color;
-    font: normal 1.2em/1.2em $serif;
+    font: normal 1.2em/1.2em ;
     margin: 0;
   }
   
@@ -267,7 +267,7 @@ html, body {
   
       li {
         color: $base-font-color;
-        font: normal 1em/1.4em $serif;
+        font: normal 1em/1.4em;
         margin: 0;
       }
     }

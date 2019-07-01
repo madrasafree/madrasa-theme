@@ -72,6 +72,7 @@ $theme-user-link: $base-color;
 $theme-user-link-hover: lighten($theme-user-link, 20%);
 //settings fo courses on main page and search
 $courses-title-color: #0c1e2b;
+
 $courses-border-color: $base-color;
 $course-hover-bg: rgba(0, 0, 0, .5);
 $course-link-color: $theme-link;
@@ -123,6 +124,7 @@ $promo-teacher-text-color: #ababab;
 // from legacy
 $theme-header-bg: #34479B;
 $theme-text-color: #4B4B4B;
+$base-font-color: #0c1e2b;
 $theme-footer-bg: #33383f;
 $link-hover: lighten($theme-color-main, 20%);
 $theme-main-nav: #4a509d;

@@ -1,0 +1,19 @@
+// LMS - CSS application architecture
+// Version 1 styling (pre-Pattern Library)
+// ====================
+
+@import "build-base-v1-rtl";
+@import "build-lms-v1"; // shared app style assets/rendering
+
+/*** RTL websites ***/
+$direction: rtl;
+$opposite-direction: ltr;
+$start-direction: right;
+$end-direction: left;
+$transform-direction: -1;
+
+body {
+  direction: $direction;
+  text-align: $start-direction;
+  padding-#{$end-direction}: 10px;
+}

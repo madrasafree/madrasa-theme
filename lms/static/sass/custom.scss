@@ -322,7 +322,7 @@ html, body {
   
       a:link,
       a:visited {
-          border: 1px solid $gray-l3;
+          border: 1px solid;
           border-top-style: none;
           border-radius: 0 0 ($baseline/2) ($baseline/2);
           background: transparentize($white, 0.25);

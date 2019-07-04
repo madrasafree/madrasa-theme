@@ -206,7 +206,6 @@ html, body {
     color: $links-color;
     font: inherit;
     text-decoration: none;
-    @include transition(all 0.1s linear 0s);
   
     &:hover,
     &:focus {
@@ -231,8 +230,6 @@ html, body {
   }
   
   .container {
-    @include clearfix();
-    @include box-sizing(border-box);
     margin: 0 auto 0;
     padding: ($baseline*2) 0;
     max-width: grid-width(12);
@@ -250,7 +247,6 @@ html, body {
   }
   
   .static-container {
-    @include clearfix();
     margin: 0 auto 0;
     max-width: 1200px;
     padding: ($baseline*3) 0 ($baseline*6);
@@ -289,7 +285,6 @@ html, body {
   }
   
   .loading-animation {
-    @include animation(fa-spin 2s infinite linear);
     text-align: center;
     width: 100%;
   }
@@ -319,8 +314,6 @@ html, body {
   }
   
   .help-tab {
-      @include transform(rotate(-90deg));
-      @include transform-origin(0 0);
       @extend %ui-depth2;
       @extend %ui-print-excluded;
       position: fixed;

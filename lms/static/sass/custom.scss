@@ -175,3 +175,261 @@ html, body {
     font: inherit;
   }
   
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-dark-grey {
+    color: $theme-color-grey;
+    font-size: 24px;
+  }
+  
+  p + p, ul + p, ol + p {
+    margin-top: $baseline;
+  }
+  
+  p {
+    a, a:visited {
+      color: $links-color;
+      font: inherit;
+      font-weight: inherit;
+      text-decoration: none;
+      @include transition(all 0.1s linear 0s);
+  
+      &:hover, &:focus {
+        color: $links-color-hover;
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  a, a:visited {
+    color: $links-color;
+    font: inherit;
+    text-decoration: none;
+    @include transition(all 0.1s linear 0s);
+  
+    &:hover,
+    &:focus {
+      color: $links-color-hover;
+      text-decoration: underline;
+    }
+  
+    &:disabled, &.is-disabled, &.disabled {
+      @extend %ui-disabled;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+  
+  .content-wrapper {
+    width: flex-grid(12);
+    margin: 0 auto;
+  
+    @media print {
+      padding-bottom: 0;
+    }
+  }
+  
+  .container {
+    @include clearfix();
+    @include box-sizing(border-box);
+    margin: 0 auto 0;
+    padding: ($baseline*2) 0;
+    max-width: grid-width(12);
+    min-width: 760px;
+    width: flex-grid(12);
+  }
+  
+  .no-min-scale {
+    min-width: 0px !important;
+  }
+  
+  span.edx {
+    text-transform: none;
+    font: inherit;
+  }
+  
+  .static-container {
+    @include clearfix();
+    margin: 0 auto 0;
+    max-width: 1200px;
+    padding: ($baseline*3) 0 ($baseline*6);
+    width: flex-grid(12);
+  
+    .inner-wrapper {
+      margin: 0 auto 0;
+      width: flex-grid(10);
+    }
+  
+    ol, ul {
+      list-style: disc;
+  
+      li {
+        color: $base-font-color;
+        font: normal 1em/1.4em;
+        margin: 0;
+      }
+    }
+  
+    h1 {
+      margin-bottom: ($baseline*1.5);
+    }
+  
+    h1 + hr {
+      margin-bottom: ($baseline*3);
+    }
+  
+    p + h2, ul + h2, ol + h2 {
+      margin-top: ($baseline*2);
+    }
+  
+    ul + p, ol + p {
+      margin-top: $baseline;
+    }
+  }
+  
+  .loading-animation {
+    @include animation(fa-spin 2s infinite linear);
+    text-align: center;
+    width: 100%;
+  }
+  
+  mark {
+    padding: 0 3px;
+    border-radius: 2px;
+    background-color: #f7e9a8;
+    color: #333;
+  }
+  
+  .ie-banner {
+    display: none;
+    max-width: 1140px;
+    min-width: 720px;
+    margin: auto;
+    border-radius: 0 0 3px 3px;
+    background: #f4f4e0;
+    color: #3c3c3c;
+    padding: ($baseline/4) $baseline 8px;
+    font-size: 13px;
+    text-align: center;
+  
+    strong {
+      font-weight: 700;
+    }
+  }
+  
+  .help-tab {
+      @include transform(rotate(-90deg));
+      @include transform-origin(0 0);
+      @extend %ui-depth2;
+      @extend %ui-print-excluded;
+      position: fixed;
+      top: 250px;
+      left: 0;
+  
+      a:link,
+      a:visited {
+          border: 1px solid $gray-l3;
+          border-top-style: none;
+          border-radius: 0 0 ($baseline/2) ($baseline/2);
+          background: transparentize($white, 0.25);
+          color: transparentize($base-font-color, 0.25);
+          font-weight: bold;
+          text-decoration: none;
+          padding: 6px 22px 11px;
+          display: inline-block;
+  
+          &:hover,
+          &:focus {
+              color: $white;
+              background: $links-color;
+          }
+      }
+  }
+  
+  .help-buttons {
+      padding: ($baseline/2) ($baseline*2.5);
+      text-align: center;
+  
+      button {
+          @extend %btn-secondary-blue-outline;
+          margin: .5rem 0;
+          font-weight: initial;
+          text-shadow: none;
+          letter-spacing: initial !important;
+          text-transform: normal !important;
+          vertical-align: initial;
+          
+          &:hover,
+          &:focus {
+              background: $links-color !important;
+              color: $white;
+              box-shadow: none !important;
+              text-shadow: none !important;
+          }
+      }
+  }
+  
+  #feedback_form {
+    input, textarea {
+      font: normal 1em/1.4em $sans-serif-font;
+    }
+    textarea[name="details"] {
+      height: 150px;
+    }
+  }
+  
+  #feedback_success_wrapper {
+    p {
+      padding: 0 $baseline $baseline $baseline;
+    }
+  }
+  
+  // ====================
+  
+  // UI - disabled state
+  .is-disabled {
+    @extend %ui-disabled;
+  }
+  
+  // UI - is hidden
+  .is-hidden {
+    display: none;
+  }
+  
+  // UI - is deprecated
+  .is-deprecated {
+    @extend %ui-deprecated;
+  }
+  
+  // UI - semantically hide text
+  .sr, .sr-only {
+    @extend %text-sr;
+    @extend %a11y-ensure-contrast;
+  }
+  
+  // UI - skipnav
+  .nav-skip,
+  .transcript-skip {
+    @extend %ui-print-excluded;
+  
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -($baseline*30);
+    overflow: hidden;
+    background: $white;
+    border-bottom: 1px solid $border-color-4;
+    padding: ($baseline*0.75) ($baseline/2);
+  
+    &:focus,
+    &:active {
+      position: relative;
+      top: auto;
+      width: auto;
+      height: auto;
+      margin: 0;
+    }
+  }
+  

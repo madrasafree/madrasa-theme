@@ -254,7 +254,7 @@ from pipeline_mako import render_require_js_path_overrides
   <%static:optional_include_mako file="body-extra.html" is_theming_enabled="True" />
 
   % if not uses_bootstrap:
-    % if ${static.dir_rtl()} == 'rtl':
+    % if static.dir_rtl() == 'rtl':
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
     % else:
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">

@@ -21,7 +21,25 @@ from openedx.core.djangolib.markup import HTML, Text
 <meta name="og:title" content="מדרסה - לומדים לתקשר | Madrasa - Learning to Communicate">
 <meta name="og:description" content="לימוד ערבית מדוברת בחינם. באתר תוכלו למצוא קורסים פתוחים, ספרית תכנים ענפה, מילון, וחשוב לא פחות - להתחבר לקהילה אדירה של לומדים לתקשר - ברשתות החברתיות ובמפגשי תרגול פתוחים">
 <meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
-
+<style>
+	@media only screen and (max-width: 600px) {
+	    .promo-box_heading{
+            font-size:26px;
+	        margin-bottom:20px;
+	    }
+	    .promo-box_text{
+            font-size:20px;
+	    }
+		.promo-box_holder .home-cta{
+			padding:4px;
+			width:60%;
+			margin-top:20px;
+		}
+		.promo-box, .carousel-img{
+			height:250px;
+		}
+	}
+</style>
 </%block>
 
 <main id="main" aria-label="Content" tabindex="-1">
@@ -109,18 +127,18 @@ from openedx.core.djangolib.markup import HTML, Text
 
 <%block name="js_extra">
    <script type="text/javascript">
-      $(window).load(function() {
-         if(getParameterByName('next')) {
-              $('#login').trigger("click");
-         }
-      })
-   </script>
+	$(window).load(function () {
+		if (getParameterByName('next')) {
+			$('#login').trigger("click");
+		}
+	})
+</script>
 </%block>
 
 % if show_signup_immediately is not UNDEFINED:
   ## NOTE: This won't work in production, because anonymous views are cached, so it will
   ## show either with or without this extra js for 3 minutes at a time.
 <script type="text/javascript">
-  $(window).load(function() {$('#signup_action').trigger("click");});
+	$(window).load(function () { $('#signup_action').trigger("click"); });
 </script>
 % endif

@@ -38,14 +38,9 @@ from openedx.core.djangolib.markup import HTML, Text
 		}
 		.promo-box, .carousel-img{
 			height:270px!important;
-			margin-bottom:5px;
+			margin-bottom:5px!important;;
 		}
-		.navbar-brand img{
-			width:170px!important;
-			position:relative!important;
-			right:10px!important;
-			top:5px!important;
-		}
+		
 		.features h1{
 			text-align:center!important;
 		}
@@ -56,10 +51,18 @@ from openedx.core.djangolib.markup import HTML, Text
 			display:block!important;
 			margin:auto!important;
 			width:60%!important;
+			margin-bottom:10px!important;
 
 		}
 		.features div:first-child{
-			margin-top:5px;
+			margin-top:5px!important;
+		}
+		.story .theme-btn-special, .story .theme-btn{
+			margin:0!important;
+			display:inline-block!important;
+		}
+		.story div:first-child{
+			padding-bottom:0!important;
 		}
 	}
 	/* Mobile Styles */

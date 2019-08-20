@@ -21,6 +21,33 @@ from openedx.core.djangolib.markup import HTML, Text
 <meta name="og:title" content="מדרסה - לומדים לתקשר | Madrasa - Learning to Communicate">
 <meta name="og:description" content="לימוד ערבית מדוברת בחינם. באתר תוכלו למצוא קורסים פתוחים, ספרית תכנים ענפה, מילון, וחשוב לא פחות - להתחבר לקהילה אדירה של לומדים לתקשר - ברשתות החברתיות ובמפגשי תרגול פתוחים">
 <meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+
+script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8.1/dist/polyfill.min.js" type="c718d08b4db3c29f025a34f2-text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0/dist/fetch.umd.min.js" type="c718d08b4db3c29f025a34f2-text/javascript"></script>
+<script src="/static/marvel/js/GetSheetDone.min.js" type="c718d08b4db3c29f025a34f2-text/javascript"></script>
+
+<script type="c718d08b4db3c29f025a34f2-text/javascript">
+	GetSheetDone.labeledCols('1gB-A3BoqMjEY4pbAmN7iyyXLBcC1X1BtjeSc_NCtNz0', 2)
+		.then((data) => {
+			if (data && data.data && data.data[0] && data.data[0].donated && data.data[0].target) {
+				let dataObj = data.data[0];
+				setProgress((dataObj.donated / dataObj.target) * 100)
+				//   document.getElementById('joined').textContent = dataObj.numdonators;
+				document.getElementById('raised').textContent = dataObj.donated;
+				document.getElementById('target').textContent = dataObj.target;
+			}
+			else {
+				setProgress(70)
+			}
+		}).catch(err => {
+			console.log('Error');
+			console.error(err);
+		});
+	function setProgress(value) {
+		var bar = document.getElementById('course-progress');
+		bar.style.width = value + "%";
+	}
+</script>
 <style>
 	/* Mobile Styles */
 	@media only screen and (max-width: 600px) {
@@ -63,6 +90,21 @@ from openedx.core.djangolib.markup import HTML, Text
 		}
 		.story div:first-child{
 			padding-bottom:0!important;
+		}
+		.reg-user-progress h2{
+			font-size:52px!important;
+			margin-top:10px;
+	
+		}
+		.reg-user-progress{
+			padding:0!important;
+			margin-bottom:60px;
+		}
+		.col-lg-6 h3{
+            margin-top:60px;
+		}
+		h1{
+			margin-top:8px;
 		}
 	}
 	/* Mobile Styles */

@@ -847,7 +847,11 @@ section.home {
 .theme-nav-wrapper_logo-holder {
 	display: none;
 	overflow: hidden;
-
+    //  added by Yaniv
+	img{
+		width:200px;
+	}
+  //  added by Yaniv
 	@media screen and (min-width: $screen-md) {
 		display: flex;
 	}

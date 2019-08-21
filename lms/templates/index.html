@@ -101,11 +101,18 @@ from openedx.core.djangolib.markup import HTML, Text
 			position:relative;
 			right:15px;
 		}
-		#wix-embed{
-			height:100%;
-		}
+		.frame-area {
+  			display: block;
+  			width: 100%;  /* RESPONSIVE WIDTH */
+  			max-width: 400px;
+  			height: 300px;
+  			overflow: auto;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  			border: #999999 1px solid;
+  			margin: 0px;
+  			padding: 0px;
+  		}
 		
-	}
+	
 	/* Mobile Styles */
 
 	/* Bar Styles */

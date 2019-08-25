@@ -5941,7 +5941,7 @@ msgstr ""
 #: lms/djangoapps/courseware/date_summary.py
 #: openedx/features/learner_profile/templates/learner_profile/learner_profile.html
 msgid "Learner Profile"
-msgstr ""
+msgstr "פרופיל משתמש"
 
 #: lms/djangoapps/courseware/date_summary.py
 msgid "We are working on generating course certificates."
@@ -20530,41 +20530,41 @@ msgstr ""
 #. their edX account.
 #: openedx/features/learner_profile/static/learner_profile/templates/third_party_auth.html
 msgid "Connected Accounts"
-msgstr ""
+msgstr "חשבונות מחוברים"
 
 #: openedx/features/learner_profile/static/learner_profile/templates/third_party_auth.html
 msgid "Linked"
-msgstr ""
+msgstr "מחובר"
 
 #: openedx/features/learner_profile/static/learner_profile/templates/third_party_auth.html
 msgid "Not Linked"
-msgstr ""
+msgstr "לא מחובר"
 
 #. Translators: clicking on this removes the link between a user's edX account
 #. and their account with an external authentication provider (like Google or
 #. LinkedIn).
 #: openedx/features/learner_profile/static/learner_profile/templates/third_party_auth.html
 msgid "Unlink"
-msgstr ""
+msgstr "נתק"
 
 #. Translators: clicking on this creates a link between a user's edX account
 #. and their account with an external authentication provider (like Google or
 #. LinkedIn).
 #: openedx/features/learner_profile/static/learner_profile/templates/third_party_auth.html
 msgid "Link"
-msgstr ""
+msgstr "חבר"
 
 #: openedx/features/learner_profile/templates/learner_profile/learner-achievements-fragment.html
 msgid "Completed {completion_date_html}"
-msgstr ""
+msgstr "בוצע {completion_date_html}"
 
 #: openedx/features/learner_profile/templates/learner_profile/learner-achievements-fragment.html
 msgid "{course_mode} certificate"
-msgstr ""
+msgstr "{course_mode} תעודה"
 
 #: openedx/features/learner_profile/templates/learner_profile/learner-achievements-fragment.html
 msgid "You haven't earned any certificates yet."
-msgstr ""
+msgstr "לא השגת אף תעודה בינתיים"
 
 #: openedx/features/learner_profile/templates/learner_profile/learner-achievements-fragment.html
 #: themes/edx.org/lms/templates/dashboard.html
@@ -20573,20 +20573,20 @@ msgstr "חקור קורסים חדשים"
 
 #: openedx/features/learner_profile/templates/learner_profile/learner_profile.html
 msgid "View My Records"
-msgstr ""
+msgstr "צפה ברשומות שלי"
 
 #: openedx/features/learner_profile/templates/learner_profile/learner_profile.html
 msgid "My Profile"
-msgstr ""
+msgstr "הפרופיל שלי"
 
 #: openedx/features/learner_profile/templates/learner_profile/learner_profile.html
 msgid ""
 "Build out your profile to personalize your identity on {platform_name}."
-msgstr ""
+msgstr "בנה את הפרופיל שלך במדרסה"
 
 #: openedx/features/learner_profile/templates/learner_profile/learner_profile.html
 msgid "An error occurred. Try loading the page again."
-msgstr ""
+msgstr "רענן/י את הדף"
 
 #: themes/edx.org/cms/templates/widgets/sock.html
 msgid ""
@@ -20936,6 +20936,10 @@ msgid "Files & Uploads"
 msgstr "קבצים והעלאות"
 
 #: cms/templates/certificates.html
+msgid "Course Certificates"
+msgstr "תעודת הקורס"
+
+#: openedx/features/learner_profile/templates/learner_profile/learner_profile.html
 msgid "Course Certificates"
 msgstr "תעודת הקורס"
 

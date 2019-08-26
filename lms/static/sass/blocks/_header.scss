@@ -849,6 +849,9 @@ section.home {
 	overflow: hidden;
 
 	@media screen and (min-width: $screen-md) {
+		img{
+			width:170px;
+		}
 		display: flex;
 	}
 }

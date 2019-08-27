@@ -4,6 +4,15 @@
 	h1, h3 {
 		color: $theme-footer-link;
 	}
+	p{
+		font-size:$font-size-base;
+	}
+	h3{
+		font-size:$font-size-h3;
+	}
+	h1{
+		font-size:$font-size-h1;
+	}
 }
 
 .about-nav {

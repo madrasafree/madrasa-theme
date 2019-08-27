@@ -850,7 +850,7 @@ section.home {
 
 	@media screen and (min-width: $screen-md) {
 		img{
-			width:170px;
+			width:200px;
 		}
 		display: flex;
 	}
@@ -858,6 +858,9 @@ section.home {
 
 .theme-nav-wrapper_logo-holder_small {
 	display: block;
+	img{
+		width:170px;
+	}
 }
 
 

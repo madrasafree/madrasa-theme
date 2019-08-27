@@ -850,7 +850,9 @@ section.home {
 
 	@media screen and (min-width: $screen-md) {
 		img{
-			width:150px;
+			width:170px;
+			position:relative;
+			right:5px;
 		}
 		display: flex;
 	}

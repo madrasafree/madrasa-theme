@@ -848,12 +848,15 @@ section.home {
 	display: none;
 	overflow: hidden;
 
-	@media screen and (min-width: $screen-md) {
+	@media screen and (max-width:600px){
 		img{
-			width:170px;
+			width:180px;
 			position:relative;
-			right:5px;
+			right:10px;
 		}
+	}
+
+	@media screen and (min-width: $screen-md) {
 		display: flex;
 	}
 }

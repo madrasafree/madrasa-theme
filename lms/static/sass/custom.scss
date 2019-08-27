@@ -35,6 +35,17 @@ $baseline : 1.2rem;
 
 html, body {
 	font-family: "muliregular","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:$font-size-base;
+}
+
+h1{
+	font-size:$font-size-h1;
+}
+h2{
+	font-size:$font-size-h2;
+}
+h3{
+	font-size:$font-size-h3;
 }
 
 // body {

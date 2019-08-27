@@ -9,6 +9,9 @@
 	}
 	h3{
 		font-size:$font-size-h3;
+		@media screen and (max-width: 600px){
+			font-size:32px;
+		}
 	}
 	h1{
 		font-size:$font-size-h1;

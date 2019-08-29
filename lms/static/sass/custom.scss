@@ -54,7 +54,7 @@ p{
 	@media (max-width: 600px) {
 tr{
     display:table;
-    width:280px;
+    max-width:280px;
      background:#d9ead3!important;
 
 }
@@ -63,7 +63,8 @@ td{
     padding:0!important;
     margin:0!important;
     border:0!important;
-    padding:2px 8px!important;
+	padding:2px 8px!important;
+	font-size:18px!important;
     
 
 }

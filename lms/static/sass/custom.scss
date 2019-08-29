@@ -50,6 +50,38 @@ h3{
 p{
 	font-size:$font-size-base;
 }
+.xmodule_HtmlModule   {
+	@media (max-width: 600px) {
+tr{
+    display:table;
+    width:280px;
+     background:#d9ead3!important;
+
+}
+td{
+    display:table-row;
+    padding:0!important;
+    margin:0!important;
+    border:0!important;
+    padding:2px 8px!important;
+    
+
+}
+td:nth-child(even){
+    width:50%!important;
+    float:right;
+
+}
+td:nth-child(odd){
+    width:50%!important;
+    float:left;
+
+}
+	}
+}
+
+
+
 
 
 

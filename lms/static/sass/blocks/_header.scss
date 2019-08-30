@@ -848,7 +848,13 @@ section.home {
 	display: none;
 	overflow: hidden;
 	img{
-		width:180px;
+		width:160px!important;
+		@media screen and (max-width:600px){
+				width:100px!important;
+				position:relative;
+				right:10px;
+			
+		}
 	}
 	@media screen and (max-width:600px){
 		img{

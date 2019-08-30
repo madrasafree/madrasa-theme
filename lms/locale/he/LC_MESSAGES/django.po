@@ -11520,7 +11520,7 @@ msgstr ""
 #: lms/templates/api_admin/terms_of_service.html
 #: openedx/features/course_experience/templates/course_experience/course-updates-fragment.html
 msgid "Updates"
-msgstr ""
+msgstr "עידכונים"
 
 #: openedx/features/course_experience/plugins.py
 #: openedx/features/course_experience/templates/course_experience/course-reviews-fragment.html
@@ -20325,7 +20325,7 @@ msgstr ""
 
 #: openedx/features/course_experience/templates/course_experience/course-dates-fragment.html
 msgid "Important Course Dates"
-msgstr ""
+msgstr "תאריכים חשובים בקורס"
 
 #: openedx/features/course_experience/templates/course_experience/course-home-fragment.html
 msgid "Goal: "
@@ -20345,7 +20345,7 @@ msgstr ""
 
 #: openedx/features/course_experience/templates/course_experience/course-outline-fragment.html
 msgid "Expand All"
-msgstr ""
+msgstr "הרחב הכל"
 
 #: openedx/features/course_experience/templates/course_experience/course-outline-fragment.html
 msgid "Prerequisite: "
@@ -20937,11 +20937,11 @@ msgstr "קבצים והעלאות"
 
 #: cms/templates/certificates.html
 msgid "Course Certificates"
-msgstr "תעודת הקורס"
+msgstr "תעודות הקורסים"
 
 #: openedx/features/learner_profile/templates/learner_profile/learner_profile.html
 msgid "Course Certificates"
-msgstr "תעודת הקורס"
+msgstr "תעודות הקורסים"
 
 #: cms/templates/certificates.html
 msgid "This module is not enabled."

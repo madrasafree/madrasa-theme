@@ -847,10 +847,12 @@ section.home {
 .theme-nav-wrapper_logo-holder {
 	display: none;
 	overflow: hidden;
-
+	img{
+		width:180px;
+	}
 	@media screen and (max-width:600px){
 		img{
-			width:180px;
+			width:120px;
 			position:relative;
 			right:10px;
 		}

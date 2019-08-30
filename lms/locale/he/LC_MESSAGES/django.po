@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2018-12-30 20:42+0000\n"
-"PO-Revision-Date: 2019-08-30 15:53+0000\n"
+"PO-Revision-Date: 2019-08-30 16:14+0000\n"
 "Last-Translator: Muhammad Ayub khan <ayubkhan@edx.org>\n"
 "Language-Team: Hebrew\n"
 "Language: he\n"
@@ -71,7 +71,7 @@ msgstr "ריק"
 #: cms/djangoapps/contentstore/views/transcript_settings.py 
 #: common/lib/xmodule/xmodule/video_module/video_handlers.py
 msgid "The following parameters are required: {missing}."
-msgstr ""
+msgstr "הפרמטרים הבאים נדרשים: {missing}."
 
 #: cms/djangoapps/contentstore/views/transcript_settings.py 
 #: common/lib/xmodule/xmodule/video_module/video_handlers.py
@@ -82,7 +82,7 @@ msgstr ""
 #: cms/djangoapps/contentstore/views/transcripts_ajax.py 
 #: common/lib/xmodule/xmodule/video_module/video_handlers.py
 msgid "A transcript file is required."
-msgstr ""
+msgstr "נדרש קובץ תמלול."
 
 #: cms/djangoapps/contentstore/views/transcript_settings.py 
 #: cms/djangoapps/contentstore/views/transcripts_ajax.py 
@@ -10368,17 +10368,19 @@ msgid ""
 "Usernames can only contain letters (A-Z, a-z), numerals (0-9), underscores "
 "(_), and hyphens (-)."
 msgstr ""
+"שם משתמש יכול להכיל אותיות בלבד (A-Z, a-Z), ספרות (0-9), קו תחתון (_) ומקפים "
+"(-)."
 
 #: openedx/core/djangoapps/user_api/accounts/__init__.py
 msgid "Usernames can only contain letters, numerals, and @/./+/-/_ characters."
-msgstr ""
+msgstr "שם משתמש יכול להכיל אותיות, ספרות ותווים @ /. / + / - / _."
 
 #. Translators: This message is shown to users who attempt to create a new
 #. account using
 #. an invalid email format.
 #: openedx/core/djangoapps/user_api/accounts/__init__.py
 msgid "\"{email}\" is not a valid email address."
-msgstr ""
+msgstr "\"{email}\" אינה כתובת אימייל חוקית."
 
 #: openedx/core/djangoapps/user_api/accounts/__init__.py
 msgid ""
@@ -10400,7 +10402,7 @@ msgstr ""
 
 #: openedx/core/djangoapps/user_api/accounts/__init__.py
 msgid "Enter a valid email address that contains at least {min} characters."
-msgstr ""
+msgstr "הזן כתובת אימייל חוקית המכילה לפחות {min} תווים."
 
 #. Translators: These messages are shown to users who do not enter information
 #. into the required field or enter it incorrectly.
@@ -10414,7 +10416,7 @@ msgstr "כתובת הדוא\"ל אינה תואמת."
 
 #: openedx/core/djangoapps/user_api/accounts/__init__.py
 msgid "Select your country or region of residence."
-msgstr ""
+msgstr "בחר את המדינה או את איזור המגורים שלך"
 
 #: openedx/core/djangoapps/user_api/accounts/__init__.py
 msgid "Select your profession."
@@ -11607,7 +11609,7 @@ msgstr ""
 
 #: cms/djangoapps/contentstore/views/transcripts_ajax.py
 msgid "Video ID is required."
-msgstr ""
+msgstr "נדרש מזהה (ID) של וידאו "
 
 #: cms/djangoapps/contentstore/views/transcripts_ajax.py
 msgid "Incoming video data is empty."
@@ -11633,7 +11635,7 @@ msgstr ""
 
 #: cms/djangoapps/contentstore/views/transcripts_ajax.py
 msgid "YouTube ID is required."
-msgstr ""
+msgstr "נדרש מזהה (ID) של יוטיוב"
 
 #: cms/djangoapps/contentstore/views/transcripts_ajax.py
 msgid "There is a problem with the YouTube transcript file."
@@ -11740,7 +11742,7 @@ msgstr ""
 
 #: cms/djangoapps/contentstore/views/videos.py
 msgid "An image file is required."
-msgstr ""
+msgstr "קובץ תמונה נדרש"
 
 #. Translators: This is the header for a CSV file column
 #. containing URLs for video encodings for the named profile
@@ -16338,7 +16340,7 @@ msgstr ""
 
 #: lms/templates/emails/activation_email_subject.txt
 msgid "Action Required: Activate your {platform_name} account"
-msgstr ""
+msgstr "פעולה נדרשת: הפעל את חשבון {platform_name} שלך"
 
 #: lms/templates/emails/business_order_confirmation_email.txt
 msgid "Thank you for your purchase of "

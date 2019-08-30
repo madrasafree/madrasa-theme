@@ -1,117 +1,57 @@
-# #-#-#-#-#  djangojs-partial.po (edx-platform)  #-#-#-#-#
-# edX community translations have been downloaded from Hebrew (http://www.transifex.com/open-edx/edx-platform/language/he/).
-# Copyright (C) 2018 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-#
-# Translators:
-# Bentsi Magidovich <magidovich@gmail.com>, 2015
-# dana bublil <dana.bublil@gmail.com>, 2016
-# dotanlaks <dotanlaks6@gmail.com>, 2014
-# dotanlaks <dotanlaks6@gmail.com>, 2014
-# e2f_HE c1 <e2f_HE_c1@outlook.com>, 2016-2017
-# e2f he_r1 <e2f_he_r1@outlook.com>, 2016
-# Naaman nov <naaman.nov@gmail.com>, 2015
-# Nadav Stark <nadav@yeda.org.il>, 2015
-# Ned Batchelder <ned@edx.org>, 2016
-# qualityalltext <quality@alltext.co.il>, 2016-2017
-# Ron Rozen <Ronrozen@gmail.com>, 2016
-# Shay Nativ <shay@yeda.org.il>, 2015
-# yaaqov, 2014
-# #-#-#-#-#  djangojs-studio.po (edx-platform)  #-#-#-#-#
-# edX community translations have been downloaded from Hebrew (http://www.transifex.com/open-edx/edx-platform/language/he/).
-# Copyright (C) 2018 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-#
-# Translators:
-# Bentsi Magidovich <magidovich@gmail.com>, 2015
-# e2f_HE c1 <e2f_HE_c1@outlook.com>, 2016-2017
-# e2f he_r1 <e2f_he_r1@outlook.com>, 2016
-# Ido, 2014
-# Naaman nov <naaman.nov@gmail.com>, 2015
-# Nadav Stark <nadav@yeda.org.il>, 2015
-# qualityalltext <quality@alltext.co.il>, 2016
-# Ron Rozen <Ronrozen@gmail.com>, 2016
-# yaaqov, 2014
-# Yoav Caspin <yoavc@pmo.gov.il>, 2017
-# #-#-#-#-#  underscore.po (edx-platform)  #-#-#-#-#
-# edX community translations have been downloaded from Hebrew (http://www.transifex.com/open-edx/edx-platform/language/he/)
-# Copyright (C) 2018 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-#
-# Translators:
-# Bentsi Magidovich <magidovich@gmail.com>, 2015
-# dana bublil <dana.bublil@gmail.com>, 2016
-# e2f_HE c1 <e2f_HE_c1@outlook.com>, 2016-2017
-# e2f he_r1 <e2f_he_r1@outlook.com>, 2016
-# Nadav Stark <nadav@yeda.org.il>, 2015
-# qualityalltext <quality@alltext.co.il>, 2016-2017
-# Ron Rozen <Ronrozen@gmail.com>, 2016
-# Yoav Caspin <yoavc@pmo.gov.il>, 2017
-# yuval zana, 2015
-# #-#-#-#-#  underscore-studio.po (edx-platform)  #-#-#-#-#
-# edX community translations have been downloaded from Hebrew (http://www.transifex.com/open-edx/edx-platform/language/he/)
-# Copyright (C) 2018 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-#
-# Translators:
-# Bentsi Magidovich <magidovich@gmail.com>, 2015
-# e2f_HE c1 <e2f_HE_c1@outlook.com>, 2016
-# e2f he_r1 <e2f_he_r1@outlook.com>, 2016
-# Nadav Stark <nadav@yeda.org.il>, 2015
-# qualityalltext <quality@alltext.co.il>, 2016-2017
-# Ron Rozen <Ronrozen@gmail.com>, 2016
-# Yoav Caspin <yoavc@pmo.gov.il>, 2017
-# yuval zana, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2018-07-10 06:58+0000\n"
-"PO-Revision-Date: 2018-07-10 07:01+0000\n"
+"PO-Revision-Date: 2019-08-30 09:11+0000\n"
 "Last-Translator: e2f_HE c1 <e2f_HE_c1@outlook.com>\n"
-"Language-Team: Hebrew (http://www.transifex.com/open-edx/edx-platform/language/he/)\n"
+"Language-Team: Hebrew\n"
 "Language: he\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+"X-Loco-Source-Locale: he_IL\n"
 "Generated-By: Babel 1.3\n"
+"\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Generator: Loco https://localise.biz/"
 
-#: cms/static/cms/js/xblock/cms.runtime.v1.js
-#: cms/static/js/certificates/views/signatory_details.js
-#: cms/static/js/models/section.js cms/static/js/utils/drag_and_drop.js
-#: cms/static/js/views/asset.js cms/static/js/views/container.js
-#: cms/static/js/views/course_info_handout.js
-#: cms/static/js/views/course_info_update.js
-#: cms/static/js/views/edit_textbook.js
-#: cms/static/js/views/list_item_editor.js
-#: cms/static/js/views/modals/edit_xblock.js cms/static/js/views/tabs.js
-#: cms/static/js/views/utils/xblock_utils.js lms/static/js/ccx/schedule.js
+#: cms/static/cms/js/xblock/cms.runtime.v1.js 
+#: cms/static/js/certificates/views/signatory_details.js 
+#: cms/static/js/models/section.js cms/static/js/utils/drag_and_drop.js 
+#: cms/static/js/views/asset.js cms/static/js/views/container.js 
+#: cms/static/js/views/course_info_handout.js 
+#: cms/static/js/views/course_info_update.js 
+#: cms/static/js/views/edit_textbook.js 
+#: cms/static/js/views/list_item_editor.js 
+#: cms/static/js/views/modals/edit_xblock.js cms/static/js/views/tabs.js 
+#: cms/static/js/views/utils/xblock_utils.js lms/static/js/ccx/schedule.js 
 #: lms/static/js/views/fields.js
 msgid "Saving"
 msgstr "שומר"
 
-#: cms/static/js/certificates/views/signatory_editor.js
-#: cms/static/js/views/asset.js cms/static/js/views/list_item.js
-#: cms/static/js/views/manage_users_and_roles.js
-#: cms/static/js/views/show_textbook.js
-#: common/static/js/vendor/ova/catch/js/catch.js
-#: lms/djangoapps/teams/static/teams/js/views/instructor_tools.js
-#: cms/templates/js/certificate-details.underscore
-#: cms/templates/js/certificate-editor.underscore
-#: cms/templates/js/content-group-editor.underscore
-#: cms/templates/js/course-instructor-details.underscore
-#: cms/templates/js/course-outline.underscore
-#: cms/templates/js/course-settings-learning-fields.underscore
-#: cms/templates/js/course_grade_policy.underscore
-#: cms/templates/js/course_info_update.underscore
-#: cms/templates/js/group-configuration-details.underscore
-#: cms/templates/js/group-configuration-editor.underscore
-#: cms/templates/js/partition-group-details.underscore
-#: cms/templates/js/show-textbook.underscore
-#: cms/templates/js/signatory-editor.underscore
-#: cms/templates/js/video-transcripts.underscore
-#: cms/templates/js/xblock-outline.underscore
+#: cms/static/js/certificates/views/signatory_editor.js 
+#: cms/static/js/views/asset.js cms/static/js/views/list_item.js 
+#: cms/static/js/views/manage_users_and_roles.js 
+#: cms/static/js/views/show_textbook.js 
+#: common/static/js/vendor/ova/catch/js/catch.js 
+#: lms/djangoapps/teams/static/teams/js/views/instructor_tools.js 
+#: cms/templates/js/certificate-details.underscore 
+#: cms/templates/js/certificate-editor.underscore 
+#: cms/templates/js/content-group-editor.underscore 
+#: cms/templates/js/course-instructor-details.underscore 
+#: cms/templates/js/course-outline.underscore 
+#: cms/templates/js/course-settings-learning-fields.underscore 
+#: cms/templates/js/course_grade_policy.underscore 
+#: cms/templates/js/course_info_update.underscore 
+#: cms/templates/js/group-configuration-details.underscore 
+#: cms/templates/js/group-configuration-editor.underscore 
+#: cms/templates/js/partition-group-details.underscore 
+#: cms/templates/js/show-textbook.underscore 
+#: cms/templates/js/signatory-editor.underscore 
+#: cms/templates/js/video-transcripts.underscore 
+#: cms/templates/js/xblock-outline.underscore 
 #: common/static/common/templates/discussion/forum-action-delete.underscore
 msgid "Delete"
 msgstr "מחק"
@@ -119,41 +59,41 @@ msgstr "מחק"
 #. #-#-#-#-#  djangojs-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
-#: cms/static/js/certificates/views/signatory_editor.js
-#: cms/static/js/views/asset.js cms/static/js/views/course_info_update.js
-#: cms/static/js/views/export.js cms/static/js/views/manage_users_and_roles.js
-#: cms/static/js/views/modals/base_modal.js
-#: cms/static/js/views/modals/course_outline_modals.js
-#: cms/static/js/views/show_textbook.js cms/static/js/views/tabs.js
-#: cms/static/js/views/validation.js
-#: common/lib/xmodule/xmodule/js/src/html/edit.js
-#: common/static/common/js/components/utils/view_utils.js
-#: lms/static/js/Markdown.Editor.js
-#: lms/static/js/student_account/components/StudentAccountDeletionModal.jsx
-#: cms/templates/js/add-xblock-component-menu-problem.underscore
-#: cms/templates/js/add-xblock-component-menu.underscore
-#: cms/templates/js/certificate-editor.underscore
-#: cms/templates/js/content-group-editor.underscore
-#: cms/templates/js/course_info_handouts.underscore
-#: cms/templates/js/course_info_update.underscore
-#: cms/templates/js/edit-textbook.underscore
-#: cms/templates/js/group-configuration-editor.underscore
-#: cms/templates/js/section-name-edit.underscore
-#: cms/templates/js/signatory-actions.underscore
-#: cms/templates/js/xblock-string-field-editor.underscore
-#: common/static/common/templates/discussion/new-post.underscore
-#: common/static/common/templates/discussion/response-comment-edit.underscore
-#: common/static/common/templates/discussion/thread-edit.underscore
-#: common/static/common/templates/discussion/thread-response-edit.underscore
-#: lms/djangoapps/support/static/support/templates/enrollment-modal.underscore
-#: lms/djangoapps/teams/static/teams/templates/edit-team.underscore
-#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore
+#: cms/static/js/certificates/views/signatory_editor.js 
+#: cms/static/js/views/asset.js cms/static/js/views/course_info_update.js 
+#: cms/static/js/views/export.js cms/static/js/views/manage_users_and_roles.js 
+#: cms/static/js/views/modals/base_modal.js 
+#: cms/static/js/views/modals/course_outline_modals.js 
+#: cms/static/js/views/show_textbook.js cms/static/js/views/tabs.js 
+#: cms/static/js/views/validation.js 
+#: common/lib/xmodule/xmodule/js/src/html/edit.js 
+#: common/static/common/js/components/utils/view_utils.js 
+#: lms/static/js/Markdown.Editor.js 
+#: lms/static/js/student_account/components/StudentAccountDeletionModal.jsx 
+#: cms/templates/js/add-xblock-component-menu-problem.underscore 
+#: cms/templates/js/add-xblock-component-menu.underscore 
+#: cms/templates/js/certificate-editor.underscore 
+#: cms/templates/js/content-group-editor.underscore 
+#: cms/templates/js/course_info_handouts.underscore 
+#: cms/templates/js/course_info_update.underscore 
+#: cms/templates/js/edit-textbook.underscore 
+#: cms/templates/js/group-configuration-editor.underscore 
+#: cms/templates/js/section-name-edit.underscore 
+#: cms/templates/js/signatory-actions.underscore 
+#: cms/templates/js/xblock-string-field-editor.underscore 
+#: common/static/common/templates/discussion/new-post.underscore 
+#: common/static/common/templates/discussion/response-comment-edit.underscore 
+#: common/static/common/templates/discussion/thread-edit.underscore 
+#: common/static/common/templates/discussion/thread-response-edit.underscore 
+#: lms/djangoapps/support/static/support/templates/enrollment-modal.underscore 
+#: lms/djangoapps/teams/static/teams/templates/edit-team.underscore 
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore 
 #: lms/templates/learner_dashboard/verification_popover.underscore
 msgid "Cancel"
 msgstr "ביטול"
 
 #. Translators: This is the status of an active video upload
-#: cms/static/js/models/active_video_upload.js cms/static/js/views/assets.js
+#: cms/static/js/models/active_video_upload.js cms/static/js/views/assets.js 
 #: cms/static/js/views/video_thumbnail.js lms/static/js/views/image_field.js
 msgid "Uploading"
 msgstr "מעלה"
@@ -161,29 +101,29 @@ msgstr "מעלה"
 #. #-#-#-#-#  djangojs-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
-#: cms/static/js/views/active_video_upload.js
-#: cms/static/js/views/modals/edit_xblock.js
-#: cms/static/js/views/video_transcripts.js
-#: common/lib/xmodule/xmodule/js/src/html/edit.js
-#: lms/static/js/student_account/tos_modal.js
-#: cms/templates/js/course-video-settings.underscore
-#: common/static/common/templates/image-modal.underscore
-#: common/static/common/templates/discussion/alert-popup.underscore
-#: common/static/common/templates/discussion/forum-action-close.underscore
-#: common/static/common/templates/discussion/search-alert.underscore
+#: cms/static/js/views/active_video_upload.js 
+#: cms/static/js/views/modals/edit_xblock.js 
+#: cms/static/js/views/video_transcripts.js 
+#: common/lib/xmodule/xmodule/js/src/html/edit.js 
+#: lms/static/js/student_account/tos_modal.js 
+#: cms/templates/js/course-video-settings.underscore 
+#: common/static/common/templates/image-modal.underscore 
+#: common/static/common/templates/discussion/alert-popup.underscore 
+#: common/static/common/templates/discussion/forum-action-close.underscore 
+#: common/static/common/templates/discussion/search-alert.underscore 
 #: openedx/features/learner_profile/static/learner_profile/templates/share_modal.underscore
 msgid "Close"
 msgstr "סגור"
 
-#: cms/templates/js/asset-library.underscore
-#: cms/templates/js/course-instructor-details.underscore
-#: cms/templates/js/previous-video-upload-list.underscore
-#: cms/templates/js/signatory-details.underscore
+#: cms/templates/js/asset-library.underscore 
+#: cms/templates/js/course-instructor-details.underscore 
+#: cms/templates/js/previous-video-upload-list.underscore 
+#: cms/templates/js/signatory-details.underscore 
 #: lms/templates/instructor/instructor_dashboard_2/certificate-white-list.underscore
 msgid "Name"
 msgstr "שם"
 
-#: cms/static/js/views/assets.js lms/static/js/Markdown.Editor.js
+#: cms/static/js/views/assets.js lms/static/js/Markdown.Editor.js 
 #: cms/templates/js/asset-upload-modal.underscore
 msgid "Choose File"
 msgstr "בחר קובץ"
@@ -191,10 +131,10 @@ msgstr "בחר קובץ"
 #. #-#-#-#-#  djangojs-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
-#: cms/static/js/views/course_info_update.js cms/static/js/views/tabs.js
-#: common/lib/xmodule/xmodule/js/src/html/edit.js
-#: lms/static/js/Markdown.Editor.js
-#: common/static/common/templates/discussion/alert-popup.underscore
+#: cms/static/js/views/course_info_update.js cms/static/js/views/tabs.js 
+#: common/lib/xmodule/xmodule/js/src/html/edit.js 
+#: lms/static/js/Markdown.Editor.js 
+#: common/static/common/templates/discussion/alert-popup.underscore 
 #: lms/templates/learner_dashboard/verification_popover.underscore
 msgid "OK"
 msgstr "בסדר"
@@ -203,30 +143,30 @@ msgstr "בסדר"
 msgid "None"
 msgstr "ללא"
 
-#: cms/static/js/views/course_video_settings.js
-#: cms/static/js/views/metadata.js
-#: cms/static/js/views/previous_video_upload.js
-#: cms/static/js/views/video_transcripts.js
-#: lms/djangoapps/teams/static/teams/js/views/edit_team_members.js
-#: lms/static/js/views/image_field.js
-#: cms/templates/js/video/metadata-translations-item.underscore
+#: cms/static/js/views/course_video_settings.js 
+#: cms/static/js/views/metadata.js 
+#: cms/static/js/views/previous_video_upload.js 
+#: cms/static/js/views/video_transcripts.js 
+#: lms/djangoapps/teams/static/teams/js/views/edit_team_members.js 
+#: lms/static/js/views/image_field.js 
+#: cms/templates/js/video/metadata-translations-item.underscore 
 #: lms/djangoapps/teams/static/teams/templates/edit-team-member.underscore
 msgid "Remove"
 msgstr "הסר"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
-#: cms/static/js/views/manage_users_and_roles.js
+#: cms/static/js/views/manage_users_and_roles.js 
 #: common/lib/xmodule/xmodule/js/src/html/edit.js
 msgid "Ok"
 msgstr ""
 
-#: cms/static/js/views/manage_users_and_roles.js
+#: cms/static/js/views/manage_users_and_roles.js 
 #: lms/static/js/instructor_dashboard/util.js
 msgid "Unknown"
 msgstr "לא ידוע"
 
-#: cms/static/js/views/manage_users_and_roles.js
+#: cms/static/js/views/manage_users_and_roles.js 
 #: lms/static/js/student_account/components/StudentAccountDeletionModal.jsx
 msgid "Are you sure?"
 msgstr ""
@@ -235,17 +175,18 @@ msgstr ""
 msgid "Upload File"
 msgstr "העלה קובץ"
 
-#: cms/templates/js/certificate-editor.underscore
-#: cms/templates/js/content-group-editor.underscore
-#: cms/templates/js/course_info_handouts.underscore
-#: cms/templates/js/edit-textbook.underscore
-#: cms/templates/js/group-configuration-editor.underscore
-#: cms/templates/js/section-name-edit.underscore
-#: cms/templates/js/signatory-actions.underscore
-#: cms/templates/js/xblock-string-field-editor.underscore
-#: lms/templates/fields/field_dropdown.underscore
-#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore
+#: cms/templates/js/certificate-editor.underscore 
+#: cms/templates/js/content-group-editor.underscore 
+#: cms/templates/js/course_info_handouts.underscore 
+#: cms/templates/js/edit-textbook.underscore 
+#: cms/templates/js/group-configuration-editor.underscore 
+#: cms/templates/js/section-name-edit.underscore 
+#: cms/templates/js/signatory-actions.underscore 
+#: cms/templates/js/xblock-string-field-editor.underscore 
+#: lms/templates/fields/field_dropdown.underscore 
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore 
 #: lms/templates/instructor/instructor_dashboard_2/divided-discussions-course-wide.underscore
+#:  
 #: lms/templates/instructor/instructor_dashboard_2/divided-discussions-inline.underscore
 msgid "Save"
 msgstr "שמור"
@@ -254,15 +195,15 @@ msgstr "שמור"
 msgid "Advanced"
 msgstr "מתקדם"
 
-#: cms/static/js/views/previous_video_upload.js
-#: cms/static/js/views/video/translations_editor.js
+#: cms/static/js/views/previous_video_upload.js 
+#: cms/static/js/views/video/translations_editor.js 
 #: cms/static/js/views/video_transcripts.js lms/static/js/views/image_field.js
 msgid "Removing"
 msgstr "מסיר"
 
-#: cms/static/js/views/validation.js
+#: cms/static/js/views/validation.js 
 #: lms/static/js/discussions_management/views/divided_discussions_course_wide.js
-#: lms/static/js/discussions_management/views/divided_discussions_inline.js
+#:  lms/static/js/discussions_management/views/divided_discussions_inline.js 
 #: lms/static/js/views/fields.js
 msgid "Your changes have been saved."
 msgstr "השינויים נשמרו"
@@ -270,26 +211,26 @@ msgstr "השינויים נשמרו"
 #. Translators: This message will be added to the front of messages of type
 #. error,
 #. e.g. "Error: required field is missing".
-#: cms/static/js/views/xblock_validation.js
-#: common/static/common/js/discussion/utils.js
-#: common/static/common/js/discussion/views/discussion_inline_view.js
-#: common/static/common/js/discussion/views/discussion_thread_list_view.js
-#: common/static/common/js/discussion/views/discussion_thread_view.js
-#: common/static/common/js/discussion/views/response_comment_view.js
-#: lms/static/js/student_account/views/FinishAuthView.js
-#: lms/static/js/verify_student/views/payment_confirmation_step_view.js
-#: lms/static/js/verify_student/views/step_view.js
+#: cms/static/js/views/xblock_validation.js 
+#: common/static/common/js/discussion/utils.js 
+#: common/static/common/js/discussion/views/discussion_inline_view.js 
+#: common/static/common/js/discussion/views/discussion_thread_list_view.js 
+#: common/static/common/js/discussion/views/discussion_thread_view.js 
+#: common/static/common/js/discussion/views/response_comment_view.js 
+#: lms/static/js/student_account/views/FinishAuthView.js 
+#: lms/static/js/verify_student/views/payment_confirmation_step_view.js 
+#: lms/static/js/verify_student/views/step_view.js 
 #: lms/static/js/views/fields.js
 msgid "Error"
 msgstr "שגיאה"
 
 #: common/lib/xmodule/xmodule/assets/library_content/public/js/library_content_edit.js
-#: common/lib/xmodule/xmodule/js/public/js/library_content_edit.js
+#:  common/lib/xmodule/xmodule/js/public/js/library_content_edit.js
 msgid "Updating with latest library content"
 msgstr "מעדכן עם התוכן העדכני ביותר"
 
 #: common/lib/xmodule/xmodule/assets/split_test/public/js/split_test_author_view.js
-#: common/lib/xmodule/xmodule/js/public/js/split_test_author_view.js
+#:  common/lib/xmodule/xmodule/js/public/js/split_test_author_view.js
 msgid "Creating missing groups"
 msgstr "יצירה של קבוצות חסרות"
 
@@ -340,8 +281,6 @@ msgid "%(num_points)s point possible (graded, results hidden)"
 msgid_plural "%(num_points)s points possible (graded, results hidden)"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #. Translators: %(num_points)s is the number of points possible (examples: 1,
 #. 3, 10).;
@@ -350,8 +289,6 @@ msgid "%(num_points)s point possible (ungraded, results hidden)"
 msgid_plural "%(num_points)s points possible (ungraded, results hidden)"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #. Translators: %(num_points)s is the number of points possible (examples: 1,
 #. 3, 10).;
@@ -360,8 +297,6 @@ msgid "%(num_points)s point possible (graded)"
 msgid_plural "%(num_points)s points possible (graded)"
 msgstr[0] "נקודה %(num_points)s אפשרית (שדורגה)"
 msgstr[1] "%(num_points)s נקודות אפשריות (שדורגו)"
-msgstr[2] "%(num_points)s נקודות אפשריות (שדורגו)"
-msgstr[3] "%(num_points)s נקודות אפשריות (שדורגו)"
 
 #. Translators: %(num_points)s is the number of points possible (examples: 1,
 #. 3, 10).;
@@ -370,8 +305,6 @@ msgid "%(num_points)s point possible (ungraded)"
 msgid_plural "%(num_points)s points possible (ungraded)"
 msgstr[0] "נקודה %(num_points)s אפשרית (שלא דורגה)"
 msgstr[1] "%(num_points)s נקודות אפשריות (שלא דורגו)"
-msgstr[2] "%(num_points)s נקודות אפשריות (שלא דורגו)"
-msgstr[3] "%(num_points)s נקודות אפשריות (שלא דורגו)"
 
 #. Translators: %(earned)s is the number of points earned. %(possible)s is the
 #. total number of points (examples: 0/1, 1/1, 2/3, 5/10). The total number of
@@ -382,8 +315,6 @@ msgid "%(earned)s/%(possible)s point (graded)"
 msgid_plural "%(earned)s/%(possible)s points (graded)"
 msgstr[0] "נקודה %(earned)s/%(possible)s (שדורגה)"
 msgstr[1] "%(earned)s/%(possible)s נקודות (שדורגו)"
-msgstr[2] "%(earned)s/%(possible)s נקודות (שדורגו)"
-msgstr[3] "%(earned)s/%(possible)s נקודות (שדורגו)"
 
 #. Translators: %(earned)s is the number of points earned. %(possible)s is the
 #. total number of points (examples: 0/1, 1/1, 2/3, 5/10). The total number of
@@ -394,8 +325,6 @@ msgid "%(earned)s/%(possible)s point (ungraded)"
 msgid_plural "%(earned)s/%(possible)s points (ungraded)"
 msgstr[0] "נקודה %(earned)s/%(possible)s (שלא דורגה)"
 msgstr[1] "%(earned)s/%(possible)s נקודות (שלא דורגו)"
-msgstr[2] "%(earned)s/%(possible)s נקודות (שלא דורגו)"
-msgstr[3] "%(earned)s/%(possible)s נקודות (שלא דורגו)"
 
 #: common/lib/xmodule/xmodule/js/src/capa/display.js
 msgid "The grading process is still running. Refresh the page to see updates."
@@ -540,7 +469,7 @@ msgstr ""
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
-#: common/lib/xmodule/xmodule/js/src/html/edit.js
+#: common/lib/xmodule/xmodule/js/src/html/edit.js 
 #: lms/static/js/Markdown.Editor.js
 msgid "Blockquote"
 msgstr "Blockquote"
@@ -755,9 +684,9 @@ msgstr ""
 msgid "Delete table"
 msgstr ""
 
-#: cms/templates/js/certificate-editor.underscore
-#: cms/templates/js/group-configuration-editor.underscore
-#: lms/templates/commerce/receipt.underscore
+#: cms/templates/js/certificate-editor.underscore 
+#: cms/templates/js/group-configuration-editor.underscore 
+#: lms/templates/commerce/receipt.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "Description"
 msgstr "תיאור"
@@ -795,16 +724,16 @@ msgstr ""
 #. #-#-#-#-#  djangojs-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
-#: common/lib/xmodule/xmodule/js/src/html/edit.js
-#: common/static/js/vendor/ova/catch/js/catch.js
-#: cms/templates/js/certificate-details.underscore
-#: cms/templates/js/course_info_handouts.underscore
-#: cms/templates/js/course_info_update.underscore
-#: cms/templates/js/group-configuration-details.underscore
-#: cms/templates/js/partition-group-details.underscore
-#: cms/templates/js/show-textbook.underscore
-#: cms/templates/js/signatory-details.underscore
-#: cms/templates/js/xblock-string-field-editor.underscore
+#: common/lib/xmodule/xmodule/js/src/html/edit.js 
+#: common/static/js/vendor/ova/catch/js/catch.js 
+#: cms/templates/js/certificate-details.underscore 
+#: cms/templates/js/course_info_handouts.underscore 
+#: cms/templates/js/course_info_update.underscore 
+#: cms/templates/js/group-configuration-details.underscore 
+#: cms/templates/js/partition-group-details.underscore 
+#: cms/templates/js/show-textbook.underscore 
+#: cms/templates/js/signatory-details.underscore 
+#: cms/templates/js/xblock-string-field-editor.underscore 
 #: common/static/common/templates/discussion/forum-action-edit.underscore
 msgid "Edit"
 msgstr "עריכה"
@@ -953,7 +882,7 @@ msgstr ""
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
-#: common/lib/xmodule/xmodule/js/src/html/edit.js
+#: common/lib/xmodule/xmodule/js/src/html/edit.js 
 #: common/lib/xmodule/xmodule/js/src/problem/edit.js
 msgid "Header"
 msgstr "כותרת"
@@ -1198,8 +1127,8 @@ msgstr ""
 msgid "New window"
 msgstr ""
 
-#: cms/templates/js/paging-header.underscore
-#: common/static/common/templates/components/paging-footer.underscore
+#: cms/templates/js/paging-header.underscore 
+#: common/static/common/templates/components/paging-footer.underscore 
 #: common/static/common/templates/discussion/pagination.underscore
 msgid "Next"
 msgstr "הבא"
@@ -1318,8 +1247,8 @@ msgstr ""
 msgid "Replace with"
 msgstr ""
 
-#: cms/templates/js/metadata-file-uploader-item.underscore
-#: cms/templates/js/video-transcripts.underscore
+#: cms/templates/js/metadata-file-uploader-item.underscore 
+#: cms/templates/js/video-transcripts.underscore 
 #: cms/templates/js/video/metadata-translations-item.underscore
 msgid "Replace"
 msgstr "החלף"
@@ -1334,8 +1263,8 @@ msgstr ""
 #. browser when a user needs to edit HTML
 #: common/lib/xmodule/xmodule/js/src/html/edit.js
 msgid ""
-"Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press "
-"ALT-0 for help"
+"Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-"
+"0 for help"
 msgstr ""
 
 #. Translators: this is a message from the raw HTML editor displayed in the
@@ -1528,9 +1457,9 @@ msgid ""
 "required http:// prefix?"
 msgstr ""
 
-#: cms/templates/js/course-instructor-details.underscore
-#: cms/templates/js/signatory-details.underscore
-#: common/static/common/templates/discussion/new-post.underscore
+#: cms/templates/js/course-instructor-details.underscore 
+#: cms/templates/js/signatory-details.underscore 
+#: common/static/common/templates/discussion/new-post.underscore 
 #: common/static/common/templates/discussion/thread-edit.underscore
 msgid "Title"
 msgstr "כותרת"
@@ -1590,7 +1519,9 @@ msgid "Vertical space"
 msgstr ""
 
 #: openedx/features/course_bookmarks/static/course_bookmarks/templates/bookmarks-list.underscore
+#:  
 #: openedx/features/course_search/static/course_search/templates/course_search_item.underscore
+#:  
 #: openedx/features/course_search/static/course_search/templates/dashboard_search_item.underscore
 msgid "View"
 msgstr "הצג"
@@ -1641,11 +1572,13 @@ msgstr ""
 
 #: common/lib/xmodule/xmodule/js/src/lti/lti.js
 msgid ""
-"Click OK to have your username and e-mail address sent to a 3rd party application.\n"
+"Click OK to have your username and e-mail address sent to a 3rd party "
+"application.\n"
 "\n"
 "Click Cancel to return to this page without sending your information."
 msgstr ""
-"לחץ 'אישור' כדי לאשר ששם המשתמש שלך וכתובת הדואר האלקטרונית שלך יועברו לאפליקציה צד 3.\n"
+"לחץ 'אישור' כדי לאשר ששם המשתמש שלך וכתובת הדואר האלקטרונית שלך יועברו "
+"לאפליקציה צד 3.\n"
 "\n"
 "לחץ על 'ביטול' כדי לחזור לעמוד זה מבלי שהמידע האישי שלך ישלח. "
 
@@ -1687,11 +1620,13 @@ msgstr "הסבר קצר"
 
 #: common/lib/xmodule/xmodule/js/src/problem/edit.js
 msgid ""
-"If you use the Advanced Editor, this problem will be converted to XML and you will not be able to return to the Simple Editor Interface.\n"
+"If you use the Advanced Editor, this problem will be converted to XML and "
+"you will not be able to return to the Simple Editor Interface.\n"
 "\n"
 "Proceed to the Advanced Editor and convert this problem to XML?"
 msgstr ""
-"במידה ואתה משתמש בעורך מתקדם, בעיה זו תומר לפורמט XML ולא תוכל לחזור לממשק של עורך פשוט.\n"
+"במידה ואתה משתמש בעורך מתקדם, בעיה זו תומר לפורמט XML ולא תוכל לחזור לממשק "
+"של עורך פשוט.\n"
 "\n"
 "האם להמשיך לעורך מתקדם ולהמיר את הבעיה ל-XML?"
 
@@ -1707,18 +1642,18 @@ msgstr ""
 "שגיאת המשכיות! אינו יכול לעבור ל-%(tab_name)s במודול נוכחי. אנא צור קשר עם "
 "צוות הקורס."
 
-#: common/lib/xmodule/xmodule/js/src/sequence/display.js
+#: common/lib/xmodule/xmodule/js/src/sequence/display.js 
 #: openedx/features/course_bookmarks/static/course_bookmarks/js/views/bookmark_button.js
 msgid "Bookmarked"
 msgstr "מסומן בסימניה"
 
-#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
-#: common/lib/xmodule/xmodule/js/src/video/09_play_pause_control.js
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js 
+#: common/lib/xmodule/xmodule/js/src/video/09_play_pause_control.js 
 #: common/lib/xmodule/xmodule/js/src/video/09_play_skip_control.js
 msgid "Play"
 msgstr "נגן"
 
-#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js 
 #: common/lib/xmodule/xmodule/js/src/video/09_play_pause_control.js
 msgid "Pause"
 msgstr "השהה"
@@ -1731,27 +1666,27 @@ msgstr "השתק"
 msgid "Unmute"
 msgstr "בטל השתקה"
 
-#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js 
 #: common/lib/xmodule/xmodule/js/src/video/04_video_full_screen.js
 msgid "Exit full browser"
 msgstr "צא מדפדפן מלא"
 
-#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js 
 #: common/lib/xmodule/xmodule/js/src/video/04_video_full_screen.js
 msgid "Fill browser"
 msgstr "מלא דפדפן"
 
-#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js 
 #: common/lib/xmodule/xmodule/js/src/video/08_video_speed_control.js
 msgid "Speed"
 msgstr "מהירות"
 
-#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js 
 #: common/lib/xmodule/xmodule/js/src/video/08_video_auto_advance_control.js
 msgid "Auto-advance"
 msgstr ""
 
-#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js 
 #: common/lib/xmodule/xmodule/js/src/video/07_video_volume_control.js
 msgid "Volume"
 msgstr "עוצמת הקול"
@@ -1828,24 +1763,18 @@ msgid "%(value)s hour"
 msgid_plural "%(value)s hours"
 msgstr[0] "%(value)s שעה"
 msgstr[1] "%(value)s שעות"
-msgstr[2] "%(value)s שעות"
-msgstr[3] "%(value)s שעות"
 
 #: common/lib/xmodule/xmodule/js/src/video/06_video_progress_slider.js
 msgid "%(value)s minute"
 msgid_plural "%(value)s minutes"
 msgstr[0] "%(value)s דקה"
 msgstr[1] "%(value)s דקות"
-msgstr[2] "%(value)s דקות"
-msgstr[3] "%(value)s דקות"
 
 #: common/lib/xmodule/xmodule/js/src/video/06_video_progress_slider.js
 msgid "%(value)s second"
 msgid_plural "%(value)s seconds"
 msgstr[0] "%(value)s שניה"
 msgstr[1] "%(value)s שניות"
-msgstr[2] "%(value)s שניות"
-msgstr[3] "%(value)s שניות"
 
 #: common/lib/xmodule/xmodule/js/src/video/07_video_volume_control.js
 msgid ""
@@ -1917,8 +1846,8 @@ msgstr "סוף התמלול. דלג להתחלה."
 
 #: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
 msgid ""
-"Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
-" keys to navigate language options. Press ENTER to change to the selected "
+"Press the UP arrow key to enter the language menu then use UP and DOWN arrow "
+"keys to navigate language options. Press ENTER to change to the selected "
 "language."
 msgstr ""
 "לחץ על מקש החץ למעלה כדי להיכנס לתפריט השפה ולאחר מכן השתמש במקשי החצים "
@@ -1956,7 +1885,7 @@ msgstr "אנא אל תשתמש ברווחים בשדה זה."
 msgid "Please do not use any spaces or special characters in this field."
 msgstr "אנא אל תשתמש ברווחים או בתווים מיוחדים בשדה זה."
 
-#: common/static/common/js/components/views/paginated_view.js
+#: common/static/common/js/components/views/paginated_view.js 
 #: common/static/common/js/components/views/paging_footer.js
 msgid "Pagination"
 msgstr "עימוד"
@@ -1985,7 +1914,7 @@ msgstr "טוען תוכן"
 msgid "Your request could not be processed. Refresh the page and try again."
 msgstr "לא ניתן לעבד את בקשתך. רענן את העמוד ונסה שנית."
 
-#: common/static/common/js/discussion/utils.js
+#: common/static/common/js/discussion/utils.js 
 #: common/static/common/templates/discussion/pagination.underscore
 msgid "…"
 msgstr "..."
@@ -2003,16 +1932,12 @@ msgid "there is currently {numVotes} vote"
 msgid_plural "there are currently {numVotes} votes"
 msgstr[0] "כרגע יש קול {numVotes}"
 msgstr[1] "כרגע יש {numVotes} קולות"
-msgstr[2] "כרגע יש {numVotes} קולות"
-msgstr[3] "כרגע יש {numVotes} קולות"
 
 #: common/static/common/js/discussion/views/discussion_content_view.js
 msgid "{numVotes} Vote"
 msgid_plural "{numVotes} Votes"
 msgstr[0] "קול {numVotes}"
 msgstr[1] "{numVotes} קולות"
-msgstr[2] "{numVotes} קולות"
-msgstr[3] "{numVotes} קולות"
 
 #: common/static/common/js/discussion/views/discussion_content_view.js
 msgid ""
@@ -2021,8 +1946,7 @@ msgstr "לא ניתן לרשום אותך לפוסט. רענן את העמוד �
 
 #: common/static/common/js/discussion/views/discussion_content_view.js
 msgid ""
-"You could not be unsubscribed from this post. Refresh the page and try "
-"again."
+"You could not be unsubscribed from this post. Refresh the page and try again."
 msgstr "לא ניתן לבטל את הרישום שלך לפוסט. רענן את העמוד ונסה שנית."
 
 #: common/static/common/js/discussion/views/discussion_content_view.js
@@ -2045,8 +1969,7 @@ msgstr "לא ניתן לסמן את התגובה הזו בתור מומלצת. �
 
 #: common/static/common/js/discussion/views/discussion_content_view.js
 msgid "This response could not be unendorsed. Refresh the page and try again."
-msgstr ""
-"לא ניתן לבטל את סימון התגובה הזו בתור מומלצת. רענן את העמוד ונסה שנית."
+msgstr "לא ניתן לבטל את סימון התגובה הזו בתור מומלצת. רענן את העמוד ונסה שנית."
 
 #: common/static/common/js/discussion/views/discussion_content_view.js
 msgid "This vote could not be processed. Refresh the page and try again."
@@ -2112,8 +2035,7 @@ msgstr "טוען רשימת פוסטים"
 
 #: common/static/common/js/discussion/views/discussion_thread_list_view.js
 msgid ""
-"No results found for {original_query}. Showing results for "
-"{suggested_query}."
+"No results found for {original_query}. Showing results for {suggested_query}."
 msgstr ""
 "לא נמצאו תוצאות עבור {original_query}. מראה תוצאות עבור {suggested_query}."
 
@@ -2143,16 +2065,12 @@ msgid "{numResponses} other response"
 msgid_plural "{numResponses} other responses"
 msgstr[0] "תגובה נוספת {numResponses}"
 msgstr[1] "{numResponses} תגובות נוספות"
-msgstr[2] "{numResponses} תגובות נוספות"
-msgstr[3] "{numResponses} תגובות נוספות"
 
 #: common/static/common/js/discussion/views/discussion_thread_view.js
 msgid "{numResponses} response"
 msgid_plural "{numResponses} responses"
 msgstr[0] "תגובה {numResponses}"
 msgstr[1] "{numResponses} תגובות"
-msgstr[2] "{numResponses} תגובות"
-msgstr[3] "{numResponses} תגובות"
 
 #: common/static/common/js/discussion/views/discussion_thread_view.js
 msgid "Showing all responses"
@@ -2163,8 +2081,6 @@ msgid "Showing first response"
 msgid_plural "Showing first {numResponses} responses"
 msgstr[0] "מציג תגובה ראשונה"
 msgstr[1] "מציג {numResponses} תגובות ראשונות"
-msgstr[2] "מציג {numResponses} תגובות ראשונות"
-msgstr[3] "מציג {numResponses} תגובות ראשונות"
 
 #: common/static/common/js/discussion/views/discussion_thread_view.js
 msgid "Load all responses"
@@ -2182,8 +2098,8 @@ msgstr "האם אתה בטוח שאתה רוצה למחוק פוסט זה?"
 msgid "Your post will be discarded."
 msgstr "הפוסט שלך יבוטל."
 
-#: common/static/common/js/discussion/views/response_comment_show_view.js
-#: common/static/common/templates/discussion/post-user-display.underscore
+#: common/static/common/js/discussion/views/response_comment_show_view.js 
+#: common/static/common/templates/discussion/post-user-display.underscore 
 #: common/static/common/templates/discussion/profile-thread.underscore
 msgid "anonymous"
 msgstr "אנונימי"
@@ -2262,8 +2178,6 @@ msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "דקה %d"
 msgstr[1] "%d דקות"
-msgstr[2] "%d דקות"
-msgstr[3] "%d דקות"
 
 #: common/static/js/src/jquery.timeago.locale.js
 msgid "about an hour"
@@ -2275,8 +2189,6 @@ msgid "about %d hour"
 msgid_plural "about %d hours"
 msgstr[0] "כשעה %d"
 msgstr[1] "כ-%d שעות"
-msgstr[2] "כ-%d שעות"
-msgstr[3] "כ-%d שעות"
 
 #: common/static/js/src/jquery.timeago.locale.js
 msgid "a day"
@@ -2288,8 +2200,6 @@ msgid "%d day"
 msgid_plural "%d days"
 msgstr[0] "יום %d"
 msgstr[1] "%d ימים"
-msgstr[2] "%d ימים"
-msgstr[3] "%d ימים"
 
 #: common/static/js/src/jquery.timeago.locale.js
 msgid "about a month"
@@ -2301,8 +2211,6 @@ msgid "%d month"
 msgid_plural "%d months"
 msgstr[0] "חודש %d"
 msgstr[1] "%d חודשים"
-msgstr[2] "%d חודשים"
-msgstr[3] "%d חודשים"
 
 #: common/static/js/src/jquery.timeago.locale.js
 msgid "about a year"
@@ -2314,8 +2222,6 @@ msgid "%d year"
 msgid_plural "%d years"
 msgstr[0] "שנה %d"
 msgstr[1] "%d שנים"
-msgstr[2] "%d שנים"
-msgstr[3] "%d שנים"
 
 #: common/static/js/vendor/ova/catch/js/catch.js
 msgid "User"
@@ -2341,10 +2247,10 @@ msgstr "#תשובות"
 msgid "Date posted"
 msgstr "תאריך פרסום"
 
-#: common/static/js/vendor/ova/catch/js/catch.js
-#: lms/static/js/courseware/credit_progress.js
-#: common/static/common/templates/discussion/forum-actions.underscore
-#: lms/templates/discovery/facet.underscore
+#: common/static/js/vendor/ova/catch/js/catch.js 
+#: lms/static/js/courseware/credit_progress.js 
+#: common/static/common/templates/discussion/forum-actions.underscore 
+#: lms/templates/discovery/facet.underscore 
 #: lms/templates/edxnotes/note-item.underscore
 msgid "More"
 msgstr "עוד"
@@ -2361,11 +2267,11 @@ msgstr "מדריך"
 msgid "Public"
 msgstr "ציבורי"
 
-#: common/static/js/vendor/ova/catch/js/catch.js
-#: common/static/common/templates/components/search-field.underscore
-#: lms/djangoapps/discussion/static/discussion/templates/search.underscore
-#: lms/djangoapps/support/static/support/templates/certificates.underscore
-#: lms/djangoapps/support/static/support/templates/enrollment.underscore
+#: common/static/js/vendor/ova/catch/js/catch.js 
+#: common/static/common/templates/components/search-field.underscore 
+#: lms/djangoapps/discussion/static/discussion/templates/search.underscore 
+#: lms/djangoapps/support/static/support/templates/certificates.underscore 
+#: lms/djangoapps/support/static/support/templates/enrollment.underscore 
 #: lms/djangoapps/support/static/support/templates/manage_user.underscore
 msgid "Search"
 msgstr "חיפוש"
@@ -2381,7 +2287,7 @@ msgstr "משתמשים"
 #. note in the courseware, the student can choose to associate 1 or more tags
 #. with the note
 #. in order to group similar notes together and help with search.
-#: common/static/js/vendor/ova/catch/js/catch.js
+#: common/static/js/vendor/ova/catch/js/catch.js 
 #: lms/static/js/edxnotes/views/tabs/tags.js
 msgid "Tags"
 msgstr "תגיות"
@@ -2390,12 +2296,12 @@ msgstr "תגיות"
 msgid "Annotation Text"
 msgstr "טקסט ההסבר"
 
-#: common/static/js/vendor/ova/catch/js/catch.js
-#: cms/templates/js/metadata-dict-entry.underscore
-#: cms/templates/js/metadata-file-uploader-entry.underscore
-#: cms/templates/js/metadata-list-entry.underscore
-#: cms/templates/js/metadata-number-entry.underscore
-#: cms/templates/js/metadata-option-entry.underscore
+#: common/static/js/vendor/ova/catch/js/catch.js 
+#: cms/templates/js/metadata-dict-entry.underscore 
+#: cms/templates/js/metadata-file-uploader-entry.underscore 
+#: cms/templates/js/metadata-list-entry.underscore 
+#: cms/templates/js/metadata-number-entry.underscore 
+#: cms/templates/js/metadata-option-entry.underscore 
 #: cms/templates/js/metadata-string-entry.underscore
 msgid "Clear"
 msgstr "נקה"
@@ -2408,7 +2314,7 @@ msgstr "טקסט"
 msgid "Video"
 msgstr "וידאו"
 
-#: common/static/js/vendor/ova/catch/js/catch.js
+#: common/static/js/vendor/ova/catch/js/catch.js 
 #: lms/static/js/views/image_field.js
 msgid "Image"
 msgstr "תמונה"
@@ -2417,7 +2323,7 @@ msgstr "תמונה"
 msgid "Reply"
 msgstr "השב"
 
-#: common/static/js/vendor/ova/catch/js/catch.js
+#: common/static/js/vendor/ova/catch/js/catch.js 
 #: lms/templates/edxnotes/note-item.underscore
 msgid "Tags:"
 msgstr "תגיות:"
@@ -2434,8 +2340,6 @@ msgid "Check the box to remove %(totalFlags)s flag."
 msgid_plural "Check the box to remove %(totalFlags)s flags."
 msgstr[0] "סמן את התיבה כדי להסיר דגל %(totalFlags)s."
 msgstr[1] "סמן את התיבה כדי להסיר %(totalFlags)s דגלים."
-msgstr[2] "סמן את התיבה כדי להסיר %(totalFlags)s דגלים."
-msgstr[3] "סמן את התיבה כדי להסיר %(totalFlags)s דגלים."
 
 #. Translators: 'count' is the number of flags solely for that annotation that
 #. will be removed
@@ -2444,8 +2348,6 @@ msgid "Check the box to remove %(count)s flag."
 msgid_plural "Check the box to remove %(count)s flags."
 msgstr[0] "סמן את התיבה כדי להסיר דגל %(count)s."
 msgstr[1] "סמן את התיבה כדי להסיר %(count)s דגלים."
-msgstr[2] "סמן את התיבה כדי להסיר %(count)s דגלים."
-msgstr[3] "סמן את התיבה כדי להסיר %(count)s דגלים."
 
 #: common/static/js/vendor/ova/flagging-annotator.js
 msgid "All flags have been removed. To undo, uncheck the box."
@@ -2465,8 +2367,6 @@ msgid "This annotation has %(count)s flag."
 msgid_plural "This annotation has %(count)s flags."
 msgstr[0] "להערה זו יש דגל %(count)s."
 msgstr[1] "להסבר זה יש %(count)s דגלים."
-msgstr[2] "להסבר זה יש %(count)s דגלים."
-msgstr[3] "להסבר זה יש %(count)s דגלים."
 
 #: lms/djangoapps/support/static/support/js/views/certificates.js
 msgid "An unexpected error occurred.  Please try again."
@@ -2502,11 +2402,11 @@ msgstr ""
 
 #: lms/djangoapps/support/static/support/jsx/file_upload.jsx
 msgid ""
-"Files that you upload must be PDFs or image files in .gif, .jpg, .jpeg, or "
-".png format."
+"Files that you upload must be PDFs or image files in .gif, .jpg, .jpeg, or ."
+"png format."
 msgstr ""
 
-#: lms/djangoapps/support/static/support/jsx/file_upload.jsx
+#: lms/djangoapps/support/static/support/jsx/file_upload.jsx 
 #: lms/djangoapps/support/static/support/jsx/single_support_form.jsx
 msgid "Something went wrong. Please try again later."
 msgstr ""
@@ -2535,7 +2435,7 @@ msgstr ""
 msgid "What can we help you with, {username}?"
 msgstr ""
 
-#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx 
 #: lms/static/js/instructor_dashboard/util.js
 msgid "Subject"
 msgstr "נושא"
@@ -2548,9 +2448,9 @@ msgstr ""
 msgid "The more you tell us, the more quickly and helpfully we can respond!"
 msgstr ""
 
-#: common/static/common/templates/discussion/new-post.underscore
-#: common/static/common/templates/discussion/thread-response.underscore
-#: common/static/common/templates/discussion/thread.underscore
+#: common/static/common/templates/discussion/new-post.underscore 
+#: common/static/common/templates/discussion/thread-response.underscore 
+#: common/static/common/templates/discussion/thread.underscore 
 #: lms/templates/verify_student/incourse_reverify.underscore
 msgid "Submit"
 msgstr "שלח"
@@ -2578,7 +2478,7 @@ msgstr ""
 msgid "Enter some details for your support request."
 msgstr ""
 
-#: lms/djangoapps/support/static/support/jsx/single_support_form.jsx
+#: lms/djangoapps/support/static/support/jsx/single_support_form.jsx 
 #: lms/djangoapps/support/static/support/jsx/success.jsx
 msgid "Contact Us"
 msgstr ""
@@ -2626,14 +2526,14 @@ msgstr "שם"
 msgid "team count"
 msgstr "ספירת צוות"
 
-#: lms/djangoapps/teams/static/teams/js/teams_tab_factory.js
+#: lms/djangoapps/teams/static/teams/js/teams_tab_factory.js 
 #: lms/djangoapps/teams/static/teams/js/views/teams_tab.js
 msgid "Teams"
 msgstr "צוותים"
 
-#: lms/djangoapps/teams/static/teams/js/views/edit_team.js
-#: cms/templates/js/certificate-editor.underscore
-#: cms/templates/js/content-group-editor.underscore
+#: lms/djangoapps/teams/static/teams/js/views/edit_team.js 
+#: cms/templates/js/certificate-editor.underscore 
+#: cms/templates/js/content-group-editor.underscore 
 #: cms/templates/js/group-configuration-editor.underscore
 msgid "Create"
 msgstr "צור"
@@ -2662,29 +2562,29 @@ msgstr ""
 "תיאור קצר של הצוות שיעזור לתלמידים אחרים להבין את היעדים או הכיוון של הצוות "
 "(300 תווים לכל היותר)."
 
-#: lms/djangoapps/teams/static/teams/js/views/edit_team.js
-#: lms/static/js/student_account/views/account_settings_factory.js
+#: lms/djangoapps/teams/static/teams/js/views/edit_team.js 
+#: lms/static/js/student_account/views/account_settings_factory.js 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "Language"
 msgstr "שפה"
 
-#: lms/djangoapps/teams/static/teams/js/views/edit_team.js
+#: lms/djangoapps/teams/static/teams/js/views/edit_team.js 
 #: lms/djangoapps/teams/static/teams/templates/team-profile.underscore
 msgid ""
 "The language that team members primarily use to communicate with each other."
 msgstr "השפה העיקרית שחברי הצוות משתמשים כדי לתקשר זה עם זה."
 
-#: lms/djangoapps/teams/static/teams/js/views/edit_team.js
+#: lms/djangoapps/teams/static/teams/js/views/edit_team.js 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "Country"
 msgstr "מדינה"
 
-#: lms/djangoapps/teams/static/teams/js/views/edit_team.js
+#: lms/djangoapps/teams/static/teams/js/views/edit_team.js 
 #: lms/djangoapps/teams/static/teams/templates/team-profile.underscore
 msgid "The country that team members primarily identify with."
 msgstr "המדינה העיקרית איתה מזוהים חברי הצוות."
 
-#: lms/djangoapps/teams/static/teams/js/views/edit_team.js
+#: lms/djangoapps/teams/static/teams/js/views/edit_team.js 
 #: lms/static/js/views/fields.js
 msgid "An error occurred. Please try again."
 msgstr "אירעה שגיאה. נא נסה שוב."
@@ -2735,8 +2635,8 @@ msgstr "האם להסיר חבר צוות זה?"
 
 #: lms/djangoapps/teams/static/teams/js/views/edit_team_members.js
 msgid ""
-"This learner will be removed from the team, allowing another learner to take"
-" the available spot."
+"This learner will be removed from the team, allowing another learner to take "
+"the available spot."
 msgstr "תלמיד זה יוסר מהצוות, כך שיתאפשר לתלמיד אחר להצטרף למקום שהתפנה."
 
 #: lms/djangoapps/teams/static/teams/js/views/instructor_tools.js
@@ -2748,8 +2648,8 @@ msgid ""
 "Deleting a team is permanent and cannot be undone. All members are removed "
 "from the team, and team discussions can no longer be accessed."
 msgstr ""
-"מחיקת צוות היא קבועה ואין אפשרות לבטלה. כל החברים הוסרו מהצוות, לא ניתן לגשת"
-" יותר לדיוני הצוות."
+"מחיקת צוות היא קבועה ואין אפשרות לבטלה. כל החברים הוסרו מהצוות, לא ניתן לגשת "
+"יותר לדיוני הצוות."
 
 #: lms/djangoapps/teams/static/teams/js/views/instructor_tools.js
 msgid "Team \"{team}\" successfully deleted."
@@ -2775,7 +2675,7 @@ msgstr "פעילות אחרונה בתאריך %(date)s"
 msgid "View %(span_start)s %(team_name)s %(span_end)s"
 msgstr "הצג %(span_start)s %(team_name)s %(span_end)s"
 
-#: lms/djangoapps/teams/static/teams/js/views/team_profile.js
+#: lms/djangoapps/teams/static/teams/js/views/team_profile.js 
 #: lms/djangoapps/teams/static/teams/js/views/team_profile_header_actions.js
 msgid "An error occurred. Try again."
 msgstr "אירעה שגיאה. נסה שוב."
@@ -2788,11 +2688,10 @@ msgstr "לעזוב צוות זה?"
 msgid ""
 "If you leave, you can no longer post in this team's discussions. Your place "
 "will be available to another learner."
-msgstr ""
-"אם תעזוב, לא תוכל לפרסם יותר בדיוני הצוות. מקומך יתפנה עבור תלמיד אחר."
+msgstr "אם תעזוב, לא תוכל לפרסם יותר בדיוני הצוות. מקומך יתפנה עבור תלמיד אחר."
 
-#: lms/djangoapps/teams/static/teams/js/views/team_profile.js
-#: lms/static/js/verify_student/views/reverify_view.js
+#: lms/djangoapps/teams/static/teams/js/views/team_profile.js 
+#: lms/static/js/verify_student/views/reverify_view.js 
 #: lms/templates/verify_student/review_photos_step.underscore
 msgid "Confirm"
 msgstr "אשר"
@@ -2810,8 +2709,6 @@ msgid "%(memberCount)s / %(maxMemberCount)s Member"
 msgid_plural "%(memberCount)s / %(maxMemberCount)s Members"
 msgstr[0] "חבר %(memberCount)s / %(maxMemberCount)s"
 msgstr[1] "%(memberCount)s / %(maxMemberCount)s חברים"
-msgstr[2] "%(memberCount)s / %(maxMemberCount)s חברים"
-msgstr[3] "%(memberCount)s / %(maxMemberCount)s חברים"
 
 #: lms/djangoapps/teams/static/teams/js/views/teams.js
 msgid "All teams"
@@ -2827,8 +2724,8 @@ msgstr "נושאים"
 
 #: lms/djangoapps/teams/static/teams/js/views/teams_tab.js
 msgid ""
-"See all teams in your course, organized by topic. Join a team to collaborate"
-" with other learners who are interested in the same topic as you are."
+"See all teams in your course, organized by topic. Join a team to collaborate "
+"with other learners who are interested in the same topic as you are."
 msgstr ""
 "ראה שכל הצוותים שבקורס שלך מאורגנים לפי נושא. הצטרף לצוות כדי לשתף פעולה עם "
 "תלמידים אחרים המעוניינים באותו נושא בו אתה מתעניין."
@@ -2837,7 +2734,7 @@ msgstr ""
 msgid "My Team"
 msgstr "הצוות שלי"
 
-#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js
+#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js 
 #: lms/templates/instructor/instructor_dashboard_2/certificate-bulk-white-list.underscore
 msgid "Browse"
 msgstr "עיין ב"
@@ -2848,8 +2745,8 @@ msgstr "לא ניתן להשלים את בקשתך. טען מחדש את הדף 
 
 #: lms/djangoapps/teams/static/teams/js/views/teams_tab.js
 msgid ""
-"Your request could not be completed due to a server problem. Reload the page"
-" and try again. If the issue persists, click the Help tab to report the "
+"Your request could not be completed due to a server problem. Reload the page "
+"and try again. If the issue persists, click the Help tab to report the "
 "problem."
 msgstr ""
 "לא ניתן להשלים את בקשתך בגלל בעיה בשרת. טען מחדש את הדף ונסה שוב. אם הבעיה "
@@ -2872,10 +2769,10 @@ msgid ""
 "Create a new team if you can't find an existing team to join, or if you "
 "would like to learn with friends you know."
 msgstr ""
-"צור צוות חדש אם אינך יכול למצוא צוות קיים ולהצטרף אליו או אם ברצונך ללמוד עם"
-" חברים שאתה מכיר."
+"צור צוות חדש אם אינך יכול למצוא צוות קיים ולהצטרף אליו או אם ברצונך ללמוד עם "
+"חברים שאתה מכיר."
 
-#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js
+#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js 
 #: lms/djangoapps/teams/static/teams/templates/team-profile-header-actions.underscore
 msgid "Edit Team"
 msgstr "ערוך צוות"
@@ -2885,8 +2782,8 @@ msgid ""
 "If you make significant changes, make sure you notify members of the team "
 "before making these changes."
 msgstr ""
-"אם אתה מבצע שינויים משמעותיים, ודא שאתה מודיע לחברי הצוות לפני ביצוע שינויים"
-" אלה."
+"אם אתה מבצע שינויים משמעותיים, ודא שאתה מודיע לחברי הצוות לפני ביצוע שינויים "
+"אלה."
 
 #: lms/djangoapps/teams/static/teams/js/views/teams_tab.js
 msgid "Membership"
@@ -2902,7 +2799,7 @@ msgstr "תוכל להסיר חברים מהצוות הזה, במיוחד אם ל
 msgid "Search teams"
 msgstr "חיפוש צוותים"
 
-#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js
+#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js 
 #: lms/djangoapps/discussion/static/discussion/templates/fake-breadcrumbs.underscore
 msgid "All Topics"
 msgstr "כל הנושאים"
@@ -2924,8 +2821,6 @@ msgid "%(team_count)s Team"
 msgid_plural "%(team_count)s Teams"
 msgstr[0] "צוות %(team_count)s"
 msgstr[1] "%(team_count)s צוותים"
-msgstr[2] "%(team_count)s צוותים"
-msgstr[3] "%(team_count)s צוותים"
 
 #: lms/djangoapps/teams/static/teams/js/views/topic_card.js
 msgid "Topic"
@@ -3037,8 +2932,6 @@ msgid "%(errorCount)s error found in form."
 msgid_plural "%(errorCount)s errors found in form."
 msgstr[0] "שגיאה %(errorCount)s נמצאה בטופס."
 msgstr[1] "%(errorCount)s שגיאות נמצאו בטופס."
-msgstr[2] "%(errorCount)s שגיאות נמצאו בטופס."
-msgstr[3] "%(errorCount)s שגיאות נמצאו בטופס."
 
 #: lms/static/js/Markdown.Editor.js
 msgid "Bold (Ctrl+B)"
@@ -3118,9 +3011,8 @@ msgstr "כותרת עליונה"
 
 #: lms/static/js/ajax-error.js
 msgid ""
-"You have been logged out of your edX account. Click Okay to log in again "
-"now. Click Cancel to stay on this page (you must log in again to save your "
-"work)."
+"You have been logged out of your edX account. Click Okay to log in again now."
+" Click Cancel to stay on this page (you must log in again to save your work)."
 msgstr ""
 "יצאת מחשבון edX שלך. לחץ על 'אישור' כדי להיכנס שוב כעת. לחץ על 'ביטול' כדי "
 "להישאר בעמוד (עליך להיכנס שוב כדי לשמור את מה שעשית)."
@@ -3245,8 +3137,8 @@ msgstr "התעודה של <%= user %> כבר נפסלה. בדוק את האיו�
 msgid "Certificate has been successfully invalidated for <%= user %>."
 msgstr "התעודה של <%= user %> נפסלה בהצלחה."
 
-#: lms/static/js/certificates/views/certificate_invalidation_view.js
-#: lms/static/js/certificates/views/certificate_whitelist.js
+#: lms/static/js/certificates/views/certificate_invalidation_view.js 
+#: lms/static/js/certificates/views/certificate_whitelist.js 
 #: lms/static/js/certificates/views/certificate_whitelist_editor.js
 msgid "Server Error, Please refresh the page and try again."
 msgstr "שגיאת שרת, רענן את הדף ונסה שוב."
@@ -3260,8 +3152,8 @@ msgstr ""
 
 #: lms/static/js/certificates/views/certificate_invalidation_view.js
 msgid ""
-"Could not find Certificate Invalidation in the list. Please refresh the page"
-" and try again"
+"Could not find Certificate Invalidation in the list. Please refresh the page "
+"and try again"
 msgstr "לא ניתן למצוא פסילת תעודה ברשימה. רענן את הדף ונסה שוב"
 
 #: lms/static/js/certificates/views/certificate_whitelist.js
@@ -3290,8 +3182,8 @@ msgstr ""
 msgid "There has been an error processing your survey."
 msgstr "אירעה שגיאה בעיבוד הסקר שלך."
 
-#: lms/static/js/courseware/credit_progress.js
-#: lms/templates/discovery/facet.underscore
+#: lms/static/js/courseware/credit_progress.js 
+#: lms/templates/discovery/facet.underscore 
 #: lms/templates/edxnotes/note-item.underscore
 msgid "Less"
 msgstr "פחות"
@@ -3349,7 +3241,7 @@ msgid ""
 "refund."
 msgstr ""
 
-#: lms/static/js/dashboard/legacy.js
+#: lms/static/js/dashboard/legacy.js 
 #: lms/static/js/learner_dashboard/views/unenroll_view.js
 msgid ""
 "Unable to determine whether we should give you a refund because of System "
@@ -3362,15 +3254,13 @@ msgid "Viewing %s course"
 msgid_plural "Viewing %s courses"
 msgstr[0] "מציג קורס %s"
 msgstr[1] "מציג %s קורסים"
-msgstr[2] "מציג %s קורסים"
-msgstr[3] "מציג %s קורסים"
 
 #: lms/static/js/discovery/views/search_form.js
 #, javascript-format
 msgid "We couldn't find any results for \"%s\"."
 msgstr "לא נמצאה אף תוצאה עבור \"%s\"."
 
-#: lms/static/js/discovery/views/search_form.js
+#: lms/static/js/discovery/views/search_form.js 
 #: openedx/features/course_search/static/course_search/templates/search_error.underscore
 msgid "There was an error, try searching again."
 msgstr "אירעה שגיאה, נסה לחפש שוב."
@@ -3428,19 +3318,19 @@ msgstr ""
 msgid "We have encountered an error. Refresh your browser and then try again."
 msgstr ""
 
-#: lms/static/js/discussions_management/views/divided_discussions.js
+#: lms/static/js/discussions_management/views/divided_discussions.js 
 #: lms/static/js/discussions_management/views/divided_discussions_course_wide.js
-#: lms/static/js/discussions_management/views/divided_discussions_inline.js
-#: lms/static/js/groups/views/cohort_form.js
+#:  lms/static/js/discussions_management/views/divided_discussions_inline.js 
+#: lms/static/js/groups/views/cohort_form.js 
 #: lms/static/js/groups/views/cohorts.js
 msgid "We've encountered an error. Refresh your browser and then try again."
 msgstr "אירעה שגיאה. רענן את הדפדפן שלך ואז נסה שוב."
 
-#: lms/static/js/edxnotes/views/notes_visibility_factory.js
+#: lms/static/js/edxnotes/views/notes_visibility_factory.js 
 #: lms/static/js/edxnotes/views/search_box.js
 msgid ""
-"An error has occurred. Make sure that you are connected to the Internet, and"
-" then try refreshing the page."
+"An error has occurred. Make sure that you are connected to the Internet, and "
+"then try refreshing the page."
 msgstr "אירעה שגיאה. ודא כי אתה מחובר לאינטרנט, ואז רענן את הדף."
 
 #: lms/static/js/edxnotes/views/notes_visibility_factory.js
@@ -3479,8 +3369,9 @@ msgstr "פעילות אחרונה"
 msgid "No results found for \"%(query_string)s\". Please try searching again."
 msgstr "לא נמצאו תוצאות עבור \"%(query_string)s\". אנא נסה לחפש שוב."
 
-#: lms/static/js/edxnotes/views/tabs/search_results.js
+#: lms/static/js/edxnotes/views/tabs/search_results.js 
 #: openedx/features/course_search/static/course_search/templates/course_search_results.underscore
+#:  
 #: openedx/features/course_search/static/course_search/templates/dashboard_search_results.underscore
 msgid "Search Results"
 msgstr "תוצאות חיפוש"
@@ -3497,7 +3388,7 @@ msgstr "[no tags]"
 msgid "Unable to submit application"
 msgstr "לא ניתן לשלוח אפליקציה"
 
-#: lms/static/js/financial-assistance/views/financial_assistance_form_view.js
+#: lms/static/js/financial-assistance/views/financial_assistance_form_view.js 
 #: lms/static/js/student_account/views/LoginView.js
 msgid "An error has occurred. Check your Internet connection and try again."
 msgstr "אירעה שגיאה. בדוק את חיבור האינטרנט ונסה שוב."
@@ -3506,7 +3397,7 @@ msgstr "אירעה שגיאה. בדוק את חיבור האינטרנט ונס�
 msgid "Choose one"
 msgstr "בחר אחד"
 
-#: lms/static/js/groups/views/cohort_editor.js
+#: lms/static/js/groups/views/cohort_editor.js 
 #: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore
 msgid "Selected tab"
 msgstr "כרטיסייה שנבחרה"
@@ -3528,24 +3419,18 @@ msgid "{numUsersAdded} learner has been added to this cohort. "
 msgid_plural "{numUsersAdded} learners have been added to this cohort. "
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: lms/static/js/groups/views/cohort_editor.js
 msgid "{numMoved} learner was moved from {prevCohort}"
 msgid_plural "{numMoved} learners were moved from {prevCohort}"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: lms/static/js/groups/views/cohort_editor.js
 msgid "{numPresent} learner was already in the cohort"
 msgid_plural "{numPresent} learners were already in the cohort"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: lms/static/js/groups/views/cohort_editor.js
 msgid "{email}"
@@ -3553,15 +3438,13 @@ msgstr ""
 
 #: lms/static/js/groups/views/cohort_editor.js
 msgid ""
-"{numPreassigned} learner was pre-assigned for this cohort. This learner will"
-" automatically be added to the cohort when they enroll in the course."
+"{numPreassigned} learner was pre-assigned for this cohort. This learner will "
+"automatically be added to the cohort when they enroll in the course."
 msgid_plural ""
 "{numPreassigned} learners were pre-assigned for this cohort. These learners "
 "will automatically be added to the cohort when they enroll in the course."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: lms/static/js/groups/views/cohort_editor.js
 msgid "Unknown username: {user}"
@@ -3576,8 +3459,6 @@ msgid "There was an error when trying to add learners:"
 msgid_plural "{numErrors} learners could not be added to this cohort:"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: lms/static/js/groups/views/cohort_editor.js
 msgid "View all errors"
@@ -3607,15 +3488,15 @@ msgstr "לא ניתן להוסיף את קבוצת הלימוד"
 msgid "You currently have no cohorts configured"
 msgstr "לא מוגדרות כעת קבוצות לימוד"
 
-#: lms/static/js/groups/views/cohorts.js
+#: lms/static/js/groups/views/cohorts.js 
 #: lms/templates/instructor/instructor_dashboard_2/cohorts.underscore
 msgid "Add Cohort"
 msgstr "הוסף קבוצת לימוד"
 
 #: lms/static/js/groups/views/cohorts.js
 msgid ""
-"The {cohortGroupName} cohort has been created. You can manually add students"
-" to this cohort below."
+"The {cohortGroupName} cohort has been created. You can manually add students "
+"to this cohort below."
 msgstr ""
 "קבוצת הלימוד {cohortGroupName} נוצרה. אתה יכול להוסיף סטודנטים בצורה ידנית "
 "לקבוצת לימוד זו. "
@@ -3651,20 +3532,20 @@ msgstr "בטל אפשרות קבוצות לימוד"
 
 #: lms/static/js/groups/views/verified_track_settings_notification.js
 msgid ""
-"This course uses automatic cohorting for verified track learners. You cannot"
-" disable cohorts, and you cannot rename the manual cohort named "
+"This course uses automatic cohorting for verified track learners. You cannot "
+"disable cohorts, and you cannot rename the manual cohort named "
 "'{verifiedCohortName}'. To change the configuration for verified track "
 "cohorts, contact your edX partner manager."
 msgstr ""
 "קורס זה משתמש במחזורי למידה אוטומטיים עבור לומדים במסלול מאומת. אינך יכול "
 "להשבית מחזורי למידה ואינך יכול לשנות את השם של מחזור למידה ידני המכונה "
-"'{verifiedCohortName}'. כדי לשנות את ההגדרה למחזורי למידה עם מעקב מאומת, צור"
-" קשר עם המנהל השותף שלך ב-edX."
+"'{verifiedCohortName}'. כדי לשנות את ההגדרה למחזורי למידה עם מעקב מאומת, צור "
+"קשר עם המנהל השותף שלך ב-edX."
 
 #: lms/static/js/groups/views/verified_track_settings_notification.js
 msgid ""
-"This course has automatic cohorting enabled for verified track learners, but"
-" the required cohort does not exist. You must create a manually-assigned "
+"This course has automatic cohorting enabled for verified track learners, but "
+"the required cohort does not exist. You must create a manually-assigned "
 "cohort named '{verifiedCohortName}' for the feature to work."
 msgstr ""
 "לקורס זה יש מחזור למידה אוטומטי שמופעל עבור לומדים במסלול מאומת, אך מחזור "
@@ -3673,8 +3554,8 @@ msgstr ""
 
 #: lms/static/js/groups/views/verified_track_settings_notification.js
 msgid ""
-"This course has automatic cohorting enabled for verified track learners, but"
-" cohorts are disabled. You must enable cohorts for the feature to work."
+"This course has automatic cohorting enabled for verified track learners, but "
+"cohorts are disabled. You must enable cohorts for the feature to work."
 msgstr ""
 "לקורס זה יש מחזור למידה אוטומטי שמופעל עבור לומדים במסלול מאומת, אך מחזורי "
 "הלמידה מושבתים. עליך להפעיל מחזורי למידה כדי שהתכונה תעבוד."
@@ -3723,9 +3604,9 @@ msgstr "אירעה שגיאה בעת יצירת תוצאות סקר. נא נסה
 msgid "Error generating student profile information. Please try again."
 msgstr "שגיאת בזמן יצירת פרופיל סטודנט. נא נסה שוב."
 
-#: lms/static/js/instructor_dashboard/data_download.js
+#: lms/static/js/instructor_dashboard/data_download.js 
 #: openedx/features/course_bookmarks/static/course_bookmarks/js/views/bookmarks_list.js
-#: cms/templates/js/move-xblock-modal.underscore
+#:  cms/templates/js/move-xblock-modal.underscore 
 #: openedx/features/course_search/static/course_search/templates/search_loading.underscore
 msgid "Loading"
 msgstr "טוען"
@@ -3756,8 +3637,8 @@ msgstr "אירעה שגיאה בעת דוח נתוני ORA. נא נסה שוב."
 
 #: lms/static/js/instructor_dashboard/ecommerce.js
 msgid ""
-"There was a problem creating the report. Select \"Create Executive Summary\""
-" to try again."
+"There was a problem creating the report. Select \"Create Executive Summary\" "
+"to try again."
 msgstr "אירעה בעיה בעת יצירת הדוח. בחר \"צור תקציר מנהלים\" כדי לנסות שוב."
 
 #: lms/static/js/instructor_dashboard/ecommerce.js
@@ -3776,11 +3657,11 @@ msgstr "שחזר קוד הרשמה"
 msgid "Mark enrollment code as unused"
 msgstr "סמן את קוד ההרשמה כ'אינו בשימוש'"
 
-#: lms/static/js/instructor_dashboard/membership.js
-#: lms/static/js/student_account/views/account_settings_factory.js
+#: lms/static/js/instructor_dashboard/membership.js 
+#: lms/static/js/student_account/views/account_settings_factory.js 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
-#: cms/templates/js/transcript-organization-credentials.underscore
-#: lms/djangoapps/support/static/support/templates/manage_user.underscore
+#:  cms/templates/js/transcript-organization-credentials.underscore 
+#: lms/djangoapps/support/static/support/templates/manage_user.underscore 
 #: lms/templates/financial-assistance/financial_assessment_form.underscore
 msgid "Username"
 msgstr "שם משתמש"
@@ -3848,7 +3729,7 @@ msgstr "אזהרות"
 msgid "The following warnings were generated:"
 msgstr "האזהרות הבאות נוצרו:"
 
-#: lms/static/js/instructor_dashboard/membership.js
+#: lms/static/js/instructor_dashboard/membership.js 
 #: lms/static/js/views/fields.js
 msgid "Success"
 msgstr "הצלחה"
@@ -4021,8 +3902,8 @@ msgstr ""
 
 #: lms/static/js/instructor_dashboard/send_email.js
 msgid ""
-"You are sending an email message with the subject {subject} to the following"
-" recipients."
+"You are sending an email message with the subject {subject} to the following "
+"recipients."
 msgstr "אתה שולח הודעת דואר אלקטרוני עם הנושא {subject} לנמענים הבאים."
 
 #: lms/static/js/instructor_dashboard/send_email.js
@@ -4058,8 +3939,8 @@ msgid ""
 "Error getting student progress url for '<%- student_id %>'. Make sure that "
 "the student identifier is spelled correctly."
 msgstr ""
-"שגיאה בקבלת כתובת URL של התקדמות הסטודנט עבור '<%- student_id %>'. ודא שמזהה"
-" הסטודנט מאוית כהלכה."
+"שגיאה בקבלת כתובת URL של התקדמות הסטודנט עבור '<%- student_id %>'. ודא שמזהה "
+"הסטודנט מאוית כהלכה."
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid "Please enter a problem location."
@@ -4075,12 +3956,12 @@ msgstr ""
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid ""
-"Error resetting problem attempts for problem '<%= problem_id %>' and student"
-" '<%- student_id %>'. Make sure that the problem and student identifiers are"
-" complete and correct."
+"Error resetting problem attempts for problem '<%= problem_id %>' and student "
+"'<%- student_id %>'. Make sure that the problem and student identifiers are "
+"complete and correct."
 msgstr ""
-"שגיאת איפוס נסיונות עבור בעיה '<%= problem_id %>'  וסטודנט '<%- student_id "
-"%>'. ודא שמזהה הבעיה והתלמיד הם מלאים ונכונים."
+"שגיאת איפוס נסיונות עבור בעיה '<%= problem_id %>'  וסטודנט '<%- student_id %>"
+"'. ודא שמזהה הבעיה והתלמיד הם מלאים ונכונים."
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid ""
@@ -4090,12 +3971,12 @@ msgstr ""
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid ""
-"Error deleting student '<%- student_id %>'s state on problem '<%- problem_id"
-" %>'. Make sure that the problem and student identifiers are complete and "
+"Error deleting student '<%- student_id %>'s state on problem '<%- problem_id "
+"%>'. Make sure that the problem and student identifiers are complete and "
 "correct."
 msgstr ""
-"טעות במחיקת מצב הבעיה של הסטודנט '<%- student_id %>' בבעיה '<%- problem_id "
-"%>'. ודא כי מזהי הבעיה והסטודנט שלמים ומדויקים. "
+"טעות במחיקת מצב הבעיה של הסטודנט '<%- student_id %>' בבעיה '<%- problem_id %>"
+"'. ודא כי מזהי הבעיה והסטודנט שלמים ומדויקים. "
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid "Module state successfully deleted."
@@ -4116,8 +3997,8 @@ msgstr "בחינת כניסה עבור סטודנט '{student_id}' בתהליך 
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid ""
-"Error resetting entrance exam attempts for student '{student_id}'. Make sure"
-" student identifier is correct."
+"Error resetting entrance exam attempts for student '{student_id}'. Make sure "
+"student identifier is correct."
 msgstr ""
 "טעות באיפוס ניסיונות לבחינת הכניסה עבור סטודנט  '{student_id}'. ודא כי מזהה "
 "הסטודנט מדויק. "
@@ -4128,15 +4009,14 @@ msgstr "הזן שם משתמש או כתובת דואר אלקטרוני של ס
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid ""
-"Do you want to allow this student ('{student_id}') to skip the entrance "
-"exam?"
+"Do you want to allow this student ('{student_id}') to skip the entrance exam?"
 msgstr ""
 "האם אתה מעוניין לאפשר לסטודנט זה ('{student_id}')  לדלג על מבחן הכניסה? "
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid ""
-"An error occurred. Make sure that the student's username or email address is"
-" correct and try again."
+"An error occurred. Make sure that the student's username or email address is "
+"correct and try again."
 msgstr ""
 "אירעה שגיאה. אנא ודא כי שם המשתמש של הסטודנט או כתובת הדואר האלקטרוני שלו "
 "נכונה ונסה שוב."
@@ -4150,8 +4030,8 @@ msgid ""
 "Error deleting entrance exam state for student '{student_id}'. Make sure "
 "student identifier is correct."
 msgstr ""
-"טעות במחיקה של מצב מבחן הכניסה עבור סטודנט '{student_id}'. ודא שמזהה הסטודנט"
-" נכון. "
+"טעות במחיקה של מצב מבחן הכניסה עבור סטודנט '{student_id}'. ודא שמזהה הסטודנט "
+"נכון. "
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid ""
@@ -4167,8 +4047,8 @@ msgstr "אפס ניסיונות עבור כל הסטודנטים בבעיה  '<%
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid ""
-"Successfully started task to reset attempts for problem '<%- problem_id %>'."
-" Click the 'Show Task Status' button to see the status of the task."
+"Successfully started task to reset attempts for problem '<%- problem_id %>'. "
+"Click the 'Show Task Status' button to see the status of the task."
 msgstr ""
 "הותחלה בהצלחה המשימה לאיפוס נסיונות עבור בעיה '<%- problem_id %>'. לחץ על "
 "לחצן 'הצג סטטוס ניסיונות' כדי לראות את סטטוס המשימה."
@@ -4188,18 +4068,18 @@ msgstr "שגיאה ברישום היסטורית משימות עבור סטוד�
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid ""
-"Started rescore problem task for problem '<%- problem_id %>' and student "
-"'<%- student_id %>'. Click the 'Show Task Status' button to see the status "
-"of the task."
+"Started rescore problem task for problem '<%- problem_id %>' and student '<%-"
+" student_id %>'. Click the 'Show Task Status' button to see the status of "
+"the task."
 msgstr ""
-"הופעלה משימה לחישוב ציונים מחדש עבור בעיה  '<%- problem_id %>' וסטודנט  '<%-"
-" student_id %>'. לחץ על לחצן 'הצג סטטוס משימות' כדי לראות את סטטוס המשימה."
+"הופעלה משימה לחישוב ציונים מחדש עבור בעיה  '<%- problem_id %>' וסטודנט  '<%- "
+"student_id %>'. לחץ על לחצן 'הצג סטטוס משימות' כדי לראות את סטטוס המשימה."
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid ""
-"Error starting a task to rescore problem '<%- problem_id %>' for student "
-"'<%- student_id %>'. Make sure that the the problem and student identifiers "
-"are complete and correct."
+"Error starting a task to rescore problem '<%- problem_id %>' for student '<%-"
+" student_id %>'. Make sure that the the problem and student identifiers are "
+"complete and correct."
 msgstr ""
 "שגיאה בזמן הפעלת משימה לחישוב ציונים מחדש עבור בעיה  '<%- problem_id %>' של "
 "סטודנט '<%- student_id %>'. ודא שמזהה הבעיה והתלמיד הם מלאים ונכונים."
@@ -4227,8 +4107,8 @@ msgid ""
 "Started entrance exam rescore task for student '{student_id}'. Click the "
 "'Show Task Status' button to see the status of the task."
 msgstr ""
-"החל תהליך ציון מחדש עבור מבחן כניסה לסטודנט '{student_id}'. לחץ על לחצן 'הצג"
-" סטטוס משימות' כדי להציג את סטטוס המשימה."
+"החל תהליך ציון מחדש עבור מבחן כניסה לסטודנט '{student_id}'. לחץ על לחצן 'הצג "
+"סטטוס משימות' כדי להציג את סטטוס המשימה."
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid ""
@@ -4253,11 +4133,11 @@ msgstr ""
 
 #: lms/static/js/instructor_dashboard/student_admin.js
 msgid ""
-"Error starting a task to rescore problem '<%- problem_id %>'. Make sure that"
-" the problem identifier is complete and correct."
+"Error starting a task to rescore problem '<%- problem_id %>'. Make sure that "
+"the problem identifier is complete and correct."
 msgstr ""
-"שגיאה בהתחלת משימה לתת ציון מחדש לבעיה  '<%- problem_id %>'. ודא שמזהה הבעיה"
-" מושלם ונכון. "
+"שגיאה בהתחלת משימה לתת ציון מחדש לבעיה  '<%- problem_id %>'. ודא שמזהה הבעיה "
+"מושלם ונכון. "
 
 #. Translators: a "Task" is a background process such as grading students or
 #. sending email
@@ -4315,8 +4195,8 @@ msgstr "התקדמות המשימה"
 
 #: lms/static/js/instructor_dashboard/util.js
 msgid ""
-"An error occurred retrieving your email. Please try again later, and contact"
-" technical support if the problem persists."
+"An error occurred retrieving your email. Please try again later, and contact "
+"technical support if the problem persists."
 msgstr ""
 "אירעה שגיאה באחזור הדואר האלקטרוני שלך. אנא נסה שוב מאוחר יותר. אם הבעיה "
 "נמשכת, פנה לתמיכה טכנית. "
@@ -4412,12 +4292,12 @@ msgstr ""
 msgid "There was an error. Please reload the page and try again."
 msgstr ""
 
-#: lms/static/js/learner_dashboard/views/course_entitlement_view.js
+#: lms/static/js/learner_dashboard/views/course_entitlement_view.js 
 #: lms/templates/learner_dashboard/course_entitlement.underscore
 msgid "Change Session"
 msgstr ""
 
-#: lms/static/js/learner_dashboard/views/course_entitlement_view.js
+#: lms/static/js/learner_dashboard/views/course_entitlement_view.js 
 #: lms/templates/learner_dashboard/course_entitlement.underscore
 msgid "Select Session"
 msgstr ""
@@ -4505,7 +4385,7 @@ msgstr ""
 msgid "Could not override problem score for {user}."
 msgstr ""
 
-#: lms/static/js/student_account/components/PasswordResetConfirmation.jsx
+#: lms/static/js/student_account/components/PasswordResetConfirmation.jsx 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Reset Your Password"
 msgstr "אפס את סיסמתך"
@@ -4534,7 +4414,7 @@ msgstr ""
 msgid "Error: "
 msgstr ""
 
-#: lms/static/js/student_account/components/StudentAccountDeletion.jsx
+#: lms/static/js/student_account/components/StudentAccountDeletion.jsx 
 #: lms/static/js/student_account/components/StudentAccountDeletionModal.jsx
 msgid ""
 "You may also lose access to verified certificates and other program "
@@ -4567,13 +4447,13 @@ msgstr ""
 #: lms/static/js/student_account/components/StudentAccountDeletion.jsx
 msgid ""
 "Once your account is deleted, you cannot use it to take courses on the edX "
-"app, edx.org, or any other site hosted by edX. This includes access to "
-"edx.org from your employer’s or university’s system and access to private "
-"sites offered by MIT Open Learning, Wharton Executive Education, and Harvard"
-" Medical School."
+"app, edx.org, or any other site hosted by edX. This includes access to edx."
+"org from your employer’s or university’s system and access to private sites "
+"offered by MIT Open Learning, Wharton Executive Education, and Harvard "
+"Medical School."
 msgstr ""
 
-#: lms/static/js/student_account/components/StudentAccountDeletion.jsx
+#: lms/static/js/student_account/components/StudentAccountDeletion.jsx 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Delete My Account"
 msgstr ""
@@ -4602,18 +4482,18 @@ msgstr ""
 
 #: lms/static/js/student_account/components/StudentAccountDeletionModal.jsx
 msgid ""
-"You have selected “Delete my account.” Deletion of your account and personal"
-" data is permanent and cannot be undone. EdX will not be able to recover "
-"your account or the data that is deleted."
+"You have selected “Delete my account.” Deletion of your account and personal "
+"data is permanent and cannot be undone. EdX will not be able to recover your "
+"account or the data that is deleted."
 msgstr ""
 
 #: lms/static/js/student_account/components/StudentAccountDeletionModal.jsx
 msgid ""
 "If you proceed, you will be unable to use this account to take courses on "
 "the edX app, edx.org, or any other site hosted by edX. This includes access "
-"to edx.org from your employer’s or university’s system and access to private"
-" sites offered by MIT Open Learning, Wharton Executive Education, and "
-"Harvard Medical School."
+"to edx.org from your employer’s or university’s system and access to private "
+"sites offered by MIT Open Learning, Wharton Executive Education, and Harvard "
+"Medical School."
 msgstr ""
 
 #: lms/static/js/student_account/components/StudentAccountDeletionModal.jsx
@@ -4633,8 +4513,8 @@ msgstr ""
 #: lms/static/js/student_account/components/StudentAccountDeletionModal.jsx
 msgid ""
 "Account deletion, including removal from email lists, may take a few weeks "
-"to fully process through our system. If you want to opt-out of emails before"
-" then, please unsubscribe from the footer of any email."
+"to fully process through our system. If you want to opt-out of emails before "
+"then, please unsubscribe from the footer of any email."
 msgstr ""
 
 #: lms/static/js/student_account/tos_modal.js
@@ -4657,7 +4537,7 @@ msgstr "הוספת הקורס שנבחר לעגלת הקניות שלך"
 msgid "Loading your courses"
 msgstr "טוען את הקורסים שלך"
 
-#: lms/static/js/student_account/views/FormView.js
+#: lms/static/js/student_account/views/FormView.js 
 #: lms/static/js/student_account/views/RegisterView.js
 msgid "An error occurred."
 msgstr "אירעה שגיאה."
@@ -4678,7 +4558,7 @@ msgstr "לא ניתן לחבר אותך."
 msgid "An error occurred when signing you in to %s."
 msgstr "אירעה שגיאה בזמן החיבור שלך ל-%s."
 
-#: lms/static/js/student_account/views/LoginView.js
+#: lms/static/js/student_account/views/LoginView.js 
 #: lms/templates/verify_student/intro_step.underscore
 msgid "Check Your Email"
 msgstr "בדוק את הדואר האלקטרוני שלך"
@@ -4687,18 +4567,18 @@ msgstr "בדוק את הדואר האלקטרוני שלך"
 msgid ""
 "{paragraphStart}You entered {boldStart}{email}{boldEnd}. If this email "
 "address is associated with your {platform_name} account, we will send a "
-"message with password reset instructions to this email "
-"address.{paragraphEnd}{paragraphStart}If you do not receive a password reset"
-" message, verify that you entered the correct email address, or check your "
-"spam folder.{paragraphEnd}{paragraphStart}If you need further assistance, "
-"{anchorStart}contact technical support{anchorEnd}.{paragraphEnd}"
+"message with password reset instructions to this email address.{paragraphEnd}"
+"{paragraphStart}If you do not receive a password reset message, verify that "
+"you entered the correct email address, or check your spam folder."
+"{paragraphEnd}{paragraphStart}If you need further assistance, {anchorStart}"
+"contact technical support{anchorEnd}.{paragraphEnd}"
 msgstr ""
-"{paragraphStart}הזנת {boldStart}{email}{boldEnd}. אם כתובת הדוא\"ל הזו קשורה"
-" לחשבון {platform_name} שלך, נשלח הודעה עם הנחיות לאיפוס הסיסמה לכתובת "
+"{paragraphStart}הזנת {boldStart}{email}{boldEnd}. אם כתובת הדוא\"ל הזו קשורה "
+"לחשבון {platform_name} שלך, נשלח הודעה עם הנחיות לאיפוס הסיסמה לכתובת "
 "הדוא\"ל הזו.{paragraphEnd}{paragraphStart}אם לא תקבל הודעה לאיפוס סיסמה, "
-"בדוק שהזנת את הכתובת הנכונה או בדוק בתיקיית דואר הזבל "
-"אצלך.{paragraphEnd}{paragraphStart}אם יש לך צורך בעזרה נוספת, "
-"{anchorStart}פנה לתמיכה הטכנית{anchorEnd}.{paragraphEnd}"
+"בדוק שהזנת את הכתובת הנכונה או בדוק בתיקיית דואר הזבל אצלך.{paragraphEnd}"
+"{paragraphStart}אם יש לך צורך בעזרה נוספת, {anchorStart}פנה לתמיכה "
+"הטכנית{anchorEnd}.{paragraphEnd}"
 
 #: lms/static/js/student_account/views/LoginView.js
 msgid ""
@@ -4709,8 +4589,8 @@ msgstr "אירעה שגיאה. נסה לרענן את הדף או בדוק את 
 #: lms/static/js/student_account/views/LoginView.js
 msgid ""
 "You have successfully signed into %(currentProvider)s, but your "
-"%(currentProvider)s account does not have a linked %(platformName)s account."
-" To link your accounts, sign in now using your %(platformName)s password."
+"%(currentProvider)s account does not have a linked %(platformName)s account. "
+"To link your accounts, sign in now using your %(platformName)s password."
 msgstr ""
 "נרשמת בהצלחה ל-%(currentProvider)s, אך לחשבון %(currentProvider)sאין חשבון "
 "%(platformName)s מקושר. כדי לקשר את חשבונותייך, היכנס כעת באמצעות סיסמת "
@@ -4720,7 +4600,7 @@ msgstr ""
 msgid "We couldn't create your account."
 msgstr "לא ניתן ליצור את החשבון שלך. "
 
-#: lms/static/js/student_account/views/RegisterView.js
+#: lms/static/js/student_account/views/RegisterView.js 
 #: lms/templates/student_account/register.underscore
 msgid "Create Account"
 msgstr ""
@@ -4754,7 +4634,7 @@ msgid ""
 "You receive messages from {platform_name} and course teams at this address."
 msgstr ""
 
-#: lms/static/js/student_account/views/account_settings_factory.js
+#: lms/static/js/student_account/views/account_settings_factory.js 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "Full Name"
 msgstr "שם מלא"
@@ -4780,14 +4660,16 @@ msgstr "פרטי חשבון בסיסיים"
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "These settings include basic information about your account."
 msgstr ""
+"הגדרות אלו כוללות מידע בסיסי אודות חשבונך.\n"
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid ""
 "The name that identifies you on {platform_name}. You cannot change your "
 "username."
 msgstr ""
+"השם שמזהה אותך דרך {platform_name}. לא ניתן לשנות את שם המשתמש.\n"
 
-#: lms/static/js/student_account/views/account_settings_factory.js
+#: lms/static/js/student_account/views/account_settings_factory.js 
 #: lms/templates/student_account/account.underscore
 msgid "Password"
 msgstr "סיסמה"
@@ -4840,7 +4722,7 @@ msgstr "מגדר"
 msgid "Year of Birth"
 msgstr "שנת לידה"
 
-#: lms/static/js/student_account/views/account_settings_factory.js
+#: lms/static/js/student_account/views/account_settings_factory.js 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "Preferred Language"
 msgstr "שפה מועדפת"
@@ -4863,7 +4745,7 @@ msgstr ""
 msgid "Enter your "
 msgstr ""
 
-#: lms/static/js/student_account/views/account_settings_factory.js
+#: lms/static/js/student_account/views/account_settings_factory.js 
 #: lms/static/js/student_account/views/account_settings_view.js
 msgid "Linked Accounts"
 msgstr "חשבונות מקושרים"
@@ -4906,8 +4788,8 @@ msgid ""
 "We've sent a confirmation message to {new_email_address}. Click the link in "
 "the message to update your email address."
 msgstr ""
-"שלחנו הודעת אישור אל {new_email_address}. לחץ על הקישור שבהודעה כדי לעדכן את"
-" כתובת הדואר האלקטרוני שלך."
+"שלחנו הודעת אישור אל {new_email_address}. לחץ על הקישור שבהודעה כדי לעדכן את "
+"כתובת הדואר האלקטרוני שלך."
 
 #: lms/static/js/student_account/views/account_settings_fields.js
 msgid ""
@@ -4916,8 +4798,8 @@ msgstr "עליך לצאת מהחשבון ולהכנס חזרה על מנת שש�
 
 #: lms/static/js/student_account/views/account_settings_fields.js
 msgid ""
-"We've sent a message to {email}. Click the link in the message to reset your"
-" password. Didn't receive the message? Contact {anchorStart}technical "
+"We've sent a message to {email}. Click the link in the message to reset your "
+"password. Didn't receive the message? Contact {anchorStart}technical "
 "support{anchorEnd}."
 msgstr ""
 
@@ -4933,8 +4815,7 @@ msgstr "הסר את הקישור של חשבון זה"
 msgid ""
 "You can use your {accountName} account to sign in to your {platformName} "
 "account."
-msgstr ""
-"ניתן לקשר את חשבון {accountName} שלך כדי להתחבר לחשבון {platformName}."
+msgstr "ניתן לקשר את חשבון {accountName} שלך כדי להתחבר לחשבון {platformName}."
 
 #: lms/static/js/student_account/views/account_settings_fields.js
 msgid "Unlink your {accountName} account"
@@ -4980,12 +4861,12 @@ msgstr "שגיאה בהעלאת תמונה"
 msgid "Please verify that you have uploaded a valid image (PNG and JPEG)."
 msgstr "אנא ודא שהעלת תמונה חוקית (PNG ו- JPEG)."
 
-#: lms/static/js/verify_student/views/incourse_reverify_view.js
+#: lms/static/js/verify_student/views/incourse_reverify_view.js 
 #: lms/static/js/verify_student/views/review_photos_step_view.js
 msgid "An error has occurred. Please try again later."
 msgstr "אירעה שגיאה. אנא נסה שוב מאוחר יותר."
 
-#: lms/static/js/verify_student/views/incourse_reverify_view.js
+#: lms/static/js/verify_student/views/incourse_reverify_view.js 
 #: lms/static/js/verify_student/views/review_photos_step_view.js
 msgid "Could not submit photos"
 msgstr "לא ניתן להעלות תמונות"
@@ -5028,8 +4909,9 @@ msgstr "כל אפשרויות התשלום אינן זמינות כרגע."
 msgid "Try the transaction again in a few minutes."
 msgstr "נסה לבצע את ההעברה שוב בעוד מספר דקות."
 
-#: lms/static/js/verify_student/views/make_payment_step_view.js
+#: lms/static/js/verify_student/views/make_payment_step_view.js 
 #: openedx/features/course_bookmarks/static/course_bookmarks/js/views/bookmark_button.js
+#:  
 #: openedx/features/course_bookmarks/static/course_bookmarks/js/views/bookmarks_list.js
 msgid "An error has occurred. Please try again."
 msgstr "אירעה שגיאה. אנא נסה שוב."
@@ -5098,7 +4980,7 @@ msgstr "ניתן לעריכה"
 msgid "Validation Error"
 msgstr "שגיאת אימות"
 
-#: lms/static/js/views/fields.js
+#: lms/static/js/views/fields.js 
 #: lms/templates/learner_dashboard/program_card.underscore
 msgid "In Progress"
 msgstr "בביצוע"
@@ -5143,8 +5025,8 @@ msgstr "העלאה מתבצעת. כדי להימנע משגיאות, הישאר 
 
 #: lms/static/js/views/image_field.js
 msgid ""
-"Removal is in progress. To avoid errors, stay on this page until the process"
-" is complete."
+"Removal is in progress. To avoid errors, stay on this page until the process "
+"is complete."
 msgstr "הסרה מתבצעת. כדי להימנע משגיאות, הישאר בעמוד זה עד שהתהליך יושלם."
 
 #: lms/static/js/views/image_field.js
@@ -5176,24 +5058,18 @@ msgid "%(num_students)s student opened Subsection"
 msgid_plural "%(num_students)s students opened Subsection"
 msgstr[0] "סטודנט %(num_students)s פתח תת סעיף"
 msgstr[1] "%(num_students)s סטודנטים פתחו תת פרק"
-msgstr[2] "%(num_students)s סטודנטים פתחו תת פרק"
-msgstr[3] "%(num_students)s סטודנטים פתחו תת פרק"
 
 #: lms/templates/class_dashboard/d3_stacked_bar_graph.js
 msgid "%(num_students)s student"
 msgid_plural "%(num_students)s students"
 msgstr[0] "סטודנט %(num_students)s"
 msgstr[1] "%(num_students)s סטודנטים"
-msgstr[2] "%(num_students)s סטודנטים"
-msgstr[3] "%(num_students)s סטודנטים"
 
 #: lms/templates/class_dashboard/d3_stacked_bar_graph.js
 msgid "%(num_questions)s question"
 msgid_plural "%(num_questions)s questions"
 msgstr[0] "שאלה %(num_questions)s"
 msgstr[1] "%(num_questions)s שאלות"
-msgstr[2] "%(num_questions)s שאלות"
-msgstr[3] "%(num_questions)s שאלות"
 
 #: lms/templates/class_dashboard/d3_stacked_bar_graph.js
 msgid "Number of Students"
@@ -5224,32 +5100,30 @@ msgid "{total_results} result"
 msgid_plural "{total_results} results"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "Profile Visibility:"
-msgstr ""
+msgstr "מדרסה יכולים לראות את:"
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "Limited Profile"
-msgstr ""
+msgstr "פרופיל חלקי"
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "Full Profile"
-msgstr ""
+msgstr "פרופיל מלא"
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "Joined"
-msgstr ""
+msgstr "תאריך הצטרפות"
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "Joined Date"
-msgstr ""
+msgstr "תאריך הצטרפות"
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "Location"
-msgstr ""
+msgstr "מיקום"
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "Add Country"
@@ -5261,7 +5135,7 @@ msgstr ""
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "About me"
-msgstr ""
+msgstr "על עצמי"
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid ""
@@ -5299,7 +5173,7 @@ msgstr ""
 
 #: openedx/features/learner_profile/static/learner_profile/js/views/learner_profile_view.js
 msgid "About Me"
-msgstr ""
+msgstr "על עצמי"
 
 #: openedx/features/learner_profile/static/learner_profile/js/views/learner_profile_view.js
 msgid "Accomplishments"
@@ -5309,7 +5183,7 @@ msgstr ""
 msgid "Profile"
 msgstr ""
 
-#: cms/static/cms/js/main.js cms/static/js/views/active_video_upload_list.js
+#: cms/static/cms/js/main.js cms/static/js/views/active_video_upload_list.js 
 #: cms/static/js/views/video_transcripts.js
 msgid ""
 "This may be happening because of an error with our server or your internet "
@@ -5361,7 +5235,7 @@ msgstr "כן, אפשר עריכות בתעודה הפעילה"
 
 #. Translators: This field pertains to the custom label for a certificate.
 #. Translators: this refers to a collection of certificates.
-#: cms/static/js/certificates/views/certificate_item.js
+#: cms/static/js/certificates/views/certificate_item.js 
 #: cms/static/js/certificates/views/certificates_list.js
 msgid "certificate"
 msgstr "תעודה"
@@ -5380,14 +5254,14 @@ msgstr "לא יצרת אף תעודה עדיין."
 msgid "Delete \"<%= signatoryName %>\" from the list of signatories?"
 msgstr "למחוק את \"<%= signatoryName %>\" מרשימת החתימות?"
 
-#: cms/static/js/certificates/views/signatory_editor.js
+#: cms/static/js/certificates/views/signatory_editor.js 
 #: cms/static/js/views/course_info_update.js
 msgid "This action cannot be undone."
 msgstr "לא ניתן לבטל פעולה זו."
 
-#: cms/static/js/certificates/views/signatory_editor.js
-#: cms/static/js/views/course_info_update.js cms/static/js/views/list_item.js
-#: cms/static/js/views/show_textbook.js cms/static/js/views/tabs.js
+#: cms/static/js/certificates/views/signatory_editor.js 
+#: cms/static/js/views/course_info_update.js cms/static/js/views/list_item.js 
+#: cms/static/js/views/show_textbook.js cms/static/js/views/tabs.js 
 #: cms/static/js/views/utils/xblock_utils.js
 msgid "Deleting"
 msgstr ""
@@ -5422,18 +5296,17 @@ msgstr "כבר חבר בצוות הקורס"
 
 #: cms/static/js/factories/manage_users.js
 msgid ""
-"Are you sure you want to delete {email} from the course team for "
-"“{container}”?"
-msgstr ""
-"האם אתה בטוח שאתה רוצה למחוק  {email} מצוות הקורס עבור “{container}”? "
+"Are you sure you want to delete {email} from the course team for “{container}"
+"”?"
+msgstr "האם אתה בטוח שאתה רוצה למחוק  {email} מצוות הקורס עבור “{container}”? "
 
-#: cms/static/js/factories/manage_users.js
-#: cms/static/js/factories/manage_users_lib.js
+#: cms/static/js/factories/manage_users.js 
+#: cms/static/js/factories/manage_users_lib.js 
 #: common/static/common/templates/discussion/thread-list-item.underscore
 msgid "Staff"
 msgstr "צוות"
 
-#: cms/static/js/factories/manage_users.js
+#: cms/static/js/factories/manage_users.js 
 #: cms/static/js/factories/manage_users_lib.js
 msgid "Admin"
 msgstr "מנהל"
@@ -5443,8 +5316,7 @@ msgid "Already a library team member"
 msgstr "כבר חבר בצוות הספרייה"
 
 #: cms/static/js/factories/manage_users_lib.js
-msgid ""
-"Are you sure you want to delete {email} from the library “{container}”?"
+msgid "Are you sure you want to delete {email} from the library “{container}”?"
 msgstr "האם אתה בטוח שאתה רוצה למחוק את {email} מספריית “{container}”?"
 
 #: cms/static/js/factories/manage_users_lib.js
@@ -5459,7 +5331,7 @@ msgstr "הסתר הגדרות מיושנות"
 msgid "Show Deprecated Settings"
 msgstr "הצג הגדרות מיושנות"
 
-#: cms/static/js/factories/textbooks.js
+#: cms/static/js/factories/textbooks.js 
 #: cms/static/js/views/pages/group_configurations.js
 msgid "You have unsaved changes. Do you really want to leave this page?"
 msgstr ""
@@ -5481,8 +5353,7 @@ msgid "Choose new file"
 msgstr ""
 
 #: cms/static/js/features/import/factories/import.js
-msgid ""
-"File format not supported. Please upload a file with a {ext} extension."
+msgid "File format not supported. Please upload a file with a {ext} extension."
 msgstr ""
 
 #: cms/static/js/features/import/factories/import.js
@@ -5616,8 +5487,7 @@ msgstr "תאריך תחילת הקורס חייב להיות מאוחר יותר
 
 #: cms/static/js/models/settings/course_details.js
 msgid "The enrollment start date cannot be after the enrollment end date."
-msgstr ""
-"תאריך התחלת ההרשמה לקורס אינו יכול להיות לפני תאריך סיום ההרשמה לקורס."
+msgstr "תאריך התחלת ההרשמה לקורס אינו יכול להיות לפני תאריך סיום ההרשמה לקורס."
 
 #: cms/static/js/models/settings/course_details.js
 msgid "The enrollment end date cannot be after the course end date."
@@ -5685,8 +5555,8 @@ msgid ""
 "<%= fileExtensions %> to upload."
 msgstr ""
 
-#: lms/templates/student_account/hinted_login.underscore
-#: lms/templates/student_account/institution_login.underscore
+#: lms/templates/student_account/hinted_login.underscore 
+#: lms/templates/student_account/institution_login.underscore 
 #: lms/templates/student_account/institution_register.underscore
 msgid "or"
 msgstr "או"
@@ -5736,8 +5606,8 @@ msgid ""
 "{filename} is not in a supported file format. Supported file formats are "
 "{supportedFileFormats}."
 msgstr ""
-"הפורמט של {filename} אינו נתמך. סוגי הקבצים שנתמכים הם "
-"{supportedFileFormats}."
+"הפורמט של {filename} אינו נתמך. סוגי הקבצים שנתמכים הם {supportedFileFormats}"
+"."
 
 #: cms/static/js/views/active_video_upload_list.js
 msgid "{filename} exceeds maximum size of {maxFileSizeInGB} GB."
@@ -5759,22 +5629,24 @@ msgstr "אישור למחיקת הקובץ"
 msgid ""
 "Are you sure you wish to delete this item. It cannot be reversed!\n"
 "\n"
-"Also any content that links/refers to this item will no longer work (e.g. broken images and/or links)"
+"Also any content that links/refers to this item will no longer work (e.g. "
+"broken images and/or links)"
 msgstr ""
 "האם אתה בטוח שברצונך למחוק פריט זה. לא ניתן יהיה לשחזר את הפעולה!\n"
 "\n"
-"בנוסף, כל תוכן שמקשר/מתייחס לפריט זה לא יעבוד יותר (לדוגמה, תמונות ו/או קישורים שבורים)"
+"בנוסף, כל תוכן שמקשר/מתייחס לפריט זה לא יעבוד יותר (לדוגמה, תמונות ו/או "
+"קישורים שבורים)"
 
 #: cms/static/js/views/asset.js
 msgid "Your file has been deleted."
 msgstr "הקובץ שלך נמחק"
 
-#: cms/static/js/views/assets.js cms/templates/js/asset-library.underscore
+#: cms/static/js/views/assets.js cms/templates/js/asset-library.underscore 
 #: cms/templates/js/previous-video-upload-list.underscore
 msgid "Date Added"
 msgstr "נוסף תאריך"
 
-#: cms/static/js/views/assets.js cms/templates/js/asset-library.underscore
+#: cms/static/js/views/assets.js cms/templates/js/asset-library.underscore 
 #: lms/djangoapps/support/static/support/templates/certificates_results.underscore
 msgid "Type"
 msgstr "סוג"
@@ -5795,8 +5667,7 @@ msgstr ""
 msgid "Max file size exceeded"
 msgstr "הגודל המקסימלי של הקובץ חרג יתר על המידה"
 
-#: cms/static/js/views/assets.js
-#: cms/templates/js/asset-upload-modal.underscore
+#: cms/static/js/views/assets.js cms/templates/js/asset-upload-modal.underscore
 msgid "Upload New File"
 msgstr "העלה קובץ חדש"
 
@@ -5804,7 +5675,7 @@ msgstr "העלה קובץ חדש"
 msgid "Load Another File"
 msgstr "טען קובץ אחר"
 
-#: cms/static/js/views/components/add_xblock.js
+#: cms/static/js/views/components/add_xblock.js 
 #: cms/static/js/views/utils/xblock_utils.js
 msgid "Adding"
 msgstr "מוסיף"
@@ -5845,7 +5716,7 @@ msgstr ""
 msgid "Settings updated"
 msgstr ""
 
-#: cms/static/js/views/course_video_settings.js
+#: cms/static/js/views/course_video_settings.js 
 #: cms/templates/js/course-video-settings-update-settings-footer.underscore
 msgid "Last updated"
 msgstr ""
@@ -5882,8 +5753,8 @@ msgid ""
 "valid and do not display any error messages."
 msgstr ""
 "יצוא של רכיב אחד לפחות ל-XML, נכשל. מומלץ לגשת לעמוד העריכה ולתקן את השגיאה "
-"לפני ביצוע יצוא נוסף. אנא בדוק את חוקיות כל הרכיבים בעמוד וכי הם אינם מציגים"
-" הודעות שגיאה.  "
+"לפני ביצוע יצוא נוסף. אנא בדוק את חוקיות כל הרכיבים בעמוד וכי הם אינם מציגים "
+"הודעות שגיאה.  "
 
 #: cms/static/js/views/export.js
 msgid "Correct failed component"
@@ -5899,8 +5770,8 @@ msgid ""
 "to identify the failed component. Inspect your library to identify any "
 "problematic components and try again."
 msgstr ""
-"לא ניתן לייצא את ספרייתך לקובץ XML. אין מידע  במידה מספקת לזיהוי הרכיב "
-"הכושל. בדוק את ספרייתך, זהה רכיבים בעיתיים ולאחר מכן נסה שוב. "
+"לא ניתן לייצא את ספרייתך לקובץ XML. אין מידע  במידה מספקת לזיהוי הרכיב הכושל."
+" בדוק את ספרייתך, זהה רכיבים בעיתיים ולאחר מכן נסה שוב. "
 
 #: cms/static/js/views/export.js
 msgid "Take me to the main library page"
@@ -5908,8 +5779,8 @@ msgstr "עבור לעמוד הספריה הראשי"
 
 #: cms/static/js/views/export.js
 msgid ""
-"Your course could not be exported to XML. There is not enough information to"
-" identify the failed component. Inspect your course to identify any "
+"Your course could not be exported to XML. There is not enough information to "
+"identify the failed component. Inspect your course to identify any "
 "problematic components and try again."
 msgstr ""
 "לא ניתן לייצא את הקורס ל-XML. אין מידע במידה מספקת על מנת לזהות את הרכיב "
@@ -5934,10 +5805,8 @@ msgid "Contains {count} group"
 msgid_plural "Contains {count} groups"
 msgstr[0] "כולל קבוצה {count}"
 msgstr[1] "כולל {count} קבוצות"
-msgstr[2] "כולל {count} קבוצות"
-msgstr[3] "כולל {count} קבוצות"
 
-#: cms/static/js/views/group_configuration_details.js
+#: cms/static/js/views/group_configuration_details.js 
 #: cms/static/js/views/partition_group_details.js
 msgid "Not in Use"
 msgstr "לא בשימוש"
@@ -5946,17 +5815,15 @@ msgstr "לא בשימוש"
 #. configuration is used in.
 #. Translators: 'count' is number of locations that the group
 #. configuration is used in.
-#: cms/static/js/views/group_configuration_details.js
+#: cms/static/js/views/group_configuration_details.js 
 #: cms/static/js/views/partition_group_details.js
 msgid "Used in {count} location"
 msgid_plural "Used in {count} locations"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #. Translators: this refers to a collection of groups.
-#: cms/static/js/views/group_configuration_item.js
+#: cms/static/js/views/group_configuration_item.js 
 #: cms/static/js/views/group_configurations_list.js
 msgid "group configuration"
 msgstr "הגדרת קבוצה"
@@ -6007,8 +5874,8 @@ msgid ""
 "but only if they give credit the way you request. Currently, this option is "
 "required."
 msgstr ""
-"אפשר לאחרים להעתיק, להפיץ, להציג ולבצע את העבודה המוגנת בזכויות היוצרים שלך,"
-" אך רק אם הם מכירים בזכויותיך על פי בקשתך. נכון לעכשיו, אפשרות זו היא חובה."
+"אפשר לאחרים להעתיק, להפיץ, להציג ולבצע את העבודה המוגנת בזכויות היוצרים שלך, "
+"אך רק אם הם מכירים בזכויותיך על פי בקשתך. נכון לעכשיו, אפשרות זו היא חובה."
 
 #: cms/static/js/views/license.js
 msgid "Noncommercial"
@@ -6019,8 +5886,8 @@ msgid ""
 "Allow others to copy, distribute, display and perform your work - and "
 "derivative works based upon it - but for noncommercial purposes only."
 msgstr ""
-"אפשר לאחרים להעתיק, להפיץ, להציג ולבצע את עבודתך - ועבודות הנגזרות ממנה- שלא"
-" למטרות מסחר."
+"אפשר לאחרים להעתיק, להפיץ, להציג ולבצע את עבודתך - ועבודות הנגזרות ממנה- שלא "
+"למטרות מסחר."
 
 #: cms/static/js/views/license.js
 msgid "No Derivatives"
@@ -6042,8 +5909,8 @@ msgstr "שתף"
 #: cms/static/js/views/license.js
 msgid ""
 "Allow others to distribute derivative works only under a license identical "
-"to the license that governs your work. This option is incompatible with \"No"
-" Derivatives\"."
+"to the license that governs your work. This option is incompatible with \"No "
+"Derivatives\"."
 msgstr ""
 "אפשר לאחרים להפיץ עבודות נגזרות אך ורק ברישיון דומה לרישיון שקיים לעבודתך. "
 "אפשרות זו אינה מתאימה ל\"ללא נגזרות\"."
@@ -6088,8 +5955,8 @@ msgstr "כבר חבר"
 
 #: cms/static/js/views/manage_users_and_roles.js
 msgid ""
-"{email} is already on the {container} team. Recheck the email address if you"
-" want to add a new member."
+"{email} is already on the {container} team. Recheck the email address if you "
+"want to add a new member."
 msgstr ""
 "{email} כבר נמצא בצוות {container}. בדוק מחדש את כתובת הדוא\"ל במידה ברצונך "
 "להוסיף חבר צוות חדש."
@@ -6114,8 +5981,8 @@ msgstr "פרסם את {display_name}"
 msgid "Publish all unpublished changes for this {item}?"
 msgstr "האם לפרסם את כל השינויים שלא פורסמו עבור {item}?"
 
-#: cms/static/js/views/modals/course_outline_modals.js
-#: cms/templates/js/course-outline.underscore
+#: cms/static/js/views/modals/course_outline_modals.js 
+#: cms/templates/js/course-outline.underscore 
 #: cms/templates/js/publish-xblock.underscore
 msgid "Publish"
 msgstr "פרסם"
@@ -6153,7 +6020,7 @@ msgstr "תצוגה"
 msgid "Editing: %(title)s"
 msgstr "עורך: %(title)s"
 
-#: cms/static/js/views/modals/edit_xblock.js
+#: cms/static/js/views/modals/edit_xblock.js 
 #: lms/templates/ccx/schedule.underscore
 msgid "Unit"
 msgstr "יחידה"
@@ -6202,7 +6069,7 @@ msgstr "יחידות"
 msgid "Components"
 msgstr ""
 
-#: cms/static/js/views/move_xblock_list.js
+#: cms/static/js/views/move_xblock_list.js 
 #: cms/templates/js/group-configuration-editor.underscore
 msgid "Groups"
 msgstr "קבוצות"
@@ -6211,8 +6078,8 @@ msgstr "קבוצות"
 msgid "This {parentCategory} has no {childCategory}"
 msgstr ""
 
-#: cms/static/js/views/move_xblock_list.js
-#: cms/templates/js/group-configuration-details.underscore
+#: cms/static/js/views/move_xblock_list.js 
+#: cms/templates/js/group-configuration-details.underscore 
 #: cms/templates/js/partition-group-details.underscore
 msgid "Course Outline"
 msgstr "מתווה קורס"
@@ -6231,9 +6098,9 @@ msgstr ""
 msgid "Publishing"
 msgstr "מפרסם"
 
-#: cms/static/js/views/pages/container_subviews.js
+#: cms/static/js/views/pages/container_subviews.js 
 #: cms/templates/js/course-video-settings-update-org-credentials-footer.underscore
-#: cms/templates/js/course-video-settings-update-settings-footer.underscore
+#:  cms/templates/js/course-video-settings-update-settings-footer.underscore 
 #: cms/templates/js/publish-xblock.underscore
 msgid "Discard Changes"
 msgstr "התעלם משינויים"
@@ -6300,8 +6167,8 @@ msgstr "הראה תצוגות מקדימות"
 #. ascending"
 #: cms/static/js/views/paging_header.js
 msgid ""
-"Showing {currentItemRange} out of {totalItemsCount}, filtered by "
-"{assetType}, sorted by {sortName} ascending"
+"Showing {currentItemRange} out of {totalItemsCount}, filtered by {assetType},"
+" sorted by {sortName} ascending"
 msgstr ""
 "מציג  {currentItemRange} מתוך {totalItemsCount}, ממוין על פי  {assetType}, "
 "בסדר עולה של {sortName} "
@@ -6311,8 +6178,8 @@ msgstr ""
 #. descending"
 #: cms/static/js/views/paging_header.js
 msgid ""
-"Showing {currentItemRange} out of {totalItemsCount}, filtered by "
-"{assetType}, sorted by {sortName} descending"
+"Showing {currentItemRange} out of {totalItemsCount}, filtered by {assetType},"
+" sorted by {sortName} descending"
 msgstr ""
 "מציג  {currentItemRange} מתוך {totalItemsCount}, ממוין על פי  {assetType}, "
 "בסדר יורד של {sortName} "
@@ -6345,7 +6212,7 @@ msgstr "{totalItems} סך הכל"
 
 #. Translators: This refers to a content group that can be linked to a student
 #. cohort.
-#: cms/static/js/views/partition_group_item.js
+#: cms/static/js/views/partition_group_item.js 
 #: cms/static/js/views/partition_group_list.js
 msgid "content group"
 msgstr "קבוצת תוכן"
@@ -6430,8 +6297,8 @@ msgstr ""
 
 #: cms/static/js/views/show_textbook.js
 msgid ""
-"Deleting a textbook cannot be undone and once deleted any reference to it in"
-" your courseware's navigation will also be removed."
+"Deleting a textbook cannot be undone and once deleted any reference to it in "
+"your courseware's navigation will also be removed."
 msgstr ""
 
 #: cms/static/js/views/tabs.js
@@ -6443,7 +6310,7 @@ msgid ""
 "Are you sure you want to delete this page? This action cannot be undone."
 msgstr "האם אתה בטוח שאתה רוצה למחוק עמוד זה? לא ניתן לבטל פעולה זו."
 
-#: cms/templates/js/metadata-file-uploader-item.underscore
+#: cms/templates/js/metadata-file-uploader-item.underscore 
 #: cms/templates/js/video/metadata-translations-item.underscore
 msgid "Upload"
 msgstr "העלה"
@@ -6465,8 +6332,7 @@ msgid ""
 "The combined length of the organization and library code fields cannot be "
 "more than <%=limit%> characters."
 msgstr ""
-"האורך המשולב של שדות הארגון וקוד הספרייה אינו יכול לעלות על <%=limit%> "
-"תווים."
+"האורך המשולב של שדות הארגון וקוד הספרייה אינו יכול לעלות על <%=limit%> תווים."
 
 #: cms/static/js/views/utils/move_xblock_utils.js
 msgid "Success! \"{displayName}\" has been moved."
@@ -6596,15 +6462,15 @@ msgid ""
 msgstr ""
 "מצטערים, אירעה שגיאה בניתוח הכתוביות שהעלת. אנא בדוק את התבנית ונסה שוב. "
 
-#: cms/static/js/views/video/translations_editor.js
+#: cms/static/js/views/video/translations_editor.js 
 #: cms/static/js/views/video_transcripts.js
 msgid "Are you sure you want to remove this transcript?"
 msgstr ""
 
 #: cms/static/js/views/video/translations_editor.js
 msgid ""
-"If you remove this transcript, the transcript will not be available for this"
-" component."
+"If you remove this transcript, the transcript will not be available for this "
+"component."
 msgstr ""
 
 #: cms/static/js/views/video/translations_editor.js
@@ -6637,8 +6503,8 @@ msgstr ""
 #. Translators: This is a 3 part text which tells the image requirements.
 #: cms/static/js/views/video_thumbnail.js
 msgid ""
-"{ReqTextSpanStart}Requirements{spanEnd}{lineBreak}{InstructionsSpanStart}{videoImageResoultion}{lineBreak}"
-" {videoImageSupportedFileFormats}{spanEnd}"
+"{ReqTextSpanStart}Requirements{spanEnd}{lineBreak}{InstructionsSpanStart}"
+"{videoImageResoultion}{lineBreak} {videoImageSupportedFileFormats}{spanEnd}"
 msgstr ""
 
 #. Translators: message will be like 1280x720 pixels
@@ -6740,11 +6606,11 @@ msgstr ""
 
 #: cms/static/js/views/video_transcripts.js
 msgid ""
-"This file type is not supported. Supported file type is "
-"{supportedFileFormat}."
+"This file type is not supported. Supported file type is {supportedFileFormat}"
+"."
 msgstr ""
 
-#: cms/static/js/views/video_transcripts.js
+#: cms/static/js/views/video_transcripts.js 
 #: cms/templates/js/video-transcripts.underscore
 msgid "{transcriptClientTitle}_{transcriptLanguageCode}.{fileExtension}"
 msgstr ""
@@ -6759,7 +6625,7 @@ msgstr ""
 msgid "Editor"
 msgstr "עורך"
 
-#: cms/static/js/views/xblock_editor.js
+#: cms/static/js/views/xblock_editor.js 
 #: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore
 msgid "Settings"
 msgstr "הגדרות"
@@ -6779,33 +6645,34 @@ msgstr "אזהרה"
 msgid "Updating Tags"
 msgstr "עדכון תגיות"
 
-#: cms/templates/js/asset-library.underscore
-#: cms/templates/js/basic-modal.underscore
+#: cms/templates/js/asset-library.underscore 
+#: cms/templates/js/basic-modal.underscore 
 #: lms/templates/instructor/instructor_dashboard_2/enrollment-code-lookup-links.underscore
 msgid "Actions"
 msgstr "פעולות"
 
-#: cms/templates/js/course-outline.underscore
-#: cms/templates/js/publish-xblock.underscore
+#: cms/templates/js/course-outline.underscore 
+#: cms/templates/js/publish-xblock.underscore 
 #: lms/templates/ccx/schedule.underscore
 msgid "Unscheduled"
 msgstr "לא נקבע"
 
-#: cms/templates/js/course_info_update.underscore
-#: lms/templates/commerce/receipt.underscore
+#: cms/templates/js/course_info_update.underscore 
+#: lms/templates/commerce/receipt.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "Date"
 msgstr "תאריך"
 
-#: cms/templates/js/paging-header.underscore
-#: common/static/common/templates/components/paging-footer.underscore
+#: cms/templates/js/paging-header.underscore 
+#: common/static/common/templates/components/paging-footer.underscore 
 #: common/static/common/templates/discussion/pagination.underscore
 msgid "Previous"
 msgstr "הקודם"
 
-#: cms/templates/js/previous-video-upload-list.underscore
-#: lms/djangoapps/support/static/support/templates/manage_user.underscore
+#: cms/templates/js/previous-video-upload-list.underscore 
+#: lms/djangoapps/support/static/support/templates/manage_user.underscore 
 #: lms/templates/instructor/instructor_dashboard_2/certificate-invalidation.underscore
+#:  
 #: lms/templates/instructor/instructor_dashboard_2/certificate-white-list.underscore
 msgid "Action"
 msgstr "פעולה"
@@ -6926,7 +6793,7 @@ msgstr ""
 msgid "All Groups"
 msgstr "כל הקבוצות"
 
-#: common/static/common/templates/discussion/new-post.underscore
+#: common/static/common/templates/discussion/new-post.underscore 
 #: common/static/common/templates/discussion/thread-edit.underscore
 msgid ""
 "Add a clear and descriptive title to encourage participation. (Required)"
@@ -6952,7 +6819,7 @@ msgstr "(עוזר הוראה קהילתי)"
 msgid "(Staff)"
 msgstr "(צוות)"
 
-#: common/static/common/templates/discussion/profile-thread.underscore
+#: common/static/common/templates/discussion/profile-thread.underscore 
 #: common/static/common/templates/discussion/thread.underscore
 msgid "This thread is closed."
 msgstr "שרשור זה סגור"
@@ -6974,8 +6841,8 @@ msgstr "עדכן הערה"
 msgid "posted %(time_ago)s by %(author)s"
 msgstr "נרשם %(time_ago)s בידי %(author)s"
 
-#: common/static/common/templates/discussion/response-comment-show.underscore
-#: common/static/common/templates/discussion/thread-response-show.underscore
+#: common/static/common/templates/discussion/response-comment-show.underscore 
+#: common/static/common/templates/discussion/thread-response-show.underscore 
 #: common/static/common/templates/discussion/thread-show.underscore
 msgid "Reported"
 msgstr "דווח"
@@ -7004,7 +6871,7 @@ msgstr "שאלה שנענתה"
 msgid "unanswered question"
 msgstr "שאלה שלא נענתה"
 
-#: common/static/common/templates/discussion/thread-list-item.underscore
+#: common/static/common/templates/discussion/thread-list-item.underscore 
 #: common/static/common/templates/discussion/thread-show.underscore
 msgid "Pinned"
 msgstr "מוצמד"
@@ -7069,8 +6936,6 @@ msgid "Show Comment (%(num_comments)s)"
 msgid_plural "Show Comments (%(num_comments)s)"
 msgstr[0] "הצג תגובה (%(num_comments)s)"
 msgstr[1] "הצג תגובות (%(num_comments)s)"
-msgstr[2] "הצג תגובות (%(num_comments)s)"
-msgstr[3] "הצג תגובות (%(num_comments)s)"
 
 #: common/static/common/templates/discussion/thread-response.underscore
 msgid "Add a comment"
@@ -7159,7 +7024,7 @@ msgid "Use the All Topics menu to find specific topics."
 msgstr "השתמש בתפריט 'כל הנושאים' על מנת למצוא נושאים ספציפיים."
 
 #: lms/djangoapps/discussion/static/discussion/templates/discussion-home.underscore
-#: lms/djangoapps/discussion/static/discussion/templates/search.underscore
+#:  lms/djangoapps/discussion/static/discussion/templates/search.underscore
 msgid "Search all posts"
 msgstr "חפש בכל הפוסטים"
 
@@ -7193,8 +7058,8 @@ msgstr "החלף מצב הגדרות התראות"
 
 #: lms/djangoapps/discussion/static/discussion/templates/discussion-home.underscore
 msgid ""
-"Check this box to receive an email digest once a day notifying you about "
-"new, unread activity from posts you are following."
+"Check this box to receive an email digest once a day notifying you about new,"
+" unread activity from posts you are following."
 msgstr ""
 "סמן תיבה זו על מנת לקבל תקציר יומי בדואר אלקטרוני על פעילות חדשה ועל הודעות "
 "שלא נקראו בפוסטים שאתה עוקב אחריהם. "
@@ -7212,7 +7077,9 @@ msgid "course id"
 msgstr "מזהה קורס"
 
 #: lms/djangoapps/support/static/support/templates/certificates_results.underscore
+#:  
 #: lms/templates/instructor/instructor_dashboard_2/certificate-invalidation.underscore
+#:  
 #: lms/templates/instructor/instructor_dashboard_2/certificate-white-list.underscore
 msgid "No results"
 msgstr "אין תוצאות "
@@ -7285,7 +7152,7 @@ msgstr "הסבר אם אחרת."
 msgid "Submit enrollment change"
 msgstr "שלח שינוי הרשמה"
 
-#: lms/djangoapps/support/static/support/templates/enrollment.underscore
+#: lms/djangoapps/support/static/support/templates/enrollment.underscore 
 #: lms/templates/instructor/instructor_dashboard_2/certificate-invalidation.underscore
 msgid "Username or email address"
 msgstr "שם משתמש או כתובת דואר אלקטרוני"
@@ -7334,7 +7201,7 @@ msgstr "שונה לאחרונה בידי"
 msgid "Active"
 msgstr ""
 
-#: lms/djangoapps/support/static/support/templates/enrollment.underscore
+#: lms/djangoapps/support/static/support/templates/enrollment.underscore 
 #: lms/templates/ccx/schedule.underscore
 msgid "N/A"
 msgstr "לא זמין"
@@ -7345,7 +7212,7 @@ msgstr "שינוי הרשמה"
 
 #: lms/djangoapps/support/static/support/templates/manage_user.underscore
 msgid "Date Joined"
-msgstr ""
+msgstr "תאריך הצטרפות"
 
 #: lms/djangoapps/support/static/support/templates/manage_user.underscore
 msgid "Password Status"
@@ -7441,18 +7308,18 @@ msgstr "קיבולת צוות"
 msgid "Leave Team"
 msgstr "עזוב צוות"
 
-#: lms/static/js/fixtures/donation.underscore
+#: lms/static/js/fixtures/donation.underscore 
 #: lms/templates/dashboard/donation.underscore
 msgid "Donate"
 msgstr "תרום"
 
 #: lms/templates/api_admin/catalog-error.underscore
 msgid ""
-"There was an error retrieving preview results for this catalog. Please check"
-" that your query is correct and try again."
+"There was an error retrieving preview results for this catalog. Please check "
+"that your query is correct and try again."
 msgstr ""
-"אירעה שגיאה בעת אִחזור תוצאות התצוגה המוקדמת עבור קטלוג זה. נא בדוק שהשאילתא"
-" נכונה ונסה שוב."
+"אירעה שגיאה בעת אִחזור תוצאות התצוגה המוקדמת עבור קטלוג זה. נא בדוק שהשאילתא "
+"נכונה ונסה שוב."
 
 #: lms/templates/api_admin/catalog-results.underscore
 msgid "This catalog's courses:"
@@ -7530,8 +7397,8 @@ msgid ""
 "To finalize course credit, %(display_name)s requires %(platform_name)s "
 "learners to submit a credit request."
 msgstr ""
-"כדי להשלים את קבלת נקודות הזכות של הקורס, %(display_name)s דורש מהתלמידים של"
-" %(platform_name)s, יש לשלוח בקשה לקבלת נקודות זכות."
+"כדי להשלים את קבלת נקודות הזכות של הקורס, %(display_name)s דורש מהתלמידים של "
+"%(platform_name)s, יש לשלוח בקשה לקבלת נקודות זכות."
 
 #: lms/templates/commerce/provider.underscore
 msgid "Get Credit"
@@ -7543,52 +7410,52 @@ msgid ""
 "Thank you %(full_name)s! We have received your payment for %(course_name)s."
 msgstr "תודה רבה, %(full_name)s! קיבלנו את תשלומך עבור %(course_name)s."
 
-#: lms/templates/commerce/receipt.underscore
+#: lms/templates/commerce/receipt.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid ""
-"Please print this page for your records; it serves as your receipt. You will"
-" also receive an email with the same information."
+"Please print this page for your records; it serves as your receipt. You will "
+"also receive an email with the same information."
 msgstr ""
 "נא הדפס עמוד זה לרשומותיך; הוא משמש כקבלה. בנוסף, תקבל גם הודעת דואר "
 "אלקטרוני עם מידע זהה. "
 
-#: lms/templates/commerce/receipt.underscore
+#: lms/templates/commerce/receipt.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "Order No."
 msgstr "מספר הזמנה"
 
-#: lms/templates/commerce/receipt.underscore
+#: lms/templates/commerce/receipt.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "Amount"
 msgstr "כמות"
 
-#: lms/templates/commerce/receipt.underscore
-#: lms/templates/verify_student/make_payment_step_ab_testing.underscore
+#: lms/templates/commerce/receipt.underscore 
+#: lms/templates/verify_student/make_payment_step_ab_testing.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "Total"
 msgstr "סה\"כ"
 
-#: lms/templates/commerce/receipt.underscore
+#: lms/templates/commerce/receipt.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "Please Note"
 msgstr "שים לב"
 
-#: lms/templates/commerce/receipt.underscore
+#: lms/templates/commerce/receipt.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "Crossed out items have been refunded."
 msgstr "תשלום הוחזר עבור פריטים שנמחקו "
 
-#: lms/templates/commerce/receipt.underscore
+#: lms/templates/commerce/receipt.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "Billed to"
 msgstr "חויב ל"
 
-#: lms/templates/commerce/receipt.underscore
+#: lms/templates/commerce/receipt.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "No receipt available"
 msgstr "אין קבלה זמינה"
 
-#: lms/templates/commerce/receipt.underscore
+#: lms/templates/commerce/receipt.underscore 
 #: lms/templates/financial-assistance/financial_assessment_submitted.underscore
 msgid "Go to Dashboard"
 msgstr "עבור ללוח הבקרה"
@@ -7596,13 +7463,13 @@ msgstr "עבור ללוח הבקרה"
 #: lms/templates/commerce/receipt.underscore
 msgid ""
 "If you don't verify your identity now, you can still explore your course "
-"from your dashboard. You will receive periodic reminders from {platformName}"
-" to verify your identity."
+"from your dashboard. You will receive periodic reminders from {platformName} "
+"to verify your identity."
 msgstr ""
 "אם אינך מאמת את זהותך כעת, תוכל עדיין לעיין בקורס מלוח הבקרה שלך. אתה תקבל "
 "תזכורות תקופתיות מ{platformName} על מנת לאמת את זהותך."
 
-#: lms/templates/commerce/receipt.underscore
+#: lms/templates/commerce/receipt.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "Want to confirm your identity later?"
 msgstr "רוצה לאמת את זהותך מאוחר יותר?"
@@ -7676,8 +7543,8 @@ msgstr "נערך לאחרונה:"
 msgid "Clear search results"
 msgstr "נקה תוצאות חיפוש"
 
-#: lms/templates/fields/field_dropdown.underscore
-#: lms/templates/fields/field_dropdown_account.underscore
+#: lms/templates/fields/field_dropdown.underscore 
+#: lms/templates/fields/field_dropdown_account.underscore 
 #: lms/templates/fields/field_textarea.underscore
 msgid "Click to edit"
 msgstr "לחץ לערוך"
@@ -7712,7 +7579,7 @@ msgid ""
 "{maxCharacters}"
 msgstr ""
 
-#: lms/templates/financial-assistance/financial_assessment_form.underscore
+#: lms/templates/financial-assistance/financial_assessment_form.underscore 
 #: lms/templates/financial-assistance/financial_assessment_submitted.underscore
 msgid "Financial Assistance Application"
 msgstr "בקשה לעזרה כספית"
@@ -7779,6 +7646,7 @@ msgid "Upload a CSV file"
 msgstr "העלה קובץ CSV"
 
 #: lms/templates/instructor/instructor_dashboard_2/certificate-bulk-white-list.underscore
+#:  
 #: lms/templates/instructor/instructor_dashboard_2/certificate-white-list-editor.underscore
 msgid "Add to Exception List"
 msgstr "הוסף לרשימת החריגים"
@@ -7812,6 +7680,7 @@ msgid "Invalidated"
 msgstr "נפסלה"
 
 #: lms/templates/instructor/instructor_dashboard_2/certificate-invalidation.underscore
+#:  
 #: lms/templates/instructor/instructor_dashboard_2/certificate-white-list.underscore
 msgid "Notes"
 msgstr "סיכומי שיעור "
@@ -7890,7 +7759,7 @@ msgid ""
 "for the learners you want to add. *"
 msgstr ""
 
-#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore 
 #: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore
 msgid "(Required Field)"
 msgstr "(שדה חובה)"
@@ -7991,8 +7860,6 @@ msgid "(contains %(student_count)s student)"
 msgid_plural "(contains %(student_count)s students)"
 msgstr[0] "(כוללת סטודנט %(student_count)s)"
 msgstr[1] "(כוללת %(student_count)s סטודנטים)"
-msgstr[2] "(כוללת %(student_count)s סטודנטים)"
-msgstr[3] "(כוללת %(student_count)s סטודנטים)"
 
 #: lms/templates/instructor/instructor_dashboard_2/cohort-group-header.underscore
 msgid ""
@@ -8082,7 +7949,7 @@ msgstr "נעשה שימוש"
 msgid "Valid"
 msgstr "חוקי"
 
-#: lms/templates/learner_dashboard/certificate_status.underscore
+#: lms/templates/learner_dashboard/certificate_status.underscore 
 #: lms/templates/learner_dashboard/upgrade_message.underscore
 msgid "Certificate Status:"
 msgstr ""
@@ -8193,14 +8060,12 @@ msgstr "עיין בקורסים שהושקו לאחרונה וראה מה חדש
 msgid "Explore New Programs"
 msgstr "בחן תכניות חדשות"
 
-#: lms/templates/learner_dashboard/program_card.underscore
+#: lms/templates/learner_dashboard/program_card.underscore 
 #: lms/templates/verify_student/enrollment_confirmation_step.underscore
 msgid "Course"
 msgid_plural "Courses"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: lms/templates/learner_dashboard/program_card.underscore
 msgid "Completed"
@@ -8311,7 +8176,7 @@ msgstr "אירעה שגיאה. נא טען מחדש את העמוד."
 msgid "Forgot password?"
 msgstr "שכחת סיסמה?"
 
-#: lms/templates/student_account/hinted_login.underscore
+#: lms/templates/student_account/hinted_login.underscore 
 #: lms/templates/student_account/login.underscore
 msgid "Sign in"
 msgstr "כניסה"
@@ -8334,7 +8199,7 @@ msgstr "הצג בפניי דרכים אחרות להיכנס לחשבון או �
 msgid "Sign in with Institution/Campus Credentials"
 msgstr "היכנס באמצעות הרשאות מוסד/קמפוס"
 
-#: lms/templates/student_account/institution_login.underscore
+#: lms/templates/student_account/institution_login.underscore 
 #: lms/templates/student_account/institution_register.underscore
 msgid "Choose your institution from the list below:"
 msgstr "בחר את המוסד שלך מהרשימה שלהלן:"
@@ -8417,7 +8282,7 @@ msgstr "או התחבר עם"
 msgid "Sign in with %(providerName)s"
 msgstr "היכנס לחשבון באמצעות %(providerName)s"
 
-#: lms/templates/student_account/login.underscore
+#: lms/templates/student_account/login.underscore 
 #: lms/templates/student_account/register.underscore
 msgid "Use my institution/campus credentials"
 msgstr "השתמש בהרשאות מוסד/קמפוס"
@@ -8512,10 +8377,10 @@ msgstr "שגיאה:"
 msgid "What You Need for Verification"
 msgstr "מה אתה צריך לאימות"
 
-#: lms/templates/verify_student/face_photo_step.underscore
-#: lms/templates/verify_student/intro_step.underscore
-#: lms/templates/verify_student/make_payment_step.underscore
-#: lms/templates/verify_student/make_payment_step_ab_testing.underscore
+#: lms/templates/verify_student/face_photo_step.underscore 
+#: lms/templates/verify_student/intro_step.underscore 
+#: lms/templates/verify_student/make_payment_step.underscore 
+#: lms/templates/verify_student/make_payment_step_ab_testing.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "Webcam"
 msgstr "מצלמת רשת"
@@ -8539,7 +8404,7 @@ msgid ""
 msgstr ""
 "אתה זקוק לרישיון נהיגה, דרכון או תעודת מזהה אחרת שמופיעים בה שמך ותמונתך."
 
-#: lms/templates/verify_student/face_photo_step.underscore
+#: lms/templates/verify_student/face_photo_step.underscore 
 #: lms/templates/verify_student/incourse_reverify.underscore
 msgid "Take Your Photo"
 msgstr "צלם את תמונתך"
@@ -8575,55 +8440,55 @@ msgstr ""
 "על מנת להשתמש בתמונה העדכנית, בחר בלחצן המצלמה {icon}. כדי לצלם תמונה אחרת, "
 "בחר בלחצן הצילום מחדש {icon}."
 
-#: lms/templates/verify_student/face_photo_step.underscore
-#: lms/templates/verify_student/id_photo_step.underscore
+#: lms/templates/verify_student/face_photo_step.underscore 
+#: lms/templates/verify_student/id_photo_step.underscore 
 #: lms/templates/verify_student/incourse_reverify.underscore
 msgid "Frequently Asked Questions"
 msgstr "שאלות נפוצות"
 
-#: lms/templates/verify_student/face_photo_step.underscore
-#: lms/templates/verify_student/id_photo_step.underscore
+#: lms/templates/verify_student/face_photo_step.underscore 
+#: lms/templates/verify_student/id_photo_step.underscore 
 #: lms/templates/verify_student/incourse_reverify.underscore
 #, python-format
 msgid "Why does %(platformName)s need my photo?"
 msgstr "מדוע  %(platformName)s צריכה את התמונה שלי?"
 
-#: lms/templates/verify_student/face_photo_step.underscore
-#: lms/templates/verify_student/id_photo_step.underscore
+#: lms/templates/verify_student/face_photo_step.underscore 
+#: lms/templates/verify_student/id_photo_step.underscore 
 #: lms/templates/verify_student/incourse_reverify.underscore
 msgid ""
 "As part of the verification process, you take a photo of both your face and "
 "a government-issued photo ID. Our authorization service confirms your "
 "identity by comparing the photo you take with the photo on your ID."
 msgstr ""
-"כחלק מתהליך אימות הזהות, אתה מצלם תמונה של פניך ושל תעודה מזהה  שהונפקה בידי"
-" הממשלה. שירות האימות שלנו מאשר את זהותך באמצעות השוואת התמונה שצילמת לתמונה"
-" שבתעודה המזהה שלך. "
+"כחלק מתהליך אימות הזהות, אתה מצלם תמונה של פניך ושל תעודה מזהה  שהונפקה בידי "
+"הממשלה. שירות האימות שלנו מאשר את זהותך באמצעות השוואת התמונה שצילמת לתמונה "
+"שבתעודה המזהה שלך. "
 
-#: lms/templates/verify_student/face_photo_step.underscore
-#: lms/templates/verify_student/id_photo_step.underscore
+#: lms/templates/verify_student/face_photo_step.underscore 
+#: lms/templates/verify_student/id_photo_step.underscore 
 #: lms/templates/verify_student/incourse_reverify.underscore
 #, python-format
 msgid "What does %(platformName)s do with this photo?"
 msgstr "מה  %(platformName)s עושה עם תמונה זו?"
 
-#: lms/templates/verify_student/face_photo_step.underscore
-#: lms/templates/verify_student/id_photo_step.underscore
+#: lms/templates/verify_student/face_photo_step.underscore 
+#: lms/templates/verify_student/id_photo_step.underscore 
 #: lms/templates/verify_student/incourse_reverify.underscore
 #, python-format
 msgid ""
 "We use the highest levels of security available to encrypt your photo and "
 "send it to our authorization service for review. Your photo and information "
-"are not saved or visible anywhere on %(platformName)s after the verification"
-" process is complete."
+"are not saved or visible anywhere on %(platformName)s after the verification "
+"process is complete."
 msgstr ""
 "אנו משתמשים ברמות הגבוהות ביותר של אבטחה להצפין את התמונה שלך ולשלוח אותה "
 "לבדיקה בשירות האימות שלנו.  התמונה והמידע האישי שלך לא נשמרים או גלויים באף "
 "מקום ב-%(platformName)s לאחר השלמת תהליך אימות הזהות.  "
 
-#: lms/templates/verify_student/face_photo_step.underscore
-#: lms/templates/verify_student/id_photo_step.underscore
-#: lms/templates/verify_student/intro_step.underscore
+#: lms/templates/verify_student/face_photo_step.underscore 
+#: lms/templates/verify_student/id_photo_step.underscore 
+#: lms/templates/verify_student/intro_step.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 #, python-format
 msgid "Next: %(nextStepTitle)s"
@@ -8649,7 +8514,7 @@ msgstr ""
 "אתה זקוק לתעודה מזהה עם שמך ועם תמונה. ניתן להשתמש ברישיון נהיגה, דרכון או "
 "תעודה מזהה אחרת שהונפקה על ידי הממשלה. "
 
-#: lms/templates/verify_student/id_photo_step.underscore
+#: lms/templates/verify_student/id_photo_step.underscore 
 #: lms/templates/verify_student/incourse_reverify.underscore
 msgid "Tips on taking a successful photo"
 msgstr "טיפים לצילום תמונה טובה"
@@ -8667,7 +8532,7 @@ msgid "Once in position, use the camera button {icon} to capture your ID"
 msgstr ""
 "כאשר התעודה המזהה שלך ממוקמת, השתמש בלחצן המצלמה {icon} על מנת לצלם אותה."
 
-#: lms/templates/verify_student/id_photo_step.underscore
+#: lms/templates/verify_student/id_photo_step.underscore 
 #: lms/templates/verify_student/incourse_reverify.underscore
 msgid "Use the retake photo button if you are not pleased with your photo"
 msgstr "השתמש בלחצן 'צלם מחדש' אם אינך מרוצה מתמונתך"
@@ -8717,13 +8582,13 @@ msgstr ""
 "עליך להפעיל את חשבונך לפני שתוכל להירשם לקורס. בדוק את תיבת הדואר הנכנס שלך "
 "להודעת הפעלה. לאחר השלמת שלב ההפעלה, יש באפשרותך לחזור ולרענן דף זה. "
 
-#: lms/templates/verify_student/intro_step.underscore
+#: lms/templates/verify_student/intro_step.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "Activate Your Account"
 msgstr "הפעל את חשבונך"
 
-#: lms/templates/verify_student/intro_step.underscore
-#: lms/templates/verify_student/make_payment_step_ab_testing.underscore
+#: lms/templates/verify_student/intro_step.underscore 
+#: lms/templates/verify_student/make_payment_step_ab_testing.underscore 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "Photo ID"
 msgstr "תעודה מזהה עם תמונה"
@@ -8736,7 +8601,7 @@ msgstr ""
 "רישיון נהיגה, דרכון, או תעודות מזהות אחרות שהונפקו בידי המדינה ומכילות את "
 "שמך ואת תמונתך"
 
-#: lms/templates/verify_student/make_payment_step.underscore
+#: lms/templates/verify_student/make_payment_step.underscore 
 #: lms/templates/verify_student/make_payment_step_ab_testing.underscore
 msgid "You are enrolling in: {courseName}"
 msgstr "אתה נרשם ב: {courseName}"
@@ -8792,8 +8657,7 @@ msgid "Government-Issued Photo ID"
 msgstr "תעודה מזהה עם תמונה שהונפקה בידי הממשלה. "
 
 #: lms/templates/verify_student/make_payment_step.underscore
-msgid ""
-"ID-Verification is not required for this Professional Education course."
+msgid "ID-Verification is not required for this Professional Education course."
 msgstr "לא נדרש אימות עם תעודה מזהה עבור קורס חינוך מקצועי זה."
 
 #: lms/templates/verify_student/make_payment_step.underscore
@@ -8801,8 +8665,8 @@ msgid ""
 "All professional education courses are fee-based, and require payment to "
 "complete the enrollment process."
 msgstr ""
-"כל הקורסים בחינוך המקצועי מבוססים על תשלום, ולכן נדרש תשלום על מנת להשלים את"
-" תהליך ההרשמה."
+"כל הקורסים בחינוך המקצועי מבוססים על תשלום, ולכן נדרש תשלום על מנת להשלים את "
+"תהליך ההרשמה."
 
 #: lms/templates/verify_student/make_payment_step.underscore
 msgid "You have already verified your ID!"
@@ -8867,8 +8731,8 @@ msgid ""
 "You will use your webcam to take a picture of your face and of your "
 "government-issued photo ID."
 msgstr ""
-"השתמש במצלמת הרשת על מנת לצלם את תמונת פניך ואת התעודה, שהונפקה בידי הממשלה,"
-" עם התמונה."
+"השתמש במצלמת הרשת על מנת לצלם את תמונת פניך ואת התעודה, שהונפקה בידי הממשלה, "
+"עם התמונה."
 
 #: lms/templates/verify_student/payment_confirmation_step.underscore
 msgid "Thank you! We have received your payment for {courseName}."
@@ -8900,8 +8764,8 @@ msgstr "רישיון נהיגה, דרכון או תעודה מזהה אחרת ש
 #, python-format
 msgid ""
 "If you don't verify your identity now, you can still explore your course "
-"from your dashboard. You will receive periodic reminders from "
-"%(platformName)s to verify your identity."
+"from your dashboard. You will receive periodic reminders from %(platformName)"
+"s to verify your identity."
 msgstr ""
 "אם אינך רוצה לאמת את זהותך כעת, יש באפשרותך עדיין לבחון מלוח הבקרה את הקורס "
 "שלך. תקבל תזכורות תקופתיות מ%(platformName)s שבהן תתבקש לאמת את זהותך."
@@ -9022,15 +8886,15 @@ msgid ""
 msgstr ""
 
 #: openedx/features/course_search/static/course_search/templates/course_search_results.underscore
+#:  
 #: openedx/features/course_search/static/course_search/templates/dashboard_search_results.underscore
 msgid "Load next {num_items} result"
 msgid_plural "Load next {num_items} results"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: openedx/features/course_search/static/course_search/templates/course_search_results.underscore
+#:  
 #: openedx/features/course_search/static/course_search/templates/dashboard_search_results.underscore
 msgid "Sorry, no results were found."
 msgstr "מצטערים, לא נמצאו תוצאות. "
@@ -9079,8 +8943,8 @@ msgid ""
 "Backpack account. Complete the following steps to add your certificate to "
 "Backpack."
 msgstr ""
-"כדי לשתף את תעודתך ב-Mozilla Backpack, עליך לפתוח חשבון Backpack תחילה. השלם"
-" את השלבים הבאים כדי להוסיף את תעודתך ל-Backpack."
+"כדי לשתף את תעודתך ב-Mozilla Backpack, עליך לפתוח חשבון Backpack תחילה. השלם "
+"את השלבים הבאים כדי להוסיף את תעודתך ל-Backpack."
 
 #: openedx/features/learner_profile/static/learner_profile/templates/share_modal.underscore
 #, python-format
@@ -9098,8 +8962,8 @@ msgid ""
 "your backpack.</li>"
 msgstr ""
 "%(download_link_start)sהורד תמונה זו (לחץ לחיצה ימנית או לחיצת-אפשרות, שמור "
-"בשם)%(link_end)s ולאחר מכן %(upload_link_start)sהעלה%(link_end)s אותה "
-"ל-Backpack שלך.</li>"
+"בשם)%(link_end)s ולאחר מכן %(upload_link_start)sהעלה%(link_end)s אותה ל-"
+"Backpack שלך.</li>"
 
 #: cms/templates/js/access-editor.underscore
 msgid "Limit Access"
@@ -9161,7 +9025,7 @@ msgstr "פרטים אודות חוסר ההצלחה"
 msgid "Add Component:"
 msgstr "הוסף רכיב:"
 
-#: cms/templates/js/add-xblock-component-menu-problem.underscore
+#: cms/templates/js/add-xblock-component-menu-problem.underscore 
 #: cms/templates/js/add-xblock-component-menu.underscore
 #, python-format
 msgid "%(type)s Component Template Menu"
@@ -9179,7 +9043,7 @@ msgstr "נתמך"
 msgid "Provisional"
 msgstr "זמני"
 
-#: cms/templates/js/add-xblock-component-support-legend.underscore
+#: cms/templates/js/add-xblock-component-support-legend.underscore 
 #: cms/templates/js/add-xblock-component-support-level.underscore
 msgid "Not Supported"
 msgstr "לא נתמך"
@@ -9256,23 +9120,23 @@ msgstr "נעל נכס זה"
 msgid "Lock/unlock file"
 msgstr "נעל/שחרר נעילת קובץ"
 
-#: cms/templates/js/certificate-details.underscore
-#: cms/templates/js/group-configuration-details.underscore
+#: cms/templates/js/certificate-details.underscore 
+#: cms/templates/js/group-configuration-details.underscore 
 #: cms/templates/js/partition-group-details.underscore
 msgid "ID"
 msgstr "מספר מזהה"
 
-#: cms/templates/js/certificate-details.underscore
+#: cms/templates/js/certificate-details.underscore 
 #: cms/templates/js/certificate-editor.underscore
 msgid "Certificate Details"
 msgstr "פרטי תעודה"
 
-#: cms/templates/js/certificate-details.underscore
+#: cms/templates/js/certificate-details.underscore 
 #: cms/templates/js/certificate-editor.underscore
 msgid "Course Title"
 msgstr "כותרת הקורס"
 
-#: cms/templates/js/certificate-details.underscore
+#: cms/templates/js/certificate-details.underscore 
 #: cms/templates/js/certificate-editor.underscore
 msgid "Course Title Override"
 msgstr "ביטול כותרת הקורס"
@@ -9285,21 +9149,20 @@ msgstr "מספר הקורס"
 msgid "Course Number Override"
 msgstr "ביטול מספר הקורס"
 
-#: cms/templates/js/certificate-details.underscore
+#: cms/templates/js/certificate-details.underscore 
 #: cms/templates/js/certificate-editor.underscore
 msgid "Certificate Signatories"
 msgstr "חתימות על התעודה"
 
-#: cms/templates/js/certificate-details.underscore
+#: cms/templates/js/certificate-details.underscore 
 #: cms/templates/js/certificate-editor.underscore
 msgid ""
 "It is strongly recommended that you include four or fewer signatories. If "
-"you include additional signatories, preview the certificate in Print View to"
-" ensure the certificate will print correctly on one page."
+"you include additional signatories, preview the certificate in Print View to "
+"ensure the certificate will print correctly on one page."
 msgstr ""
 "מומלץ בחום שתכלול ארבע חתימות או פחות. אם תכלול חתימות נוספות, הצג בתצוגה "
-"מוקדמת את התעודה במצב 'תצוגת הדפסה' כדי להבטיח שהתעודה תודפס כהלכה על דף "
-"אחד."
+"מוקדמת את התעודה במצב 'תצוגת הדפסה' כדי להבטיח שהתעודה תודפס כהלכה על דף אחד."
 
 #: cms/templates/js/certificate-editor.underscore
 msgid "Certificate Information"
@@ -9391,7 +9254,7 @@ msgstr "זהו שם הקבוצה"
 msgid "This content group is used in one or more units."
 msgstr "נעשה שימוש בקבוצת תוכן זו ביחידה אחת או יותר. "
 
-#: cms/templates/js/content-group-editor.underscore
+#: cms/templates/js/content-group-editor.underscore 
 #: cms/templates/js/partition-group-details.underscore
 msgid "Cannot delete when in use by a unit"
 msgstr "לא ניתן למחוק כאשר נמצא בשימוש של יחידה"
@@ -9477,7 +9340,7 @@ msgstr "תואר המדריך"
 msgid "Please add the instructor's title"
 msgstr "נא הוסף את תואר המדריך"
 
-#: cms/templates/js/course-instructor-details.underscore
+#: cms/templates/js/course-instructor-details.underscore 
 #: cms/templates/js/signatory-details.underscore
 msgid "Organization"
 msgstr "ארגון"
@@ -9573,7 +9436,7 @@ msgstr "מבחן תחת פיקוח"
 msgid "Timed Exam"
 msgstr ""
 
-#: cms/templates/js/course-outline.underscore
+#: cms/templates/js/course-outline.underscore 
 #: cms/templates/js/xblock-outline.underscore
 #, python-format
 msgid "Collapse/Expand this %(xblock_type)s"
@@ -9599,18 +9462,18 @@ msgstr "גרור על מנת לסדר מחדש"
 msgid "Release Status:"
 msgstr "מצב שחרור:"
 
-#: cms/templates/js/course-outline.underscore
-#: cms/templates/js/publish-xblock.underscore
+#: cms/templates/js/course-outline.underscore 
+#: cms/templates/js/publish-xblock.underscore 
 #: cms/templates/js/xblock-outline.underscore
 msgid "Released:"
 msgstr "שוחרר:"
 
-#: cms/templates/js/course-outline.underscore
+#: cms/templates/js/course-outline.underscore 
 #: cms/templates/js/publish-xblock.underscore
 msgid "Scheduled:"
 msgstr "מתוכנן:"
 
-#: cms/templates/js/course-outline.underscore
+#: cms/templates/js/course-outline.underscore 
 #: cms/templates/js/highlights-editor.underscore
 msgid "Section Highlights"
 msgstr ""
@@ -9631,12 +9494,12 @@ msgstr ""
 msgid "Subsection is hidden after due date"
 msgstr "תת-הפרק נסתר לאחר תאריך היעד"
 
-#: cms/templates/js/course-outline.underscore
+#: cms/templates/js/course-outline.underscore 
 #: cms/templates/js/xblock-outline.underscore
 msgid "You haven't added any content to this course yet."
 msgstr " לא הוספת עדיין תוכן לקורס זה."
 
-#: cms/templates/js/course-outline.underscore
+#: cms/templates/js/course-outline.underscore 
 #: cms/templates/js/xblock-outline.underscore
 #, python-format
 msgid "Click to add a new %(xblock_type)s"
@@ -9655,7 +9518,7 @@ msgid "Press discard changes to discard your changes."
 msgstr ""
 
 #: cms/templates/js/course-video-settings-update-org-credentials-footer.underscore
-#: cms/templates/js/course-video-settings-update-settings-footer.underscore
+#:  cms/templates/js/course-video-settings-update-settings-footer.underscore
 msgid "Update Settings"
 msgstr ""
 
@@ -9695,9 +9558,9 @@ msgstr ""
 msgid "Transcript Languages"
 msgstr ""
 
-#: cms/templates/js/course-video-transcript-preferences.underscore
-#: cms/templates/js/metadata-dict-entry.underscore
-#: cms/templates/js/metadata-list-entry.underscore
+#: cms/templates/js/course-video-transcript-preferences.underscore 
+#: cms/templates/js/metadata-dict-entry.underscore 
+#: cms/templates/js/metadata-list-entry.underscore 
 #: cms/templates/js/video/metadata-translations-entry.underscore
 msgid "Add"
 msgstr "הוסף"
@@ -9740,8 +9603,8 @@ msgstr "קיצור"
 
 #: cms/templates/js/course_grade_policy.underscore
 msgid ""
-"This short name for the assignment type (for example, HW or Midterm) appears"
-" next to assignments on a learner's Progress page."
+"This short name for the assignment type (for example, HW or Midterm) appears "
+"next to assignments on a learner's Progress page."
 msgstr ""
 "שם קצר זה לסוג המשימה (לדוגמה, ש\"ב או מבחן אמצע) מופיע ליד המשימות שבעמוד "
 "ההתקדמות של הלומד."
@@ -9789,8 +9652,8 @@ msgstr "לא הוגדרו דפי מידע"
 
 #: cms/templates/js/course_info_handouts.underscore
 msgid ""
-"There is invalid code in your content. Please check to make sure it is valid"
-" HTML."
+"There is invalid code in your content. Please check to make sure it is valid "
+"HTML."
 msgstr "יש קוד לא חוקי בתוכן שלך. אנא ודא כי זהו HTML חוקי."
 
 #: cms/templates/js/course_info_update.underscore
@@ -9887,7 +9750,7 @@ msgstr "תן ציון כ:"
 msgid "Not Graded"
 msgstr "לא ניתן ציון"
 
-#: cms/templates/js/group-configuration-details.underscore
+#: cms/templates/js/group-configuration-details.underscore 
 #: cms/templates/js/group-configuration-editor.underscore
 msgid "Cannot delete when in use by an experiment"
 msgstr "לא ניתן למחוק כאשר נמצא בשימוש הניסוי"
@@ -9898,8 +9761,8 @@ msgstr "הגדרת הקבוצה נמצאת בשימוש ב:"
 
 #: cms/templates/js/group-configuration-details.underscore
 msgid ""
-"This Group Configuration is not in use. Start by adding a content experiment"
-" to any Unit via the {linkStart}Course Outline{linkEnd}."
+"This Group Configuration is not in use. Start by adding a content experiment "
+"to any Unit via the {linkStart}Course Outline{linkEnd}."
 msgstr ""
 "הגדרת תצורת קבוצה זו אינה בשימוש. התחל בהוספת ניסוי תוכן לכל יחידה באמצעות "
 "{linkStart}תרשים הקורס{linkEnd}."
@@ -9962,8 +9825,8 @@ msgstr "מחק קבוצות"
 
 #: cms/templates/js/highlights-editor.underscore
 msgid ""
-"This feature is currently in testing. Course teams can enter highlights, but"
-" learners will not receive email messages."
+"This feature is currently in testing. Course teams can enter highlights, but "
+"learners will not receive email messages."
 msgstr ""
 
 #: cms/templates/js/highlights-editor.underscore
@@ -10024,11 +9887,11 @@ msgstr "%(new_item_message)s"
 msgid "New %(item_type)s"
 msgstr "חדש %(item_type)s"
 
-#: cms/templates/js/metadata-dict-entry.underscore
-#: cms/templates/js/metadata-file-uploader-entry.underscore
-#: cms/templates/js/metadata-list-entry.underscore
-#: cms/templates/js/metadata-number-entry.underscore
-#: cms/templates/js/metadata-option-entry.underscore
+#: cms/templates/js/metadata-dict-entry.underscore 
+#: cms/templates/js/metadata-file-uploader-entry.underscore 
+#: cms/templates/js/metadata-list-entry.underscore 
+#: cms/templates/js/metadata-number-entry.underscore 
+#: cms/templates/js/metadata-option-entry.underscore 
 #: cms/templates/js/metadata-string-entry.underscore
 msgid "Clear Value"
 msgstr "נקה ערך"
@@ -10037,8 +9900,8 @@ msgstr "נקה ערך"
 msgid "Component Location ID"
 msgstr "מזהה מיקום רכיב"
 
-#: cms/templates/js/metadata-file-uploader-item.underscore
-#: cms/templates/js/video-transcripts.underscore
+#: cms/templates/js/metadata-file-uploader-item.underscore 
+#: cms/templates/js/video-transcripts.underscore 
 #: cms/templates/js/video/metadata-translations-item.underscore
 msgid "Download"
 msgstr "הורד"
@@ -10118,7 +9981,7 @@ msgstr "מעולם לא פורסם"
 msgid "Last published %(last_published_date)s by %(publish_username)s"
 msgstr "פורסם לאחרונה  %(last_published_date)s על ידי %(publish_username)s"
 
-#: cms/templates/js/publish-history.underscore
+#: cms/templates/js/publish-history.underscore 
 #: cms/templates/js/publish-xblock.underscore
 msgid "Previously published"
 msgstr "פורסם בעבר"
@@ -10153,8 +10016,8 @@ msgstr "מצב פרסום"
 
 #: cms/templates/js/publish-xblock.underscore
 msgid ""
-"Draft saved on {lastSavedStart}{editedOn}{lastSavedEnd} by "
-"{editedByStart}{editedBy}{editedByEnd}"
+"Draft saved on {lastSavedStart}{editedOn}{lastSavedEnd} by {editedByStart}"
+"{editedBy}{editedByEnd}"
 msgstr ""
 
 #: cms/templates/js/publish-xblock.underscore
@@ -10189,7 +10052,7 @@ msgstr "עם %(section_or_subsection)s"
 msgid "Staff and Learners"
 msgstr "צוות ולומדים"
 
-#: cms/templates/js/publish-xblock.underscore
+#: cms/templates/js/publish-xblock.underscore 
 #: cms/templates/js/staff-lock-editor.underscore
 msgid "Hide from learners"
 msgstr "הסתר מהלומדים"
@@ -10264,16 +10127,16 @@ msgstr ""
 
 #: cms/templates/js/show-correctness-editor.underscore
 msgid ""
-"If the subsection does not have a due date, learners always see their scores"
-" when they submit answers to assessments."
+"If the subsection does not have a due date, learners always see their scores "
+"when they submit answers to assessments."
 msgstr ""
 
-#: cms/templates/js/signatory-details.underscore
+#: cms/templates/js/signatory-details.underscore 
 #: cms/templates/js/signatory-editor.underscore
 msgid "Signatory"
 msgstr "החותֵם"
 
-#: cms/templates/js/signatory-details.underscore
+#: cms/templates/js/signatory-details.underscore 
 #: cms/templates/js/signatory-editor.underscore
 msgid "Signature Image"
 msgstr "תמונת חתימה"
@@ -10411,8 +10274,8 @@ msgid ""
 "allow additional time for individual learners through the Instructor "
 "Dashboard."
 msgstr ""
-"השתמש במבחן מתוזמן על מנת להגביל את זמן ההשקעה של תלמידים בבעיות בתת-פרק זה."
-" התלמידים חייבים להגיש תשובות לפני שתם הזמן . תוכל לאפשר זמן נוסף לתלמידים "
+"השתמש במבחן מתוזמן על מנת להגביל את זמן ההשקעה של תלמידים בבעיות בתת-פרק זה. "
+"התלמידים חייבים להגיש תשובות לפני שתם הזמן . תוכל לאפשר זמן נוסף לתלמידים "
 "אינדיבידואליים באמצעות לוח הבקרה של המדריך."
 
 #: cms/templates/js/timed-examination-preference-editor.underscore
@@ -10447,8 +10310,8 @@ msgstr "זמן שהוקצב (שש:דד):"
 #: cms/templates/js/timed-examination-preference-editor.underscore
 msgid ""
 "Select a time allotment for the exam. If it is over 24 hours, type in the "
-"amount of time. You can grant individual learners extra time to complete the"
-" exam through the Instructor Dashboard."
+"amount of time. You can grant individual learners extra time to complete the "
+"exam through the Instructor Dashboard."
 msgstr ""
 "בחר בזמן שהוקצב למבחן. אם חלפו 24 שעות, הקלד את משך הזמן. תוכל להעניק זמן "
 "נוסף ללומדים אינדיבידואליים על מנת להשלים את המבחן באמצעות לוח הבקרה של "
@@ -10586,8 +10449,8 @@ msgstr "ערוך %(display_name)s (חובה)"
 
 #: cms/templates/js/maintenance/force-published-course-response.underscore
 msgid ""
-"You have done a dry run of force publishing the course. Nothing has changed."
-" Had you run it, the following course versions would have been change."
+"You have done a dry run of force publishing the course. Nothing has changed. "
+"Had you run it, the following course versions would have been change."
 msgstr ""
 "ביצעת הפעלה מאולצת של פרסום הקורס. דבר לא השתנה. אם היית מפעיל אותו, גרסאות "
 "הקורס הבאות היו משתנות."
@@ -10604,10 +10467,10 @@ msgstr "הוסף כתובות URL עבור גרסאות נוספות"
 
 #: cms/templates/js/video/transcripts/metadata-videolist-entry.underscore
 msgid ""
-"To be sure all students can access the video, we recommend providing both an"
-" .mp4 and a .webm version of your video. Click below to add a URL for "
-"another version. These URLs cannot be YouTube URLs. The first listed video "
-"that's compatible with the student's computer will play."
+"To be sure all students can access the video, we recommend providing both an "
+".mp4 and a .webm version of your video. Click below to add a URL for another "
+"version. These URLs cannot be YouTube URLs. The first listed video that's "
+"compatible with the student's computer will play."
 msgstr ""
 "על מנת לוודא שכל הסטודנטים יוכלו לגשת לסרטון הווידאו, אנו ממליצים שתספק "
 "לסרטון גרסאות בקובץ MP4 ובקובץ WEBM. לחץ למטה להוסיף כתובת URL עבור גרסה "
@@ -10618,29 +10481,29 @@ msgstr ""
 msgid "Default Timed Transcript"
 msgstr "תמליל מתוזמן כברירת מחדל"
 
-#: cms/templates/js/video/transcripts/messages/transcripts-choose.underscore
+#: cms/templates/js/video/transcripts/messages/transcripts-choose.underscore 
 #: cms/templates/js/video/transcripts/messages/transcripts-replace.underscore
 msgid "Timed Transcript Conflict"
 msgstr "עימות תמליל מתוזמן"
 
 #: cms/templates/js/video/transcripts/messages/transcripts-choose.underscore
 msgid ""
-"The timed transcript for the first video file does not appear to be the same"
-" as the timed transcript for the second video file."
+"The timed transcript for the first video file does not appear to be the same "
+"as the timed transcript for the second video file."
 msgstr ""
-"נראה כי התמליל המתוזמן לקובץ הווידאו הראשון אינו דומה לתמליל המתוזמן של קובץ"
-" הווידאו השני."
+"נראה כי התמליל המתוזמן לקובץ הווידאו הראשון אינו דומה לתמליל המתוזמן של קובץ "
+"הווידאו השני."
 
 #: cms/templates/js/video/transcripts/messages/transcripts-choose.underscore
 msgid "Which timed transcript would you like to use?"
 msgstr "באיזה תמליל מתוזמן ברצונך להשתמש?"
 
-#: cms/templates/js/video/transcripts/messages/transcripts-choose.underscore
-#: cms/templates/js/video/transcripts/messages/transcripts-found.underscore
-#: cms/templates/js/video/transcripts/messages/transcripts-import.underscore
+#: cms/templates/js/video/transcripts/messages/transcripts-choose.underscore 
+#: cms/templates/js/video/transcripts/messages/transcripts-found.underscore 
+#: cms/templates/js/video/transcripts/messages/transcripts-import.underscore 
 #: cms/templates/js/video/transcripts/messages/transcripts-not-found.underscore
-#: cms/templates/js/video/transcripts/messages/transcripts-replace.underscore
-#: cms/templates/js/video/transcripts/messages/transcripts-uploaded.underscore
+#:  cms/templates/js/video/transcripts/messages/transcripts-replace.underscore 
+#: cms/templates/js/video/transcripts/messages/transcripts-uploaded.underscore 
 #: cms/templates/js/video/transcripts/messages/transcripts-use-existing.underscore
 msgid "Error."
 msgstr "שגיאה"
@@ -10660,26 +10523,27 @@ msgid ""
 "transcript, you can download, edit, and re-upload the existing transcript. "
 "If you want to replace this transcript, upload a new .srt transcript file."
 msgstr ""
-"ל-edX קיים תמליל מתוזמן עבור סרטון זה. על מנת לערוך תמליל זה, ניתן להוריד את"
-" הקובץ, לערוך אותו ולהעלות אותו מחדש. אם ברצונך להחליף תמליל זה, נא העלה "
-"קובץ תמליל SRT חדש. "
+"ל-edX קיים תמליל מתוזמן עבור סרטון זה. על מנת לערוך תמליל זה, ניתן להוריד את "
+"הקובץ, לערוך אותו ולהעלות אותו מחדש. אם ברצונך להחליף תמליל זה, נא העלה קובץ "
+"תמליל SRT חדש. "
 
-#: cms/templates/js/video/transcripts/messages/transcripts-found.underscore
-#: cms/templates/js/video/transcripts/messages/transcripts-import.underscore
+#: cms/templates/js/video/transcripts/messages/transcripts-found.underscore 
+#: cms/templates/js/video/transcripts/messages/transcripts-import.underscore 
 #: cms/templates/js/video/transcripts/messages/transcripts-not-found.underscore
-#: cms/templates/js/video/transcripts/messages/transcripts-uploaded.underscore
+#:  
+#: cms/templates/js/video/transcripts/messages/transcripts-uploaded.underscore 
 #: cms/templates/js/video/transcripts/messages/transcripts-use-existing.underscore
 msgid "Upload New Transcript"
 msgstr "העלה תמליל חדש"
 
-#: cms/templates/js/video/transcripts/messages/transcripts-found.underscore
+#: cms/templates/js/video/transcripts/messages/transcripts-found.underscore 
 #: cms/templates/js/video/transcripts/messages/transcripts-import.underscore
 msgid "Upload New .srt Transcript"
 msgstr "העלה תמליל SRT חדש"
 
-#: cms/templates/js/video/transcripts/messages/transcripts-found.underscore
+#: cms/templates/js/video/transcripts/messages/transcripts-found.underscore 
 #: cms/templates/js/video/transcripts/messages/transcripts-not-found.underscore
-#: cms/templates/js/video/transcripts/messages/transcripts-uploaded.underscore
+#:  cms/templates/js/video/transcripts/messages/transcripts-uploaded.underscore
 msgid "Download Transcript for Editing"
 msgstr "הורד תמליל לעריכה"
 
@@ -10689,9 +10553,9 @@ msgstr "אין תמליל edX מתוזמן "
 
 #: cms/templates/js/video/transcripts/messages/transcripts-import.underscore
 msgid ""
-"EdX doesn't have a timed transcript for this video in Studio, but we found a"
-" transcript on YouTube. You can import the YouTube transcript or upload your"
-" own .srt transcript file."
+"EdX doesn't have a timed transcript for this video in Studio, but we found a "
+"transcript on YouTube. You can import the YouTube transcript or upload your "
+"own .srt transcript file."
 msgstr ""
 "אין  תמליל edX מתוזמן עבור סרטון וידאו זה בסטודיו, אך מצאנו תמליל ביוטיוב. "
 "יש באפשרותך לייבא את תמליל יוטיוב או להעלות את קובץ תמליל ה-SRT שלך."
@@ -10712,8 +10576,8 @@ msgstr "אין ל-edX תמליל מתוזמן עבור סרטון וידאו ז�
 
 #: cms/templates/js/video/transcripts/messages/transcripts-replace.underscore
 msgid ""
-"The timed transcript for this video on edX is out of date, but YouTube has a"
-" current timed transcript for this video."
+"The timed transcript for this video on edX is out of date, but YouTube has a "
+"current timed transcript for this video."
 msgstr ""
 "התמליל המתוזמן עבור סרטון וידאו זה ב-edX מיושן, אך קיימת גרסה עדכנית עבורו "
 "ביוטיוב."
@@ -10747,8 +10611,8 @@ msgstr "אשר תמליל מתוזמן"
 #: cms/templates/js/video/transcripts/messages/transcripts-use-existing.underscore
 msgid ""
 "You changed a video URL, but did not change the timed transcript file. Do "
-"you want to use the current timed transcript or upload a new .srt transcript"
-" file?"
+"you want to use the current timed transcript or upload a new .srt transcript "
+"file?"
 msgstr ""
 "שינית את כתובת ה-URL של סרטון הווידאו אך לא שינית את קובץ התמליל המתוזמן. "
 "האם ברצונך להשתמש בקובץ התמליל הנוכחי או להעלות קובץ תמליל SRT חדש?"

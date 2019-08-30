@@ -8230,7 +8230,7 @@ msgstr "עדיין לא רשום?"
 
 #: lms/templates/student_account/login.underscore
 msgid "Create an Account."
-msgstr ""
+msgstr "צור חשבון"
 
 #: lms/templates/student_account/login.underscore
 msgid "Sign in to continue learning as {email}"

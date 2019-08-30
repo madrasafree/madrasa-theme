@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2018-07-10 06:58+0000\n"
-"PO-Revision-Date: 2019-08-30 09:11+0000\n"
+"PO-Revision-Date: 2019-08-30 09:17+0000\n"
 "Last-Translator: e2f_HE c1 <e2f_HE_c1@outlook.com>\n"
 "Language-Team: Hebrew\n"
 "Language: he\n"
@@ -4633,6 +4633,8 @@ msgstr ""
 msgid ""
 "You receive messages from {platform_name} and course teams at this address."
 msgstr ""
+"כתובת הדואר האלקטרוני שאתה משתמש בה כדי להיכנס. הודעות מ-{platform_name} "
+"ומהקורסים שלך נשלחות לכתובת זו.\n"
 
 #: lms/static/js/student_account/views/account_settings_factory.js 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
@@ -4644,6 +4646,8 @@ msgid ""
 "The name that is used for ID verification and that appears on your "
 "certificates."
 msgstr ""
+"השם שמשמש לאימות המזהה ומופיע בתעודות שלך. לומדים אחרים לא יוכלו לעולם לראות "
+"את שמך המלא. ודא שהזנת את השם בדיוק כפי שהוא מופיע בתעודת הזהות.\n"
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Country or Region of Residence"
@@ -4651,7 +4655,7 @@ msgstr ""
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "The country or region where you live."
-msgstr ""
+msgstr "המדינה או האיזור בו אתה גר."
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Basic Account Information"
@@ -4677,6 +4681,8 @@ msgstr "סיסמה"
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Check your email account for instructions to reset your password."
 msgstr ""
+"כאשר תלחץ על \"איפוס סיסמה\", הודעה תישלח לכתובת הדואר האלקטרוני שלך עבור "
+"חשבון מדרסה. לחץ על הקישור שבהודעה לאפס את סיסמתך.\n"
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid ""
@@ -4684,6 +4690,7 @@ msgid ""
 "a limited number of languages. Changing the value of this field will cause "
 "the page to refresh."
 msgstr ""
+"השפה שמשתמשים בה באתר זה. אתר זה זמין כרגע במספר מוגבל של שפות.\n"
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Time Zone"

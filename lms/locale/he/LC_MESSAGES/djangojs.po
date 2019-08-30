@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2018-07-10 06:58+0000\n"
-"PO-Revision-Date: 2019-08-30 09:17+0000\n"
+"PO-Revision-Date: 2019-08-30 10:01+0000\n"
 "Last-Translator: e2f_HE c1 <e2f_HE_c1@outlook.com>\n"
 "Language-Team: Hebrew\n"
 "Language: he\n"
@@ -4603,7 +4603,7 @@ msgstr "לא ניתן ליצור את החשבון שלך. "
 #: lms/static/js/student_account/views/RegisterView.js 
 #: lms/templates/student_account/register.underscore
 msgid "Create Account"
-msgstr ""
+msgstr "צור חשבון"
 
 #: lms/static/js/student_account/views/RegisterView.js
 msgid "(required)"
@@ -8337,7 +8337,7 @@ msgstr ""
 
 #: lms/templates/student_account/register.underscore
 msgid "Support education research by providing additional information"
-msgstr ""
+msgstr "תמיכה במחקר חינוכי על ידי מסירת מידע נוסף"
 
 #: lms/templates/verify_student/enrollment_confirmation_step.underscore
 #, python-format

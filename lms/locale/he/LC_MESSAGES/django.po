@@ -11105,7 +11105,7 @@ msgid ""
 "{terms_of_service_link_start}{terms_of_service}{terms_of_service_link_end}"
 "                   and agree to our {privacy_policy_link_start}Privacy "
 "Policy{privacy_policy_link_end}."
-msgstr ""
+msgstr "ביצירת חשבון ב-{platform_name} אתה מסכים לעמוד ב terms_of_service_link_start}{terms_of_service} terms_of_service_link_en} שלנו, ומסכים ל{privacy_policy_link_start}{privacy_policy_link_end} שלנו."
 
 #. Translators: "Terms of service" is a legal document users must agree to
 #. in order to register a new account.

@@ -56,6 +56,11 @@ p{
 			margin-top:10px;
 			margin-bottom:10px;
 		}
+.content-left{
+	@media (max-width: 600px) {
+        width:100%!important;
+	}
+}
 tr{
     display:table;
     width:280px;

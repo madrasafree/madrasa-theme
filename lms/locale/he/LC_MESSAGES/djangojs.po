@@ -1468,7 +1468,7 @@ msgstr "כותרת"
 #. browser when a user needs to edit HTML
 #: common/lib/xmodule/xmodule/js/src/html/edit.js
 msgid "Tools"
-msgstr ""
+msgstr "כלים"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -10351,7 +10351,7 @@ msgstr ""
 
 #: cms/templates/js/transcript-organization-credentials.underscore
 msgid "Account"
-msgstr ""
+msgstr "חשבון"
 
 #: cms/templates/js/transcript-organization-credentials.underscore
 msgid ""

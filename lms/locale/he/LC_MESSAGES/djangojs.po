@@ -7224,11 +7224,11 @@ msgstr "תאריך הצטרפות"
 
 #: lms/djangoapps/support/static/support/templates/manage_user.underscore
 msgid "Password Status"
-msgstr ""
+msgstr "סטטוס סיסמה"
 
 #: lms/djangoapps/support/static/support/templates/manage_user.underscore
 msgid "Disable Account"
-msgstr ""
+msgstr "השבת חשבון"
 
 #: lms/djangoapps/teams/static/teams/templates/edit-team.underscore
 msgid "Your team could not be created."
@@ -8226,7 +8226,7 @@ msgstr "הירשם דרך edX"
 
 #: lms/templates/student_account/login.underscore
 msgid "First time here?"
-msgstr "פעם ראשונה כאן?"
+msgstr "עדיין לא רשום?"
 
 #: lms/templates/student_account/login.underscore
 msgid "Create an Account."

@@ -11105,7 +11105,7 @@ msgid ""
 "{terms_of_service_link_start}{terms_of_service}{terms_of_service_link_end}"
 "                   and agree to our {privacy_policy_link_start}Privacy "
 "Policy{privacy_policy_link_end}."
-msgstr ""
+msgstr "ביצירת חשבון באתר {platform_name}, אתה מסכים ל {terms_of_service_link_start}{terms_of_service}{terms_of_service_link_end} ומסכים ל- {privacy_policy_link_start}מדיניות הפרטיות{privacy_policy_link_end}."
 
 #. Translators: "Terms of service" is a legal document users must agree to
 #. in order to register a new account.
@@ -11274,7 +11274,7 @@ msgstr "מספר נסיונות חיבור רב מדי. אנא נסה מאוחר
 
 #: openedx/core/djangoapps/user_authn/views/login_form.py
 msgid "Create Account"
-msgstr ""
+msgstr "צור חשבון"
 
 #: openedx/core/djangoapps/user_authn/views/register.py
 #, python-brace-format

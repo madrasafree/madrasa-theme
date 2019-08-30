@@ -4737,13 +4737,13 @@ msgstr "שפה מועדפת"
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Social Media Links"
-msgstr ""
+msgstr "קישורי רשתות חברתיות"
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid ""
 "Optionally, link your personal accounts to the social media icons on your "
 "edX profile."
-msgstr ""
+msgstr "ניתן לקשר את חשבונות המדיה החברתית שלך לאתר."
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid " Link"
@@ -4751,7 +4751,7 @@ msgstr "קישור"
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Enter your "
-msgstr ""
+msgstr "הכנס"
 
 #: lms/static/js/student_account/views/account_settings_factory.js 
 #: lms/static/js/student_account/views/account_settings_view.js
@@ -8187,7 +8187,7 @@ msgstr "שכחת סיסמה?"
 #: lms/templates/student_account/hinted_login.underscore 
 #: lms/templates/student_account/login.underscore
 msgid "Sign in"
-msgstr "כניסה"
+msgstr "התחבר"
 
 #: lms/templates/student_account/hinted_login.underscore
 #, python-format
@@ -8317,7 +8317,7 @@ msgstr "כבר יש לך חשבון  {platformName} ?"
 
 #: lms/templates/student_account/register.underscore
 msgid "Sign in."
-msgstr ""
+msgstr "התחבר"
 
 #: lms/templates/student_account/register.underscore
 msgid "Create an account using"

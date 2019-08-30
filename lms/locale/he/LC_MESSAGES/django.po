@@ -140,7 +140,7 @@ msgstr ""
 #: cms/templates/admin/base_site.html lms/templates/admin/base_site.html 
 #: wiki/templates/wiki/base.html
 msgid "Log out"
-msgstr ""
+msgstr "התנתק"
 
 #: common/djangoapps/course_modes/admin.py 
 #: common/djangoapps/course_modes/models.py 
@@ -9506,7 +9506,7 @@ msgstr ""
 #: cms/templates/login.html cms/templates/widgets/header.html 
 #: themes/red-theme/cms/templates/login.html
 msgid "Sign In"
-msgstr "כניסה"
+msgstr "התחבר"
 
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html
 #:  themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html
@@ -10674,7 +10674,7 @@ msgid ""
 "{terms_of_service}{terms_of_service_link_end}                   and agree to "
 "our {privacy_policy_link_start}Privacy Policy{privacy_policy_link_end}."
 msgstr ""
-"ביצירת חשבון באתר {platform_name}, אתה מסכים ל {terms_of_service_link_start}"
+"ביצירת חשבון באתר {platform_name}, אתה מסכים ל- {terms_of_service_link_start}"
 "{terms_of_service}{terms_of_service_link_end} ומסכים ל- "
 "{privacy_policy_link_start}מדיניות הפרטיות{privacy_policy_link_end}."
 
@@ -11092,7 +11092,7 @@ msgstr ""
 #: lms/templates/navigation/navbar-not-authenticated.html 
 #: themes/edx.org/lms/templates/header/navbar-not-authenticated.html
 msgid "Sign in"
-msgstr "כניסה"
+msgstr "התחבר"
 
 #: openedx/features/course_experience/views/course_home_messages.py
 msgid ""
@@ -19489,7 +19489,7 @@ msgstr "נא המתן"
 
 #: lms/templates/student_account/login_and_register.html
 msgid "Sign in or Register"
-msgstr "היכנס או הירשם"
+msgstr "התחבר או הירשם"
 
 #: lms/templates/support/certificates.html lms/templates/support/index.html
 msgid "Student Support"

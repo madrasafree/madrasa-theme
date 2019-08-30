@@ -2421,11 +2421,11 @@ msgstr ""
 
 #: lms/djangoapps/support/static/support/jsx/file_upload.jsx
 msgid "Remove file"
-msgstr ""
+msgstr "הסר קובץ"
 
 #: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx
 msgid "Course Name"
-msgstr ""
+msgstr "שם קורס"
 
 #: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx
 msgid "Not specific to a course"
@@ -2442,7 +2442,7 @@ msgstr "נושא"
 
 #: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx
 msgid "Details"
-msgstr ""
+msgstr "פרטים"
 
 #: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx
 msgid "The more you tell us, the more quickly and helpfully we can respond!"
@@ -2481,7 +2481,7 @@ msgstr ""
 #: lms/djangoapps/support/static/support/jsx/single_support_form.jsx 
 #: lms/djangoapps/support/static/support/jsx/success.jsx
 msgid "Contact Us"
-msgstr ""
+msgstr "צור קשר"
 
 #: lms/djangoapps/support/static/support/jsx/single_support_form.jsx
 msgid "Find answers to the top questions asked by learners."
@@ -5109,7 +5109,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
-msgid "Profile Visibility:"
+msgid "ibility:"
 msgstr "מדרסה יכולים לראות את:"
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
@@ -5134,11 +5134,11 @@ msgstr "מיקום"
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "Add Country"
-msgstr ""
+msgstr "הוסף מדינה"
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "Add language"
-msgstr ""
+msgstr "הוסף שפה"
 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
 msgid "About me"
@@ -5172,7 +5172,7 @@ msgstr ""
 
 #: openedx/features/learner_profile/static/learner_profile/js/views/learner_profile_fields.js
 msgid "Profile Image"
-msgstr ""
+msgstr "תמונת פרופיל"
 
 #: openedx/features/learner_profile/static/learner_profile/js/views/learner_profile_fields.js
 msgid "Profile image for {username}"
@@ -5188,7 +5188,7 @@ msgstr ""
 
 #: openedx/features/learner_profile/static/learner_profile/js/views/learner_profile_view.js
 msgid "Profile"
-msgstr ""
+msgstr "פרופיל"
 
 #: cms/static/cms/js/main.js cms/static/js/views/active_video_upload_list.js 
 #: cms/static/js/views/video_transcripts.js
@@ -5271,7 +5271,7 @@ msgstr "לא ניתן לבטל פעולה זו."
 #: cms/static/js/views/show_textbook.js cms/static/js/views/tabs.js 
 #: cms/static/js/views/utils/xblock_utils.js
 msgid "Deleting"
-msgstr ""
+msgstr "מחיקה"
 
 #: cms/static/js/certificates/views/signatory_editor.js
 msgid "Upload signature image."
@@ -8333,7 +8333,7 @@ msgstr "או צור אחד חדש כאן"
 
 #: lms/templates/student_account/register.underscore
 msgid "Create an Account"
-msgstr ""
+msgstr "צור חשבון"
 
 #: lms/templates/student_account/register.underscore
 msgid "Support education research by providing additional information"

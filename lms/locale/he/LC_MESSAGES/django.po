@@ -145,7 +145,7 @@ msgstr "יחידה"
 #: cms/djangoapps/contentstore/views/helpers.py
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "Empty"
-msgstr ""
+msgstr "ריק"
 
 #: cms/djangoapps/contentstore/views/transcript_settings.py
 #: common/lib/xmodule/xmodule/video_module/video_handlers.py
@@ -213,7 +213,7 @@ msgstr ""
 
 #: cms/templates/admin/base_site.html lms/templates/admin/base_site.html
 msgid "View site"
-msgstr ""
+msgstr "צפה באתר"
 
 #: cms/templates/admin/base_site.html lms/templates/admin/base_site.html
 msgid "Documentation"
@@ -954,7 +954,7 @@ msgstr "איפוס סיסמה נכשל"
 
 #: common/djangoapps/student/views/management.py
 msgid "Error in resetting your password."
-msgstr ""
+msgstr "שגיאה באיפוס הסיסמה"
 
 #: common/djangoapps/student/views/management.py
 msgid "Error in resetting your password. Please try again."
@@ -3575,7 +3575,7 @@ msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "private"
-msgstr ""
+msgstr "פרטי"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "public_outline"
@@ -3583,7 +3583,7 @@ msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "public"
-msgstr ""
+msgstr "פומבי"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Course Instructor"
@@ -4902,7 +4902,7 @@ msgstr "מילות num_top_words מובילות עבור ענן המילים."
 
 #: common/templates/student/edx_ace/emailchange/email/body.html
 msgid "Email Change"
-msgstr ""
+msgstr "כתובת אימייל שונתה"
 
 #: common/templates/student/edx_ace/emailchange/email/body.html
 #: common/templates/student/edx_ace/emailchange/email/body.txt
@@ -5976,7 +5976,7 @@ msgstr ""
 #: lms/djangoapps/courseware/date_summary.py
 #, python-brace-format
 msgid "by {date}"
-msgstr ""
+msgstr "ב-"
 
 #: lms/djangoapps/courseware/date_summary.py
 #, python-brace-format
@@ -6179,7 +6179,7 @@ msgstr ""
 #: lms/djangoapps/courseware/views/views.py
 #: openedx/features/course_experience/views/course_home_messages.py
 msgid "You must be enrolled in the course to see course content."
-msgstr ""
+msgstr "אתה חייב להיות רשום לקורס כדי לראות את התוכן של הקורס"
 
 #: lms/djangoapps/courseware/views/views.py
 msgid "Invalid location."
@@ -6532,7 +6532,7 @@ msgstr ""
 #: lms/djangoapps/discussion/templates/discussion/edx_ace/responsenotification/email/body.html
 #: lms/djangoapps/discussion/templates/discussion/edx_ace/responsenotification/email/body.txt
 msgid "View discussion"
-msgstr ""
+msgstr "צפה בדיון"
 
 #: lms/djangoapps/discussion/templates/discussion/edx_ace/responsenotification/email/subject.txt
 #, python-format
@@ -24766,21 +24766,21 @@ msgstr ""
 
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/history.html
 msgid "History of"
-msgstr ""
+msgstr "היסטוריה של"
 
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/history.html
 msgid "User"
-msgstr ""
+msgstr "משתמש"
 
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/history.html
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/search.html
 msgid "File"
-msgstr ""
+msgstr "קובץ"
 
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/history.html
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/search.html
 msgid "Action"
-msgstr ""
+msgstr "פעולה"
 
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/history.html
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/search.html
@@ -24827,7 +24827,7 @@ msgstr ""
 
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/search.html
 msgid "Add file to"
-msgstr ""
+msgstr "הוסף קובץ ל"
 
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/search.html
 msgid "Add attachment from other article"
@@ -24835,24 +24835,24 @@ msgstr ""
 
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/search.html
 msgid "Main article"
-msgstr ""
+msgstr "מאמר ראשי"
 
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/search.html
 msgid "Add to article"
-msgstr ""
+msgstr "הוסף למאמרים"
 
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/search.html
 msgid "Your search did not return any results"
-msgstr ""
+msgstr "החיפוש שלך לא הניב אף תוצאה"
 
 #: wiki/plugins/help/templates/wiki/plugins/help/sidebar.html
 msgid "Adding new articles"
-msgstr ""
+msgstr "הוספת מאמרים חדשים"
 
 #: wiki/plugins/help/templates/wiki/plugins/help/sidebar.html
 #: wiki/plugins/links/templates/wiki/plugins/links/sidebar.html
 msgid "An external link"
-msgstr ""
+msgstr "קישור חיצוני"
 
 #: wiki/plugins/help/templates/wiki/plugins/help/sidebar.html
 msgid "Headers"
@@ -24866,11 +24866,11 @@ msgstr ""
 
 #: wiki/plugins/help/templates/wiki/plugins/help/sidebar.html
 msgid "Typography"
-msgstr ""
+msgstr "טיפוגרפיה"
 
 #: wiki/plugins/help/templates/wiki/plugins/help/sidebar.html
 msgid "Lists"
-msgstr ""
+msgstr "רשימות"
 
 #: wiki/plugins/images/forms.py
 #, python-format
@@ -24953,23 +24953,23 @@ msgstr ""
 
 #: wiki/plugins/images/templates/wiki/plugins/images/index.html
 msgid "Back to edit page"
-msgstr ""
+msgstr "חזרה לדף העריכה"
 
 #: wiki/plugins/images/templates/wiki/plugins/images/index.html
 msgid "No file"
-msgstr ""
+msgstr "אין קובץ"
 
 #: wiki/plugins/images/templates/wiki/plugins/images/index.html
 msgid "Upload new image"
-msgstr ""
+msgstr "העלה תמונה חדשה"
 
 #: wiki/plugins/images/templates/wiki/plugins/images/index.html
 msgid "Restore image"
-msgstr ""
+msgstr "שחזר תמונה"
 
 #: wiki/plugins/images/templates/wiki/plugins/images/index.html
 msgid "Remove image"
-msgstr ""
+msgstr "הסר תמונה"
 
 #: wiki/plugins/images/templates/wiki/plugins/images/index.html
 msgid "Completely delete"
@@ -24998,11 +24998,11 @@ msgstr ""
 
 #: wiki/plugins/images/templates/wiki/plugins/images/render.html
 msgid "Image not found"
-msgstr ""
+msgstr "תמונה לא נמצאה"
 
 #: wiki/plugins/images/templates/wiki/plugins/images/revision_add.html
 msgid "Replace image"
-msgstr ""
+msgstr "החלף תמונה"
 
 #: wiki/plugins/images/templates/wiki/plugins/images/revision_add.html
 msgid "Choose an image file to replace current image."
@@ -25010,7 +25010,7 @@ msgstr ""
 
 #: wiki/plugins/images/templates/wiki/plugins/images/sidebar.html
 msgid "Image id"
-msgstr ""
+msgstr "מזהה תמונה"
 
 #: wiki/plugins/images/templates/wiki/plugins/images/sidebar.html
 #: wiki/plugins/links/templates/wiki/plugins/links/sidebar.html
@@ -25027,11 +25027,11 @@ msgstr ""
 
 #: wiki/plugins/images/templates/wiki/plugins/images/sidebar.html
 msgid "Add new image"
-msgstr ""
+msgstr "הוסף תמונה חדשה"
 
 #: wiki/plugins/images/templates/wiki/plugins/images/sidebar.html
 msgid "Add image"
-msgstr ""
+msgstr "הוסף תמונה"
 
 #: wiki/plugins/images/templates/wiki/plugins/images/sidebar.html
 msgid "You do not have permissions to add images."
@@ -25126,7 +25126,7 @@ msgstr ""
 
 #: wiki/templates/wiki/base.html
 msgid "Search..."
-msgstr ""
+msgstr "חפש..."
 
 #: wiki/templates/wiki/base.html wiki/templates/wiki/accounts/login.html
 #: wiki/templates/wiki/accounts/signup.html
@@ -25165,7 +25165,7 @@ msgstr ""
 
 #: wiki/templates/wiki/dir.html
 msgid "clear"
-msgstr ""
+msgstr "נקה"
 
 #: wiki/templates/wiki/dir.html
 msgid "article,articles"
@@ -25211,7 +25211,7 @@ msgstr ""
 
 #: wiki/templates/wiki/preview_inline.html
 msgid "and"
-msgstr ""
+msgstr "ו"
 
 #: wiki/templates/wiki/source.html
 msgid "Source of"

@@ -850,9 +850,10 @@ section.home {
 	img{
 		width:160px!important;
 		@media screen and (max-width:600px){
-				width:100px!important;
+				width:120px!important;
 				position:relative;
 				right:10px;
+				top:10px;
 			
 		}
 	}

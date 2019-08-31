@@ -95,6 +95,7 @@ td:nth-child(odd){
 
 
 .image-text-container{
+	@media (max-width: 600px) {
   flex-wrap: wrap;
   .image-middle{
 	width:40%!important;
@@ -111,6 +112,7 @@ td:nth-child(odd){
 		text-align:justify;
 	}
   }
+}
 }
 
 

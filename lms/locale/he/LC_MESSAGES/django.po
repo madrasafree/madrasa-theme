@@ -10398,7 +10398,7 @@ msgstr "נראה כי {username} שייך לחשבון קיים. נסה שוב �
 
 #: openedx/core/djangoapps/user_api/accounts/__init__.py
 msgid "Username must be between {min} and {max} characters long."
-msgstr ""
+msgstr "שם המשתמש חייב להיות באורך {min} עד {max} תווים."
 
 #: openedx/core/djangoapps/user_api/accounts/__init__.py
 msgid "Enter a valid email address that contains at least {min} characters."

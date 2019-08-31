@@ -94,7 +94,24 @@ td:nth-child(odd){
 }
 
 
-
+.image-text-container{
+  flex-wrap: wrap;
+  .image-middle{
+	width:40%!important;
+  }
+  .image-middle{
+	width:50%!important;
+	padding-top:0!important;
+  }
+  .content-left{
+	width:100%!important;
+	padding-top:40px!important;
+	p{
+		padding-left:20px;
+		text-align:justify;
+	}
+  }
+}
 
 
 

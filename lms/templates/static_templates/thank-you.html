@@ -146,10 +146,10 @@
 <!-- Progress bar -->
 <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8.1/dist/polyfill.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0/dist/fetch.umd.min.js"></script>
-<script>
-    function reportBuy(rawValue) {
-        var reportObj = { content_name: rawValue, content_type: 'product' };
-        if (rawValue.indexOf("sub") > -1) {
+<script type="76f1bfb7a6c7c7670a348abf-text/javascript">
+    function reportBuy(rawValue){
+        var reportObj = {content_name : rawValue, content_type : 'product'};
+        if (rawValue.indexOf("sub") > -1){
             reportObj.sub = true;
         }
         var value = parseInt(rawValue.replace(/[^0-9\.]/g, ''));
@@ -160,17 +160,17 @@
         console.dir(reportObj)
         fbq('track', 'Purchase',
             reportObj
-            // end parameter object data
+        // end parameter object data
         );
         document.cookie = "dvalue= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
     }
     function getDValue(cname) {
-        var cookiestring = RegExp("" + cname + "[^;]+").exec(document.cookie);
-        return decodeURIComponent(!!cookiestring ? cookiestring.toString().replace(/^[^=]+./, "") : "");
+        var cookiestring=RegExp(""+cname+"[^;]+").exec(document.cookie);
+        return decodeURIComponent(!!cookiestring ? cookiestring.toString().replace(/^[^=]+./,"") : "");
     }
     var dvalue = getDValue("dvalue");
-    if (dvalue) {
+    if (dvalue){
         reportBuy(dvalue);
     }
-
+    
 </script>

@@ -290,5 +290,17 @@
 			// HERE YOU CAN PUT YOUR AJAX CALL
 		}
 	});
+
+	$('#submit').on('click', function (event) {
+		var isvalidate = $("#donation-form")[0].checkValidity();
+		if (isvalidate) {
+			event.preventDefault();
+			var val = $('input[name=sum]:checked').val();
+			document.cookie = "dvalue=" + $('input[name=sum]:checked').attr('id');
+			$("#donation-form").action = val;
+			window.open(val, '_blank');
+			return false;
+		}
+	});
 </script>
 </main>

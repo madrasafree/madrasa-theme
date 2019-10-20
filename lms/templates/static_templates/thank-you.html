@@ -162,6 +162,14 @@
             reportObj
         // end parameter object data
         );
+        if (ga){
+            ga('require', 'ec'); 
+            ga('set', 'currencyCode', 'ILS');
+            ga('ec:addProduct', {'name': 'monthly subscription','price': value});
+            ga('ec:setAction', 'add');
+            ga('send', 'event', 'UX', 'click', 'add to cart');
+        }
+
         document.cookie = "dvalue= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
     }
     function getDValue(cname) {

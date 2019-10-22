@@ -38,7 +38,7 @@ body {
   font-family: "muliregular", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-[data-course-id="course-v1:madrasa+course2+2019_1"] {
+[data-course-id~="course2"] {
   .course-wrapper {
     p,
     span,

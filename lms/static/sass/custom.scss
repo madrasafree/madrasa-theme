@@ -38,7 +38,9 @@ body {
   font-family: "muliregular", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-[data-course-id~="course2"] {
+//added 22/10/2019 By Yaniv - for overriding font sizes of inline styles
+
+[data-course-id*="course2"] {
   .course-wrapper {
     p,
     span,
@@ -46,6 +48,7 @@ body {
     th,
     label {
       font-size: 21px !important;
+      line-height: 1.4em !important;
     }
   }
 }

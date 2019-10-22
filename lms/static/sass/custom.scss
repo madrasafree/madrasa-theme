@@ -52,9 +52,9 @@ body {
     line-height: 1.6em !important;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 400px) {
    iframe{
-     max-width: 80%!important;
+     max-width: 330px!important;
      height:100%!important;
    }
 }

@@ -37,15 +37,19 @@ html,
 body {
   font-family: "muliregular", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.course-wrapper p,
-.course-wrapper p span,
-.course-wrapper td,
-.course-wrapper th,
-.course-wrapper li,
-.course-wrapper p a,
-.course-wrapper label {
-  font-size: 20px !important;
+
+[data-course-id="course-v1:madrasa+course2+2019_1"] {
+  .course-wrapper {
+    p,
+    span,
+    td,
+    th,
+    label {
+      font-size: 21px !important;
+    }
+  }
 }
+
 h1 {
   font-size: $font-size-h1;
 }

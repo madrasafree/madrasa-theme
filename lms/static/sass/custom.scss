@@ -41,15 +41,13 @@ body {
 //added 22/10/2019 By Yaniv - for overriding font sizes of inline styles
 
 [data-course-id*="course2"] {
-  .course-wrapper {
-    p,
-    span,
-    td,
-    th,
-    label {
-      font-size: 21px !important;
-      line-height: 1.4em !important;
-    }
+  p,
+  span,
+  td,
+  th,
+  label {
+    font-size: 21px !important;
+    line-height: 1.4em !important;
   }
 }
 

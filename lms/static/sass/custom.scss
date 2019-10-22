@@ -51,6 +51,12 @@ body {
     font-size: 20px !important;
     line-height: 1.5em !important;
   }
+
+  @media (max-width: 600px) {
+   iframe{
+     max-width: 80%!important;
+     height:100%!important;
+   }
 }
 
 h1 {

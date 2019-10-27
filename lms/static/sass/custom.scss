@@ -40,7 +40,7 @@ body {
 
 //added 22/10/2019 By Yaniv - for overriding font sizes of inline styles
 
-.xblock-student_view {
+.xblock {
   p,
   span,
   td,
@@ -54,9 +54,6 @@ body {
   iframe {
     @media (max-width: 500px) {
       max-width: 100% !important;
-      * {
-        font-family: muliregular !important;
-      }
     }
   }
 }

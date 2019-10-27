@@ -40,9 +40,9 @@ body {
 
 //added 22/10/2019 By Yaniv - for overriding font sizes of inline styles
 
-main {
+[data-course-id] {
   p,
-  p span,
+  span,
   td,
   th,
   label,

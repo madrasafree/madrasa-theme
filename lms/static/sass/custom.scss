@@ -46,10 +46,6 @@ body {
   opacity: 0;
 }
 
-.course-profile-promo-box:before:has([src*="course1+2018"]) {
-  opacity: 0.5;
-}
-
 //added 22/10/2019 By Yaniv - for overriding font sizes of inline styles
 
 [data-course-id] {

@@ -162,12 +162,14 @@
             reportObj
         // end parameter object data
         );
-        if (ga){
-            ga('require', 'ec'); 
-            ga('set', 'currencyCode', 'ILS');
-            ga('ec:addProduct', {'name': 'monthly subscription','price': value});
-            ga('ec:setAction', 'add');
-            ga('send', 'event', 'UX', 'click', 'add to cart');
+        if (gtag){
+            // tracker = ga.getAll()[0];
+            gtag('event', 'purchase', {
+                "transaction_id": new Date().getTime(),
+                "affiliation": "Madrasa Donation",
+                "value": value,
+                "currency": "ILS"
+                });
         }
 
         document.cookie = "dvalue= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"

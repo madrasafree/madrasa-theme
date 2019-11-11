@@ -215,9 +215,6 @@ from six import string_types
         ${get_course_about_section(request, course, "overview")}
       </div>
     </div>
-    %if active_reg_button or is_shib_course:
-     <p>Asalam!</p>
-    %endif
     </%block>
 
     %endif
@@ -237,6 +234,10 @@ from six import string_types
 ## Need to put this hidden form on the page so that the registration button works.
 ## Since it's no harm to display a hidden form, we display it with the most permissive conditional
 ## which is when the student is not registered.
+%if active_reg_button or is_shib_course:
+<p>Asalam!</p>
+%endif
+
 
 %if active_reg_button or is_shib_course:
   <div style="display: none;">

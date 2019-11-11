@@ -339,6 +339,11 @@ from six import string_types
 ## Since it's no harm to display a hidden form, we display it with the most permissive conditional
 ## which is when the student is not registered.
 %if active_reg_button or is_shib_course:
+<p>Asalam!</p>
+%endif
+
+
+%if active_reg_button or is_shib_course:
   <div style="display: none;">
     <form id="class_enroll_form" method="post" data-remote="true" action="${reverse('change_enrollment')}">
       <fieldset class="enroll_fieldset">

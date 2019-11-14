@@ -64,14 +64,13 @@ body {
 
     .disabled ~ a strong {
       background: #74bb00 !important;
-      padding: 4px 25px 8px 24px !important;
-      font-size: 12px;
-      font-weight: normal;
+      padding: 10px 6px !important;
+      font-size: 16px;
+      font-weight: 400;
     }
     .disabled ~ a strong:hover {
       background: #ffffff !important;
       color: #74bb00 !important;
-      padding: 10px 16px !important;
       border: 2px #74bb00 solid;
     }
   }

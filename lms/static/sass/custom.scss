@@ -54,6 +54,7 @@ body {
     span.disabled {
       background: initial !important;
       border: 0 !important;
+      padding-left: 6px;
     }
     span.disabled.register:hover {
       background: initial !important;
@@ -64,11 +65,13 @@ body {
     .disabled ~ a strong {
       background: #74bb00 !important;
       padding: 4px 25px 8px 24px !important;
+      font-size: 12px;
+      font-weight: normal;
     }
     .disabled ~ a strong:hover {
       background: #ffffff !important;
       color: #74bb00 !important;
-      padding: 4px 25px 8px 24px !important;
+      padding: 10px 16px !important;
       border: 2px #74bb00 solid;
     }
   }

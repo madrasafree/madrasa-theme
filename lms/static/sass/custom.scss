@@ -55,6 +55,12 @@ body {
       background: initial !important;
       border: 0 !important;
     }
+    span.disabled:hover {
+      background: initial !important;
+      border: 0 !important;
+      color: white !important;
+    }
+
     .disabled ~ a strong {
       background: #74bb00 !important;
       padding: 4px 25px 8px 24px !important;

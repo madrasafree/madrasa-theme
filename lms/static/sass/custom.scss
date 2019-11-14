@@ -46,18 +46,25 @@ body {
   opacity: 0;
 }
 
-.course-profile-wrapper .main-cta strong {
-  color: white;
-}
-
-.main-cta a ~ .disabled strong {
-  background: #74bb00;
-  padding: 4px 25px 8px 24px;
-}
-
-.main-cta span.disabled {
-  background: initial !important;
-  border: none !important;
+.course-profile-wrapper {
+  .main-cta {
+    strong {
+      color: white;
+    }
+    span.disabled {
+      background: initial !important;
+      border: 0 !important;
+    }
+    .disabled ~ a strong {
+      background: #74bb00 !important;
+      padding: 4px 25px 8px 24px !important;
+    }
+    .disabled ~ a strong:hover {
+      background: #ffffff !important;
+      color: #74bb00 !important;
+      padding: 4px 25px 8px 24px !important;
+    }
+  }
 }
 
 [data-course-id] {

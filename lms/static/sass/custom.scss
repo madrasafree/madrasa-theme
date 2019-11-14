@@ -49,7 +49,16 @@ body {
 .course-profile-wrapper .main-cta strong {
   color: white;
 }
-//added 22/10/2019 By Yaniv - for overriding font sizes of inline styles
+
+.main-cta a ~ .disabled strong {
+  background: #74bb00;
+  padding: 4px 25px 8px 24px;
+}
+
+.main-cta span.disabled {
+  background: initial !important;
+  border: none !important;
+}
 
 [data-course-id] {
   p,

@@ -55,23 +55,24 @@ body {
       background: initial !important;
       border: 0 !important;
       padding-left: 6px;
-    }
-    span.disabled.register:hover {
-      background: initial !important;
-      border: 0 !important;
-      color: white !important;
+      &:hover {
+        background: initial !important;
+        border: 0 !important;
+        color: white !important;
+      }
     }
 
     .disabled ~ a strong {
       background: #74bb00 !important;
-      padding: 10px 6px !important;
-      font-size: 16px;
+      padding: 10px 16px !important;
+      font-size: 14px;
+      font-family: muliregular !important;
       font-weight: 400;
-    }
-    .disabled ~ a strong:hover {
-      background: #ffffff !important;
-      color: #74bb00 !important;
-      border: 2px #74bb00 solid;
+      &:hover {
+        background: #ffffff !important;
+        color: #74bb00 !important;
+        border: 2px #74bb00 solid;
+      }
     }
   }
 }

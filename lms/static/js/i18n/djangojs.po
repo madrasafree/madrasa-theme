@@ -4635,7 +4635,7 @@ msgid ""
 "You receive messages from {platform_name} and course teams at this address."
 msgstr ""
 "כתובת הדואר האלקטרוני שאתה משתמש בה כדי להיכנס. הודעות מ-{platform_name} "
-"ומהקורסים שלך נשלחות לכתובת זו.\n"
+"ומהקורסים שלך נשלחות לכתובת זו."
 
 #: lms/static/js/student_account/views/account_settings_factory.js 
 #: openedx/features/learner_profile/static/learner_profile/js/learner_profile_factory.js
@@ -4648,7 +4648,7 @@ msgid ""
 "certificates."
 msgstr ""
 "השם שמשמש לאימות המזהה ומופיע בתעודות שלך. לומדים אחרים לא יוכלו לעולם לראות "
-"את שמך המלא. ודא שהזנת את השם בדיוק כפי שהוא מופיע בתעודת הזהות.\n"
+"את שמך המלא. ודא שהזנת את השם בדיוק כפי שהוא מופיע בתעודת הזהות."
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Country or Region of Residence"
@@ -4665,14 +4665,14 @@ msgstr "פרטי חשבון בסיסיים"
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "These settings include basic information about your account."
 msgstr ""
-"הגדרות אלו כוללות מידע בסיסי אודות חשבונך.\n"
+"הגדרות אלו כוללות מידע בסיסי אודות חשבונך."
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid ""
 "The name that identifies you on {platform_name}. You cannot change your "
 "username."
 msgstr ""
-"השם שמזהה אותך דרך {platform_name}. לא ניתן לשנות את שם המשתמש.\n"
+"השם שמזהה אותך דרך {platform_name}. לא ניתן לשנות את שם המשתמש."
 
 #: lms/static/js/student_account/views/account_settings_factory.js 
 #: lms/templates/student_account/account.underscore
@@ -4683,7 +4683,7 @@ msgstr "סיסמה"
 msgid "Check your email account for instructions to reset your password."
 msgstr ""
 "כאשר תלחץ על \"איפוס סיסמה\", הודעה תישלח לכתובת הדואר האלקטרוני שלך עבור "
-"חשבון מדרסה. לחץ על הקישור שבהודעה לאפס את סיסמתך.\n"
+"חשבון מדרסה. לחץ על הקישור שבהודעה לאפס את סיסמתך."
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid ""
@@ -4691,7 +4691,7 @@ msgid ""
 "a limited number of languages. Changing the value of this field will cause "
 "the page to refresh."
 msgstr ""
-"השפה שמשתמשים בה באתר זה. אתר זה זמין כרגע במספר מוגבל של שפות.\n"
+"השפה שמשתמשים בה באתר זה. אתר זה זמין כרגע במספר מוגבל של שפות."
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Time Zone"
@@ -7021,7 +7021,7 @@ msgstr "עמוד הבית לדיון"
 #: lms/djangoapps/discussion/static/discussion/templates/discussion-home.underscore
 #, python-format
 msgid "How to use %(platform_name)s discussions"
-msgstr "כיצד להשתמש בדיוני %(platform_name)s"
+msgstr "כיצד להשתמש בדיוני מדרסה"
 
 #: lms/djangoapps/discussion/static/discussion/templates/discussion-home.underscore
 msgid "Find discussions"
@@ -8313,7 +8313,7 @@ msgstr "שחזר את הסיסמה שלי"
 
 #: lms/templates/student_account/register.underscore
 msgid "Already have an {platformName} account?"
-msgstr "כבר יש לך חשבון  {platformName} ?"
+msgstr "כבר יש לך חשבון?"
 
 #: lms/templates/student_account/register.underscore
 msgid "Sign in."

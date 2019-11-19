@@ -8313,7 +8313,7 @@ msgstr "שחזר את הסיסמה שלי"
 
 #: lms/templates/student_account/register.underscore
 msgid "Already have an {platformName} account?"
-msgstr "כבר יש לך חשבון  {platformName} ?"
+msgstr "כבר יש לך חשבון?"
 
 #: lms/templates/student_account/register.underscore
 msgid "Sign in."

@@ -10554,7 +10554,7 @@ msgstr "פעולות"
 #. a field on the login form meant to hold the user's email address.
 #: openedx/core/djangoapps/user_api/api.py
 msgid "username@domain.com"
-msgstr "username@domain.com"
+msgstr "myemail@gmail.com"
 
 #. Translators: These instructions appear on the password reset form,
 #. immediately below a field meant to hold the user's email address.
@@ -10562,7 +10562,7 @@ msgstr "username@domain.com"
 #. below a field meant to hold the user's email address.
 #: openedx/core/djangoapps/user_api/api.py
 msgid "The email address you used to register with {platform_name}"
-msgstr "כתובת דואר אלקטרוני שהשתמשת בזמן רישום ל{platform_name}"
+msgstr "כתובת דואר אלקטרוני שהשתמשת בזמן רישום למדרסה"
 
 #. Translators: This label appears above a field on the password reset
 #. form meant to hold the user's email address.
@@ -10674,7 +10674,7 @@ msgid ""
 "{terms_of_service}{terms_of_service_link_end}                   and agree to "
 "our {privacy_policy_link_start}Privacy Policy{privacy_policy_link_end}."
 msgstr ""
-"ביצירת חשבון באתר {platform_name}, אתה מסכים ל- {terms_of_service_link_start}"
+"ביצירת חשבון באתר מדרסה, אתה מסכים ל- {terms_of_service_link_start}"
 "{terms_of_service}{terms_of_service_link_end} ומסכים ל- "
 "{privacy_policy_link_start}מדיניות הפרטיות{privacy_policy_link_end}."
 

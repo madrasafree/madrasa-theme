@@ -60,7 +60,6 @@
 				//   document.getElementById('joined').textContent = dataObj.numdonators;
 				document.getElementById('raised').textContent = dataObj.donated;
 				document.getElementById('target').textContent = dataObj.target;
-
 			}
 			else {
 				setProgress(70)
@@ -139,9 +138,6 @@
 
 							<h2>בכמה תרצו להשתתף?</h2>
 							<form id="donation-form">
-								<div id="sum-validate" class="alert alert-warning" role="alert">
-									בחר סכום כדי להמשיך
-								  </div>
 								<div class="form-group text-center text-lg-left">
 									<select  class="custom-select" id="donation-type">
 										<option value="1">תמיכה חודשית</option>
@@ -151,14 +147,14 @@
 								<div class="form-group" id="amount2">
 									<div class="support-us-form-radios row">
 										<div class="custom-control col-6 col-lg-4">
-											<input class="support-us-form-input" id="sum-25-sub" name="sum" required type="radio" value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=407fcb6b-375b-4a00-b61f-aca2bc62ff6a">
+											<input class="support-us-form-input" id="sum-25-sub" name="sum" type="radio" value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=407fcb6b-375b-4a00-b61f-aca2bc62ff6a">
 											<label class="support-us-form-label" for="sum-25-sub">
 												 ₪ 25
 											</label>
 										</div>
 
 										<div class="custom-control col-6 col-lg-4">
-											<input class="support-us-form-input" id="sum-50-sub" name="sum" checked type="radio" value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=db976d37-2c9d-4247-8f6d-590727d2ced8">
+											<input class="support-us-form-input" id="sum-50-sub" name="sum" type="radio" value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=db976d37-2c9d-4247-8f6d-590727d2ced8" checked>
 											<label class="support-us-form-label" for="sum-50-sub">
 												 ₪ 50
 											</label>
@@ -260,36 +256,28 @@
 	</div>
 	
 <script>
-	$('#sum-validate').hide();
 	$('#donation-type').on('change', function () {
 		if (this.value == '1') {
 			$('#amount2').show();
 			$('#amount1').hide();
-			$('[type="radio"]').attr('checked', false);
 		}
 		else {
 			$('#amount1').show();
 			$('#amount2').hide();
-			$('[type="radio"]').attr('checked', false);
 		}
-
 	});
-
 	function afterValidate() {
 		// $("#donation-form").action = val;
 		// window.location.replace(val);
 		// return false;
 	}
 	// $("#submit").click(function(e) {
-
 	// 		var val = $('input[name=sum]:checked').val();
 	// 		console.log(val);
 	// 		$("#donation-form").action = val;
 	// 		window.location.replace(val);
 	// 		return false;
-
 	// });
-
 	// $('#submit').on('click', function (event) {
 	// 	var isvalidate = $("#donation-form")[0].checkValidity();
 	// 	if (isvalidate) {
@@ -302,7 +290,6 @@
 	// 		// HERE YOU CAN PUT YOUR AJAX CALL
 	// 	}
 	// });
-
 	$('#submit').on('click', function (event) {
 		var isvalidate = $("#donation-form")[0].checkValidity();
 		if (isvalidate) {
@@ -313,8 +300,6 @@
 			window.open(val, '_blank');
 			return false;
 		}
-		$('#sum-validate').show();
-		setTimeout($('#sum-validate').hide(), 2000);
 	});
 </script>
 </main>

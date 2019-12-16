@@ -261,10 +261,12 @@
 		if (this.value == '1') {
 			$('#amount2').show();
 			$('#amount1').hide();
+			$('[type="radio"]').attr('checked', false);
 		}
 		else {
 			$('#amount1').show();
 			$('#amount2').hide();
+			$('[type="radio"]').attr('checked', false);
 		}
 
 	});

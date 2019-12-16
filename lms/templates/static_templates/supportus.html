@@ -139,6 +139,9 @@
 
 							<h2>בכמה תרצו להשתתף?</h2>
 							<form id="donation-form">
+								<div id="sum-validate" class="alert alert-warning" role="alert">
+									בחר סכום כדי להמשיך
+								  </div>
 								<div class="form-group text-center text-lg-left">
 									<select  class="custom-select" id="donation-type">
 										<option value="1">תמיכה חודשית</option>
@@ -257,6 +260,7 @@
 	</div>
 	
 <script>
+	$('#sum-validate').hide();
 	$('#donation-type').on('change', function () {
 		if (this.value == '1') {
 			$('#amount2').show();
@@ -309,6 +313,8 @@
 			window.open(val, '_blank');
 			return false;
 		}
+		$('#sum-validate').show();
+		setTimeout($('#sum-validate').hide(), 2000);
 	});
 </script>
 </main>

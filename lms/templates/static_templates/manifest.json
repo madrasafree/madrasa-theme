@@ -1,4 +1,22 @@
 {
   "gcm_sender_id": "482941778795",
-  "gcm_sender_id_comment": "Do not change the GCM Sender ID"
+  "short_name": "Madrasa",
+  "name": "Madrasa School for Colloquial Arabic",
+  "icons": [
+    {
+      "src": "https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#74bb00",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#74bb00"
 }

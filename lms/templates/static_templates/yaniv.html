@@ -17,7 +17,7 @@
 					<input type="hidden" name="_next" value="https://madrasafree.com/thanks" />
                     <input type="hidden" name="_subject" value="פנייה דרך טופס יצירת קשר  " />
                     <div class="form-group">
-						<select>
+						<select class="form-control">
                             <option value="option1">טכני</option>
                             <option value="option2">מנהלה</option>
                             <option value="option3">התנדבות</option>
@@ -55,8 +55,8 @@
         option2: "example2@gmail.com",
         option3: "example3@gmail.com"
     }
-    select.addEventListener("onchange", function () {
-        form.setAttribute("action", emails[selectedOption]);
+    select.addEventListener("change", function () {
+        form.setAttribute("action", "https://formspree.io/" + emails[selectedOption]);
     });
 
 </script>

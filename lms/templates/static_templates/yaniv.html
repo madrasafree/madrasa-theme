@@ -47,16 +47,15 @@
 	</section>
 </main>
 <script>
-    const select = document.querySelector(".form-group select");
-    const form = document.querySelector("form");
-    let selectedOption = select.options[select.selectedIndex].text;
-    const emails = {
-        option1: "example1@gmail.com",
-        option2: "example2@gmail.com",
-        option3: "example3@gmail.com"
-    }
-    select.addEventListener("change", function () {
-        form.setAttribute("action", "https://formspree.io/" + emails[selectedOption]);
-    });
+	const select = document.querySelector(".form-group select");
+	const form = document.querySelector("form");
+	const emails = {
+		option1: "example1@gmail.com",
+		option2: "example2@gmail.com",
+		option3: "example3@gmail.com"
+	}
+	select.addEventListener("change", function (e) {
+		form.setAttribute("action", "https://formspree.io/" + emails[e.value]);
+	});
 
 </script>

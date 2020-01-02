@@ -2,4 +2,59 @@
 <%! from django.utils.translation import ugettext as _ %>
 <%inherit file="../main.html" />
 
-<%block name="pagetitle">Yaniv's</%block>
+<%block name="pagetitle">צור קשר</%block>
+<%block name="headextra">
+
+</%block>
+<main id="main" aria-label="Content" tabindex="-1">
+	<section class="lang-services-form">
+			<form method="POST" action="https://formspree.io/example1@gmail.com">
+        <div class="container text-center p-5">
+			<div class="lang-services-form-wrap p-5">
+				<h3 class="mb-4">יצירת קשר<br>
+					מלא.י את הטופס ונחזור אלייך בהקדם!</h3>
+				<form>
+					<input type="hidden" name="_next" value="https://madrasafree.com/thanks" />
+                    <input type="hidden" name="_subject" value="פנייה דרך טופס יצירת קשר  " />
+                    <div class="form-group">
+						<select>
+                            <option>טכני</option>
+                            <option>מנהלה</option>
+                            <option>התנדבות</option>
+                        </select>
+					</div>
+					<div class="form-group">
+						<label for="lang-services-form-name" class="sr-only">שם</label>
+						<input type="text" class="form-control"  name="username" id="lang-services-form-name" placeholder="שם">
+					</div>
+					<div class="form-group">
+						<label for="lang-services-form-email" class="sr-only">מייל</label>
+						<input type="email" name="email" class="form-control" id="lang-services-form-email" placeholder="מייל">
+					</div>
+					<div class="form-group">
+						<label for="lang-services-form-tel" class="sr-only">טלפון</label>
+						<input type="tel" class="form-control"  name="phone" id="lang-services-form-tel" placeholder="טלפון">
+					</div>
+					<div class="form-group">
+						<label for="lang-services-form-textarea" class="sr-only">איך נוכל לעזור?</label>
+						<textarea name="message" class="form-control" id="lang-services-form-textarea" rows="3" placeholder="איך נוכל לעזור?"></textarea>
+					</div>
+					<button class="theme-btn theme-btn__invert type="submit">שלח</button>
+				</form>
+			</div>
+		</div>
+	</form>
+	</section>
+</main>
+<script>
+    const select = document.querySelector(".form-group select");
+    const form = document.querySelector("form");
+    let selectedOption = select.options[select.selectedIndex].text;
+    const emails = {
+        option1: "example1@gmail.com",
+        option2: "example2@gmail.com",
+        option3: "example3@gmail.com"
+    }
+    form.setAttribute("action", emails[selectedOption]);
+
+</script>

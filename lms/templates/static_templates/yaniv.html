@@ -18,9 +18,9 @@
                     <input type="hidden" name="_subject" value="פנייה דרך טופס יצירת קשר  " />
                     <div class="form-group">
 						<select>
-                            <option>טכני</option>
-                            <option>מנהלה</option>
-                            <option>התנדבות</option>
+                            <option value="option1">טכני</option>
+                            <option value="option2">מנהלה</option>
+                            <option value="option3">התנדבות</option>
                         </select>
 					</div>
 					<div class="form-group">
@@ -55,6 +55,8 @@
         option2: "example2@gmail.com",
         option3: "example3@gmail.com"
     }
-    form.setAttribute("action", emails[selectedOption]);
+    select.addEventListener("onchange", function () {
+        form.setAttribute("action", emails[selectedOption]);
+    });
 
 </script>

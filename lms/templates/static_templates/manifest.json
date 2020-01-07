@@ -14,9 +14,12 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/?source=pwa",
+  "start_url": "https://madrasafree.com/?source=pwa",
   "background_color": "#74bb00",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#74bb00"
+  "theme_color": "#74bb00",
+  "lang": "Hebrew (modern)",
+  "screenshots": [],
+  "orientation": "natural"
 }

@@ -24,16 +24,7 @@
 				<form>
 					<input type="hidden" name="_next" value="https://madrasafree.com/thanks" />
                     <input type="hidden" name="_subject" value="פנייה דרך טופס יצירת קשר  " />
-                    <div class="form-group">
-						<select class="form-control">
-							<option value="" disabled selected>נושא הפנייה</option>
-                            <option value="lang">שירותי שפה</option>
-                            <option value="admin">שאלות טכניות</option>
-							<option value="office">תרומות וכספים</option>
-							<option value="admin">שאלות מקצועיות</option>
-							<option value="office">אחר</option>
-                        </select>
-					</div>
+                   
 					<div class="form-group">
 						<label for="lang-services-form-name" class="sr-only">שם</label>
 						<input type="text" class="form-control"  name="username" id="lang-services-form-name" placeholder="שם">
@@ -46,6 +37,18 @@
 						<label for="lang-services-form-tel" class="sr-only">טלפון</label>
 						<input type="tel" class="form-control"  name="phone" id="lang-services-form-tel" placeholder="טלפון">
 					</div>
+
+					<div class="form-group">
+						<select class="form-control">
+							<option value="" disabled selected>נושא הפנייה</option>
+                            <option value="lang">קורסים, הרצאות, תרגום ושירותי שפה אחרים</option>
+                            <option value="admin">תקלות או שאלות טכניות</option>
+							<option value="office">תרומות או כספים </option>
+							<option value="admin">שאלות מקצועיות</option>
+							<option value="office">אחר</option>
+                        </select>
+					</div>
+
 					<div class="form-group">
 						<label for="lang-services-form-textarea" class="sr-only">איך נוכל לעזור?</label>
 						<textarea name="message" class="form-control" id="lang-services-form-textarea" rows="3" placeholder="איך נוכל לעזור?"></textarea>

@@ -6,12 +6,12 @@
 <%block name="headextra">
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "ec7fef53-942e-4f5b-aadd-c71ebe1af624",
-    });
-  });
+	var OneSignal = window.OneSignal || [];
+	OneSignal.push(function () {
+		OneSignal.init({
+			appId: "ec7fef53-942e-4f5b-aadd-c71ebe1af624",
+		});
+	});
 </script>
 </%block>
 <main id="main" aria-label="Content" tabindex="-1">
@@ -26,9 +26,12 @@
                     <input type="hidden" name="_subject" value="פנייה דרך טופס יצירת קשר  " />
                     <div class="form-group">
 						<select class="form-control">
-                            <option value="option1">טכני</option>
-                            <option value="option2">מנהלה</option>
-                            <option value="option3">התנדבות</option>
+							<option value="" disabled selected>נושא הפנייה</option>
+                            <option value="lang">שירותי שפה</option>
+                            <option value="admin">שאלות טכניות</option>
+							<option value="office">תרומות וכספים</option>
+							<option value="admin">שאלות מקצועיות</option>
+							<option value="office">אחר</option>
                         </select>
 					</div>
 					<div class="form-group">
@@ -59,9 +62,9 @@
 	const form = document.querySelector("form");
 
 	const emails = {
-		option1: "example1@gmail.com",
-		option2: "example2@gmail.com",
-		option3: "example3@gmail.com"
+		lang: "‏‪michal@madrasafree.com‬‏",
+		admin: "admin@madrasafree.com",
+		office: "office@madrasafree.com",
 	}
 
 	select.addEventListener("change", function () {

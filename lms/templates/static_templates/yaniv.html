@@ -41,11 +41,11 @@
 					<div class="form-group">
 						<select class="form-control">
 							<option value="" disabled selected>נושא הפנייה</option>
-                            <option value="lang">קורסים, הרצאות, תרגום ושירותי שפה אחרים</option>
-                            <option value="admin">תקלות או שאלות טכניות</option>
-							<option value="office">תרומות או כספים </option>
-							<option value="admin">שאלות מקצועיות</option>
-							<option value="office">אחר</option>
+                            <option value="קורסים, הרצאות, תרגום ושירותי שפה אחרים">קורסים, הרצאות, תרגום ושירותי שפה אחרים</option>
+                            <option value="תקלות או שאלות טכניות">תקלות או שאלות טכניות</option>
+							<option value="תרומות או כספים">תרומות או כספים </option>
+							<option value="שאלות מקצועיות">שאלות מקצועיות</option>
+							<option value="אחר">אחר</option>
                         </select>
 					</div>
 
@@ -72,6 +72,6 @@
 	// }
 
 	select.addEventListener("change", function () {
-		subject.setAttribute("value", this.innerHTML);
+		subject.setAttribute("value", "פנייה מאתר מדרסה: " + this.value);
 	});
 </script>

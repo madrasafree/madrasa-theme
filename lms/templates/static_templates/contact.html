@@ -13,27 +13,40 @@
 			<div class="lang-services-form-wrap p-5">
 				<h3 class="mb-4">יצירת קשר<br>
 					מלא.י את הטופס ונחזור אלייך בהקדם!</h3>
-				<form>
-					<input type="hidden" name="_next" value="https://madrasafree.com/thanks" />
-					<input type="hidden" name="_subject" value="פנייה דרך טופס יצירת קשר  " />
-					<div class="form-group">
-						<label for="lang-services-form-name" class="sr-only">שם</label>
-						<input type="text" class="form-control"  name="username" id="lang-services-form-name" placeholder="שם">
-					</div>
-					<div class="form-group">
-						<label for="lang-services-form-email" class="sr-only">מייל</label>
-						<input type="email" name="email" class="form-control" id="lang-services-form-email" placeholder="מייל">
-					</div>
-					<div class="form-group">
-						<label for="lang-services-form-tel" class="sr-only">טלפון</label>
-						<input type="tel" class="form-control"  name="phone" id="lang-services-form-tel" placeholder="טלפון">
-					</div>
-					<div class="form-group">
-						<label for="lang-services-form-textarea" class="sr-only">איך נוכל לעזור?</label>
-						<textarea name="message" class="form-control" id="lang-services-form-textarea" rows="3" placeholder="איך נוכל לעזור?"></textarea>
-					</div>
-					<button class="theme-btn theme-btn__invert type="submit">שלח</button>
-				</form>
+					<form>
+						<input type="hidden" name="_next" value="https://madrasafree.com/thanks" />
+						<input id="subject" type="hidden" name="_subject" value="פנייה דרך טופס יצירת קשר  " />
+					   
+						<div class="form-group">
+							<label for="lang-services-form-name" class="sr-only">שם</label>
+							<input type="text" class="form-control"  name="username" id="lang-services-form-name" placeholder="שם">
+						</div>
+						<div class="form-group">
+							<label for="lang-services-form-email" class="sr-only">מייל</label>
+							<input required type="email" name="email" class="form-control" id="lang-services-form-email" placeholder="מייל">
+						</div>
+						<div class="form-group">
+							<label for="lang-services-form-tel" class="sr-only">טלפון</label>
+							<input type="tel" class="form-control"  name="phone" id="lang-services-form-tel" placeholder="טלפון">
+						</div>
+	
+						<div class="form-group">
+							<select required class="form-control">
+								<option value="" disabled selected>נושא הפנייה</option>
+								<option value="קורסים, הרצאות, תרגום ושירותי שפה אחרים">קורסים, הרצאות, תרגום ושירותי שפה אחרים</option>
+								<option value="תקלות או שאלות טכניות">תקלות או שאלות טכניות</option>
+								<option value="תרומות או כספים">תרומות או כספים </option>
+								<option value="שאלות מקצועיות">שאלות מקצועיות</option>
+								<option value="אחר">אחר</option>
+							</select>
+						</div>
+	
+						<div class="form-group">
+							<label for="lang-services-form-textarea" class="sr-only">איך נוכל לעזור?</label>
+							<textarea required name="message" class="form-control" id="lang-services-form-textarea" rows="3" placeholder="איך נוכל לעזור?"></textarea>
+						</div>
+						<button class="theme-btn theme-btn__invert" type="submit">שלח</button>
+					</form>
 			</div>
 		</div>
 	</form>

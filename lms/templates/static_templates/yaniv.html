@@ -16,14 +16,14 @@
 </%block>
 <main id="main" aria-label="Content" tabindex="-1">
 	<section class="lang-services-form">
-			<form method="POST" action="https://formspree.io/office@madrasafree.com">
+			<form method="POST" action="https://formspree.io/admin@madrasafree.com">
         <div class="container text-center p-5">
 			<div class="lang-services-form-wrap p-5">
 				<h3 class="mb-4">יצירת קשר<br>
 					מלא.י את הטופס ונחזור אלייך בהקדם!</h3>
 				<form>
 					<input type="hidden" name="_next" value="https://madrasafree.com/thanks" />
-                    <input type="hidden" name="_subject" value="פנייה דרך טופס יצירת קשר  " />
+                    <input id="subject" type="hidden" name="_subject" value="פנייה דרך טופס יצירת קשר  " />
                    
 					<div class="form-group">
 						<label for="lang-services-form-name" class="sr-only">שם</label>
@@ -63,14 +63,15 @@
 <script>
 	const select = document.querySelector(".form-group select");
 	const form = document.querySelector("form");
+	const subject = document.querySelector("#subject");
 
-	const emails = {
-		lang: "michal@madrasafree.com",
-		admin: "admin@madrasafree.com",
-		office: "office@madrasafree.com",
-	}
+	// const emails = {
+	// 	lang: "michal@madrasafree.com",
+	// 	admin: "admin@madrasafree.com",
+	// 	office: "office@madrasafree.com",
+	// }
 
 	select.addEventListener("change", function () {
-		form.setAttribute("action", "https://formspree.io/" + emails[this.value]);
+		subject.setAttribute("value", this.innerHTML);
 	});
 </script>

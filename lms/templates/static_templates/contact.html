@@ -19,7 +19,7 @@
 					   
 						<div class="form-group">
 							<label for="lang-services-form-name" class="sr-only">שם</label>
-							<input type="text" class="form-control"  name="username" id="lang-services-form-name" placeholder="שם">
+							<input required type="text" class="form-control"  name="username" id="lang-services-form-name" placeholder="שם">
 						</div>
 						<div class="form-group">
 							<label for="lang-services-form-email" class="sr-only">מייל</label>
@@ -52,3 +52,11 @@
 	</form>
 	</section>
 </main>
+
+<script>
+	const select = document.querySelector(".form-group select");
+	const subject = document.querySelector("#subject");
+	select.addEventListener("change", function () {
+		subject.setAttribute("value", "פנייה מאתר מדרסה: " + this.value);
+	});
+</script>

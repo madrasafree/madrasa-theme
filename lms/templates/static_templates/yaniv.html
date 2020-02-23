@@ -2,76 +2,110 @@
 <%! from django.utils.translation import ugettext as _ %>
 <%inherit file="../main.html" />
 
-<%block name="pagetitle">צור קשר</%block>
+<%block name="pagetitle">תמכו במהפכה | Join the Revolution </%block>
 <%block name="headextra">
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-	var OneSignal = window.OneSignal || [];
-	OneSignal.push(function () {
-		OneSignal.init({
-			appId: "ec7fef53-942e-4f5b-aadd-c71ebe1af624",
-		});
-	});
-</script>
+
+<!-- viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Search Engine -->
+<meta name="description" content="מדרסה קיים בזכות שותפים כמוך. יחד אנחנו יוצרים חברה מתקשרת וטובה יותר. הצטרפו עכשיו!">
+<meta name="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content=" תמכו במהפכה | ٍJoin the Revolution">
+<meta itemprop="description" content="מדרסה קיים בזכות שותפים כמוך. יחד אנחנו יוצרים חברה מתקשרת וטובה יותר. הצטרפו עכשיו!">
+<meta itemprop="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content=" תמכו במהפכה | ٍJoin the Revolution">
+<meta name="og:description" content="מדרסה קיים בזכות שותפים כמוך. יחד אנחנו יוצרים חברה מתקשרת וטובה יותר. הצטרפו עכשיו!">
+<meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+<!-- style -->
+<style>
+		.reg-user-progress h2{
+			font-size:52px!important;
+			margin-top:10px;
+	
+		}
+		.reg-user-progress{
+			padding:0!important;
+			margin-bottom:60px;
+		}
+		.col-lg-6 h3{
+            margin-top:60px;
+		}
+		h1{
+			margin-top:8px;
+		}
+		.support-us-top-phrase{
+			font-family:muliregular!important;
+		}
+	
+</style>
+
 </%block>
-<main id="main" aria-label="Content" tabindex="-1">
-	<section class="lang-services-form">
-			<form method="POST" action="https://formspree.io/admin@madrasafree.com">
-        <div class="container text-center p-5">
-			<div class="lang-services-form-wrap p-5">
-				<h3 class="mb-4">יצירת קשר<br>
-					מלא.י את הטופס ונחזור אלייך בהקדם!</h3>
-				<form>
-					<input type="hidden" name="_next" value="https://madrasafree.com/thanks" />
-                    <input id="subject" type="hidden" name="_subject" value="פנייה דרך טופס יצירת קשר  " />
-                   
-					<div class="form-group">
-						<label for="lang-services-form-name" class="sr-only">שם</label>
-						<input type="text" class="form-control"  name="username" id="lang-services-form-name" placeholder="שם">
-					</div>
-					<div class="form-group">
-						<label for="lang-services-form-email" class="sr-only">מייל</label>
-						<input required type="email" name="email" class="form-control" id="lang-services-form-email" placeholder="מייל">
-					</div>
-					<div class="form-group">
-						<label for="lang-services-form-tel" class="sr-only">טלפון</label>
-						<input type="tel" class="form-control"  name="phone" id="lang-services-form-tel" placeholder="טלפון">
-					</div>
 
-					<div class="form-group">
-						<select required class="form-control">
-							<option value="" disabled selected>נושא הפנייה</option>
-                            <option value="קורסים, הרצאות, תרגום ושירותי שפה אחרים">קורסים, הרצאות, תרגום ושירותי שפה אחרים</option>
-                            <option value="תקלות או שאלות טכניות">תקלות או שאלות טכניות</option>
-							<option value="תרומות או כספים">תרומות או כספים </option>
-							<option value="שאלות מקצועיות">שאלות מקצועיות</option>
-							<option value="אחר">אחר</option>
-                        </select>
-					</div>
-
-					<div class="form-group">
-						<label for="lang-services-form-textarea" class="sr-only">איך נוכל לעזור?</label>
-						<textarea required name="message" class="form-control" id="lang-services-form-textarea" rows="3" placeholder="איך נוכל לעזור?"></textarea>
-					</div>
-					<button class="theme-btn theme-btn__invert" type="submit">שלח</button>
-				</form>
-			</div>
-		</div>
-	</form>
-	</section>
-</main>
+<!-- Progress bar -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8.1/dist/polyfill.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0/dist/fetch.umd.min.js"></script>
 <script>
-	const select = document.querySelector(".form-group select");
-	const form = document.querySelector("form");
-	const subject = document.querySelector("#subject");
-
-	// const emails = {
-	// 	lang: "michal@madrasafree.com",
-	// 	admin: "admin@madrasafree.com",
-	// 	office: "office@madrasafree.com",
-	// }
-
-	select.addEventListener("change", function () {
-		subject.setAttribute("value", "פנייה מאתר מדרסה: " + this.value);
-	});
+	!function (e, t) { "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define("GetSheetDone", [], t) : "object" == typeof exports ? exports.GetSheetDone = t() : e.GetSheetDone = t() }(this, function () { return function (e) { function t(r) { if (n[r]) return n[r].exports; var o = n[r] = { i: r, l: !1, exports: {} }; return e[r].call(o.exports, o, o.exports, t), o.l = !0, o.exports } var n = {}; return t.m = e, t.c = n, t.d = function (e, n, r) { t.o(e, n) || Object.defineProperty(e, n, { configurable: !1, enumerable: !0, get: r }) }, t.n = function (e) { var n = e && e.__esModule ? function () { return e.default } : function () { return e }; return t.d(n, "a", n), n }, t.o = function (e, t) { return Object.prototype.hasOwnProperty.call(e, t) }, t.p = "", t(t.s = 0) }([function (e, t, n) { "use strict"; function r(e, t, n) { return "https://spreadsheets.google.com/feeds/" + n + "/" + e + "/" + t + "/public/values?alt=json" } function o(e, t, n, o) { if (0 === e.length) return Promise.reject(new Error("empty id")); var u = r(e, t, n); return new Promise(function (e, t) { fetch(u).then(function (e) { return e.json() }).then(function (t) { var n = o(t.feed.entry), r = { title: t.feed.title.$t, updated: t.feed.updated.$t, data: n }; e(r) }).catch(function (e) { t(e) }) }) } function u(e) { var t = []; return e.forEach(function (e) { var n = parseInt(e.gs$cell.row, 10) - 1, r = parseInt(e.gs$cell.col, 10) - 1, o = e.gs$cell.$t; void 0 === t[n] && (t[n] = []), t[n][r] = o }), t } function l(e) { var t = {}; return Object.keys(e).forEach(function (n) { if (0 === n.indexOf("gsx$")) { var r = n.substr(4); t[r] = e[n].$t } }), t } function i(e) { return e.map(function (e) { return l(e) }) } function c(e) { var t = e.split(", "), n = {}, r = null; return t.forEach(function (e, t) { var o = e.split(": "); 2 === o.length ? (n[o[0]] = o[1], r = o[0]) : 1 === o.length && r && (n[r] = n[r] + ", " + o[0]) }), n } function f(e) { var t = {}; return e.forEach(function (e) { t[e.title.$t] = c(e.content.$t) }), t } function s(e) { return o(e, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1, "cells", u) } function a(e) { return o(e, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1, "list", i) } function d(e) { return o(e, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1, "list", f) } Object.defineProperty(t, "__esModule", { value: !0 }), t.buildUrl = r, t.parseRawCells = u, t.parseLabeledCols = i, t.parseLabeledRowsCols = f, t.raw = s, t.labeledCols = a, t.labeledColsRows = d, t.default = { raw: s, labeledCols: a, labeledColsRows: d } }]).default });
 </script>
+<!-- <script src="GetSheetDone.js?0.1.4"></script> -->
+
+<script>
+	GetSheetDone.labeledCols('1gB-A3BoqMjEY4pbAmN7iyyXLBcC1X1BtjeSc_NCtNz0', 2)
+		.then((data) => {
+			if (data && data.data && data.data[0] && data.data[0].donated && data.data[0].target) {
+				let dataObj = data.data[0];
+				setProgress((dataObj.donated / dataObj.target) * 100)
+				//   document.getElementById('joined').textContent = dataObj.numdonators;
+				document.getElementById('raised').textContent = dataObj.donated;
+				document.getElementById('target').textContent = dataObj.target;
+			}
+			else {
+				setProgress(70)
+			}
+		}).catch(err => {
+			console.log('Error');
+			console.error(err);
+		});
+	function setProgress(value) {
+		var bar = document.getElementById('course-progress');
+		bar.style.width = value + "%";
+	}
+</script>
+
+<main id="main" aria-label="Content" tabindex="-1" class="content-wrapper">
+	<div class="content-wrapper">
+		
+		<section class="support-us-top d-flex align-items-center">
+			<div class="support-us-top-wrap flex-grow-1">
+				<div class="row align-items-center flex-grow-1">
+				  <div class="col-lg-6 order-lg-2 pr-lg-5 py-4">
+					  <div class="support-us-top-phrase support-us-top-phrase-01">
+						מצטרפים עכשיו לתנועה החברתית של מדרסה
+					  </div>
+					  <div class="support-us-top-phrase support-us-top-phrase-02">
+מקדמים יחד חברה ישראלית מתקשרת ובריאה יותר					  </div>
+					  <div class="support-us-top-phrase support-us-top-phrase-03 d-none d-md-block">
+					צריכים אותך איתנו
+					  </div>
+				  </div>
+				  <div class="col-lg-6 order-lg-1">
+					<div class="embed-responsive embed-responsive-16by9">
+					  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/LYK6Jr_fRK4?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=0&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false&amp;enablejsapi=0" allowfullscreen></iframe>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="support-us-body">
+			<div class="support-us-body-wrap">
+				
+			</div>
+		</section>
+
+	</div>
+	
+
+</main>

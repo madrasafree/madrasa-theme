@@ -20,13 +20,17 @@
 <meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
 <!-- style -->
 <style>
+	    p{
+			font-size:23px;
+		}
         .support-us-top .support-us-top-phrase{
 			font-size:20px;
 		}
-		ul {
- 		 list-style-image: url('https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/vsign-list-icon.png');
+		ul.v-list {
+ 		 list-style-image: url('https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/vsign-list-icon.png')!important;
+		
 		}
-		ul::before {
+		.v-list li::before {
  		   content:"";
 		}
         .support-us-top .support-us-top-phrase-01{
@@ -35,6 +39,8 @@
 
 		.support-us-top .support-us-top-phrase-02{
 			transform: rotate(-3deg);
+			margin-right:0;
+		    margin-top:20px;
 		}
         .support-us-top .support-us-top-phrase-02{
 
@@ -76,6 +82,12 @@
 			.progress-bar-image{
 			width: 200px;
             bottom: -30;
+			
+		}
+		}
+		@media screen and (max-width: 900px){
+			.support-us-flex-item{
+			padding: 0 30px;
 			
 		}
 		}
@@ -163,7 +175,7 @@
 
 				<div class="support-us-flex-item p-2">
 
-					<p class="text-center">
+					<p class="text-center" style="margin-top:-40px">
 						<strong>מאמינים בחשיבות של ידיעת ערבית?</strong>
 						הצטרפו עכשיו לתמיכה חודשית  הפרוייקט ועזרו לנו לאפשר למאות אלפי אנשים ללמוד לתקשר בצורה נגישה מקצועית וחינמית
 					</p>
@@ -188,7 +200,7 @@
 				<div class="support-us-flex-item p-2">
 
 					<h3>בזכות התמיכה שלכם כבר הספקנו</h3>
-					<ul>
+					<ul class="v-list">
 						<li>לשחרר גרסת מובייל לקורס המקוון שלנו - כדי שהלמידה לא תהיה מוגבלת לזמן או למקום</li>
 						<li>לקיים מפגשי שיח חינמיים בירושליים, תל אביב וחיפה ולאפשר למעל 200 אנשים לתרגל ולשוחח בערבית בחינם באופן שבועי!</li>
 						<li>להשיק את קורס הממשיכים של מדרסה! ולקרב עוד אנשים לתקשר בערבית ברמה גבוהה בדרך אפקטיבית, מתקדמת ומהנה</li>

@@ -20,7 +20,7 @@
 <meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
 <!-- style -->
 <style>
-	    p{
+	    .support-us-flex-item p{
 			font-size:23px;
 		}
         .support-us-top .support-us-top-phrase{
@@ -41,14 +41,19 @@
         list-style-type: none;
     }
 
+	.monthly-option{
+		color:white;
+		background-color:orange;
+	}
+
     .v-list li:before {
-        content: "";
+        content: ""!important;
         position: absolute;
-        top: 8px;
-        left: -16px;
-        width: 8px;
-        height: 8px;
+        width: 40px!important;
+        height: 100%;
+		right:-20px;
         background-image: url('https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/vsign-list-icon.png');
+		background-repeat: no-repeat;
     }
         .support-us-top .support-us-top-phrase-01{
 	
@@ -192,7 +197,7 @@
 
 				<div class="support-us-flex-item p-2">
 
-					<p class="text-center" style="margin-top:-40px">
+					<p class="text-center" style="margin-bottom:-40px">
 						<strong>מאמינים בחשיבות של ידיעת ערבית?</strong>
 						הצטרפו עכשיו לתמיכה חודשית  הפרוייקט ועזרו לנו לאפשר למאות אלפי אנשים ללמוד לתקשר בצורה נגישה מקצועית וחינמית
 					</p>
@@ -228,13 +233,14 @@
 
 				</div>
 
-				<div class="support-us-flex-item  p-2">
-					
-					<h2>יאללה, אני בפנים!</h2>
+				<div class="form-container support-us-flex-item  p-2">
+					<form id="donation-form"></form>
+					<h2 class="text-center">יאללה, אני בפנים!</h2>
 					<select  class="custom-select" id="donation-type">
-						<option value="1">חברות חודשית</option>
+						<option value="1" class="monthly-option">חברות חודשית</option>
 						<option value="2">תרומה חד פעמית</option>
 					</select>
+				</form>
 				</div>
 				
 			</div>

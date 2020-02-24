@@ -26,13 +26,30 @@
         .support-us-top .support-us-top-phrase{
 			font-size:20px;
 		}
-		ul.v-list {
+
+
+		/* ul.v-list {
  		 list-style-image: url('https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/vsign-list-icon.png')!important;
 		
-		}
+		} */
 		.v-list li::before {
  		   content:"";
 		}
+
+		.v-list li {
+        position: relative;
+        list-style-type: none;
+    }
+
+    .v-list li:before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: -16px;
+        width: 8px;
+        height: 8px;
+        background-image: url('https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/vsign-list-icon.png');
+    }
         .support-us-top .support-us-top-phrase-01{
 	
 		}
@@ -212,7 +229,12 @@
 				</div>
 
 				<div class="support-us-flex-item  p-2">
-
+					
+					<h2>יאללה, אני בפנים!</h2>
+					<select  class="custom-select" id="donation-type">
+						<option value="1">חברות חודשית</option>
+						<option value="2">תרומה חד פעמית</option>
+					</select>
 				</div>
 				
 			</div>

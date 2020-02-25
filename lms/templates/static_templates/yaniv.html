@@ -46,9 +46,13 @@
      .only-mobile a{
 		font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: white!important;
     background-color: #28A745;
     padding: 8px 16px;
+	 }
+	 #donation-type{
+		background-color: #FEA007!important;
+			color:white!important
 	 }
 	#donation-type option{
 		color:black!important;
@@ -72,10 +76,6 @@
 		    margin-top:20px!important;
 		}
 
-		.support-us-flex-item .select:not(.forum-nav-filter-main-control):not(.forum-nav-sort-control){
-			background-color: #FEA007;
-			color:white
-		}
   
 
 		.reg-user-progress h2{
@@ -359,7 +359,7 @@
                                 <div class="custom-control col-6 col-lg-4">
                                     <input class="support-us-form-input" id="sum-50-sub" name="sum" type="radio"
                                         value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=db976d37-2c9d-4247-8f6d-590727d2ced8"
-                                        >
+                                        checked>
                                     <label class="support-us-form-label" for="sum-50-sub">
                                          50 ₪
                                     </label>
@@ -434,8 +434,8 @@
 				$('#amount2').show();
 				$('#amount1').hide();
 				$('#submit').show();
-				$('#donation-type').css("background-color", "#FEA007");
-				$('#donation-type').css("color", "white");
+				// $('#donation-type').css("background-color", "#FEA007");
+				// $('#donation-type').css("color", "white");
 
 			}
 			else {
@@ -443,8 +443,8 @@
 				$('#amount2').hide();
 				$('#submit').hide();
 
-				$('#donation-type').css("background-color", "white");
-				$('#donation-type').css("color", "black");
+				// $('#donation-type').css("background-color", "white");
+				// $('#donation-type').css("color", "black");
 			}
 		});
 

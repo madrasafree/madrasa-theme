@@ -31,13 +31,10 @@
     }
 
 	.support-us-flex-item select.custom-select{
-		color:white;
-		background-color:orange;
+		color:white!important;
+		background-color:orange!important;
 		font-size:18px;
 		width:220px;
-		position:relative;
-		right:20px;
-		padding-right:20px;
 	}
 
     .v-list li:before {
@@ -84,12 +81,20 @@
 		.support-us-flex-item{
 			width:50%;
 		}
-		.form-group .support-us-form-input{
+		.form-group input.support-us-form-input+label.support-us-form-label{
 			border-radius:0;
 			line-height: 120px;
 			width: 120px;
 			height: 120px;
 
+		}
+		#one-time-donate{
+			background: none;
+   			border: none;
+   			box-shadow: none;
+   			color: #85c559!important;
+   			text-shadow: none;
+    		font-weight: bold;
 		}
 		@media screen and (max-width: 800px){
 			.support-us-flex-item{
@@ -248,7 +253,7 @@
                 <div class="support-us-form support-us-flex-item">
 					<p><strong>אני רוצה להצטרף!</strong></p>
                     <form id="donation-form">
-                        <div class="form-group text-center text-lg-left">
+                        <div class="form-group text-center text-center">
                             <select class="custom-select" id="donation-type">
                                 <option value="1">תמיכה חודשית</option>
                                 <option value="2">תשלום חד פעמי</option>
@@ -300,11 +305,11 @@
 
                         <div class="form-group" id="amount1">
 
-							<p>
+							<p class="p-0 m-0">
 								למעבר לבחירת סכום ותשלום מאובטח  
 							</p>
-							<p>
-								<button id="one-time-donate" type="submit"></button>
+							<p class="p-0 m-0 pb-2">
+								<button id="one-time-donate" type="submit">לחצו כאן</button>
 							</p>
                             
                            

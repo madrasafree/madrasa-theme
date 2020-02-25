@@ -50,9 +50,9 @@
     background-color: #28A745;
     padding: 8px 16px;
 	 }
-	 #donation-type{
+	 .orange-button{
 		background-color: #FEA007!important;
-			color:white!important
+		color:white!important
 	 }
 	#donation-type option{
 		color:black!important;
@@ -142,7 +142,7 @@
 		}	
 
 		.support-cta{
-			font-size:30px;
+			font-size:30px!important;
 			margin-top:40px;
 		}
 		.reg-user-progress{
@@ -306,7 +306,7 @@
                         <p class="text-center">
 							שישתלב בתהליך הלמידה במדרסה וייקדם תקשורת והיכרות טובה יותר עם המרחב.
 						</p>
-						<p class="text-center support-cta"><strong>אני רוצה להצטרף!</strong></p>
+						<p class="text-center support-cta"><strong>יאללה, אני בפנים!</strong></p>
                     </div>
 
 
@@ -434,17 +434,15 @@
 				$('#amount2').show();
 				$('#amount1').hide();
 				$('#submit').show();
-				// $('#donation-type').css("background-color", "#FEA007");
-				// $('#donation-type').css("color", "white");
+				$('#donation-type').addClass("orange-button");
+
 
 			}
 			else {
 				$('#amount1').show();
 				$('#amount2').hide();
 				$('#submit').hide();
-
-				// $('#donation-type').css("background-color", "white");
-				// $('#donation-type').css("color", "black");
+				$('#donation-type').removeClass("orange-button");
 			}
 		});
 

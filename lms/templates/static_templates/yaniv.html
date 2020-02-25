@@ -30,10 +30,12 @@
         list-style-type: none;
     }
 
-	.support-us-flex-item select.custom-select{
+	.support-us-flex-item #donation-type{
 		color:white!important;
-		background-color:orange!important;
+		background-color:#FEA007!important;
+		border-radius:0;
 		font-size:18px;
+		font-weight: bold;
 		width:220px;
 	}
 
@@ -82,11 +84,13 @@
 			width:50%;
 		}
 		.form-group input.support-us-form-input+label.support-us-form-label{
-			border-radius:0;
+			border-radius:0!important;
 			line-height: 120px;
-			width: 120px;
-			height: 120px;
-
+			width: 140px;
+			height: 60px;
+			font-size:30px;
+			background-color: #28A745;
+			margin:5px;
 		}
 		#one-time-donate{
 			background: none;
@@ -254,7 +258,7 @@
 					<p><strong>אני רוצה להצטרף!</strong></p>
                     <form id="donation-form">
                         <div class="form-group text-center text-center">
-                            <select class="custom-select" id="donation-type">
+                            <select class="pb-2" id="donation-type">
                                 <option value="1">תמיכה חודשית</option>
                                 <option value="2">תשלום חד פעמי</option>
                             </select>
@@ -325,7 +329,11 @@
                         </div>
                         <div class="support-us-btn-wrap">
                             <button id="submit" type="submit" class="btn btn-warning"> תשלום מאובטח </button>
-                        </div>
+						</div>
+						<p>
+							ניתן להפסיק את התמיכה בכל עת בלחיצה
+							<a href="#">כאן</a>
+						</p>
                     </form>
                 </div>
 

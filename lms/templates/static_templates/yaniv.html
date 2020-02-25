@@ -20,7 +20,9 @@
 <meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
 <!-- style -->
 <style>
-
+      .support-us-top-phrase-03{
+        display: block!important;
+	  }
 		.v-list li::before {
  		   content:"";
 		}
@@ -76,9 +78,9 @@
 			font-family:muliregular!important;
 		}
 		.progress-bar-image{
-			width: 360px;
+			width: 440px;
 			position: relative;
-            bottom: -40;
+            bottom: -46;
 			
 		}
 		.support-us-flex-item{
@@ -95,7 +97,7 @@
 		}
 		.form-group .support-us-form-input:not(:checked)+.support-us-form-label{
 		
-			background-color: #28A745;
+			background-color: #28A745!important;
 		}
 		:checked+.support-us-form-label{
 			background-color: white!important;
@@ -117,16 +119,27 @@
 		@media screen and (max-width: 800px){
 			.support-us-flex-item{
 			width:100%;
+			
 		}
+		
 		}
 		@media screen and (max-width: 500px){
 			.progress-bar-image{
 			width: 200px;
 			bottom: -30;
-			
-			
-			
+			}
+			.cancel-donation{
+            font-size:16px;
+			}	
+			.support-us-top .support-us-top-phrase-02{
+		
+			margin-top:10px!important;
 		}
+		.support-us-top-phrase{
+			font-size:15px!important;
+		}
+		}
+
 
 		.form-group .support-us-form-input+.support-us-form-label{
 			width: 120px!important;
@@ -208,7 +221,7 @@
             <div class="support-us-body-wrap d-flex flex-wrap">
 
 
-                <div class="support-us-flex-item">
+                <div class="support-us-flex-item div1">
 
                     <h3>מצטרפים למדרסה ומקדמים את המהפכה יחד
                     </h3>
@@ -217,20 +230,13 @@
                         מיותרים בדרך.</p>
                     <p>זה לא ״מוצר״, זה לא תחביב, זו מטרה חברתית - ליצור יחד חברה ישראלית מתקשרת ובריאה יותר. זו משימה
                         של כו-ל-נו, ובשבילנו - היא תכנית עבודה!</p>
-                    <p><strong>החברים החודשיים שלנו הם הכוח שמניע את הפרוייקט</strong></p>
-                    <p>
-
-                        מי שמאפשר לתנועה הזו לגדול, ולהפוך את המשימה החשובה הזו לתוכנית עבודה ממשית - הם מאות התומכים
-                        שלנו, שבוחרים לתרום באופן חודשי, בכל סכום שמתאפשר. בלעדי התמיכה שלכם לא נוכל להמשיך וליצור בית
-                        עבור לומדי הערבית בישראל, ולקרב מאוד אלפי אנשים לתקשורת טובה יותר, לקרבה והיכרות עם המרחב
-                        שסביבם.
-                    </p>
+                  
 
                 </div>
 
 
 
-                <div class="support-us-flex-item">
+                <div class="support-us-flex-item div2">
 
                     <p class="text-center" style="margin-bottom:-40px">
                         <strong>מאמינים בחשיבות של ידיעת ערבית?</strong>
@@ -252,13 +258,22 @@
                         </p>
                         <p class="text-center">
                             שישולב בתהליך הלמידה במדרסה ויקדם תקשורת והיכרות טובה יותר עם המרחב
-                        </p>
+						</p>
+						<p><strong>אני רוצה להצטרף!</strong></p>
                     </div>
 
 
                 </div>
 
-                <div class="support-us-flex-item">
+                <div class="support-us-flex-item div4">
+					<p><strong>החברים החודשיים שלנו הם הכוח שמניע את הפרוייקט</strong></p>
+                    <p>
+
+                        מי שמאפשר לתנועה הזו לגדול, ולהפוך את המשימה החשובה הזו לתוכנית עבודה ממשית - הם מאות התומכים
+                        שלנו, שבוחרים לתרום באופן חודשי, בכל סכום שמתאפשר. בלעדי התמיכה שלכם לא נוכל להמשיך וליצור בית
+                        עבור לומדי הערבית בישראל, ולקרב מאוד אלפי אנשים לתקשורת טובה יותר, לקרבה והיכרות עם המרחב
+                        שסביבם.
+                    </p>
 
                     <h3>בזכות התמיכה שלכם כבר הספקנו</h3>
                     <ul class="v-list">
@@ -276,8 +291,8 @@
 
                 </div>
 
-                <div class="support-us-form support-us-flex-item">
-					<p><strong>אני רוצה להצטרף!</strong></p>
+                <div class="support-us-form support-us-flex-item div4">
+					
                     <form id="donation-form">
                         <div class="form-group text-center text-center">
                             <select class="pb-2" id="donation-type">
@@ -352,9 +367,9 @@
                         <div class="support-us-btn-wrap">
                             <button id="submit" type="submit" class="btn btn-warning"> תשלום מאובטח </button>
 						</div>
-						<p class="p-4">
+						<p class="cancel-donation" class="p-4">
 							ניתן להפסיק את התמיכה בכל עת בלחיצה
-							<a href="#">כאן</a>
+							<a href="/contact">כאן</a>
 						</p>
                     </form>
                 </div>

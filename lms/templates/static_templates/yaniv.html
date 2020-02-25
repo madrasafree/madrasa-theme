@@ -37,8 +37,6 @@
     }
 
 	.support-us-flex-item #donation-type{
-		color:white!important;
-		background-color:#FEA007!important;
 		border-radius:0;
 		font-size:18px;
 		font-weight: bold;
@@ -127,6 +125,18 @@
    			text-shadow: none;
     		font-weight: bold;
 		}
+
+		.cancel-donation{
+           margin-top:30px;
+		}	
+
+		.support-cta{
+			font-size:30px;
+			margin-top:40px;
+		}
+		.reg-user-progress{
+			margin-bottom:0;
+		}
 		@media screen and (max-width: 800px){
 			.support-us-flex-item{
 			width:100%;
@@ -153,12 +163,7 @@
 			margin-top:10px!important;
 		}
 
-		.support-cta{
-			font-size:24px;
-		}
-		.reg-user-progress{
-			margin-bottom:0;
-		}
+
 		.support-us-top-phrase{
 			font-size:15px!important;
 		}
@@ -242,7 +247,7 @@
         </section>
 
         <section class="support-us-body">
-            <div class="support-us-body-wrap d-sm-flex flex-sm-wrap overflow-auto">
+            <div class="support-us-body-wrap overflow-auto">
 
 
                 <div class="support-us-flex-item float-md-left order-1">
@@ -321,7 +326,7 @@
 					
                     <form id="donation-form">
                         <div class="form-group text-center text-center">
-                            <select class="pb-2" id="donation-type">
+                            <select class="pb-2" id="donation-type" style="background-color: #FEA007;color:white">
                                 <option value="1">חברות חודשית</option>
                                 <option value="2">תרומה חד פעמית</option>
                             </select>
@@ -423,8 +428,8 @@
 				$('#amount2').hide();
 				$('#submit').hide();
 
-				$('#donation-type').css("background-color", "white!important");
-				$('#donation-type').css("color", "black!important");
+				$('#donation-type').css("background-color", "white");
+				$('#donation-type').css("color", "black");
 			}
 		});
 

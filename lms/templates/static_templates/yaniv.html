@@ -51,8 +51,8 @@
     padding: 8px 16px;
 	 }
 	 .orange-button{
-		background-color: #FEA007!important;
-		color:white!important
+		/* background-color: #FEA007!important;
+		color:white!important */
 	 }
 	#donation-type option{
 		color:black!important;
@@ -109,10 +109,11 @@
 		.form-group .support-us-form-input+.support-us-form-label{
 			border-radius:0!important;
 			line-height: 60px!important;
-			width: 160px!important;
+			width: 150px!important;
 			height: 60px!important;
-			font-size:30px!important;
+			font-size:28px!important;
 			margin:5px!important;
+			padding:0!important;
 		}
 		.form-group .support-us-form-input:not(:checked)+.support-us-form-label{
 		
@@ -130,7 +131,7 @@
 		#one-time-donate{
 			background: none;
    			border: none;
-   			box-shadow: none;
+   			box-shadow: none!important;
    			color: #85c559!important;
    			text-shadow: none;
     		font-weight: bold;
@@ -143,7 +144,11 @@
 
 		.support-cta{
 			font-size:30px!important;
-			margin-top:40px;
+			margin:40px 0 0;
+		}
+		#donation-form{
+			box-shadow: none;
+			padding-top:0;
 		}
 		.reg-user-progress{
 			margin-bottom:0;
@@ -331,7 +336,7 @@
                     <h3>וזו רק ההתחלה</h3>
                     <p>היעד הבא - קורס ייחודי לכתב הערבי! שיעצים את היכולת לתקשר, ירחיב את המפגש עם הערבית בסביבה שלנו, וישדרג את הלמידה כולה.</p>
 						
-						<div class="only-mobile text-center" style="font-size:30px;">
+						<div class="only-mobile text-center" style="font-size:25px;margin-top:20px;">
 							<a href="#donation-form">אני רוצה להצטרף!</a>
 						</div>
 
@@ -380,10 +385,10 @@
                                     </label>
                                 </div>
 
-                                <div style="font-size:24px!important;" class="custom-control col-6 offset-3 col-lg-4">
+                                <div  class="custom-control col-6 offset-3 col-lg-4">
                                     <input class="support-us-form-input" id="sum-other-sub" name="sum" type="radio"
                                         value="https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=c6b2764c-e4e7-4315-8c5d-c08190176c22">
-                                    <label class="support-us-form-label" for="sum-other-sub">
+                                    <label style="font-size:24px!important;" class="support-us-form-label" for="sum-other-sub">
                                         סכום אחר
                                     </label>
                                 </div>
@@ -434,7 +439,7 @@
 				$('#amount2').show();
 				$('#amount1').hide();
 				$('#submit').show();
-				$('#donation-type').addClass("orange-button");
+				// $('#donation-type').addClass("orange-button");
 
 
 			}
@@ -442,7 +447,7 @@
 				$('#amount1').show();
 				$('#amount2').hide();
 				$('#submit').hide();
-				$('#donation-type').removeClass("orange-button");
+				// $('#donation-type').removeClass("orange-button");
 			}
 		});
 

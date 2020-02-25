@@ -23,6 +23,10 @@
       .support-us-top-phrase-03{
         display: block!important;
 	  }
+
+	  .support-us-flex-item li{
+		line-height:34px;
+	  }
 		.v-list li::before {
  		   content:"";
 		}
@@ -38,13 +42,15 @@
 		border-radius:0;
 		font-size:18px;
 		font-weight: bold;
-		height:40px;
+		height:60px;
 		width:182px;
 	}
+
 
 	#donation-type option{
 		color:black!important;
 		background-color:white!important;
+		height:60px;
 	}
 
     .v-list li:before {
@@ -124,10 +130,16 @@
 		@media screen and (max-width: 800px){
 			.support-us-flex-item{
 			width:100%;
+			}
+			.support-us-body-wrap{
+				display: flex;
+				flex-wrap: wrap;
+
+			}
 			
 		}
 		
-		}
+		
 		@media screen and (max-width: 500px){
 			.progress-bar-image{
 			width: 200px;
@@ -139,6 +151,13 @@
 			.support-us-top .support-us-top-phrase-02{
 		
 			margin-top:10px!important;
+		}
+
+		.support-cta{
+			font-size:24px;
+		}
+		.reg-user-progress{
+			margin-bottom:0;
 		}
 		.support-us-top-phrase{
 			font-size:15px!important;
@@ -264,7 +283,7 @@
                         <p class="text-center">
                             שישולב בתהליך הלמידה במדרסה ויקדם תקשורת והיכרות טובה יותר עם המרחב
 						</p>
-						<p class="text-center"><strong>אני רוצה להצטרף!</strong></p>
+						<p class="text-center support-cta"><strong>אני רוצה להצטרף!</strong></p>
                     </div>
 
 
@@ -341,7 +360,7 @@
                                     </label>
                                 </div>
 
-                                <div class="custom-control col-6 offset-3 col-lg-4">
+                                <div style="font-size:24px;" class="custom-control col-6 offset-3 col-lg-4">
                                     <input class="support-us-form-input" id="sum-other-sub" name="sum" type="radio"
                                         value="https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=c6b2764c-e4e7-4315-8c5d-c08190176c22">
                                     <label class="support-us-form-label" for="sum-other-sub">
@@ -403,10 +422,9 @@
 				$('#amount1').show();
 				$('#amount2').hide();
 				$('#submit').hide();
-				$('#donation-type').css("background-color", "initial");
-				$('#donation-type').css("color", "initial");
-				$('#donation-type').css("background-color", "white");
-				$('#donation-type').css("color", "black");
+
+				$('#donation-type').css("background-color", "white!important");
+				$('#donation-type').css("color", "black!important");
 			}
 		});
 

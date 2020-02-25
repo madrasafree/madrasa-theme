@@ -20,18 +20,7 @@
 <meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
 <!-- style -->
 <style>
-		/* .support-us-flex-item li {
-			line-height:35px;
-		}
-        .support-us-top .support-us-top-phrase{
-			font-size:20px;
-		}  */
 
-
-		/* ul.v-list {
- 		 list-style-image: url('https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/vsign-list-icon.png')!important;
-		
-		} */
 		.v-list li::before {
  		   content:"";
 		}
@@ -50,10 +39,6 @@
 		right:20px;
 		padding-right:20px;
 	}
-	/* select.custom-select::after{
-		content:"&#8681;"!important;
-		color:black!important;
-	} */
 
     .v-list li:before {
         content: ""!important;
@@ -98,6 +83,13 @@
 		}
 		.support-us-flex-item{
 			width:50%;
+		}
+		.form-group .support-us-form-input{
+			border-radius:0;
+			line-height: 120px;
+			width: 120px;
+			height: 120px;
+
 		}
 		@media screen and (max-width: 800px){
 			.support-us-flex-item{
@@ -254,6 +246,7 @@
                 </div>
 
                 <div class="support-us-form support-us-flex-item">
+					<p><strong>אני רוצה להצטרף!</strong></p>
                     <form id="donation-form">
                         <div class="form-group text-center text-lg-left">
                             <select class="custom-select" id="donation-type">
@@ -342,12 +335,12 @@
 			if (this.value == '1') {
 				$('#amount2').show();
 				$('#amount1').hide();
-				$('.support-us-btn-wrap button').hide();
+				$('#submit').show();
 			}
 			else {
 				$('#amount1').show();
 				$('#amount2').hide();
-				$('.support-us-btn-wrap button').show();
+				$('#submit').hide();
 			}
 		});
 

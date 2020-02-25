@@ -42,6 +42,11 @@
 		width:182px;
 	}
 
+	#donation-type option{
+		color:black!important;
+		background-color:white!important;
+	}
+
     .v-list li:before {
         content: ""!important;
         position: absolute;
@@ -138,7 +143,7 @@
 		.support-us-top-phrase{
 			font-size:15px!important;
 		}
-		}
+		
 
 
 		.form-group .support-us-form-input+.support-us-form-label{
@@ -221,7 +226,7 @@
             <div class="support-us-body-wrap d-flex flex-wrap">
 
 
-                <div class="support-us-flex-item div1">
+                <div class="support-us-flex-item">
 
                     <h3>מצטרפים למדרסה ומקדמים את המהפכה יחד
                     </h3>
@@ -236,7 +241,7 @@
 
 
 
-                <div class="support-us-flex-item div2">
+                <div class="support-us-flex-item">
 
                     <p class="text-center" style="margin-bottom:-40px">
                         <strong>מאמינים בחשיבות של ידיעת ערבית?</strong>
@@ -259,13 +264,13 @@
                         <p class="text-center">
                             שישולב בתהליך הלמידה במדרסה ויקדם תקשורת והיכרות טובה יותר עם המרחב
 						</p>
-						<p><strong>אני רוצה להצטרף!</strong></p>
+						<p class="text-center"><strong>אני רוצה להצטרף!</strong></p>
                     </div>
 
 
                 </div>
 
-                <div class="support-us-flex-item div4">
+                <div class="support-us-flex-item">
 					<p><strong>החברים החודשיים שלנו הם הכוח שמניע את הפרוייקט</strong></p>
                     <p>
 
@@ -291,7 +296,7 @@
 
                 </div>
 
-                <div class="support-us-form support-us-flex-item div4">
+                <div class="support-us-form support-us-flex-item">
 					
                     <form id="donation-form">
                         <div class="form-group text-center text-center">
@@ -386,11 +391,15 @@
 				$('#amount2').show();
 				$('#amount1').hide();
 				$('#submit').show();
+				$('#donation-type').css("background-color", "white");
+				$('#donation-type').css("color", "black");
 			}
 			else {
 				$('#amount1').show();
 				$('#amount2').hide();
 				$('#submit').hide();
+				$('#donation-type').css("background-color", "initial");
+				$('#donation-type').css("color", "initial");
 			}
 		});
 

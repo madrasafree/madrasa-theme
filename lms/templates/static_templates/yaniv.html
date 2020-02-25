@@ -20,10 +20,6 @@
 <meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
 <!-- style -->
 <style>
-      .support-us-top-phrase-03{
-        display: block!important;
-	  }
-
 	  .support-us-flex-item li{
 		line-height:34px;
 	  }
@@ -41,7 +37,7 @@
 		font-size:18px;
 		font-weight: bold;
 		height:60px;
-		width:182px;
+		width:200px;
 	}
 
 
@@ -65,6 +61,11 @@
 			transform: rotate(-3deg)!important;
 			margin-right:0!important;
 		    margin-top:20px!important;
+		}
+
+		.select:not(.forum-nav-filter-main-control):not(.forum-nav-sort-control){
+			background-color: #FEA007;
+			color:white
 		}
   
 
@@ -124,6 +125,7 @@
    			color: #85c559!important;
    			text-shadow: none;
     		font-weight: bold;
+			font-size:30px;
 		}
 
 		.cancel-donation{
@@ -145,6 +147,9 @@
 				display: flex;
 				flex-wrap: wrap;
 
+			}
+			.support-us-body .support-us-body-wrap .support-us-form {
+               box-shadow: none;
 			}
 			
 		}
@@ -231,7 +236,7 @@
                         <div class="support-us-top-phrase support-us-top-phrase-02">
                             מקדמים יחד חברה ישראלית מתקשרת ובריאה יותר
                         </div>
-                        <div class="support-us-top-phrase support-us-top-phrase-03 d-none d-md-block">
+                        <div class="support-us-top-phrase support-us-top-phrase-03">
                             צריכים אותך איתנו
                         </div>
                     </div>
@@ -326,7 +331,7 @@
 					
                     <form id="donation-form">
                         <div class="form-group text-center text-center">
-                            <select class="pb-2" id="donation-type" style="background-color: #FEA007;color:white">
+                            <select class="pb-2" id="donation-type">
                                 <option value="1">חברות חודשית</option>
                                 <option value="2">תרומה חד פעמית</option>
                             </select>
@@ -403,10 +408,12 @@
 							<a href="/contact">כאן</a>
 						</p>
                     </form>
-                </div>
+				</div>
 
-               
-
+				<div class="only-mobile d-none d-sm-block d-md-none">
+					<a href="#donation-form">אני רוצה להצטרף!</a>
+				</div>
+			
 
     </div>
     </section>
@@ -419,8 +426,8 @@
 				$('#amount2').show();
 				$('#amount1').hide();
 				$('#submit').show();
-				$('#donation-type').css("background-color", "initial");
-				$('#donation-type').css("color", "initial");
+				$('#donation-type').css("background-color", "#FEA007");
+				$('#donation-type').css("color", "white");
 
 			}
 			else {

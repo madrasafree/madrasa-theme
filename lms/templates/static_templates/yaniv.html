@@ -306,6 +306,13 @@
                         </div>
 
                         <div class="form-group" id="amount1">
+
+							<p>
+								למעבר לבחירת סכום ותשלום מאובטח  
+							</p>
+							<p>
+								<button id="one-time-donate" type="submit"></button>
+							</p>
                             
                            
                         </div>
@@ -335,10 +342,12 @@
 			if (this.value == '1') {
 				$('#amount2').show();
 				$('#amount1').hide();
+				$('.support-us-btn-wrap button').hide();
 			}
 			else {
 				$('#amount1').show();
 				$('#amount2').hide();
+				$('.support-us-btn-wrap button').show();
 			}
 		});
 
@@ -351,6 +360,16 @@
 				document.cookie = "dvalue=" + $('input[name=sum]:checked').attr('id');
 				$("#donation-form").action = val;
 				window.open(val, '_blank');
+				return false;
+			}
+		});
+
+
+		$('#one-time-donate').on('click', function (event) {
+			var isvalidate = $("#donation-form")[0].checkValidity();
+			if (isvalidate) {
+				event.preventDefault();
+				window.open("https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=d1ca29c9-740d-4f54-b5f8-eceaced09e1b", '_blank');
 				return false;
 			}
 		});

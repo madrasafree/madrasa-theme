@@ -463,6 +463,7 @@
 				event.preventDefault();
 				var val = $('input[name=sum]:checked').val();
 				document.cookie = "dvalue=" + $('input[name=sum]:checked').attr('id');
+				console.log(document.cookie);
 				$("#donation-form").action = val;
 				window.open(val, '_blank');
 				return false;
@@ -474,6 +475,8 @@
 			var isvalidate = $("#donation-form")[0].checkValidity();
 			if (isvalidate) {
 				event.preventDefault();
+				document.cookie = "dvalue=" + "sum-other-sub";
+	            console.log(document.cookie);
 				window.open("https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=d1ca29c9-740d-4f54-b5f8-eceaced09e1b", '_blank');
 				return false;
 			}

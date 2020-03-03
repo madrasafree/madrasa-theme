@@ -153,6 +153,10 @@
             reportObj.sub = true;
         }
         var value = parseInt(rawValue.replace(/[^0-9\.]/g, ''));
+
+        console.log("value: "); //debug
+        console.log(value); //debug
+
         if (value) {
             reportObj.value = value;
             reportObj.currency = "ILS";
@@ -172,7 +176,12 @@
                 });
         }
 
+       
         document.cookie = "dvalue= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+
+        console.log("document.cookie: "); //debug
+        console.log(document.cookie); //debug
+
     }
     function getDValue(cname) {
         var cookiestring=RegExp(""+cname+"[^;]+").exec(document.cookie);
@@ -180,6 +189,7 @@
     }
     var dvalue = getDValue("dvalue");
     if (dvalue){
+        
         reportBuy(dvalue);
     }
     

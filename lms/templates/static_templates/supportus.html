@@ -408,6 +408,9 @@
 							<p class="p-0 m-0">
 								<button id="one-time-donate" type="submit">לחצו כאן</button>
 							</p>
+
+							 <input hidden id="sum-other" name="sum" type="radio"
+                                        value="https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=d1ca29c9-740d-4f54-b5f8-eceaced09e1b">
                             
                            
                         </div>
@@ -444,40 +447,35 @@
 				$('#amount2').show();
 				$('#amount1').hide();
 				$('#submit').show();
-				// $('#donation-type').addClass("orange-button");
-
+                $("#sum-other").prop("checked", false);
 
 			}
 			else {
 				$('#amount1').show();
 				$('#amount2').hide();
 				$('#submit').hide();
-				// $('#donation-type').removeClass("orange-button");
+				$("#sum-other").prop("checked", true);
+
 			}
 		});
 
 
-		$('#submit').on('click', function (event) {
+		$('[type=submit]').on('click', function (event) {
 			var isvalidate = $("#donation-form")[0].checkValidity();
 			if (isvalidate) {
 				event.preventDefault();
 				var val = $('input[name=sum]:checked').val();
 				document.cookie = "dvalue=" + $('input[name=sum]:checked').attr('id');
-				console.log(document.cookie);
-				$("#donation-form").action = val;
+
+                console.log("cookie: "); //debug
+				console.log(document.cookie); //debug
+
+				$("#donation-form").action = val; 
+
+				console.log("link: "); //debug
+				console.log(val); //debug
+
 				window.open(val, '_blank');
-				return false;
-			}
-		});
-
-
-		$('#one-time-donate').on('click', function (event) {
-			var isvalidate = $("#donation-form")[0].checkValidity();
-			if (isvalidate) {
-				event.preventDefault();
-				document.cookie = "dvalue=" + "sum-other-sub";
-	            console.log(document.cookie);
-				window.open("https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=d1ca29c9-740d-4f54-b5f8-eceaced09e1b", '_blank');
 				return false;
 			}
 		});

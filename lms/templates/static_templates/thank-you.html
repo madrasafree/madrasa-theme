@@ -172,7 +172,14 @@
                 "transaction_id": new Date().getTime(),
                 "affiliation": "Madrasa Donation",
                 "value": value,
-                "currency": "ILS"
+                "currency": "ILS",
+                "items" : [{
+                    "id" : rawValue,
+                    "name": rawValue,
+                    "variant":  reportObj.sub ? 'subscription' : 'one-time',
+                    "quantity": 1,
+                    "price": value
+                }]
                 });
         }
 

@@ -181,6 +181,11 @@ p {
   }
 }
 
+a[href*="course1"] {
+  background-color: #ffc107;
+  color: black;
+}
+
 // body {
 // 	background: $body-bg !important;
 // 	position: relative;

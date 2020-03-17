@@ -81,6 +81,9 @@ body {
         border: 2px #74bb00 solid;
       }
     }
+    a[href*="course1"] strong {
+      background-color: #f28e0a;
+    }
   }
 }
 
@@ -179,11 +182,6 @@ p {
   div {
     width: 100%;
   }
-}
-
-a[href*="course1"] {
-  background-color: #ffc107;
-  color: black;
 }
 
 // body {

@@ -10,55 +10,124 @@
     color:white;
     background-color:#70BF96;
 }
+h1.main-heading{
+  font-size:56px;
+}
 main{
   background-size: 22px 22px;
   background-image:
     linear-gradient(to right, #F0F9FE 2px, transparent 1px),
     linear-gradient(to bottom, #F0F9FE 2px, transparent 1px);
+  padding-top:40px;
 
 }
 p{
     font-size:20px;
 }
-.title-strip{
-    margin-top:20px;
-    opacity: 0.8;
-}
+
 section{
-    border-bottom:4px dashed #70BF96;
+  border-bottom:8px dashed #70BF96;
+  margin:0;
+  padding:30px 0;
+}
+.main-description div, .how-it-works div{
+   width:20%;
+}
+
+.main-description .text-div, .how-it-works .text-div{
+  width:60%;
+}
+
+.button-link{
+  text-decoration:none;
+  padding:12px 20px;
+  display:block;
+}
+.button-link:hover{
+  text-decoration:none;
+  color:white;
+}
+.learning-day-link{
+  font-size:30px;
+  font-weight:bold;
+}
+.video-container{
+  width:50%;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  h1.main-heading{
+  font-size:40px;
+}
+  .main-description div, .how-it-works div {
+    width:100%;
+  }
+  .main-description .text-div, .how-it-works .text-div{
+  width:100%;
+}
+  .video-container{
+  width:100%;
+}
+  .fb-video{
+    width:100%;
+  }
+  section{
+    padding:30px;
+  }
 }
 </style>
 
 </%block>
 
-<main id="main" aria-label="Content" tabindex="-1">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v6.0&appId=821489011612438&autoLogAppEvents=1"></script>
+
+<main dir="rtl" id="main" aria-label="Content" tabindex="-1">
     <section class="bg-turquise title-strip py-5">
-    <h1>לומדים ערבית בבידוד - מתחילים</h1>
+    <h1 class="main-heading text-center">לומדים ערבית בבידוד - מתחילים!</h1>
    </section>
-	<section class="d-flex">
-    <div></div>
-     <div>
+	<section class="main-description d-block d-lg-flex">
+    <div class="text-center">
+      <img width="150" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/14-days/gray_pencil.png">
+      
+    </div>
+     <div class="text-div text-center">
         <p class="text-center p-2">בשבועיים הקרובים נעבור יחד ולחוד מסע אינטנסיבי ללימוד ערבית מדוברת. התהליך יתבצע דרך משימות שונות -מלימוד מקוון, דרך תרגול ביחד ולחוד, וכלה בתכני העשרה מרתקים. בסוף השבועיים, יוכל כל אחד מאיתנו לתקשר מעט יותר בערבית מדוברת, עם עמדת מוצא מצוינת ומומנטים מצוין להמשיך לתרגל וללמוד!
+             
 </p>
-        <a class="bg-turquise" href="#">להרשמה לתוכנית וקבלת השיעורים ישירות למייל</a>
+        <a class="button-link bg-turquise"  href="https://forms.gle/cvi8yo9njgcgAihc7
+" target="_blank">להרשמה לתוכנית וקבלת השיעורים ישירות למייל</a>
+    
      </div>
-      <div></div>
+      <div class="text-center"><img width="150" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/14-days/orange_notebooks.png"></div>
     </section>
-    <section>
+    <section class="how-it-works  d-block d-lg-flex">
      <div></div>
-      <div>
-      <h2></h2>
-      <p></p>
+      <div class="text-div text-center">
+      <h2 class="text-center">אז איך זה עובד?</h2>
+      <p class="text-center">מדי בוקר תשלח אלייך לכאן רשימת משימות יומית - לימוד (דרך הקורס באתר שלנו), תרגול, צפיה בתכנים, ואתגרים שונים ומשונים :). לצד כל משימה יצוין משך הזמן שלה, כך שיתאפשר לך לתכנן מראש את החלוקה של הדברים על פני היום. אחת המשימות שלך תהיה לצפות בשיעור הלייב היומי שלנו, כל ערב ב-19:00. אם לא יתאפשר להצטרף אלינו בזמן השיעור, תמיד אפשר להיכנס ולצפות בדיעבד. 
+</p>
       </div>
        <div></div>
     </section>
     <section class="live-section">
-      <div></div>
-      <div>
-      <div></div>
-      <div></div>
-       <div>
+      <div><h2 class="text-center">לצפייה שוב בתכנים</h2></div>
+      <div class="text-center videos-container d-block d-lg-flex">
+        <div class="video-container">
+      <h3 class="text-center">יום 1 בלמידה</h3>
+     <div class="m-auto fb-video" data-href="https://www.facebook.com/madrasafree/videos/229824148068514" data-width="500" data-show-text="false"><blockquote cite="https://developers.facebook.com/madrasafree/videos/229824148068514/" class="fb-xfbml-parse-ignore"><a href="https://developers.facebook.com/madrasafree/videos/229824148068514/"></a><p>יום 1 בלמידה - 14 יום בבידוד!</p>פורסם על ידי ‏<a href="https://www.facebook.com/madrasafree/">מדרסה - לומדים לתקשר</a>‏ ב- יום שלישי, 17 במרץ 2020</blockquote></div>
+        </div>
+
+      </div>
+      
     </section>
     <section>
+      <div>
+        <h2 class="text-center">ניתן לצפות בכל התכנים היומיים כאן</h2>
+        <a class="text-center learning-day-link button-link bg-turquise"  href="https://app.activetrail.com/S/diwizzatw3d.htm" target="_blank">יום ראשון ללמידה!</a>
+      </div>
+     
+
     </section>
 </main>

@@ -10,6 +10,10 @@
     color:white;
     background-color:#70BF96;
 }
+.bg-orange{
+  color:white;
+  background-color:#F18E0F;
+}
 h1.main-heading{
   font-size:56px;
 }
@@ -23,8 +27,11 @@ main{
 }
 p{
     font-size:20px;
+  line-height:1.7;
 }
-
+.card, .card h5 button{
+  font-size:20px;
+}
 section{
   border-bottom:8px dashed #70BF96;
   margin:0;
@@ -33,8 +40,12 @@ section{
 .main-description div, .how-it-works div{
    width:20%;
 }
+.card{
+  background: rgba(255,255,255,0);
+}
 .card-header{
-  background-color:white;
+  background: rgba(255,255,255,1);
+
 }
 .main-description .text-div, .how-it-works .text-div{
   width:60%;
@@ -53,6 +64,7 @@ section{
 .learning-day-link{
   font-size:30px!important;
   font-weight:bold!important;
+  
 }
 .video-container{
   width:50%;
@@ -61,9 +73,15 @@ section{
     color:#70BF96;
     font-weight:bold;
 }
-
+.card button:hover{
+    color:#F18E0F;
+    font-weight:bold;
+}
   
-
+.support-heading{
+  font-size:28px;
+  color:#70BF96;
+}
 @media only screen and (max-width: 600px) {
  
   h1.main-heading{
@@ -134,11 +152,11 @@ section{
     <section>
       <div>
         <h2 class="text-center mb-5">רשימות משימות לפי ימים</h2>
-        <a class="text-center learning-day-link button-link bg-turquise mb-3"  href="https://app.activetrail.com/S/diwizzatw3d.htm" target="_blank">יום ראשון ללמידה</a>
+        <a class="text-center learning-day-link button-link bg-turquise my-4"  href="https://app.activetrail.com/S/diwizzatw3d.htm" target="_blank">יום ראשון ללמידה</a>
       
-         <a class="text-center learning-day-link button-link bg-turquise mb-3"  href="https://app.activetrail.com/S/diwizzazxxd.htm" target="_blank">יום שני ללמידה</a>
+         <a class="text-center learning-day-link button-link bg-turquise my-4"  href="https://app.activetrail.com/S/diwizzazxxd.htm" target="_blank">יום שני ללמידה</a>
         
-        
+            <a class="text-center learning-day-link button-link bg-turquise my-4" target="_blank">יום שלישי ללמידה</a>
         
       </div>
      
@@ -157,18 +175,23 @@ section{
       <h3 class="text-center mb-3 h4">יום שני בלמידה (18/3/2020)</h3>
      <div class="fb-video" data-href="https://www.facebook.com/madrasafree/videos/541100956525192" data-width="500" data-show-text="false"><blockquote cite="https://developers.facebook.com/madrasafree/videos/541100956525192/" class="fb-xfbml-parse-ignore"><a href="https://developers.facebook.com/madrasafree/videos/541100956525192/"></a><p>הצטרפו לשיעור הלייב של היום השני ללמידה בתכנית 14 יום לימוד בבידוד!</p>פורסם על ידי ‏<a href="https://www.facebook.com/madrasafree/">מדרסה - לומדים לתקשר</a>‏ ב- יום רביעי, 18 במרץ 2020</blockquote></div>
         </div>
+        
+         <div class="video-container">
+      <h3 class="text-center mb-3 h4">יום שני בלמידה (18/3/2020)</h3>
+    <div class="fb-video" data-href="https://www.facebook.com/madrasafree/videos/1358817030990617" data-width="500" data-show-text="false"><blockquote cite="https://developers.facebook.com/madrasafree/videos/1358817030990617/" class="fb-xfbml-parse-ignore"><a href="https://developers.facebook.com/madrasafree/videos/1358817030990617/"></a><p>הצטרפו לשיעור שלישי בבידוד - יוצאים לדרך!!</p>פורסם על ידי ‏<a href="https://www.facebook.com/madrasafree/">מדרסה - לומדים לתקשר</a>‏ ב- יום חמישי, 19 במרץ 2020</blockquote></div>
+        </div>
 
       </div>
       
     </section>
 
-<!--     <section>
-    <div id="accordion">
+    <section class="opacity-2">
+    <div id="accordion" class="text-center">
       <h2 class="text-center mb-4">שאלות ותשובות</h2>
 
   <div class="card">
     <div class="card-header" id="headingOne">
-      <h5 class="text-right mb-0">
+      <h5 class="text-center mb-0">
         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
       נרשמתי ולא קיבלתי מייל
         </button>
@@ -176,7 +199,7 @@ section{
     </div>
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="text-right card-body">
+      <div class="text-center card-body">
     יכולות להיות לכך כמה סיבות: <br>
 1. נרשמתם אחרי שנשלח המייל (אל דאגה - לינקים לשיעורים קודמים יגיעו למייל של השיעור הבא!)<br>
 2. לא הזנתם את כתובת המייל כראוי - לכן בידקו טוב טוב את כתובת המייל לפני שליחת הטופס!<br>
@@ -186,27 +209,27 @@ section{
   </div>
   <div class="card">
     <div class="card-header" id="headingTwo">
-      <h5 class="text-right mb-0">
+      <h5 class="text-center mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 מתי יש לייב (ימים, שעות)?        </button>
       </h5>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="text-right card-body">
+      <div class="text-center card-body">
       שיעורי הלייב יהיו בדף הפייסבוק שלנו מידי יום בשעה 19:00!
       </div>
     </div>
   </div>
   <div class="card">
     <div class="card-header" id="headingThree">
-      <h5 class="text-right mb-0">
+      <h5 class="text-center mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         האם הלייב יהיה זמין אחרי השידור?
         </button>
       </h5>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="text-right card-body">
+      <div class="text-center card-body">
      בוודאי! כל סרטוני הלייב יהיו זמינים בדף הפייסבוק ובעמוד הזה! ואפשר לראות את כולם כאן: https://www.facebook.com/madrasafree/videos/
       </div>
     </div>
@@ -215,14 +238,14 @@ section{
 
    <div class="card">
     <div class="card-header" id="headingFour">
-      <h5 class="text-right mb-0">
+      <h5 class="text-center mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
        קבוצת הואטסאפ מלאה
         </button>
       </h5>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="text-right card-body">
+      <div class="text-center card-body">
     הנה לינק לקבוצת הואצאפ החדשה:
 http://link.madrasafree.com/whatsapp
       </div>
@@ -230,14 +253,14 @@ http://link.madrasafree.com/whatsapp
   </div>
   <div class="card">
     <div class="card-header" id="headingFive">
-      <h5 class="text-right mb-0">
+      <h5 class="text-center mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         איך נכנסים לקורס?
         </button>
       </h5>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="text-right card-body">
+      <div class="text-center card-body">
     פשוט מאוד - ככה:
 http://bit.ly/2IYs1oF
       </div>
@@ -246,14 +269,14 @@ http://bit.ly/2IYs1oF
 
   <div class="card">
     <div class="card-header" id="headingSix">
-      <h5 class="text-right mb-0">
+      <h5 class="text-center mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         האם הלייב יהיה זמין אחרי השידור?
         </button>
       </h5>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="text-right card-body">
+      <div class="text-center card-body">
      בוודאי! כל סרטוני הלייב יהיו זמינים בדף הפייסבוק ובעמוד הזה! ואפשר לראות את כולם כאן: https://www.facebook.com/madrasafree/videos/
       </div>
     </div>
@@ -263,5 +286,26 @@ http://bit.ly/2IYs1oF
 
 
 </div>
-    </section> -->
+    </section>
+  
+  
+  <section class="main-description d-block d-md-flex">
+    <div class="text-center">
+         
+    </div>
+     <div class="text-div text-center">
+       <h2 class="support-heading mb-5">מאמינים שכולנו צריכים לדעת יותר ערבית?</h2>
+     <p>עשרות אלפי חברים וחברות לומדים לתקשר דרך מדרסה כל חודש, מאות אלפים נחשפים לתכנים שלנו ברשתות. אנחנו תנועה חברתית שיוצרת תקשורת טובה יותר דרך שפה, גם ובמיוחד בתקופה הקשה שעוברת עלינו! 
+הבסיס לפעילות שלנו מגיע ממאות חברי התנועה שלנו. מזמינים כל מי שרוצה ויכול להצטרף כאן:
+</p>
+       
+       
+        <a class="button-link bg-orange d-inline-block mt-4" style="font-size:20px;font-weight:bold" href="https://madrasafree.com/supportus
+" target="_blank"> להצטרפות לתנועה החברתית של מדרסה</a>
+    
+     </div>
+      <div class="text-center"></div>
+    </section>
+  
+  
 </main>

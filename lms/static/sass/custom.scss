@@ -181,6 +181,59 @@ p {
   }
 }
 
+.strip14days .div2 {
+  width: 50%;
+}
+.strip14days .div1,
+.strip14days .div3 {
+  width: 25%;
+}
+.strip14days .buttons a {
+  color: #70bf96 !important;
+  background-color: white !important;
+  padding: 6px 20px;
+  margin: 0 10px;
+  font-size: 20px;
+}
+.strip14days .pencil-notebook {
+  position: relative;
+}
+.strip14days .pencil {
+  position: absolute;
+  left: 75px;
+  top: 20px;
+}
+.strip14days .notebook {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+}
+@media screen and (max-width: 600px) {
+  .strip14days .div2 {
+    width: 100%;
+    text-align: center;
+  }
+  .strip14days .div1,
+  .strip14days .div3 {
+    width: 100%;
+    text-align: center;
+  }
+  .strip14days .pencil {
+    position: static;
+  }
+  .strip14days .notebook {
+    position: static;
+  }
+
+  .strip14days .buttons a {
+    font-size: 16px;
+  }
+  .strip14days p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 // body {
 // 	background: $body-bg !important;
 // 	position: relative;

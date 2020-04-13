@@ -267,3 +267,25 @@ ${HTML(course_sock_fragment.body_html())}
 % endif
 
 <script src="${static.url('js/fullscreenButton.js')}"></script>
+
+<script type="text/javascript">
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (iOS) {
+        $('.seq_contents').each(function (i, el) {
+            var question = $('<div>' + $(el).text() + '<\/div>');
+            question.find('.problems-wrapper').replaceWith(function () {
+                var problem = $(this).clone(true);
+                var content = $('<div>' + problem.data('content') + '<\/div>');
+                content.find('audio').replaceWith(function () {
+                    var audio = $(this).clone(true)[0].outerHTML.replace('\'', '"');
+                    var random = Math.random() + i; // create random identifier
+                    var script = '<script>document.getElementById("audio-' + random + '").innerHTML = \'' + audio + '\';<\/script>';
+                    return $('<div id="audio-' + random + '" />' + script);
+                });
+                problem.attr('data-content', content.html());
+                return problem;
+            });
+            $(el).text(question.html());
+        });
+    }
+</script>

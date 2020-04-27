@@ -525,6 +525,35 @@ h1 {
 				event.preventDefault();
 				var val = $('input[name=sum]:checked').val();
 				document.cookie = "dvalue=" + $('input[name=sum]:checked').attr('id');
+				document.cookie = "dvalue=" + $('input[name=sum]:checked').attr('id') + " ;Domain=www.madrasafree.com"
+				document.cookie = "dvalue=" + $('input[name=sum]:checked').attr('id') + " ;domain=www.madrasafree.com"
+
+				if (gtag){
+					reportObj = {}
+					var rawValue = $('input[name=sum]:checked').attr('id')
+					if (rawValue.indexOf("sub") > -1){
+						reportObj.sub = true;
+					}
+					var value = parseInt(rawValue.replace(/[^0-9\.]/g, ''));
+					if (value) {
+						reportObj.value = value;
+						reportObj.currency = "ILS";
+					}
+
+					gtag('event', 'add_to_cart', {
+						"items": [
+							{
+							"id": rawValue,
+							"name": rawValue,
+							"brand": "Madrasa",
+							"category": "Donation",
+							"quantity": 1,
+							"price": reportObj.value
+							}
+						]
+						});
+				}
+
 
                 console.log("cookie: "); //debug
 				console.log(document.cookie); //debug

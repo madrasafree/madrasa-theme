@@ -541,6 +541,7 @@ h1 {
 					}
 
 					gtag('event', 'add_to_cart', {
+						'event_label' : reportObj.sub ? 'subscription' : 'one-time',
 						"items": [
 							{
 							"id": rawValue,

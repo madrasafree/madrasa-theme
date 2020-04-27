@@ -175,8 +175,10 @@
                 "currency": "ILS",
                 "items" : [{
                     "id" : rawValue,
-                    "name": rawValue,
+                    "name": reportObj.sub ? 'subscription' : 'one-time',
                     "variant":  reportObj.sub ? 'subscription' : 'one-time',
+                    "category":  reportObj.sub ? 'subscription' : 'one-time',
+                    "list_name": reportObj.sub ? 'subscription' : 'one-time',
                     "quantity": 1,
                     "price": value
                 }]

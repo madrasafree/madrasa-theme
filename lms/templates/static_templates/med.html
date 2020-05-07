@@ -86,7 +86,7 @@
                 </audio>
 
                 <audio id="audio-1">
-                    <source src="https://s3.eu-west-2.amazonaws.com/madrasa-voice/Female/Nagham+(136).mp3"
+                    <source src="https://s3.eu-west-2.amazonaws.com/madrasa-voice/Female/Nagham+(134).mp3"
                         type="audio/mpeg">
                 </audio>
 
@@ -101,8 +101,7 @@
     const buttons = document.querySelectorAll('.item-audio i');
 
     function playAudio(number) {
-        const audio = document.querySelector(`#audio-${number}`);
-        audio.play();
+        document.querySelector(`#audio-${number}`).play();
     }
 
     for (let i = 0; i < buttons.length; i++) {

@@ -31,71 +31,72 @@
 
 
 <main dir="rtl" id="main" aria-label="Content" tabindex="-1">
-	<section class="about-top">
+    <section class="about-top">
         <div class="container text-center p-5">
-			<h1 class="pt-5">ערבית לצוותי רפואה</h1>
-			<p class="pb-5">שיחון ערבי-עברי</p>
-		</div>
-	</section>  
+            <h1 class="pt-5">ערבית לצוותי רפואה</h1>
+            <p class="pb-5">שיחון ערבי-עברי</p>
+        </div>
+    </section>
 
     <section id="phrasebook">
         <div class="phrasebook-table">
-          <div class="phrasebook-item">
-             <div class="item-audio">
+            <div class="phrasebook-item">
+                <div class="item-audio">
 
-             <i class='fas fa-play-circle' style='font-size:40px'></i>
+                    <i class='fas fa-play-circle' style='font-size:40px'></i>
 
-             <div>
-              <div class="item-hebrew">
-              <p>
-              את יכולה לאכול או לשתות
-              </p>
-             </div>
-             <div class="item-arabic">
-             <p>
-             בְּתִקְדַרִי תַאכְּלִי אַו תִשְרַבִּי?
-</p>
-             </div>
+                </div>
+                <div class="item-hebrew">
+                    <p>
+                        את יכולה לאכול או לשתות
+                    </p>
+                </div>
+                <div class="item-arabic">
+                    <p>
+                        בְּתִקְדַרִי תַאכְּלִי אַו תִשְרַבִּי?
+                    </p>
+                </div>
 
-          </div>
-           <div class="phrasebook-item">
-             <div class="item-audio">
-             <i class='fas fa-play-circle' style='font-size:40px'></i>
+            </div>
+            <div class="phrasebook-item">
+                <div class="item-audio">
+                    <i class='fas fa-play-circle' style='font-size:40px'></i>
 
-             <div>
-              <div class="item-hebrew">
-              <p>
-              אני מדבר ערבית
-                </p>
-             </div>
-             <div class="item-arabic">
-              <p>
-              אַנַא בַּ(א)חְכִּי עַרַבִּי
-                </p>
-             </div>
+                </div>
+                <div class="item-hebrew">
+                    <p>
+                        אני מדבר ערבית
+                    </p>
+                </div>
+                <div class="item-arabic">
+                    <p>
+                        אַנַא בַּ(א)חְכִּי עַרַבִּי
+                    </p>
+                </div>
 
-          </div>
+            </div>
         </div>
-    <section>
+        <section>
 
-    <div class="audio-library" style="display:none">
-    <audio id="audio-1">
-     <source src="https://s3.eu-west-2.amazonaws.com/madrasa-voice/Female/Nagham+(135).mp3" type="audio/mpeg">
-    </audio>
+            <div class="audio-library" style="display:none">
+                <audio id="audio-1">
+                    <source src="https://s3.eu-west-2.amazonaws.com/madrasa-voice/Female/Nagham+(135).mp3"
+                        type="audio/mpeg">
+                </audio>
 
-    <div>
-  
+            </div>
+
 </main>
 
 <script>
 
 
-    const buttons = document.querySelector('.item-audio i');
+    const buttons = document.querySelectorAll('.item-audio i');
 
-    buttons.forEach(function(button){
-         button.addEventListener("onclick",function(){
-             document.querySelector("#audio-1").play();
-         })
+    buttons.forEach(function (button) {
+        button.addEventListener("onclick", function () {
+            document.querySelector("#audio-1").play();
+        })
     });
 
 

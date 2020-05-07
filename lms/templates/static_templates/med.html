@@ -6,15 +6,66 @@
 <%block name="headextra">
 
 <style>
-
+.phrasebook-table{
+    display:flex;
+}
+.item-hebrew{
+    flex:4;
+}
+.item-arabic{
+    flex:4;
+}
+.item-audio{
+    flex:1;
+}
 </style>
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 
 </%block>
 
 
 
 <main dir="rtl" id="main" aria-label="Content" tabindex="-1">
-<h1>ערבית לצוותי רפואה</h1>
-  
+	<section class="about-top">
+        <div class="container text-center p-5">
+			<h1 class="pt-5">ערבית לצוותי רפואה</h1>
+			<p class="pb-5">שיחון ערבי-עברי</p>
+		</div>
+	</section>  
+
+    <section id="phrasebook">
+        <div class="phrasebook-table">
+          <div class="phrasebook-item">
+             <div class="item-audio">
+             <i class='fas fa-play-circle' style='font-size:40px'></i>
+
+             <div>
+              <div class="item-hebrew">
+              את יכולה לאכול או לשתות
+             <div>
+             <div class="item-arabic">
+             בְּתִקְדַרִי תַאכְּלִי אַו תִשְרַבִּי?
+
+             <div>
+
+          </div>
+           <div class="phrasebook-item">
+             <div class="item-audio">
+             <i class='fas fa-play-circle' style='font-size:40px'></i>
+
+             <div>
+              <div class="item-hebrew">
+              אני מדבר ערבית
+             <div>
+             <div class="item-arabic">
+           אַנַא בַּ(א)חְכִּי עַרַבִּי
+
+             <div>
+
+          </div>
+        </div>
+    <section>
   
 </main>

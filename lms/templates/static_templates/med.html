@@ -7,10 +7,14 @@
 
 <style>
     .phrasebook{
-        max-width: 800px;
+        margin:auto;
+    }
+    .phrasebook-table{
+        max-width:800px;
     }
 .phrasebook-item{
     display:flex;
+    padding:20px;
 }
 .item-hebrew{
    width:40%;
@@ -51,12 +55,12 @@
                 </div>
                 <div class="item-hebrew">
                     <p>
-                        את יכולה לאכול או לשתות
+                        צריך
                     </p>
                 </div>
                 <div class="item-arabic">
                     <p>
-                        בְּתִקְדַרִי תַאכְּלִי אַו תִשְרַבִּי?
+לאזם
                     </p>
                 </div>
 
@@ -68,13 +72,11 @@
                 </div>
                 <div class="item-hebrew">
                     <p>
-                        אני מדבר ערבית
-                    </p>
+אפשר                    </p>
                 </div>
                 <div class="item-arabic">
                     <p>
-                        אַנַא בַּ(א)חְכִּי עַרַבִּי
-                    </p>
+ממכן                    </p>
                 </div>
 
             </div>
@@ -82,10 +84,16 @@
         <section>
 
             <div class="audio-library" style="display:none">
-                <audio id="audio-1">
+                <audio id="audio-0">
                     <source src="https://s3.eu-west-2.amazonaws.com/madrasa-voice/Female/Nagham+(135).mp3"
                         type="audio/mpeg">
                 </audio>
+
+                <audio id="audio-1">
+                    <source src="https://s3.eu-west-2.amazonaws.com/madrasa-voice/Female/Nagham+(136).mp3"
+                        type="audio/mpeg">
+                </audio>
+
 
             </div>
 
@@ -96,13 +104,15 @@
 
     const buttons = document.querySelectorAll('.item-audio i');
 
-    function playAudio() {
-        document.querySelector('#audio-1').play();
+    function playAudio(number) {
+        const audio = document.querySelector(`#audio-${number}`);
+        audio.play();
     }
 
-    buttons.forEach(function (button) {
-        button.addEventListener('click', playAudio);
-    });
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', playAudio(i));
+    }
+
 
 
 </script>

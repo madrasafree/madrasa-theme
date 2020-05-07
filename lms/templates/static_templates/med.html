@@ -6,7 +6,7 @@
 <%block name="headextra">
 
 <style>
-.phrasebook-table{
+.phrasebook-item{
     display:flex;
 }
 .item-hebrew{
@@ -17,6 +17,9 @@
 }
 .item-audio{
     flex:1;
+}
+.item-audio i{
+    cursor:pointer;
 }
 </style>
 
@@ -39,16 +42,20 @@
         <div class="phrasebook-table">
           <div class="phrasebook-item">
              <div class="item-audio">
+
              <i class='fas fa-play-circle' style='font-size:40px'></i>
 
              <div>
               <div class="item-hebrew">
+              <p>
               את יכולה לאכול או לשתות
-             <div>
+              </p>
+             </div>
              <div class="item-arabic">
+             <p>
              בְּתִקְדַרִי תַאכְּלִי אַו תִשְרַבִּי?
-
-             <div>
+</p>
+             </div>
 
           </div>
            <div class="phrasebook-item">
@@ -57,15 +64,38 @@
 
              <div>
               <div class="item-hebrew">
+              <p>
               אני מדבר ערבית
-             <div>
+                </p>
+             </div>
              <div class="item-arabic">
-           אַנַא בַּ(א)חְכִּי עַרַבִּי
-
-             <div>
+              <p>
+              אַנַא בַּ(א)חְכִּי עַרַבִּי
+                </p>
+             </div>
 
           </div>
         </div>
     <section>
+
+    <div class="audio-library" style="display:none">
+    <audio id="audio-1">
+     <source src="https://s3.eu-west-2.amazonaws.com/madrasa-voice/Female/Nagham+(135).mp3" type="audio/mpeg">
+    </audio>
+
+    <div>
   
 </main>
+
+<script>
+
+function playAudio(){
+
+    const buttons = document.querySelector('.item-audio i');
+    console.log(buttons);
+
+
+
+}
+
+</script>

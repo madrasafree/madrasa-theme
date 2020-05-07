@@ -91,6 +91,7 @@
             </div>
 
 </main>
+
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <script>
 
@@ -98,7 +99,8 @@
     const buttons = document.querySelectorAll('.item-audio i');
 
     function playAudio(number) {
-        document.querySelector(`#audio-${number}`).play();
+        let audio = document.querySelector('#audio-' + number);
+        audio.play();
     }
 
     for (let i = 0; i < buttons.length; i++) {

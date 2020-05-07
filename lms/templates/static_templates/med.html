@@ -10,13 +10,13 @@
     display:flex;
 }
 .item-hebrew{
-    flex:4;
+   width:40%;
 }
 .item-arabic{
-    flex:4;
+   width:40%;
 }
 .item-audio{
-    flex:1;
+   width:10%;
 }
 .item-audio i{
     cursor:pointer;
@@ -89,13 +89,15 @@
 
 <script>
 
-function playAudio(){
 
     const buttons = document.querySelector('.item-audio i');
-    console.log(buttons);
+
+    buttons.forEach(function(button){
+         button.addEventListener("onclick",function(){
+             document.querySelector("#audio-1").play();
+         })
+    });
 
 
-
-}
 
 </script>

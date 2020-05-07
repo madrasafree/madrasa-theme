@@ -6,6 +6,9 @@
 <%block name="headextra">
 
 <style>
+    .phrasebook{
+        max-width: 800px;
+    }
 .phrasebook-item{
     display:flex;
 }
@@ -93,12 +96,13 @@
 
     const buttons = document.querySelectorAll('.item-audio i');
 
-    buttons.forEach(function (button) {
-        button.addEventListener("onclick", function () {
-            document.querySelector("#audio-1").play();
-        })
-    });
+    function playAudio() {
+        document.querySelector('#audio-1').play();
+    }
 
+    buttons.forEach(function (button) {
+        button.addEventListener('click', playAudio);
+    });
 
 
 </script>

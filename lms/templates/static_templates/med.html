@@ -6,103 +6,852 @@
 <%block name="headextra">
 
 <style>
-    .phrasebook{
+    @font-face {
+    font-family: "Abraham";
+    src: url(https://madrasafree.com/static/madrasa_theme/fonts/AbrahamTRIAL-Regular.woff2") format("woff2");
+  }
+
+*:not(i){
+  font-family:'Abraham'!important;
+  direction:rtl;
+}
+#phrasebook p{
+  text-align:right;
+}
+
+
+.btn{
+  white-space: normal;
+}
+.bg-turquise{
+    color:white;
+    background-color:#5BAFAF;
+}
+.bg-orange{
+  color:white;
+  background-color:#F18E0F;
+}
+h1.main-heading{
+  font-size:56px;
+}
+main{
+ 
+}
+p{
+    font-size:19px;
+  line-height:1.7;
+}
+
+section{
+  margin:0;
+  padding:30px 0;
+}
+
+
+.icon-flipped {
+    transform: scaleX(-1);
+   
+}
+#phrasebook p{
+  margin:0;
+    padding:0;
+}
+
+
+.button-link{
+  text-decoration:none;
+  padding:12px 20px;
+  display:block;
+  max-width:400px;
+  margin:auto;
+  color:white!important;
+}
+.button-link:hover{
+  text-decoration:none;
+  color:white!important;
+}
+.learning-day-link{
+  font-size:30px!important;
+  font-weight:bold!important;
+  
+}
+
+
+  
+.support-heading{
+  font-size:28px;
+  color:#70BF96;
+}
+ .phrasebook{
         padding:30px 0;
     }
     .phrasebook-table{
-        max-width:800px;  
+        max-width:780px;  
         margin:auto;
     }
 .phrasebook-item{
     display:flex;
-    padding:10px;
-    margin:5px 0;
-    border:1px solid lightgray; 
+    padding:2px 10px;
+  margin:2px 0;
+  border-bottom:0.5px dashed black;
 }
+
 .item-hebrew{
    width:50%;
 }
 .item-arabic{
    width:50%;
 }
-.item-audio{
-   width:40px;
-}
-.item-audio i{
-    cursor:pointer;
-}
-phrasebook-item p{
-    text-align: center;
 
+.phrasebook-item i{
+    cursor:pointer;
+  position:relative;
+  top:3px;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .video-container{
+    width:50%;
+     margin:auto;
+    margin-bottom:20px;
+  }
+  .fb-video{
+    margin:auto;
+  }
+  p{
+    margin-right:40px;
+    margin-left:40px;
+  }
+  
+}
+@media only screen and (max-width: 600px) {
+ 
+  h1.main-heading{
+  font-size:40px;
+}
+  .main-description div, .how-it-works div {
+    width:100%;
+  }
+  .main-description .text-div, .how-it-works .text-div{
+  width:100%;
+}
+  .video-container{
+  width:100%;
+}
+  .fb-video{
+    width:100%;
+  }
+  section{
+    padding:30px;
+  }
 }
 </style>
 
 </%block>
 
 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v6.0&appId=821489011612438&autoLogAppEvents=1"></script>
 
 <main dir="rtl" id="main" aria-label="Content" tabindex="-1">
-    <section class="about-top">
-        <div class="container text-center p-5">
-            <h1 class="pt-1">ערבית לצוותי רפואה</h1>
-            <p class="pb-1">הדף יעלה בשעות הקרובות!</p>
+    <section class="bg-turquise title-strip py-5">
+        <h1 class="main-heading text-center">
+            ערבית מדוברת לצוותי רפואה
+        </h1>
+
+    </section>
+    <section class="main-description d-block d-md-flex">
+        <div class="text-center">
+
+
+        </div>
+        <div class="text-div text-center">
+            <p>
+                אנחנו שומעים כל יום כמה חיכוכים ואתגרים מציב מחסום השפה בבתי חולים ובחדרי המיון, במיוחד בתקופה מאתגרת
+                זו. אחרי כמה פניות שקיבלנו בנושא, החלטנו שעכשיו הזמן להרים את הכפפה ולייצר קורס מיוחד לעובדי מערכת
+                הבריאות, שיאפשר לצוותים הרפואיים לתקשר באופן מדוייק וטוב יותר בינם לבין עצמם, ועם אלו הזקוקים לטיפול
+                ולסיוע.
+            </p>
+          <div class="video-container">
+            <div  class="fb-video" data-href="https://www.facebook.com/madrasafree/videos/2897528760296936/"
+                data-show-text="false" data-width="">
+                <blockquote cite="https://developers.facebook.com/madrasafree/videos/2897528760296936/"
+                    class="fb-xfbml-parse-ignore"><a
+                        href="https://developers.facebook.com/madrasafree/videos/2897528760296936/">האם חשוב שצוותי
+                        רפואה ידעו ערבית?</a>
+                    <p>אז כמה חשוב לרופאים ואנשי צוות רפואי לדעת ערבית? שאלנו, וקיבלנו תשובות מרתקות...
+
+                        פוש אחרון של גיוס לטובת הצוותים הרפואיים ומערכת הבריאות שלנו - עוד פחות מ-2,000 ש״ח בתמיכה
+                        חודשית ונוכל להפיק ולהפעיל קורס ייעודי לערבית מדוברת שיונגש בחינם לכל עובדי מערכת הבריאות. מגיעה
+                        להם ההזדמנות לעשות את העבודה שלהם על הצד הטוב ביותר. מגיעה לנו חברה מתקשרת, טובה ובריאה יותר.
+                        הצטרפו עכשיו: https://bit.ly/2WrdJmX</p>פורסם על ידי ‏<a
+                        href="https://www.facebook.com/madrasafree/">מדרסה - לומדים לתקשר</a>‏ ב- יום חמישי, 30 באפריל
+                    2020
+                </blockquote>
+            </div>
+          </div>
+            <p>אם גם אתם מאמינים שקורס ערבית חינמי וייעודי לצוותי רפואה יכול להקל על הצוותים בעבודה הקשה במיוחד בתקופה
+                הזו, המקום שלכם איתנו! מזמינים אתכם להצטרף אלינו לדרך ולתנועה, בכל סכום שתבחרו -
+            </p>
+          <div class="m-auto">
+            <a class="button-link bg-turquise" style="font-size:20px;font-weight:bold"
+                href="https://madrasafree.com/supportus" target="_blank">הצטרפו אלינו</a>
+          </div>
 
         </div>
     </section>
 
-    <section>
-
-
-    </section>
-
-    <section id="phrasebook" style="display:none;">
+    <section id="phrasebook">
         <div class="phrasebook-table">
             <div class="phrasebook-item">
-              
+
                 <div class="item-hebrew">
-                    <p>                        צריך
+                    <p>
+                     שלום, שמי הוא... ואני...
                     </p>
                 </div>
-                
+
                 <div class="item-arabic">
                     <p>
-                      <i class='far fa-play-circle'  style='font-size:30px;margin-bottom:-2px' onclick="playAudio(0)"></i>
-                    לאזם
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(0)"></i>
+                        מַרְחַבַּא, אִסְמִי... וּאַנַא...
                     </p>
                 </div>
 
             </div>
             <div class="phrasebook-item">
-               
+
                 <div class="item-hebrew">
-                    <p>אפשר                    </p>
+                    <p>איך את/ה מרגיש/ה היום? טוב יותר מאתמול? </p>
                 </div>
-                
+
                 <div class="item-arabic">
                     <p>
-                     <i class='far fa-play-circle' style='font-size:30px;margin-bottom:-2px' onclick="playAudio(1)"></i>
-                    ממכן                    </p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(3)"></i>
+                       כִּיף חַאסֵס/חַאסֵّה אִלְיוֹם, אַחְסַן מִן אִמְבַּארֵח? </p>
                 </div>
 
             </div>
-        </div>
-        <section>
+          
+           <div class="phrasebook-item">
 
-            <div class="audio-library" style="display:none">
-                <audio id="audio-0">
-                    <source src="https://s3.eu-west-2.amazonaws.com/madrasa-voice/Female/Nagham+(135).mp3"
-                        type="audio/mpeg">
-                </audio>
+                <div class="item-hebrew">
+                    <p>
+                     היכן כואב לך/ךְ?
+                    </p>
+                </div>
 
-                <audio id="audio-1">
-                    <source src="https://s3.eu-west-2.amazonaws.com/madrasa-voice/Female/Nagham+(136).mp3"
-                        type="audio/mpeg">
-                </audio>
-
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(2)"></i>
+                  וֵין בְּיוּגַ'עַכּ/וֵין בְּיוּגַ'עֵכּ?
+                    </p>
+                </div>
 
             </div>
+          
+ 
+          
+          
+  
+          
+          
+           <div class="phrasebook-item">
 
+                <div class="item-hebrew">
+                    <p>
+                     אני רוצה לעשות לך בדיקת דם
+                    </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(5)"></i>
+                        בִּדִّי אַעְמַל-לַכ/לֵכּ פַחְץ דַםّ
+                    </p>
+                </div>
+
+            </div>
+          
+          
+           <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+                     אתה/את רוצה שמישהו יהיה איתך בבדיקה? 
+                    </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(6)"></i>
+                        בִּדַّכּ/בִּדֵّכּ חַדַא יְכּוּן מַעַאכּ/מַעַאכִּי בִּ(א)לְפַחְץ?
+                    </p>
+                </div>
+
+            </div>
+          
+          
+           <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+                     את/ה מסוגל/ת לאכול או לשתות?
+                    </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(7)"></i>
+                        בְּתִקְדַר/בְּתִקְדַרִי תַאכֹּל/תַאכְּלִי אַו תִשְרַבּ/תִשְרַבִּי?
+                    </p>
+                </div>
+
+            </div>
+          
+          
+           <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+                   תרגיש טוב/תרגישי טוב!
+                    </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(8)"></i>
+                        סַלַאמְתַכּ/סַלַאמְתֵכּ!
+                    </p>
+                </div>
+
+            </div>
+          
+           <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+                     רופא/ה
+                    </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(9)"></i>
+                        דֹכְּתוֹר/דֹכְּתוֹרַה
+                    </p>
+                </div>
+
+            </div>
+          
+           <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+                    אח/ות
+                    </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(10)"></i>
+                       מֻמַרֵّץ'/מֻמַרִّצַ'ה
+                    </p>
+                </div>
+
+            </div>
+          
+           <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+                   סטודנט/ית
+                    </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(11)"></i>
+טַאלֵבּ/טַאלְבֵּה
+                  </p>
+                </div>
+
+            </div>
+          
+           <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+              פחות טוב
+                    </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(12)"></i>
+אַסְוַא                    </p>
+                </div>
+
+            </div>
+          
+          <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+יותר טוב                    </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(13)"></i>
+אַחְסַן                    </p>
+                </div>
+
+            </div>
+          
+          <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+אותו הדבר                    </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(14)"></i>
+נַפְס א(ל)שִّי                    </p>
+                </div>
+
+            </div>
+          
+          <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+האם יש...?                    </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(15)"></i>
+פִי?                    </p>
+                </div>
+
+            </div>
+          
+            <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+חום                  </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(16)"></i>
+חַרַארַה              
+                  
+                  </p>
+                </div>
+
+            </div>
+          
+            <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+כאב                  
+                  </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(17)"></i>
+וַגַ'ע                  
+                  </p>
+                </div>
+
+            </div>
+          
+            <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+שיפור במצב
+                  </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(18)"></i>
+תַחַסֹّן בִּ(א)לְוַצְ'ע
+
+                  </p>
+                </div>
+
+            </div>
+          
+            <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+מחלות במשפחה?
+                  </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(19)"></i>
+אַמְרַאץ' בִּ(א)לְעֵילֵה?
+                  </p>
+                </div>
+
+            </div>
+          
+          
+            <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+בדיקה גופנית
+                  </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(20)"></i>
+פַחְץ גִ'סַדִי
+
+                      
+                  </p>
+                </div>
+
+            </div>
+          
+            <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+
+                      בבקשה
+                  </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(21)"></i>
+תְפַצַّ'ל/תְפַצַّ'לִי
+                      
+                  </p>
+                </div>
+
+            </div>
+          
+            <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+שב/י
+                      
+                  </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(22)"></i>
+אֻקְעֹד/אֻקֻעְדִי
+
+                      
+                  </p>
+                </div>
+
+            </div>
+          
+          
+            <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+עמוד/עמדי
+                  </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(23)"></i>
+וַקֵّף/וַקְّפִי
+
+                      
+                  </p>
+                </div>
+
+            </div>
+          
+          
+            <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+שכב/י כאן
+                  </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(24)"></i>
+            נַאם/נַאמִי הוֹן
+                  </p>
+                </div>
+
+            </div>
+          
+            <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+                      פתח/י את הפה
+                  </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(25)"></i>
+           אִפְתַח תֻמַّכּ/אִפְתַחִי תֻמֵّכּ
+                  </p>
+                </div>
+
+            </div>
+          
+          
+            <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+                      הרם/הרימי את החולצה
+                  </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(26)"></i>
+                      אִרְפַע קַמִיצַכּ/אִרְפַעִי קַמִיצֵכּ
+                  </p>
+                </div>
+
+            </div>
+          
+            <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+                      קח/י נשימה עמוקה
+                  </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(27)"></i>
+                      ח'ֹד/ח'ֹדִי נַפַס עַמִיק
+
+                    </p>
+                </div>
+
+            </div>
+          
+            <div class="phrasebook-item">
+
+                <div class="item-hebrew">
+                    <p>
+אתה מצויין/את מצויינת                  </p>
+                </div>
+
+                <div class="item-arabic">
+                    <p>
+                        <i class='icon-flipped far fa-play-circle' style='font-size:30px;margin-bottom:-2px'
+                            onclick="playAudio(28)"></i>
+אִנְתֵ מֻמְתַאז/אִנְתִי מֻמְתַאזֵה                  </p>
+                </div>
+
+            </div>
+          
+        </div>
+
+
+    </section>
+
+
+    <div class="audio-library" style="display:none">
+        <audio id="audio-0">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(1).mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="audio-1">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(2).mp3" type="audio/mpeg">
+        </audio>
+       <audio id="audio-2">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(3).mp3" type="audio/mpeg">
+        </audio>
+      
+       <audio id="audio-3">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(4).mp3" type="audio/mpeg">
+        </audio>
+      
+       <audio id="audio-4">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(5).mp3" type="audio/mpeg">
+        </audio>
+      
+       <audio id="audio-5">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(6).mp3" type="audio/mpeg">
+        </audio>
+      
+       <audio id="audio-6">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(7).mp3" type="audio/mpeg">
+        </audio>
+      
+       <audio id="audio-7">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(8).mp3" type="audio/mpeg">
+        </audio>
+      
+           <audio id="audio-8">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(9).mp3" type="audio/mpeg">
+        </audio>
+      
+        <audio id="audio-9">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(10).mp3" type="audio/mpeg">
+        </audio>
+      
+        <audio id="audio-10">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(11).mp3" type="audio/mpeg">
+        </audio>
+      
+        <audio id="audio-11">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(12).mp3" type="audio/mpeg">
+        </audio>
+      
+              <audio id="audio-12">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(13).mp3" type="audio/mpeg">
+        </audio>
+      
+              <audio id="audio-13">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(14).mp3" type="audio/mpeg">
+        </audio>
+      
+              <audio id="audio-14">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(15).mp3" type="audio/mpeg">
+        </audio>
+      
+       <audio id="audio-15">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(16).mp3" type="audio/mpeg">
+        </audio>
+      
+      
+       <audio id="audio-16">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(17).mp3" type="audio/mpeg">
+        </audio>
+      
+       <audio id="audio-17">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(18).mp3" type="audio/mpeg">
+        </audio>
+      
+      
+       <audio id="audio-18">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(19).mp3" type="audio/mpeg">
+        </audio>
+      
+       <audio id="audio-19">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(20).mp3" type="audio/mpeg">
+        </audio>
+      
+      
+       <audio id="audio-20">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(21).mp3" type="audio/mpeg">
+        </audio>
+      
+      
+       <audio id="audio-21">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(22).mp3" type="audio/mpeg">
+        </audio>
+      
+      
+       <audio id="audio-22">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(23).mp3" type="audio/mpeg">
+        </audio>
+      
+      
+       <audio id="audio-23">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(24).mp3" type="audio/mpeg">
+        </audio>
+      
+      
+       <audio id="audio-24">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(25).mp3" type="audio/mpeg">
+        </audio>
+      
+      
+       <audio id="audio-25">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(26).mp3" type="audio/mpeg">
+        </audio>
+      
+      
+       <audio id="audio-26">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(27).mp3" type="audio/mpeg">
+        </audio>
+      
+       <audio id="audio-27">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(28).mp3" type="audio/mpeg">
+        </audio>
+      
+      
+       <audio id="audio-28">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(29).mp3" type="audio/mpeg">
+        </audio>
+      
+       <audio id="audio-29">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(30).mp3" type="audio/mpeg">
+        </audio>
+      
+      
+    
+      
+      
+       <audio id="audio-30">
+            <source src="https://madrasa-voice.s3.eu-west-2.amazonaws.com/Glossary_med/Glossaryword+(31).mp3" type="audio/mpeg">
+        </audio>
+      
+      
+
+
+    </div>
 </main>
+
 
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <script>

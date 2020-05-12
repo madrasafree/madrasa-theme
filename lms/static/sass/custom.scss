@@ -43,11 +43,15 @@ body {
 }
 
 .course-profile-promo-box:before {
-  opacity: 15%;
+  opacity: 20%;
 }
 
 .course-profile img[src*="med1"] + section h1 {
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px black;
+}
+
+.course-profile section.about p:first-child {
+  margin-top: 20px;
 }
 
 .course-profile-wrapper {
@@ -57,11 +61,6 @@ body {
       color: white;
       font-size: 18px !important;
       padding: 8px 20px !important;
-      &:after {
-        content: "◀";
-        font-size: 15px;
-        padding-right: 4px;
-      }
     }
 
     span.disabled {

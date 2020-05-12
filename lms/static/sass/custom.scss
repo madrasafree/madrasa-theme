@@ -52,7 +52,8 @@ body {
 
 .course-profile-wrapper {
   .main-cta {
-    strong {
+    strong,
+    a.register {
       color: white;
       font-size: 18px !important;
       padding: 8px 20px !important;
@@ -62,6 +63,7 @@ body {
         padding-right: 4px;
       }
     }
+
     span.disabled {
       background: initial !important;
       border: 0 !important;

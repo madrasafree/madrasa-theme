@@ -43,7 +43,11 @@ body {
 }
 
 .course-profile-promo-box:before {
-  opacity: 0;
+  opacity: 15%;
+}
+
+.course-profile img[src*="med1"] + section h1 {
+  text-shadow: 2px 2px black;
 }
 
 .course-profile-wrapper {

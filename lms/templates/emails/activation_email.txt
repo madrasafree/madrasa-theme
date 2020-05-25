@@ -10,10 +10,17 @@ https://${ site }/activate/${ key }
 http://${ site }/activate/${ key }
 % endif
 
+מזמינים אותך גם להצטרף באופן פעיל לחברות במדרסה ולאפשר לעשרות אלפים ללמוד ערבית מדוברת בחינם:
+(https://bit.ly/2LalWGB)
 
-אל תשכחו גם לעקוב אחרינו בפייסבוק (https://www.facebook.com/madrasafree) ולהיכנס לקבוצת התרגול (https://www.facebook.com/groups/MadrasaFree/).
+לא לשכוח גם להצטרף לקהילה הלומדת של מדרסה בקבוצת הפייסבוק:
+(https://www.facebook.com/groups/MadrasaFree)
 
-בִִּ(אל)נַّגַ'אח! בהצלחה!
+ובקבוצת הוואצאפ:
+(http://link.madrasafree.com/whatsapp)
+
+
+בִִּ(אל)נַ֘גַ'אח! בהצלחה!
 
 צוות מדרסה
 

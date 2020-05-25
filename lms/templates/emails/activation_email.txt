@@ -3,7 +3,6 @@
 תודה שהצטרפת לקהילה הלומדת של מדרסה!
 
 כל מה שצריך לעשות כדי להתחיל ללמוד זה ללחוץ על הקישור כדי לאשר את ההרשמה:
-
 % if is_secure:
 https://${ site }/activate/${ key }
 % else:
@@ -11,17 +10,16 @@ http://${ site }/activate/${ key }
 % endif
 
 מזמינים אותך גם להצטרף באופן פעיל לחברות במדרסה ולאפשר לעשרות אלפים ללמוד ערבית מדוברת בחינם:
-(https://bit.ly/2LalWGB)
+https://bit.ly/2LalWGB
 
 לא לשכוח גם להצטרף לקהילה הלומדת של מדרסה בקבוצת הפייסבוק:
-(https://www.facebook.com/groups/MadrasaFree)
+https://www.facebook.com/groups/MadrasaFree
 
 ובקבוצת הוואצאפ:
-(http://link.madrasafree.com/whatsapp)
+http://link.madrasafree.com/whatsapp
 
 
 בִִּ(אל)נַ֘גַ'אח! בהצלחה!
-
 צוות מדרסה
 
 

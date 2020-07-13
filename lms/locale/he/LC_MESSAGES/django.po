@@ -10657,12 +10657,7 @@ msgstr "תנאי שימוש וקוד אתי"
 msgid ""
 "I agree to the {platform_name} {terms_of_service_link_start}"
 "{terms_of_service}{terms_of_service_link_end}"
-<<<<<<< HEAD
-msgstr "אני מסכים/ה לתנאי השימוש של {platform_name} {terms_of_service_link_start}"
-"{terms_of_service} {terms_of_service_link_end}"
-=======
 msgstr ""
->>>>>>> parent of a99bce0... update translation files
 
 #. Translators: "Terms of Service" is a legal document users must agree to
 #. in order to register a new account.

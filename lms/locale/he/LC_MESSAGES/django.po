@@ -10657,8 +10657,8 @@ msgstr "תנאי שימוש וקוד אתי"
 msgid ""
 "I agree to the {platform_name} {terms_of_service_link_start}"
 "{terms_of_service}{terms_of_service_link_end}"
-msgstr "אני מסכים/ה לתנאי השימוש של {platform_name}{terms_of_service_link_start}"
-"{terms_of_service}{terms_of_service_link_end}"
+msgstr "אני מסכים/ה לתנאי השימוש של {platform_name} {terms_of_service_link_start}"
+"{terms_of_service} {terms_of_service_link_end}"
 
 #. Translators: "Terms of Service" is a legal document users must agree to
 #. in order to register a new account.
@@ -10685,7 +10685,7 @@ msgstr ""
 msgid ""
 "I agree to the {platform_name} {tos_link_start}{terms_of_service}"
 "{tos_link_end}"
-msgstr "אני מסכים/ה לתנאי השימוש של {platform_name}{terms_of_service_link_start}"
+msgstr "אני מסכים/ה לתנאי השימוש של {platform_name} {terms_of_service_link_start}"
 "{terms_of_service}{terms_of_service_link_end}"
 
 #: openedx/core/djangoapps/user_api/config/waffle.py

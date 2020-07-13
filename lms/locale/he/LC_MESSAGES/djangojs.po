@@ -5731,7 +5731,7 @@ msgstr "עודכן "
 
 #: cms/static/js/views/course_video_settings.js
 msgid "Required"
-msgstr ""
+msgstr "חובה"
 
 #: cms/static/js/views/course_video_settings.js
 msgid "Automatic transcripts are disabled."

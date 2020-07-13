@@ -10674,9 +10674,6 @@ msgid ""
 "{terms_of_service}{terms_of_service_link_end}                   and agree to "
 "our {privacy_policy_link_start}Privacy Policy{privacy_policy_link_end}."
 msgstr ""
-"ביצירת חשבון באתר מדרסה, אתה מסכים ל- {terms_of_service_link_start}"
-"{terms_of_service}{terms_of_service_link_end} ומסכים ל- "
-"{privacy_policy_link_start}מדיניות הפרטיות{privacy_policy_link_end}."
 
 #. Translators: "Terms of service" is a legal document users must agree to
 #. in order to register a new account.

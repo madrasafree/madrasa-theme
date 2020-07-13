@@ -1,1 +1,1 @@
-scp -i ~/.ssh/bitnami-aws-081248911030.pem $(pwd)/lms/lms.env.json bitnami@52.209.223.84:/opt/bitnami/apps/edx/conf
+scp -i ~/.ssh/bitnami-aws-081248911030.pem $(pwd)/lms/lms.env.json bitnami@34.247.81.20:/opt/bitnami/apps/edx/conf

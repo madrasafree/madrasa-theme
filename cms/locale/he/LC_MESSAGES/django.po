@@ -10740,8 +10740,8 @@ msgid ""
 "We received a deletion request for your account on %(platform_name)s. We're "
 "sorry to see you go!"
 msgstr ""
-"קיבלנו בקשת מחיקה לחשבונך ב-% (platform_name) s. אנחנו מצטערים לראות אותך "
-"הולך!"
+"קיבלנו בקשת מחיקה לחשבונך ב-%(platform_name)s. אנחנו מצטערים לראות אותך "
+
 
 #: openedx/core/djangoapps/user_api/templates/user_api/edx_ace/deletionnotificationmessage/email/body.html
 #:  

@@ -7021,7 +7021,7 @@ msgstr "עמוד הבית לדיון"
 #: lms/djangoapps/discussion/static/discussion/templates/discussion-home.underscore
 #, python-format
 msgid "How to use %(platform_name)s discussions"
-msgstr "כיצד להשתמש בדיוני מדרסה"
+msgstr "כיצד להשתמש בדיוני %(platform_name)s"
 
 #: lms/djangoapps/discussion/static/discussion/templates/discussion-home.underscore
 msgid "Find discussions"

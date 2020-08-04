@@ -26,7 +26,6 @@
 
         body {
             background-color: #bad6e1;
-            font-family: 'Heebo', sans-serif;
         }
 
         form {
@@ -216,7 +215,7 @@
             <p id="support-text">
                 הלימודים במדרסה הם ללא עלות אבל אנחנו כאן בזכות התומכים החודשיים שלנו
             </p>
-            <p class="checkboxes text-right mb-0 mt-0">
+            <p class="checkboxes text-left mb-0 mt-0">
                 <label> <input id="support-check" name="support-check" type="checkbox">אני רוצה
                     לתמוך במיזם ובתנועה</label>
             </p>
@@ -339,6 +338,7 @@
 
     $("#support-check").on("change", function (e) {
         $("#support").toggle();
+		$("#payment-frame").toggle();
         $('html, body').animate({
             scrollTop: $("#amount").offset().top
         }, 600);

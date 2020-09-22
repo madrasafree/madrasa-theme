@@ -63,9 +63,8 @@ section{
   color:white!important;
 }
 .learning-day-link{
-  font-size:30px!important;
+  font-size:23px!important;
   font-weight:bold!important;
-  
 }
 .video-container{
   width:50%;
@@ -103,6 +102,22 @@ section{
   section{
     padding:30px;
   }
+}
+
+@media only screen and (min-width: 600px) {
+  .learning-day-link{
+  font-size:23px!important;
+  width:23%;
+  border-radius:14px;
+  margin:10px;
+}
+
+.learning-day-links-container{
+  display:flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
 }
 </style>
 
@@ -154,8 +169,8 @@ section{
     </section>
     
     <section>
-      <div>
-        <h2 class="text-center mb-5">רשימות משימות לפי ימים</h2>
+      <h2 class="text-center mb-5">רשימות משימות לפי ימים</h2>
+      <div class="learning-day-links-container">
         <a class="text-center learning-day-link button-link bg-turquise my-4"  href="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/14-days/lessons/lesson1.pdf" target="_blank">יום ראשון ללמידה</a>
       
          <a class="text-center learning-day-link button-link bg-turquise my-4"  href="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/14-days/lessons/lesson2.pdf" target="_blank">יום שני ללמידה</a>

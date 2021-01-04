@@ -196,9 +196,8 @@ from student.models import CourseEnrollment
         <div class="container">
           <div class="reg-user-header">
             <h1 class="text-left">מרחבא ${user}!</h1>
-            <!--
-            <a href="https://madrasafree.com/courses" class="theme-btn theme-btn__invert w-100">המשך לאיזור הקורסים של מדרסה</a>
-            -->
+            <p>כיף שהגעת לכיתה!</p>
+            <!-- <a href="https://madrasafree.com/courses" class="theme-btn theme-btn__invert w-100">המשך לאיזור הקורסים של מדרסה</a> -->
           </div>		
           <div class="d-flex justify-content-between align-items-center flex-column">
             <!-- <div class="text-center p-3"> -->
@@ -215,13 +214,11 @@ from student.models import CourseEnrollment
                <p>כמה מילים למדתי?</p>
               <p class="big-num-text mt-1">35 / 490</p> 
             </div> -->
-            <p>כיף שהגעת לכיתה!</p>
           </div>
         </div>
       </section>
       <div class="dashboard" id="dashboard-main">
         <div class="main-container">
-            <p>בואו נמשיך ללמוד!</p>
           <div class="my-courses" id="my-courses">
 
             % if display_dashboard_courses:

@@ -46,6 +46,27 @@ from student.models import CourseEnrollment
 section.reg-user{
   min-height:min-content!important;
 }
+.header-courses, .course-info{
+    display:none;
+}
+
+
+@media screen and (min-width: 600px){
+#my-courses{
+    width:100%;
+}
+.dashboard .main-container{
+    display:block;
+}
+.listing-courses{
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    margin:10px;
+    width:45%;
+}
+}
 
 @media screen and (max-width: 600px){
  
@@ -200,8 +221,9 @@ section.reg-user{
       </section>
       <div class="dashboard" id="dashboard-main">
         <div class="main-container">
+          <p>בואו נמשיך ללמוד</p>
           <div class="my-courses" id="my-courses">
-            <p>בואו נמשיך ללמוד</p>
+
             % if display_dashboard_courses:
             <%include file="learner_dashboard/_dashboard_navigation_courses.html"/>
             % endif

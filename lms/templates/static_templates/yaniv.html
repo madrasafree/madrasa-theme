@@ -43,42 +43,21 @@ from student.models import CourseEnrollment
 <meta name="og:description" content="לימוד ערבית מדוברת בחינם. באתר תוכלו למצוא קורסים פתוחים, ספרית תכנים ענפה, מילון, וחשוב לא פחות - להתחבר לקהילה אדירה של לומדים לתקשר - ברשתות החברתיות ובמפגשי תרגול פתוחים">
 <meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
 <style>
-    section.reg-user {
-      min-height: min-content !important;
-    }
-    .header-courses,
-    .course-info {
-      display: none;
-    }
-  
-    @media screen and (min-width: 600px) {
-      #my-courses {
-        width: 100%;
-      }
-      .dashboard .main-container {
-        display: block;
-      }
-      .listing-courses {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      li {
-        margin: 10px;
-        width: 45%;
-      }
-    }
-  
-    @media screen and (max-width: 600px) {
-      .reg-user-header {
-        padding-top: 30px !important;
-        padding-bottom: 30px !important;
-      }
-      .reg-user-header h1 {
-        text-align: center !important;
-        margin-bottom: 40px;
-      }
-    }
-  </style>
+@media screen and (max-width: 600px){
+  .reg-user{
+  min-height:min-content!important;
+}
+.reg-user-header{
+  padding-top:30px!important;
+  padding-bottom:30px!important;
+}
+.reg-user-header h1{
+  text-align:center!important;
+  margin-bottom:40px;
+}
+}
+
+</style>
 </%block>
 
 <%block name="header_extras">
@@ -196,8 +175,7 @@ from student.models import CourseEnrollment
         <div class="container">
           <div class="reg-user-header">
             <h1 class="text-left">מרחבא ${user}!</h1>
-            <p>כיף שהגעת לכיתה!</p>
-            <!-- <a href="https://madrasafree.com/courses" class="theme-btn theme-btn__invert w-100">המשך לאיזור הקורסים של מדרסה</a> -->
+            <a href="https://madrasafree.com/courses" class="theme-btn theme-btn__invert w-100">המשך לאיזור הקורסים של מדרסה</a>
           </div>		
           <div class="d-flex justify-content-between align-items-center flex-column">
             <!-- <div class="text-center p-3"> -->
@@ -220,7 +198,6 @@ from student.models import CourseEnrollment
       <div class="dashboard" id="dashboard-main">
         <div class="main-container">
           <div class="my-courses" id="my-courses">
-
             % if display_dashboard_courses:
             <%include file="learner_dashboard/_dashboard_navigation_courses.html"/>
             % endif

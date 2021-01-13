@@ -1,431 +1,250 @@
 <%page expression_filter="h"/>
-<%inherit file="main.html" />
-<%def name="online_help_token()"><% return "learnerdashboard" %></%def>
-<%namespace name='static' file='static_content.html'/>
-<%!
-import pytz
-import six
-from datetime import datetime, timedelta
-from django.urls import reverse
-from django.utils.translation import ugettext as _
-from django.template import RequestContext
-from entitlements.models import CourseEntitlement
-from third_party_auth import pipeline
-from util.date_utils import strftime_localized
-from opaque_keys.edx.keys import CourseKey
-from openedx.core.djangoapps.content.course_overviews.models import CourseOverview
-from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
-from openedx.core.djangolib.js_utils import dump_js_escaped_json, js_escaped_string
-from openedx.core.djangolib.markup import HTML, Text
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
 
-from student.models import CourseEnrollment
-%>
+<%block name="pagetitle">אודות | ِAbout</%block>
 
-<%
-  cert_name_short = settings.CERT_NAME_SHORT
-  cert_name_long = settings.CERT_NAME_LONG
-%>
-
-
-<%block name="pagetitle"> עמוד הבית - מדרסה</%block>
-<%block name="bodyclass">view-dashboard is-authenticated</%block>
 
 <%block name="headextra">
 <!-- Search Engine -->
-<meta name="description" content="לימוד ערבית מדוברת בחינם. באתר תוכלו למצוא קורסים פתוחים, ספרית תכנים ענפה, מילון, וחשוב לא פחות - להתחבר לקהילה אדירה של לומדים לתקשר - ברשתות החברתיות ובמפגשי תרגול פתוחים">
+<meta name="description" content="פחות מ-5% מהיהודים בישראל יודעים לנהל שיחה בסיסית בערבית מדוברת, אנחנו כאן כדי לשנות את זה. הסיפור שלנו מתחיל בסלון של ההורים של גילעד, בקיץ 2014">
 <meta name="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
 <!-- Schema.org for Google -->
-<meta itemprop="name" content="מדרסה - לומדים לתקשר | Madrasa - Learning to Communicate">
-<meta itemprop="description" content="לימוד ערבית מדוברת בחינם. באתר תוכלו למצוא קורסים פתוחים, ספרית תכנים ענפה, מילון, וחשוב לא פחות - להתחבר לקהילה אדירה של לומדים לתקשר - ברשתות החברתיות ובמפגשי תרגול פתוחים">
+<meta itemprop="name" content="אודות | ِAbout">
+<meta itemprop="description" content="פחות מ-5% מהיהודים בישראל יודעים לנהל שיחה בסיסית בערבית מדוברת, אנחנו כאן כדי לשנות את זה. הסיפור שלנו מתחיל בסלון של ההורים של גילעד, בקיץ 2014">
 <meta itemprop="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
 <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-<meta name="og:title" content="מדרסה - לומדים לתקשר | Madrasa - Learning to Communicate">
-<meta name="og:description" content="לימוד ערבית מדוברת בחינם. באתר תוכלו למצוא קורסים פתוחים, ספרית תכנים ענפה, מילון, וחשוב לא פחות - להתחבר לקהילה אדירה של לומדים לתקשר - ברשתות החברתיות ובמפגשי תרגול פתוחים">
+<meta name="og:title" content="אודות | ِAbout">
+<meta name="og:description" content="פחות מ-5% מהיהודים בישראל יודעים לנהל שיחה בסיסית בערבית מדוברת, אנחנו כאן כדי לשנות את זה. הסיפור שלנו מתחיל בסלון של ההורים של גילעד, בקיץ 2014">
 <meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
+
 <style>
-@media screen and (max-width: 600px){
-  .reg-user{
-  min-height:min-content!important;
-}
-.reg-user-header{
-  padding-top:30px!important;
-  padding-bottom:30px!important;
-}
-.reg-user-header h1{
-  text-align:center!important;
-  margin-bottom:40px;
-}
-}
+	.about-story .about-story-img{
+		background-position:top!important;
+		min-height:200px!important;
+	}
 
 </style>
+
 </%block>
 
-<%block name="header_extras">
-% for template_name in ["donation"]:
-<script type="text/template" id="${template_name}-tpl">
-  <%static:include path="dashboard/${template_name}.underscore" />
-</script>
-% endfor
-</%block>
 
-<%block name="js_extra">
-  <script src="${static.url('js/commerce/credit.js')}"></script>
-  <%static:js group='dashboard'/>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      edx.dashboard.legacy.init({
-        dashboard: "${reverse('dashboard') | n, js_escaped_string}",
-        signInUser: "${reverse('signin_user') | n, js_escaped_string}",
-        changeEmailSettings: "${reverse('change_email_settings') | n, js_escaped_string}"
-      });
-    });
-  </script>
-    <script>
-      let courseId = "course-v1:madrasa+course1+2018";
-      let username = "${user}";
-      fetch("https://madrasafree.com/api/grades/v0/course_grade/" + courseId + "/users/?username=" + username).then(function (response) {
-        if (!response.ok) throw 'bad response';
-        return response.json();
-      }).then(function (grade) {
-        grade = grade[0];
-        setProgress(grade && grade.percent ? grade.percent * 100 : 1);
-      }).catch(function (err) {
-        setProgress(1);
-      });
 
-      function setProgress() {
-        var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-        var bar = document.getElementById('course-progress');
-        bar.style.width = value + "%";
-      }
-    </script>
-  <%static:webpack entry="UnenrollmentFactory">
-    UnenrollmentFactory({
-      urls: {
-        dashboard: "${reverse('dashboard') | n, js_escaped_string}",
-        signInUser: "${reverse('signin_user') | n, js_escaped_string}",
-        changeEmailSettings: "${reverse('change_email_settings') | n, js_escaped_string}",
-        browseCourses: "${marketing_link('COURSES') | n, js_escaped_string}"
-      },
-      isEdx: false
-    });
-  </%static:webpack>
-  <%static:webpack entry="EntitlementUnenrollmentFactory">
-    ## Wait until the document is fully loaded before initializing the EntitlementUnenrollmentView
-    ## to ensure events are setup correctly.
-    $(document).ready(function() {
-      EntitlementUnenrollmentFactory({
-        dashboardPath: "${reverse('dashboard') | n, js_escaped_string}",
-        signInPath: "${reverse('signin_user') | n, js_escaped_string}",
-        browseCourses: "${marketing_link('COURSES') | n, js_escaped_string}",
-        isEdx: false
-      });
-    });
-  </%static:webpack>
-  % if settings.FEATURES.get('ENABLE_DASHBOARD_SEARCH'):
-    <%static:require_module module_name="course_search/js/dashboard_search_factory" class_name="DashboardSearchFactory">
-        DashboardSearchFactory();
-    </%static:require_module>
-  % endif
-  % if redirect_message:
-    <%static:require_module module_name="js/views/message_banner" class_name="MessageBannerView">
-        var banner = new MessageBannerView({urgency: 'low', type: 'warning'});
-        $('#content').prepend(banner.$el);
-        banner.showMessage(${redirect_message | n, dump_js_escaped_json})
-    </%static:require_module>
-  % endif
-</%block>
-
-<div class="dashboard-notifications" tabindex="-1">
-
-    %if banner_account_activation_message:
-        <div class="dashboard-banner">
-            ${banner_account_activation_message | n, decode.utf8}
-        </div>
-    %endif
-
-    %if enrollment_message:
-        <div class="dashboard-banner">
-            ${enrollment_message | n,  decode.utf8}
-        </div>
-    %endif
-
-    %if enterprise_message:
-        <div class="dashboard-banner">
-            ${ enterprise_message | n, decode.utf8 }
-        </div>
-    %endif
-
-    %if account_activation_messages:
-      <div class="activation-message-container">
-        % for account_activation_message in account_activation_messages:
-          <div class="account-activation ${account_activation_message.tags}" role="alert" aria-label="Account Activation Message" tabindex="-1">
-            <div class="message-copy" style="position: inherit;" >
-              ${ account_activation_message | n, decode.utf8 }
-            </div>
-          </div>
-        % endfor
-      </div>
-    %endif
-
-</div>
 
 <main id="main" aria-label="Content" tabindex="-1">
-    <section class="reg-user">
-        <div class="container">
-          <div class="reg-user-header">
-            <h1 class="text-left">מרחבא ${user}!</h1>
-            <a href="https://madrasafree.com/courses" class="theme-btn theme-btn__invert w-100">המשך לאיזור הקורסים של מדרסה</a>
-          </div>		
-          <div class="d-flex justify-content-between align-items-center flex-column">
-            <!-- <div class="text-center p-3"> -->
-              <!-- <p>כמה שעורים סיימתי?</p>
-              <p class="big-num-text mt-1">5 / 20</p> -->
-            <!-- </div> -->
-            <!-- <div class="reg-user-progress text-center text-md-left p-3">
-              <p>כמה התקדמתי?</p>
-              <div class="progress mt-3 ml-md-3">
-                <div class="progress-bar bg-warning" id="course-progress" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div> -->
-            <!--<div class="text-center p-3">
-               <p>כמה מילים למדתי?</p>
-              <p class="big-num-text mt-1">35 / 490</p> 
-            </div> -->
-          </div>
-        </div>
-      </section>
-      <div class="dashboard" id="dashboard-main">
-        <div class="main-container">
-          <div class="my-courses" id="my-courses">
-            % if display_dashboard_courses:
-            <%include file="learner_dashboard/_dashboard_navigation_courses.html"/>
-            % endif
-  
-            % if len(course_entitlements + course_enrollments) > 0:
-              <ul class="listing-courses">
-              <%
-                  share_settings = configuration_helpers.get_value(
-                      'SOCIAL_SHARING_SETTINGS',
-                      getattr(settings, 'SOCIAL_SHARING_SETTINGS', {})
-                  )
-              %>
-              % for dashboard_index, enrollment in enumerate(course_entitlements + course_enrollments):
-                <%
-                  # Check if the course run is an entitlement and if it has an associated session
-                  entitlement = enrollment if isinstance(enrollment, CourseEntitlement) else None
-                  entitlement_session = entitlement.enrollment_course_run if entitlement else None
-                  entitlement_days_until_expiration = entitlement.get_days_until_expiration() if entitlement else None
-                  entitlement_expiration = datetime.now(tz=pytz.UTC) + timedelta(days=entitlement_days_until_expiration) if (entitlement and entitlement_days_until_expiration < settings.ENTITLEMENT_EXPIRED_ALERT_PERIOD) else None
-                  entitlement_expiration_date = strftime_localized(entitlement_expiration, 'SHORT_DATE') if entitlement and entitlement_expiration else None
-                  entitlement_expired_at = strftime_localized(entitlement.expired_at_datetime, 'SHORT_DATE') if entitlement and entitlement.expired_at_datetime else None
-  
-                  is_fulfilled_entitlement = True if entitlement and entitlement_session else False
-                  is_unfulfilled_entitlement = True if entitlement and not entitlement_session else False
-  
-                  entitlement_available_sessions = []
-                  if entitlement:
-                    # Grab the available, enrollable sessions for a given entitlement and scrape them for relevant attributes
-                    entitlement_available_sessions = [{
-                      'session_id': course['key'],
-                      'enrollment_end': course['enrollment_end'],
-                      'pacing_type': course['pacing_type'],
-                      'advertised_start': CourseOverview.get_from_id(CourseKey.from_string(course['key'])).advertised_start,
-                      'start': CourseOverview.get_from_id(CourseKey.from_string(course['key'])).start,
-                      'end': CourseOverview.get_from_id(CourseKey.from_string(course['key'])).end,
-                      } for course in course_entitlement_available_sessions[str(entitlement.uuid)]]
-                    if is_fulfilled_entitlement:
-                      # If the user has a fulfilled entitlement, pass through the entitlements CourseEnrollment object
-                      enrollment = entitlement_session
-                    else:
-                      # If the user has an unfulfilled entitlement, pass through a bare CourseEnrollment object to populate card with metadata
-                      pseudo_session = unfulfilled_entitlement_pseudo_sessions[str(entitlement.uuid)]
-                      if not pseudo_session:
-                          continue
-                      enrollment = CourseEnrollment(user=user, course_id=pseudo_session['key'], mode=pseudo_session['type'])
-                    # We only show email settings for entitlement cards if the entitlement has an associated enrollment
-                    show_email_settings = is_fulfilled_entitlement and (entitlement_session.course_id in show_email_settings_for)
-                  else:
-                    show_email_settings = (enrollment.course_id in show_email_settings_for)
-  
-                  session_id = enrollment.course_id
-                  show_courseware_link = show_courseware_links_for.get(session_id, False)
-                  cert_status = cert_statuses.get(session_id)
-                  can_refund_entitlement = entitlement and entitlement.is_entitlement_refundable()
-                  can_unenroll = (not cert_status) or cert_status.get('can_unenroll') if not unfulfilled_entitlement else False
-                  credit_status = credit_statuses.get(session_id)
-                  course_mode_info = all_course_modes.get(session_id)
-                  is_paid_course = True if entitlement else (session_id in enrolled_courses_either_paid)
-                  is_course_blocked = (session_id in block_courses)
-                  course_verification_status = verification_status_by_course.get(session_id, {})
-                  course_requirements = courses_requirements_not_met.get(session_id)
-                  related_programs = inverted_programs.get(six.text_type(entitlement.course_uuid if is_unfulfilled_entitlement else session_id))
-                  show_consent_link = (session_id in consent_required_courses)
-                  course_overview = enrollment.course_overview
-                  resume_button_url = resume_button_urls[dashboard_index]
-                %>
-                <%include file='dashboard/_dashboard_course_listing.html' args='course_overview=course_overview, course_card_index=dashboard_index, enrollment=enrollment, is_unfulfilled_entitlement=is_unfulfilled_entitlement, is_fulfilled_entitlement=is_fulfilled_entitlement, entitlement=entitlement, entitlement_session=entitlement_session, entitlement_available_sessions=entitlement_available_sessions, entitlement_expiration_date=entitlement_expiration_date, entitlement_expired_at=entitlement_expired_at, show_courseware_link=show_courseware_link, cert_status=cert_status, can_refund_entitlement=can_refund_entitlement, can_unenroll=can_unenroll, credit_status=credit_status, show_email_settings=show_email_settings, course_mode_info=course_mode_info, is_paid_course=is_paid_course, is_course_blocked=is_course_blocked, verification_status=course_verification_status, course_requirements=course_requirements, dashboard_index=dashboard_index, share_settings=share_settings, user=user, related_programs=related_programs, display_course_modes_on_dashboard=display_course_modes_on_dashboard, show_consent_link=show_consent_link, enterprise_customer_name=enterprise_customer_name, resume_button_url=resume_button_url' />
-                <div style="display: none;">${resume_button_urls} ${dashboard_index}</div>
-                % endfor
-              % if show_load_all_courses_link:
-                  <br/>
-                   ${len(course_enrollments)} ${_("results successfully populated,")}
-                   <a href="${reverse('dashboard')}?course_limit=None">
-                       ${_("Click to load all enrolled courses")}
-                  </a>
-              % endif
-              </ul>
-            % else:
-              <div class="empty-dashboard-message">
-                % if display_dashboard_courses:
-                  <p>${_("You are not enrolled in any courses yet.")}</p>
-                  % if empty_dashboard_message:
-                    <p class="custom-message">${empty_dashboard_message | n, decode.utf8}</p>
-                  %endif
-                  % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
-                    <a class="btn btn-primary" href="${marketing_link('COURSES')}">
-                      ${_("Explore courses")}
-                    </a>
-                  %endif
-                % else:
-                <p>${_("Activate your account!")}</p>
-                <p class="custom-message">${ activate_account_message | n, decode.utf8 }</p>
-                % endif
-            </div>
-            % endif
-  
-            % if staff_access and len(errored_courses) > 0:
-              <div id="course-errors">
-                <h2>${_("Course-loading errors")}</h2>
-  
-              % for course_dir, errors in errored_courses.items():
-                 <h3>${course_dir}</h3>
-                     <ul>
-                   % for (msg, err) in errors:
-                       <li>${msg}
-                         <ul><li><pre>${err}</pre></li></ul>
-                       </li>
-                   % endfor
-                     </ul>
-              % endfor
-              </div>
-            % endif
-          </div>
-        </div>
-        <div class="side-container" role="complementary" aria-label="messages">
-          %if display_sidebar_account_activation_message:
-            <div class="sidebar-notification">
-              <%include file="${static.get_template_path('registration/account_activation_sidebar_notice.html')}" />
-            </div>
-          %endif
-  
-          % if settings.FEATURES.get('ENABLE_DASHBOARD_SEARCH'):
-            <div id="dashboard-search-bar" class="search-bar dashboard-search-bar" role="search" aria-label="Dashboard">
-              <form class="search-form">
-                <label for="dashboard-search-input">${_('Search Your Courses')}</label>
-                <div class="search-field-wrapper">
-                  <input id="dashboard-search-input" type="text" class="search-field"/>
-                  <button type="submit" class="search-button" title="${_('Search')}">
-                    <span class="icon fa fa-search" aria-hidden="true"></span>
-                  </button>
-                  <button type="button" class="cancel-button" title="${_('Clear search')}">
-                    <span class="icon fa fa-remove" aria-hidden="true"></span>
-                  </button>
-                </div>
-              </form>
-            </div>
-            <div id="dashboard-search-results" class="search-results dashboard-search-results"></div>
-          % endif
-  
-          <%block name="skip_links">
-            % if settings.FEATURES.get('ENABLE_ANNOUNCEMENTS'):
-              <a id="announcements-skip" class="nav-skip sr-only sr-only-focusable" href="#announcements">${_("Skip to list of announcements")}</a>
-            % endif
-          </%block>
-          % if settings.FEATURES.get('ENABLE_ANNOUNCEMENTS'):
-            <%include file='dashboard/_dashboard_announcements.html' />
-          % endif
-  
-          % if display_sidebar_on_dashboard:
-            <div class="profile-sidebar" id="profile-sidebar" role="region" aria-label="Account Status Info">
-              <header class="profile">
-                <h2 class="account-status-title sr">${_("Account Status Info")}: </h2>
-              </header>
-              <div class="user-info">
-                <ul>
-  
-                  <%include file="${static.get_template_path('dashboard/_dashboard_status_verification.html')}" />
-  
-                </ul>
-              </div>
-            </div>
-          % endif
-        </div>
-      </div>
-      <%include file="dashboard/common.html"/>
+
+	<section class="about-top">
+        <div class="container text-center p-5">
+			<h1 class="pt-5">הסיפור של מדרסה</h1>
+			<h3>מיזם חברתי-קהילתי-טכנולוגי ללימוד ערבית מדוברת בחינם ולכולם.</h3>
+			<p class="pb-5"> המטרה שלנו היא לקדם תקשורת טובה יותר בין המגזרים השונים בחברה הישראלית. המיזם משלב לימוד מקוון באתר באמצעות קורסים אינטראקטיביים וספרית תכנים ענפה, יחד עם פעילות קהילתית יומיומית ברשתות החברתיות וקבוצות לימוד ברחבי הארץ.</p>
+		</div>
+	</section>
+	
+	<nav>
+		<ul class="about-nav nav justify-content-center">
+			<li class="nav-item"><a class="nav-link active" href="#story">הסיפור</a></li>
+			<li class="nav-item"><a class="nav-link" href="#team">הצוות</a></li>
+			<li class="nav-item"><a class="nav-link" href="#managment">הוועד המנהל</a></li>
+			<li class="nav-item"><a class="nav-link" href="#thanks">תודות</a></li>
+		</ul>
+	</nav>
+	
+	<section class="about-story">
+		<div class="about-story-img"></div>
+		<a name="story"></a>
+		<div class="container pb-0">
+			<div class="about-story-wrap mb-5 px-3">
+				<p class="heading">מדרסה הוא ארגון חברתי ללימוד ערבית מדוברת בחינם דרך כלים טכנולוגיים ולמידה קהילתית.</p>
+				<p>מעל 75,000 תלמידים רשומים לומדים לתקשר דרך שילוב בין קורסים מקוונים חינמיים, תכנים מגוונים בערוצי ניו מדיה שונים, וקבוצות תרגול ושיח ברחבי הארץ. במקביל לפעילות מול הקהל הרחב, הארגון יוצר ומקיים שיתופי פעולה אסטרטגיים רבים המבוססים על קורסים היברידיים, סדנאות והרצאות, במטרה להנכיח ולהגדיל את ידיעת הערבית בזירות המרכזיות של החברה.</p>
+			</div>
+			<div class="about-story-wrap mb-5 px-3">
+				<p class="heading">המטרה שלנו היא לחבר בין הקבוצות השונות בחברה הישראלית.</p>
+				<p>הערבית מהווה למעשה מכנה משותף רחב הרבה יותר משנהוג לחשוב:  היא שפת אם עבור 22% מהאוכלוסייה; לרבים מהיהודים בישראל ישנו חיבור משפחתי, תרבותי והיסטורי אליה; היא השפה הרשמית של 24 מדינות סביבנו והדמיון בינה לבין עברית מדהים . עם זאת, הרוב המוחלט של היהודים בישראל (95%!) לא דובר את השפה והחיבור אליה נשחק עם השנים. </p>
+			</div>
+			<div class="about-story-wrap mb-5 px-3">
+				<p class="heading">הקהילה העצומה והמגוונת של מדרסה היא הלב של הארגון.</p>
+				<p> הן בפן הפדגוגי - דרך תרגול ולימוד משותפים, והן בפן החברתי – בהשתתפות בפעילות ויצירת המומנטום שמניע את המהלך החברתי הרחב: 75,000 התלמידים - חילונים ודתיים, אשכנזים ומזרחים,  גברים ונשים, מכל קצוות הקשת הפוליטית ובכל הגילאים. 250,000 אנשים שונים מקבלים את התכנים היומיומיים שלנו בעמוד הפייסבוק מדי חודש, ועשרות אלפים מנויים לערוצי למידה רבים אחרים.  </p>
+			</div>
+		
+		</div>
+	</section>
+	
+	<section class="about-team text-center">
+		<a name="team"></a>
+		<div class="container pt-0" style="max-width:920px;">
+			<h3 class="h1 mb-5">הצוות</h3>
+			<div class="about-team-wrap row justify-content-center">
+					<div class="col-lg-4 col-sm-12">
+							<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/michal-rosen.png" alt="מיכל רוזן" width="185">
+							<div class="about-team-content">
+								<p class="h3 mt-4">מיכל רוזן</p>
+								<p style="font-size:23px;">
+										מנהלת מדיה דיגיטלית בצוות מדרסה. בעלת תואר ראשון בלימודי מזרח אסיה וחובבת שפות. לומדת ערבית ועוסקת ביצירת תוכן לרשתות, עיצוב גרפי והוראה. מתרגלת יוגה ומוזיקאית יוצרת.
+								</p>
+							</div>
+						</div>		
+				<div class="col-lg-4 col-sm-12">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/gilad.png" alt="גילעד סוויט">
+					<div class="about-team-content">
+						<p class="h3 mt-4">גילעד סוויט</p>
+						<p style="font-size:23px;"> המייסד והמנהל המקצועי. בעל תואר ראשון בסוציולוגיה, אנתרופולוגיה, ערבית ובודהיזם. גר בירושלים, וחובב שפות (דה), אקולוגיה ומוזיקה.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-12">
+						<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/aya.png" alt="איה ח׳לאילה">
+						<div class="about-team-content">
+							<p class="h3 mt-4">איה ח׳לאילה</p>
+							<p style="font-size:23px;"> מתרגמת, מורה ועורכת תוכן. סטודנטית לתואר שני בפיתוח בין-לאומי, פעילה חברתית, אוהבת לטייל בעולם ולשחק משחקי קופסה!</p>
+						</div>
+					</div>
+				
+			
+			</div>
+			<div class="row justify-content-center">		
+				<div class="col-lg-4 col-sm-12">
+							<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/daniel.png" alt="דניאל דותן">
+							<div class="about-team-content">
+								<p class="h3 mt-4">דניאל דותן</p>
+								<p style="font-size:23px;"> עו״ד ופעיל חברתי. מייסד ומנכ״ל העמותה. חולה כדורגל, מצלם, כותב תשבצי היגיון (רק בעברית בינתיים), ואבא של עלמה.</p>
+							</div>
+				</div>
+			
+				<div class="about-team-item col-lg-4 col-sm-12">
+						<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/yaniv.png" alt="יניב גרשון" width="185">
+						<div class="about-team-content">
+							<p class="h3 mt-4">יניב גרשון</p>
+							<p style="font-size:23px;">
+									מנהל אתר וכותב תוכן במדרסה. בעל תואר ראשון במדעי המידע וערבית בבר אילן. בעל ידע גם בשפה הערבית וגם בשפות המחשב. השילוש הקדוש שלו זה ערבית, טכנולוגיה ושינוי חברתי. חובב משחקי קופסה ואוכל בריא.
+							</p>
+						</div>
+				</div>	
+				<div class="col-lg-4 col-sm-12">
+					<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/amit.png" alt="עמית בנדור" width="185">
+					<div class="about-team-content">
+						<p class="h3 mt-4">עמית בנדור</p>
+						<p style="font-size:23px;">
+								הטכנולוג (הראשי) של מדרסה. ביום יום מומחה לבינה מלאכותית ועיבוד שפה, בעל תואר מהנדס מהטכניון.  
+						</p>
+					</div>
+				</div>		
+						
+			</div>
+			<div class="row justify-content-center">	
+				<!-- <div class="about-team-item col-lg-3 col-sm-12">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/vered.png" alt="ורד קיסר">
+					<div class="about-team-content">
+						<p class="h3 mt-4">ורד קיסר</p>
+						<p style="font-size:23px;"> בת 27 מירושלים, כותבת חומרי לימוד ורכזת אדמיניסטרציה. בוגרת תואר ראשון בשפה וספרות ערבית ולומדת לתואר שני בבריאות הציבור. חובבת שפות, נופים וחתולים.</p>
+					</div>
+				</div>	 -->
+
+				<!-- <div class="col-lg-3 col-sm-12">
+							
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/naam.png" alt="נע׳ם אבו ליל">
+							
+						<div class="about-team-content">
+								<p class="h3 mt-4">נע׳ם אבו ליל</p>
+								<p style="font-size:23px;"> נע’ם אבו-ליל, עורכת תוכן במדרסה. סטודנטית לתואר ראשון במזרח תיכון ובלשנות. גרה בירושלים ותמיד מאחרת</p>
+						</div>
+					</div> -->
+
+					<!-- <div class="col-lg-3 col-sm-12">
+						<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/mu'tasam.png" alt="מעתצם ג'לאל עטשאן" width="185">
+						<div class="about-team-content">
+								<p class="h3 mt-4">מעתצם ג'לאל עטשאן</p>
+								<p style="font-size:23px;"> עורך תוכן במדרסה. בעל תואר ראשון בשפה וספרות ערבית וחינוך, סטודנט לתואר שני בשפה וספרות ערבית. מתרגל ערבית במרכז שלם ומקטלג ספרים במחלקה לערבית בספרייה הלאומית. חובב שפות ומשחקי קופסה. אבא לשני ילדים.</p>
+						</div>
+					</div> -->
+
+					
+					<div class="col-lg-3 col-sm-12">
+						<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/sondos.png" alt="סונדוס אלחות" width="185">
+						<div class="about-team-content">
+								<p class="h3 mt-4">סונדוס אלחות</p>
+								<p style="font-size:23px;"> מורה ופרזנטורית במדרסה. בוגרת האוניברסיטה העברית, מלמדת ערבית בארה"ב ובתכנית "מדברות". עובדת בסנונית כרכזת תחום ערבית, מתרגמת וכותבת תוכן ומנחה מורים לערבית. החלום שלה שיהיה לה בית ספר משלה. </p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-sm-12">
+						<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/yiftach.png" alt="יפתח שביט" width="185">
+						<div class="about-team-content">
+								<p class="h3 mt-4">יפתח שביט</p>
+								<p style="font-size:23px;">
+									מנהל פדגוגי ורכז פעילויות השפה. בעל תואר ראשון בהיסטוריה ויחסים בינלאומיים ותואר שני בהיסטוריה. גר בירושלים, חובב שפות, טיולים ולימוד גמרא בזמנו הפנוי :-)
+								</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-sm-12">
+						<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/lital.png" alt="ליטל רוז" width="185">
+						<div class="about-team-content">
+								<p class="h3 mt-4">ליטל רוז</p>
+								<p style="font-size:23px;"> 
+									מנהלת שיתופי פעולה. בעלת תואר ראשון במנהיגות ומדיניות בחינוך ולימודי א"י וסטודנטית לתואר שני במנהל ומדיניות ציבורית. אמא של נוגה, אוהבת לטייל בארץ ולכתוב (למגירה :)
+								</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-sm-12">
+						<img class="about-team-img" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/about/shachaf.png" alt="שחף ברקאי" width="185">
+						<div class="about-team-content">
+								<p class="h3 mt-4">שחף ברקאי</p>
+								<p style="font-size:23px;"> 
+									מנהלת אדמיניסטרטיבית. בעלת תואר ראשון ותעודת הוראה בהיסטוריה. 
+									אוהבת טבע, א.נשים ובעלי חיים. מאמינה שמפגש ותקשורת הם הבסיס ליצירת חברה ויחסים טובים. 
+								</p>
+						</div>
+					</div>
+
+				
+				
+			</div>
+		</div>
+	</section>
+	
+	<section class="about-team text-center">
+		<a name="managment"></a>
+		<div class="container" style="max-width:920px;">
+			<h3 class="h1">הוועד המנהל</h3>
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-sm-12">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/netanel.png" alt="נתנאל כץ">
+					<div class="about-team-content">
+						<p class="h3 mt-4">נתנאל כ״ץ</p>
+						<p style="font-size:23px;"> יושב ראש העמותה פסיכולוג ארגוני, מייסד ומנכל משותף ב”מכון מנהיגות”. ליווה את הפרויקט מראשית דרכו</p>
+					</div>
+				</div>
+				<!-- <div class="col-lg-4 col-sm-12">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/alon.png" alt="אלון פרגמן">
+					<div class="about-team-content">
+						<p class="h3 mt-4">ד״ר אלון פרגמן</p>
+						<p style="font-size:23px;"> עוסק בתרגום, בחקר הוראת השפה הערבית ובהכשרת מורים לערבית בבית הספר לחינוך באוניברסיטת תל אביב.</p>
+					</div>
+				</div> -->
+				<div class="col-lg-4 col-sm-12">
+					<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/daniel-s.png" alt="דניאל שפע">
+					<div class="about-team-content">
+						<p class="h3 mt-4">דניאל שפע</p>
+						<p style="font-size:23px;"> עורך בכיר ומפיק בערוץ הספורט</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="about-thanks text-center">
+		<a name="thanks"></a>
+		<div class="container">
+			<h3>
+				תודות 
+				<img class="about-team-img" src="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/images/about/namaste.png" alt="תודה">
+			</h3>
+			<p>מיכל ודרור וינוגרד, שם בראשי, אורן פלד, מיכל פורת, מתן אשד, יובל כץ, גל קרמרסקי, נועה פינקלשטיין, ירדן ליכטרמן, שחר גילן, שרון קומש, מתן סרי, מחמוד שחאדה, סמירה טאפש, רג’אא חאג’ יחיא, מאיה דוד, מעתצם בכיראת ז”ל, איה ח’יריה, ראוי מוסא, זאדה חאג׳, אריאל קדם, עומר ארליך, חנאן חסין דבאח, ת'נאא גובארי, ג’האד אבו סנינה, רונן רוטפרב, איתי כץ, עירית שחם, מנחם דותן רו״ח, מירי חזות, אוהד ובר, מתן גז מכון וןליר, המרכז האמריקאי בירושלים, סטודיו פו, בית אליאנס, אולפן הקלטות המזקקה, מרכז קרוסלה, משולם פרינט </p>
+			<a class="theme-btn-special mt-5" href="/supportus">וכמובן, לכל מי שתמך ותומך במיזם</a>
+		</div>
+	</section>
 </main>
-
-<div id="email-settings-modal" class="modal" aria-hidden="true">
-  <div class="inner-wrapper" role="dialog" aria-labelledby="email-settings-title">
-    <button class="close-modal">
-      <span class="icon fa fa-remove" aria-hidden="true"></span>
-      <span class="sr">
-        ## Translators: this is a control to allow users to exit out of this modal interface (a menu or piece of UI that takes the full focus of the screen)
-        ${_("Close")}
-      </span>
-    </button>
-
-    <header>
-      <h2 id="email-settings-title">
-        ${Text(_("Email Settings for {course_number}")).format(course_number=HTML('<span id="email_settings_course_number"></span>'))}
-        <span class="sr">,
-          ## Translators: this text gives status on if the modal interface (a menu or piece of UI that takes the full focus of the screen) is open or not
-          ${_("window open")}
-        </span>
-      </h2>
-      <hr/>
-    </header>
-
-    <form id="email_settings_form" method="post">
-      <input name="course_id" id="email_settings_course_id" type="hidden" />
-      <label><input type="checkbox" id="receive_emails" name="receive_emails" />${_("Receive course emails")} </label>
-      <div class="submit">
-        <input type="submit" id="submit" value="${_('Save Settings')}" />
-      </div>
-    </form>
-  </div>
-</div>
-
-<div id="unenroll-modal" class="modal unenroll-modal" aria-hidden="true">
-  <div class="inner-wrapper" role="dialog" aria-labelledby="unenrollment-modal-title" aria-live="polite">
-    <button class="close-modal">
-      <span class="icon fa fa-remove" aria-hidden="true"></span>
-      <span class="sr">
-        ## Translators: this is a control to allow users to exit out of this modal interface (a menu or piece of UI that takes the full focus of the screen)
-        ${_("Close")}
-      </span>
-    </button>
-
-    <header class="unenroll-header">
-      <h2 id="unenrollment-modal-title">
-        <span id='track-info'></span>
-        <span id='refund-info'></span>
-        <span class="sr">,
-          ## Translators: this text gives status on if the modal interface (a menu or piece of UI that takes the full focus of the screen) is open or not
-          ${_("window open")}
-        </span>
-      </h2>
-      <hr/>
-    </header>
-    <div id="unenroll_error" class="modal-form-error"></div>
-    <form id="unenroll_form" method="post" data-remote="true" action="${reverse('change_enrollment')}">
-      <input name="course_id" id="unenroll_course_id" type="hidden" />
-      <input name="enrollment_action" type="hidden" value="unenroll" />
-      <div class="submit">
-        <input class="submit-button" name="submit" type="submit" value="${_('Unenroll')}" />
-      </div>
-    </form>
-  </div>
-</div>
-
-<%include file="dashboard/_dashboard_entitlement_unenrollment_modal.html"/>
+	
+<!-- smooth scroll JS -->
+<script src="/static/madrasa_theme/js/smooth-scroll.js"></script>

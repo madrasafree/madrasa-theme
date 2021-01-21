@@ -45,6 +45,68 @@ from student.models import CourseEnrollment
 <style>
 
 
+.dashboard{
+       flex-direction: column!important;
+   }
+  .dashboard .course-info {
+    display: none;
+  }
+  .dashboard .course-actions a {
+    padding: 5px 20px!important;
+  }
+  .dashboard .course-title {
+    text-align: center;
+  }
+  .dashboard .wrapper-course-actions {
+    margin: auto!important;
+  }
+  .dashboard .side-container {
+    order: 0!important;
+    max-width: 700px;
+    margin: 10px auto;
+    padding:0!important;
+  }
+   section.reg-user {
+    min-height: min-content !important;
+    background-image: url("https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/home/reg-user-bg-crop.png");
+  }
+   .reg-user-header {
+    padding: 80px 0 !important;
+  }
+
+  .dashboard .course-title a,
+  .dashboard .course-actions a {
+    font-family: "muliregular" !important;
+  }
+
+  @media screen and (min-width: 800px) {
+    .dashboard .main-container #my-courses {
+      width: 100%;
+    }
+    .dashboard .main-container {
+      display: block;
+    }
+    .dashboard .main-container .listing-courses {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .dashboard li.course-item {
+      margin: 10px !important;
+      width: 45%;
+    }
+    .dashboard .course .details {
+      display: flex;
+    }
+    .dashboard .wrapper-course-image,
+    .wrapper-course-details {
+      width: 49% !important;
+    }
+    .dashboard .details {
+      min-height: 190px;
+    }
+  }
+
+
 @media screen and (max-width: 600px){
   .reg-user{
   min-height:min-content!important;

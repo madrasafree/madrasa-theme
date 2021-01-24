@@ -1,0 +1,137 @@
+<div class="js-form-feedback" aria-live="assertive" tabindex="-1">
+</div>
+
+<form id="register" class="register-form" autocomplete="off" tabindex="-1" method="POST">
+    <h2 id="main-form-title">
+        מצטרפים למדרסה ומתחילים ללמוד ערבית מדוברת בחינם!
+    </h2>
+
+    <% if (!context.syncLearnerProfileData) { %>
+        <div class="toggle-form">
+            <span class="text"><%- edx.StringUtils.interpolate(gettext('Already have an {platformName} account?'), {platformName: context.platformName }) %></span>
+            <a id="sign-in-link" href="#login" class="form-toggle" data-type="login"><%- gettext("Sign in.") %></a>
+        </div>
+    <% } %>
+
+    <% if (!context.currentProvider) { %>
+        <% if (context.providers.length > 0 || context.hasSecondaryProviders) { %>
+            <div class="login-providers">
+                <div class="section-title lines">
+                    <h3>
+                        <span class="text"><%- gettext("Create an account using") %></span>
+                    </h3>
+                </div>
+                <%
+                _.each( context.providers, function( provider) {
+                    if ( provider.registerUrl ) { %>
+                        <button type="button" class="button button-primary button-<%- provider.id %> login-provider register-<%- provider.id %>" data-provider-url="<%- provider.registerUrl %>">
+                            <div class="icon <% if ( provider.iconClass ) { %>fa <%- provider.iconClass %><% } %>" aria-hidden="true">
+                                <% if ( provider.iconImage ) { %>
+                                    <img class="icon-image" src="<%- provider.iconImage %>" alt="<%- provider.name %> icon" />
+                                <% } %>
+                            </div>
+                            <span aria-hidden="true"><%- provider.name %></span>
+                            <span class="sr"><%- _.sprintf( gettext("Create account using %(providerName)s."), {providerName: provider.name} ) %></span>
+                        </button>
+                <%  }
+                }); %>
+
+                <% if ( context.hasSecondaryProviders ) { %>
+                    <button type="button" class="button-secondary-login form-toggle" data-type="institution_login">
+                        <%- gettext("Use my institution/campus credentials") %>
+                    </button>
+                <% } %>
+            </div>
+            <div class="section-title lines">
+                <h3>
+                    <span class="text"><%- gettext("or create a new one here") %></span>
+                </h3>
+            </div>
+        <% } else { %>
+
+        <% } %>
+    <% } else if (context.autoRegisterWelcomeMessage) { %>
+        <span class="auto-register-message"><%- context.autoRegisterWelcomeMessage %></span>
+    <% } %>
+
+    <p id="personal-details-heading">
+       כמה פרטים אישיים
+    </p>
+
+    <%= context.fields %>
+
+    <p id="support-text">
+       הלימודים במדרסה הם ללא עלות אבל אנחנו כאן בזכות התומכים החודשיים שלנו
+    </p>
+    <p class="checkboxes mb-0 mt-0">
+       <label>
+        <input id="support-check" name="support-check" type="checkbox">אני רוצה
+       לתמוך במיזם ובתנועה </label>
+    </p>
+    <div id="back-arrow">
+       <i class="fa fa-arrow-circle-right"></i>
+    </div>
+
+    <div id="support">
+       <div id="amount">
+          <!-- monthly payment of 25 -->
+          <label class="fixed-amount">
+             <input name="amount" type="radio" value="25">
+             <div class="number">₪25</div>
+             <div>
+                בתמיכה חודשית
+             </div>
+          </label>
+          <!-- monthly payment of 50 -->
+          <label class="fixed-amount">
+             <input  name="amount" type="radio" value="50">
+             <div class="number">₪50
+             </div>
+             <div>
+                בתמיכה חודשית
+             </div>
+          </label>
+          <!-- monthly payment of 100 -->
+          <label class="fixed-amount">
+             <input name="amount" type="radio" value="100">
+             <div class="number">₪100</div>
+             <div>
+                בתמיכה חודשית
+             </div>
+          </label>
+          <!-- monthly payment of 200 -->
+          <label class="fixed-amount">
+             <input name="amount" type="radio" value="200">
+             <div class="number">₪200</div>
+             <div>
+                בתמיכה חודשית
+             </div>
+          </label>
+          <!-- monthly payment of custom amount -->
+          <label class="custom-amount">
+             <input name="amount" type="radio" value="monthly">
+             <div>
+                סכום אחר
+             </div>
+          </label>
+          <!-- one-time payment of custom amount -->
+          <label class="custom-amount">
+             <input name="amount" type="radio" value="one-time">
+             <div>
+                לתמיכה חד פעמית
+             </div>
+          </label>
+       </div>
+       <!-- setting custom amount -->
+       <div id="custom-amount-section">
+          <label>בחרו סכום: <input id="custom-amount" type="number"></label>
+          <button id="custom-amount-button">הזינו סכום</button>
+       </div>
+    </div>
+
+    <div class="actions">
+        <button type="submit" class="action action-primary action-update js-register register-button">
+            <% if ( context.registerFormSubmitButtonText ) { %><%- context.registerFormSubmitButtonText %><% } else { %><%- gettext("Create Account") %><% } %>
+        </button>
+    </div>
+</form>

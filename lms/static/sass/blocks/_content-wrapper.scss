@@ -1,5 +1,7 @@
 .content-wrapper {
-    padding:0 0 10px!important;
+    @media (min-width: 768px) {
+        padding: 0;
+    }
 
     .login-form {
         span {

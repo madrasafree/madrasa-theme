@@ -43,7 +43,9 @@ from student.models import CourseEnrollment
 <meta name="og:description" content="לימוד ערבית מדוברת בחינם. באתר תוכלו למצוא קורסים פתוחים, ספרית תכנים ענפה, מילון, וחשוב לא פחות - להתחבר לקהילה אדירה של לומדים לתקשר - ברשתות החברתיות ובמפגשי תרגול פתוחים">
 <meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
 <style>
-
+.header-courses{
+  display:none;
+}
 
 .dashboard{
        flex-direction: column!important;
@@ -85,6 +87,7 @@ from student.models import CourseEnrollment
     }
     .dashboard .main-container {
       display: block;
+      padding-bottom:20px;
     }
     .dashboard .main-container .listing-courses {
       display: flex;
@@ -240,7 +243,7 @@ from student.models import CourseEnrollment
           <div class="reg-user-header">
             <h1 class="text-center">מרחבא ${user}!</h1>
             <!-- <a href="https://madrasafree.com/courses" class="theme-btn theme-btn__invert w-100">המשך לאיזור הקורסים של מדרסה</a> -->
-            <p class="text-center">כיף שהגעת לכיתה!</p>
+            <p class="text-center" style="font-size:26px;">כיף שהגעת לכיתה!</p>
           </div>		
           <div class="d-flex justify-content-between align-items-center flex-column">
             <!-- <div class="text-center p-3"> -->
@@ -263,7 +266,7 @@ from student.models import CourseEnrollment
       <div class="dashboard" id="dashboard-main">
         <div class="main-container">
           <div class="my-courses" id="my-courses">
-            <h2>בואו נמשיך ללמוד!</h2>
+            <h2 style="font-size:26px;font-family:'muliregular';margin-right:10px">בואו נמשיך ללמוד!</h2>
             % if display_dashboard_courses:
             <%include file="learner_dashboard/_dashboard_navigation_courses.html"/>
             % endif

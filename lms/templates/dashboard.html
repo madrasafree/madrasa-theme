@@ -238,8 +238,9 @@ from student.models import CourseEnrollment
     <section class="reg-user">
         <div class="container">
           <div class="reg-user-header">
-            <h1 class="text-left">מרחבא ${user}!</h1>
-            <a href="https://madrasafree.com/courses" class="theme-btn theme-btn__invert w-100">המשך לאיזור הקורסים של מדרסה</a>
+            <h1 class="text-center">מרחבא ${user}!</h1>
+            <!-- <a href="https://madrasafree.com/courses" class="theme-btn theme-btn__invert w-100">המשך לאיזור הקורסים של מדרסה</a> -->
+            <p class="text-center">כיף שהגעת לכיתה!</p>
           </div>		
           <div class="d-flex justify-content-between align-items-center flex-column">
             <!-- <div class="text-center p-3"> -->
@@ -262,6 +263,7 @@ from student.models import CourseEnrollment
       <div class="dashboard" id="dashboard-main">
         <div class="main-container">
           <div class="my-courses" id="my-courses">
+            <h2>בואו נמשיך ללמוד!</h2>
             % if display_dashboard_courses:
             <%include file="learner_dashboard/_dashboard_navigation_courses.html"/>
             % endif

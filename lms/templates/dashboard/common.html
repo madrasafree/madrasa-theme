@@ -50,7 +50,14 @@ from django.utils.translation import ugettext as _
         src: url("abraham.woff2") format("woff2");
       }
 
-      
+      .test-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+  }
       .updates-strip {
         background: #85c559;
         padding: 30px 0;
@@ -227,7 +234,108 @@ from django.utils.translation import ugettext as _
   <div class="container">
     <div id="quote-carousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
+
         <div class="carousel-item active">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="quotation-mark align-self-start">״</div>
+            <blockquote class="blockquote text-center">
+              <img
+                class="test-img"
+                src="https://courses.madrasafree.com/wp-content/uploads/2021/01/alan-e1611097026266.jpeg"
+                alt="אלן אזגורי"
+              />
+              <h3 class="mb-0">לא סתם קורסים, אלא קהילה ענקית עם חזון.</h3>
+              <p class="blockquote-footer mt-4">אלן אזגורי, מנהל מו"פ בהייטק</p>
+            </blockquote>
+            <div class="quotation-mark align-self-end">״</div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="quotation-mark align-self-start">״</div>
+            <blockquote class="blockquote text-center">
+              <img
+                class="test-img"
+                src="https://courses.madrasafree.com/wp-content/uploads/2021/01/andres.png"
+                alt="אנדרס שניידר כץ"
+              />
+              <h3 class="mb-0">
+                פלטופרמה מושקעת ומלאת אהבה, ששינתה את התפיסה לגבי לימודי ערבית בישראל.
+              </h3>
+              <p class="blockquote-footer mt-4">אנדרס שניידר כץ</p>
+            </blockquote>
+            <div class="quotation-mark align-self-end">״</div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="quotation-mark align-self-start">״</div>
+            <blockquote class="blockquote text-center">
+              <img
+                class="test-img"
+                src="https://courses.madrasafree.com/wp-content/uploads/2021/01/lilach.jpeg"
+                alt="לילך שמחון ברעם"
+              />
+              <h3 class="mb-0">אני מאוד נהנית ללמוד עם מדרסה ומאמינה בדרך שלהם.</h3>
+              <p class="blockquote-footer mt-4">לילך שמחון ברעם, מנחת קבוצות</p>
+            </blockquote>
+            <div class="quotation-mark align-self-end">״</div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="quotation-mark align-self-start">״</div>
+            <blockquote class="blockquote text-center">
+              <img
+                class="test-img"
+                src="https://courses.madrasafree.com/wp-content/uploads/2021/01/nir.jpg"
+                alt="ניר רוזנר"
+              />
+              <h3 class="mb-0">קורסים מקצועיים, מטורפים ובחינם. אין בכלל התלבטות!</h3>
+              <p class="blockquote-footer mt-4">ניר רוזנר, עובד בשוק ההון</p>
+            </blockquote>
+            <div class="quotation-mark align-self-end">״</div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="quotation-mark align-self-start">״</div>
+            <blockquote class="blockquote text-center">
+              <img
+                class="test-img"
+                src="https://courses.madrasafree.com/wp-content/uploads/2021/01/malna.jpg"
+                alt="דר' מאלנה כהן-סימברקנו"
+              />
+              <h3 class="mb-0">
+                בזכות מדרסה אני מצליחה לתקשר. מצליחה לשוחח ולתקשר בצורה הרבה יותר טובה
+                עם המטופלים והעמיתים שלי בעבודה.
+              </h3>
+              <p class="blockquote-footer mt-4">דר' מאלנה כהן-סימברקנו</p>
+            </blockquote>
+            <div class="quotation-mark align-self-end">״</div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="quotation-mark align-self-start">״</div>
+            <blockquote class="blockquote text-center">
+              <img
+                class="test-img"
+                src="https://courses.madrasafree.com/wp-content/uploads/2021/01/hila-e1611097149805.jpg"
+                alt="הילה טלומק"
+              />
+              <h3 class="mb-0">חבר'ה צעירים חדורי מטרה לשנות את העולם.</h3>
+              <p class="blockquote-footer mt-4">הילה טלומק</p>
+            </blockquote>
+            <div class="quotation-mark align-self-end">״</div>
+          </div>
+        </div>
+        <!-- <div class="carousel-item active">
           <div class="d-flex justify-content-between align-items-center">
             <div class="quotation-mark align-self-start">״</div>
             <blockquote class="blockquote text-center">
@@ -256,7 +364,7 @@ from django.utils.translation import ugettext as _
             </blockquote>
             <div class="quotation-mark align-self-end">״</div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

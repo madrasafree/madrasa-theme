@@ -16,13 +16,13 @@ function setIframeData() {
     if (checkFormInput()) {
         $("#custom-amount-section").hide();
         let json = {};
-        email = $("#email").val();
-        fname = $("#fname").val();
-        lname = $("#lname").val();
-        json = createJson(isMonthly, fname, lname, email, amount);
+        email = $("#register-email").val();
+        // fname = $("#register-name").val();
+        // lname = $("#lname").val();
+        json = createJson(isMonthly, '', '', email, amount);
         setUrl(json);
         showIframe();
-        $("#supporter-details").html(`שם פרטי: ${fname}<br>שם משפחה:${lname}<br>אימייל: ${email}`);
+        //$("#supporter-details").html(`שם פרטי: ${fname}<br>שם משפחה:${lname}<br>אימייל: ${email}`);
     } else {
         $("#empty-fields-msg").show();
     }
@@ -40,13 +40,11 @@ function showIframe() {
 //Creating purchese object
 function createJson(isMonthly, fname, lname, email, amount) {
     const object = {};
-    object["GroupPrivateToken"] = "bb8a47ab-42e0-4b7f-ba08-72d55f2d9e41";
-    object["Items"] = [{
+    object["Item"] = {
         "CatalogNumber": "29",
         "Quantity": 1,
         "Description": "תמיכה חד פעמית במדרסה"
-    }];
-    object["RedirectURL"] = "thanks.html";
+    };
     if (isMonthly) {
         object["SaleType"] = 2;
         object["CreateRecurringSale"] = true;
@@ -55,19 +53,19 @@ function createJson(isMonthly, fname, lname, email, amount) {
         object["RecurringSaleStep"] = 1;
         object["RecurringSaleCount"] = 6;
         object["RecurringSaleAutoCharge"] = true;
-        object["Items"][0]["Description"] = "תמיכה חודשית במדרסה (הוראת קבע)";
+        object["Item"].Description = "תמיכה חודשית במדרסה (הוראת קבע)";
     }
     object["EmailAddress"] = email;
     object["CustomerFirstName"] = fname;
     object["CustomerLastName"] = lname;
-    object["Items"][0]["UnitPrice"] = amount;
+    object["Item"].UnitPrice = amount;
     return object;
 }//createJson
 
 
 //set iframe url from the server by the purchese object
 function setUrl(json) {
-    $.post("getUrl.php", json, function (response) {
+    $.post("/madrasafree/icredit_get_url/", json, function (response) {
         $("#paying-iframe iframe").attr('src', response);
     });
 }//setUrl

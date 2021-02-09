@@ -10,6 +10,7 @@ main {
     border-radius: 0 0 30px 30px;
     width: 100%;
     max-width: 750px;
+    height: 100%;
   }
 }
 
@@ -198,8 +199,8 @@ form#register {
 
   #paying-iframe iframe {
     width: 100%;
+    height: 100%;
     border: none;
-    height: 800px;
   }
 
   #back-arrow {

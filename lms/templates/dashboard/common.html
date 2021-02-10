@@ -138,9 +138,96 @@ from django.utils.translation import ugettext as _
           padding: 20px;
         }
       }
+          /* Ticker */
+          @import url(https://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+        @keyframes ticker {
+          0% {
+            transform: translate3d(-150%, 0, 0);
+          }
+          100% {
+            transform: translate3d(0, 0, 0);
+          }
+        }
+        .wrp{
+          width: 90%;
+          overflow: hidden;
+          height: 4rem;
+          margin: 0 auto;
+          font-weight: 800;
+          font-family: "Alef Hebrew",
+            "Helvetica Neue",
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        
+        .ticker-wrap {
+          position: relative;
+          overflow: hidden;
+          height: 4rem;
+          background-color: #fff; 
+          padding-left: 100%;  
+          box-sizing: border-box;
+          display: inline-block;
+        }
+        
+        .ticker {
+          overflow: hidden;
+          box-sizing: border-box;
+          display: inline-block;
+          height: 4rem;
+          line-height: 4rem;  
+          white-space: nowrap; 
+          padding-right: -100%; 
+          
+        }
+        .ticker-wrap:hover .ticker{
+          animation-play-state:paused;
+        }
+        .anim{
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          animation-name: ticker;
+        }
+        
+        .ticker .moving a{
+          text-decoration: none;
+          color: #333;
+          cursor: pointer;
+          margin-left: 30px;
+        }
+        .ticker .moving a:hover{
+         text-decoration: underline; 
+        }
+        p{
+          direction:rtl;
+          margin:0;
+        }
+         /* Ticker */
 </style>
 <p class="text-center" style="font-size:26px;margin-bottom:40px">להרשמה לקורסים נוספים - יש ללחוץ <a href="/courses">כאן</a>
   </p>
+
+    <!-- ticker -->
+    <section class="ticker">
+      <div class="wrp">
+          <div class="ticker-wrap">
+            <div class="ticker anim">
+              <div class="moving">
+                <p>
+              
+               
+                         אתר מדרסה לא יהיה זמין ביום שלישי תאריך 16/2/2021 בין השעות 8:00 - 6:00
+        בבוקר בשל עבודת תחזוק בשרת.
+                עמכם הסליחה!
+         </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+          <!-- ticker -->
+
 <div class="strip14days" style="margin-bottom:-10px">
   <section style="color:white;  background-color:#70BF96;" class="py-5 d-block d-lg-flex">
     <div class="div1">
@@ -503,3 +590,26 @@ from django.utils.translation import ugettext as _
       </div>
     </div>
 </div> -->
+
+
+<script>
+  /* Ticker */
+ var wrap = document.querySelector('.wrp'),
+     ticker = document.querySelector('.ticker'),
+     mov = document.querySelector('.moving');
+ ticker.addEventListener("animationstart", start, false);
+ 
+ 
+ function start(){
+
+   var movCoor = mov.getBoundingClientRect(),
+       wrapCoor = wrap.getBoundingClientRect(),
+       duration = ((movCoor.width/wrapCoor.width)*20).toFixed()+'s';
+
+   durationAttribute = 'animation-duration:'+duration
+   ticker.setAttribute('style',durationAttribute);
+ }
+ 
+ 
+  /* Ticker */
+ </script>

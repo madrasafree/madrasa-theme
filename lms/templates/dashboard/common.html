@@ -208,25 +208,25 @@ from django.utils.translation import ugettext as _
 <p class="text-center" style="font-size:26px;margin-bottom:40px">להרשמה לקורסים נוספים - יש ללחוץ <a href="/courses">כאן</a>
   </p>
 
-    <!-- ticker -->
-    <section class="ticker">
-      <div class="wrp">
-          <div class="ticker-wrap">
-            <div class="ticker anim">
-              <div class="moving">
-                <p>
-              
-               
-                         אתר מדרסה לא יהיה זמין ביום שלישי תאריך 16/2/2021 בין השעות 8:00 - 6:00
-        בבוקר בשל עבודת תחזוק בשרת.
-                עמכם הסליחה!
-         </p>
-              </div>
+  <!-- ticker -->
+  <section class="ticker-section">
+    <div class="wrp">
+        <div class="ticker-wrap">
+          <div class="ticker anim">
+            <div class="moving">
+              <p>
+            
+             
+                       אתר מדרסה לא יהיה זמין ביום שלישי תאריך 16/2/2021 בין השעות 8:00 - 6:00
+      בבוקר בשל עבודת תחזוק בשרת.
+              עמכם הסליחה!
+       </p>
             </div>
           </div>
         </div>
-        </section>
-          <!-- ticker -->
+      </div>
+      </section>
+        <!-- ticker -->
 
 <div class="strip14days" style="margin-bottom:-10px">
   <section style="color:white;  background-color:#70BF96;" class="py-5 d-block d-lg-flex">
@@ -593,23 +593,23 @@ from django.utils.translation import ugettext as _
 
 
 <script>
-  /* Ticker */
- var wrap = document.querySelector('.wrp'),
-     ticker = document.querySelector('.ticker'),
-     mov = document.querySelector('.moving');
- ticker.addEventListener("animationstart", start, false);
- 
- 
- function start(){
+   /* Ticker */
+   var wrap = document.querySelector('.ticker-section .wrp'),
+          ticker = document.querySelector('.ticker-section .ticker'),
+          mov = document.querySelector('.ticker-section .moving');
+      ticker.addEventListener("animationstart", start, false);
+      
+      
+      function start(){
 
-   var movCoor = mov.getBoundingClientRect(),
-       wrapCoor = wrap.getBoundingClientRect(),
-       duration = ((movCoor.width/wrapCoor.width)*20).toFixed()+'s';
+        var movCoor = mov.getBoundingClientRect(),
+            wrapCoor = wrap.getBoundingClientRect(),
+            duration = ((movCoor.width/wrapCoor.width)*20).toFixed()+'s';
 
-   durationAttribute = 'animation-duration:'+duration
-   ticker.setAttribute('style',durationAttribute);
- }
- 
- 
-  /* Ticker */
+        durationAttribute = 'animation-duration:'+duration
+        ticker.setAttribute('style',durationAttribute);
+      }
+      
+      
+       /* Ticker */
  </script>

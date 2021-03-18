@@ -602,7 +602,12 @@ h1 {
 	</script>
 
 	<script>
-		var w = $('.pvideo[display="block"]').width();
-		$('.pvideo').css({'height':w+'px'});
+		function makeSquare(){
+			$('.pvideo').each(function(e){
+				e.css({'height':e.width()+'px'});
+			});
+		}
+		window.addEventListener("resize", makeSquare);
+		makeSquare();
 	</script>
 </main>

@@ -603,8 +603,8 @@ h1 {
 
 	<script>
 		function makeSquare(){
-			$('.pvideo').each(function(e){
-				e.css({'height':e.width()+'px'});
+			$('.pvideo').each(function(i, el){
+				$(el).css({'height':$(el).width()+'px'});
 			});
 		}
 		window.addEventListener("resize", makeSquare);

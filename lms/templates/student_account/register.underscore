@@ -60,82 +60,15 @@
 
     <%= context.fields %>
 
-    <p id="support-text">
-       הלימודים במדרסה הם ללא עלות אבל אנחנו כאן בזכות התומכים החודשיים שלנו
-    </p>
-    <p class="checkboxes mb-0 mt-0">
-       <label>
-        <input id="support-check" name="support-check" type="checkbox">אני רוצה
-       לתמוך במיזם ובתנועה </label>
-    </p>
-    <div id="back-arrow">
-       <i class="fa fa-arrow-circle-right"></i>
+    <div class="form-field checkbox-optional_fields_toggle">
+        <input type="checkbox" id="toggle_optional_fields" class="input-block checkbox"">
+        <label for="toggle_optional_fields">
+            <span class="label-text">
+                <%- gettext("Support education research by providing additional information") %>
+            </span>
+        </label>
     </div>
 
-    <div id="support">
-       <div id="amount">
-          <!-- monthly payment of 25 -->
-          <label class="fixed-amount">
-             <input name="amount" type="radio" value="25">
-             <div class="number">₪25</div>
-             <div>
-                בתמיכה חודשית
-             </div>
-          </label>
-          <!-- monthly payment of 50 -->
-          <label class="fixed-amount">
-             <input  name="amount" type="radio" value="50">
-             <div class="number">₪50
-             </div>
-             <div>
-                בתמיכה חודשית
-             </div>
-          </label>
-          <!-- monthly payment of 100 -->
-          <label class="fixed-amount">
-             <input name="amount" type="radio" value="100">
-             <div class="number">₪100</div>
-             <div>
-                בתמיכה חודשית
-             </div>
-          </label>
-          <!-- monthly payment of 200 -->
-          <label class="fixed-amount">
-             <input name="amount" type="radio" value="200">
-             <div class="number">₪200</div>
-             <div>
-                בתמיכה חודשית
-             </div>
-          </label>
-          <!-- monthly payment of custom amount -->
-          <label class="custom-amount">
-             <input name="amount" type="radio" value="monthly">
-             <div>
-                סכום אחר
-             </div>
-          </label>
-          <!-- one-time payment of custom amount -->
-          <label class="custom-amount">
-             <input name="amount" type="radio" value="one-time">
-             <div>
-                לתמיכה חד פעמית
-             </div>
-          </label>
-       </div>
-       <!-- setting custom amount -->
-       <div id="custom-amount-section">
-          <label>בחרו סכום: <input id="custom-amount" type="number"></label>
-          <button id="custom-amount-button">הזינו סכום</button>
-       </div>
-    </div>
-    <div id="paying-iframe">
-       <p id="supporter-details"></p>
-       <iframe src="" />
-       <p id="cancel">
-          אפשר להפסיק את התמיכה בכל עת בלחיצה
-          <a href="#"> כאן</a>
-       </p>
-    </div>
     <div class="actions">
         <button type="submit" class="action action-primary action-update js-register register-button">
             <% if ( context.registerFormSubmitButtonText ) { %><%- context.registerFormSubmitButtonText %><% } else { %><%- gettext("Create Account") %><% } %>

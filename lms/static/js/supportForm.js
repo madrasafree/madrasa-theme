@@ -32,13 +32,7 @@ $(function() {
             "Description": "תמיכה חד פעמית במדרסה"
         };
         if (isMonthly) {
-            object["SaleType"] = 2;
             object["CreateRecurringSale"] = true;
-            object["RecurringSaleCycle"] = 3;
-            object["RecurringSaleDay"] = 10;
-            object["RecurringSaleStep"] = 1;
-            object["RecurringSaleCount"] = 6;
-            object["RecurringSaleAutoCharge"] = true;
             object["Item"].Description = "תמיכה חודשית במדרסה (הוראת קבע)";
         }
         object["Item"].UnitPrice = amount;

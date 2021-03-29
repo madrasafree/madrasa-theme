@@ -18,8 +18,9 @@
         });
 
         $('body').on('formLoaded', function (e) {
+           $('.plaintext-honor_code').insertAfter('.optional-fields');
            $('.form-field.text-name').hide();
-           $('#toggle_optional_fields').click();
+           $('.optional-fields').removeClass('hidden');
         });
     </script>
     <%static:require_module module_name="js/student_account/logistration_factory" class_name="LogistrationFactory">

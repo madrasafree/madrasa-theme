@@ -60,8 +60,8 @@
 
     <%= context.fields %>
 
-    <div class="form-field checkbox-optional_fields_toggle">
-        <input type="checkbox" id="toggle_optional_fields" class="input-block checkbox"">
+    <div class="form-field checkbox-optional_fields_toggle hidden">
+        <input type="checkbox" id="toggle_optional_fields" class="input-block checkbox hidden"/>
         <label for="toggle_optional_fields">
             <span class="label-text">
                 <%- gettext("Support education research by providing additional information") %>

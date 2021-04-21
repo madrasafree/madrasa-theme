@@ -1,0 +1,85 @@
+<%page expression_filter="h"/>
+<%namespace name='static' file='../static_content.html'/>
+<%! from django.utils.translation import ugettext as _ %>
+
+<%block name="headextra">
+    <link rel="stylesheet" type="text/css" href="${static.url('css/madrasafree/donate.css')}">
+</%block>
+
+<section class="madrasafree-donate">
+    <div class="container">
+        <h1>Donate!</h1>
+        % if user.extrainfo.support_is_donor and not user.extrainfo.support_payment_response:
+            <div class="support-container">
+                <p id="support-text">
+                    הלימודים במדרסה הם ללא עלות אבל אנחנו כאן בזכות התומכים החודשיים שלנו
+                </p>
+
+                <div id="back-arrow">
+                    <i class="fa fa-arrow-circle-right"></i>
+                </div>
+
+                <div id="support">
+                    <div id="amount">
+                        <!-- monthly payment of 25 -->
+                        <label class="fixed-amount">
+                            <input name="amount" type="radio" value="25">
+                            <div class="number">₪25</div>
+                            <div>
+                                בתמיכה חודשית
+                            </div>
+                        </label>
+                        <!-- monthly payment of 50 -->
+                        <label class="fixed-amount">
+                            <input name="amount" type="radio" value="50">
+                            <div class="number">₪50
+                            </div>
+                            <div>
+                                בתמיכה חודשית
+                            </div>
+                        </label>
+                        <!-- monthly payment of 100 -->
+                        <label class="fixed-amount">
+                            <input name="amount" type="radio" value="100">
+                            <div class="number">₪100</div>
+                            <div>
+                                בתמיכה חודשית
+                            </div>
+                        </label>
+                        <!-- monthly payment of 200 -->
+                        <label class="fixed-amount">
+                            <input name="amount" type="radio" value="200">
+                            <div class="number">₪200</div>
+                            <div>
+                                בתמיכה חודשית
+                            </div>
+                        </label>
+                        <!-- monthly payment of custom amount -->
+                        <label class="custom-amount">
+                            <input name="amount" type="radio" value="monthly">
+                            <div>
+                                סכום אחר
+                            </div>
+                        </label>
+                        <!-- one-time payment of custom amount -->
+                        <label class="custom-amount">
+                            <input name="amount" type="radio" value="one-time">
+                            <div>
+                                לתמיכה חד פעמית
+                            </div>
+                        </label>
+                    </div>
+                    <!-- setting custom amount -->
+                    <div id="custom-amount-section">
+                        <label>בחרו סכום: <input id="custom-amount" type="number"></label>
+                        <button id="custom-amount-button">הזינו סכום</button>
+                    </div>
+                </div>
+                <div id="paying-iframe">
+                    <p id="supporter-details"></p>
+                    <iframe src="about:blank"></iframe>
+                </div>
+            </div>
+        % endif
+    </div>
+</section>

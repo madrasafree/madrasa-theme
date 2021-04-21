@@ -3,12 +3,7 @@
 <%! from django.utils.translation import ugettext as _ %>
 
 <%block name="headextra">
-    <link rel="stylesheet" type="text/css" href="${static.url('css/madrasafree/icredit_payment_success.css')}">
+    <script type="text/javascript">
+        window.parent.location = '/madrasafree/donate_success/';
+    </script>
 </%block>
-
-<section class="madrasafree-icredit_payment_success">
-    <div class="container">
-        <h1>Payment completed!</h1>
-        <a href="" onclick="window.parent.location = '/dashboard/'">Visit dashboard</a>
-    </div>
-</section>

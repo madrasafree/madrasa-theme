@@ -1,85 +1,84 @@
 <%page expression_filter="h"/>
 <%namespace name='static' file='../static_content.html'/>
-<%! from django.utils.translation import ugettext as _ %>
+<%!
+    from django.utils.translation import ugettext as _
+%>
+
+<%inherit file="../main.html" />
 
 <%block name="headextra">
     <link rel="stylesheet" type="text/css" href="${static.url('css/madrasafree/donate.css')}">
+    <script type="text/javascript" src="${static.url('js/supportForm.js')}"></script>
+    <script type="text/javascript">
+        function showIframe() {
+            window.setIframeData();
+            $("#paying-iframe").show();
+            $('.actions').hide();
+        }
+    </script>
 </%block>
 
 <section class="madrasafree-donate">
     <div class="container">
-        <h1>Donate!</h1>
-        % if user.extrainfo.support_is_donor and not user.extrainfo.support_payment_response:
-            <div class="support-container">
-                <p id="support-text">
-                    הלימודים במדרסה הם ללא עלות אבל אנחנו כאן בזכות התומכים החודשיים שלנו
-                </p>
+        <h1>שכראן כתיר! עכשיו נשאר רק לבחור את אופן וסכום התמיכה</h1>
 
-                <div id="back-arrow">
-                    <i class="fa fa-arrow-circle-right"></i>
-                </div>
+        <div class="support-container">
+            <div class="frequency">
+                <h2>סוג תמיכה</h2>
+                <select name="monthly" id="monthly">
+                    <option value="0">לתמיכה חד פעמית</option>
+                    <option value="1" selected="selected">חברות חודשית</option>
+                </select>
+            </div>
 
-                <div id="support">
-                    <div id="amount">
-                        <!-- monthly payment of 25 -->
-                        <label class="fixed-amount">
-                            <input name="amount" type="radio" value="25">
-                            <div class="number">₪25</div>
-                            <div>
-                                בתמיכה חודשית
-                            </div>
-                        </label>
-                        <!-- monthly payment of 50 -->
-                        <label class="fixed-amount">
-                            <input name="amount" type="radio" value="50">
-                            <div class="number">₪50
-                            </div>
-                            <div>
-                                בתמיכה חודשית
-                            </div>
-                        </label>
-                        <!-- monthly payment of 100 -->
-                        <label class="fixed-amount">
-                            <input name="amount" type="radio" value="100">
-                            <div class="number">₪100</div>
-                            <div>
-                                בתמיכה חודשית
-                            </div>
-                        </label>
-                        <!-- monthly payment of 200 -->
-                        <label class="fixed-amount">
-                            <input name="amount" type="radio" value="200">
-                            <div class="number">₪200</div>
-                            <div>
-                                בתמיכה חודשית
-                            </div>
-                        </label>
-                        <!-- monthly payment of custom amount -->
-                        <label class="custom-amount">
-                            <input name="amount" type="radio" value="monthly">
-                            <div>
-                                סכום אחר
-                            </div>
-                        </label>
-                        <!-- one-time payment of custom amount -->
-                        <label class="custom-amount">
-                            <input name="amount" type="radio" value="one-time">
-                            <div>
-                                לתמיכה חד פעמית
-                            </div>
-                        </label>
-                    </div>
-                    <!-- setting custom amount -->
-                    <div id="custom-amount-section">
-                        <label>בחרו סכום: <input id="custom-amount" type="number"></label>
-                        <button id="custom-amount-button">הזינו סכום</button>
-                    </div>
+            <p id="support-text">
+                סכום השתתפות בשקלים
+            </p>
+
+            <div id="support">
+                <div id="amount">
+                    <label class="select-amount">
+                        <input name="amount" type="radio" value="20">
+                        <div class="number">20</div>
+                    </label>
+                    <label class="select-amount selected">
+                        <input name="amount" type="radio" value="40" checked="checked">
+                        <div class="number">40</div>
+                    </label>
+                    <label class="select-amount">
+                        <input name="amount" type="radio" value="40">
+                        <div class="number">80</div>
+                    </label>
+                    <label class="select-amount">
+                        <input name="amount" type="radio" value="100">
+                        <div class="number">100</div>
+                    </label>
+                    <label class="select-amount">
+                        <input name="amount" type="radio" value="200">
+                        <div class="number">200</div>
+                    </label>
+                    <label class="select-amount custom-amount">
+                        <input name="amount" type="radio" value="custom">
+                        <div>
+                            סכום אחר
+                        </div>
+                    </label>
                 </div>
-                <div id="paying-iframe">
-                    <p id="supporter-details"></p>
-                    <iframe src="about:blank"></iframe>
+                <!-- setting custom amount -->
+                <div id="custom-amount-section">
+                    <label>בחרו סכום: <input id="custom-amount" type="number"></label>
+                    <button id="custom-amount-button">הזינו סכום</button>
                 </div>
             </div>
-        % endif
+
+            <div class="actions">
+                <button class="display-iframe" onclick="showIframe();this.hide();">לתשלום מאובטח</button>
+            </div>
+
+            <div id="paying-iframe">
+                <p id="supporter-details"></p>
+                <iframe src="about:blank"></iframe>
+            </div>
+        </div>
     </div>
 </section>

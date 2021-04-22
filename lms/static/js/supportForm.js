@@ -1,8 +1,14 @@
 $(function() {
 
 // variables
-    let amount;
+    let amount = $('input[name=amount]:checked').val() || 40;
     let isMonthly = true;
+
+    $('.select-amount').click(function (e) {
+        $('#custom-amount-section').hide();
+        $('.select-amount').removeClass('selected');
+        $(this).addClass('selected');
+    });
 
 // functions
 // set iframe data and show iframe
@@ -11,17 +17,8 @@ $(function() {
         $("#custom-amount-section").hide();
         let json = createJson(isMonthly, amount);
         setUrl(json);
-        showIframe();
     }//setIframeData
-
-
-//show the iframe and hide the amount and the arrow
-    function showIframe() {
-        $("#paying-iframe").show();
-        $("#back-arrow").show();
-        $("#amount").hide();
-    }//showIframe
-
+    window.setIframeData = setIframeData;
 
 //Creating purchese object
     function createJson(isMonthly, amount) {
@@ -69,34 +66,27 @@ $(function() {
         }
     }//toggleSupportAmounts
 
-    function backToAmounts() {
-        amount = 0;
-        $("#back-arrow").hide();
-        $("#amount").show();
-        $("#paying-iframe").hide();
-        $("#paying-iframe iframe").attr('src', "");
-        $("#custom-amount-section").hide();
-        $("#empty-fields-msg").hide();
-    }//backToAmounts
-
     const loginRegisterContainer = $('.support-container');
 
     loginRegisterContainer.on('click', '#custom-amount-button', function (e) {
         e.preventDefault();
     });
 
-    loginRegisterContainer.on('click', '.custom-amount input', function () {
-        $("#custom-amount-section").show();
+    loginRegisterContainer.on('change', '#monthly', function (e) {
+        isMonthly = Boolean(e.target.value === '1');
+        setIframeData();
     });
 
     loginRegisterContainer.on('click', '#support-check', toggleSupportAmounts);
 
-    loginRegisterContainer.on('click', '#back-arrow', backToAmounts);
-
-    loginRegisterContainer.on('click', '.fixed-amount input', function () {
+    loginRegisterContainer.on('click', '.select-amount', function () {
         amount = $('input[name=amount]:checked').val();
         isMonthly = true;
         setIframeData();
+    });
+
+    loginRegisterContainer.on('click', '.custom-amount', function () {
+        $("#custom-amount-section").show();
     });
 
     loginRegisterContainer.on('click', '#custom-amount-button', function () {

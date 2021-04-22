@@ -1,85 +1,76 @@
 .madrasafree-registration_completed {
 
-  .support-container {
+  .container {
+    max-width: 651px;
+    margin: auto;
 
-    #amount {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 540px;
-      margin: auto;
-      justify-content: center;
-      align-items: stretch;
+    h1 {
+      margin-bottom: 80px;
     }
 
-    #amount > label {
-      width: 25%;
-      color: #16a5b6;
-      padding: 5px 0;
-      border-radius: 20px;
-      margin: 0 10px 30px 10px;
-      display: block;
-      position: relative;
+    .annotate {
+      text-align: center;
+
+      p {
+        display: inline-block;
+        padding: 5px;
+        margin: 40px auto;
+        background-color: #57C2EA;
+        color: white;
+        border-radius: 10px;
+        font-size: 32px;
+        line-height: 100%;
+      }
     }
 
-    #amount > label:hover {
-      cursor: pointer;
-      background-color: #e8f3e5;
-    }
-
-    #amount .number {
-      font-size: 32px;
+    .question {
+      text-align: center;
       font-weight: bold;
-      width: 100%;
+      margin: 40px auto 100px auto;
     }
 
-    #custom-amount-section {
-      display: none;
-    }
-
-    .other {
-      font-size: 20px;
-      font-weight: bold;
+    .actions {
       display: flex;
-      justify-content: center;
       align-items: center;
+      flex-direction: column;
+
+      .button {
+        padding: 10px 40px;
+        background-image: none;
+        background-color: #80CA20;
+        color: black;
+        border: none;
+        outline: none;
+        text-shadow: none;
+        box-shadow: none;
+        border-radius: 25px;
+
+        &:hover {
+          background-image: none;
+          color: black;
+        }
+
+        &.donate {
+          margin-bottom: 32px;
+        }
+
+        &.cancel {
+          background: none;
+          border-bottom: solid 1px black;
+          border-radius: 0;
+          padding: 0;
+        }
+      }
+
+      #cancel-pity {
+        text-align: center;
+
+        .button {
+          display: inline-block;
+        }
+      }
     }
 
-    #cancel {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-
-    #amount input[type="radio"] {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 1px;
-      opacity: 0;
-    }
-
-    #back-arrow {
-      font-size: 60px;
-      text-align: right;
-      cursor: pointer;
-    }
-
-    #paying-iframe {
-      display: none;
-      max-width: 600px;
-      margin: auto;
-      margin-top: -80px;
-    }
-
-    #paying-iframe iframe {
-      width: 100%;
-      height: 100%;
-      min-height: 1000px;
-      border: none;
-    }
-
-    #back-arrow {
-      display: none;
-    }
   }
 
 }

@@ -43,9 +43,9 @@
                 <% } %>
             </div>
             <div class="section-title lines">
-                <h3>
+                <!-- <h3>
                     <span class="text"><%- gettext("or create a new one here") %></span>
-                </h3>
+                </h3> -->
             </div>
         <% } else { %>
 
@@ -55,7 +55,7 @@
     <% } %>
 
     <p id="personal-details-heading">
-       כמה פרטים אישיים
+        הרשמה
     </p>
 
     <%= context.fields %>

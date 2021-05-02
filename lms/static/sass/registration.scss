@@ -1,4 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap');
+
 main {
+
+  font-family: 'Heebo';
 
   .login-register-content {
     background-color: #65C7EB;
@@ -30,7 +35,7 @@ form#register {
         content: '*';
         color: #FC6464;
         left: auto;
-        top: 25%;
+        top: 12%;
       }
     }
   }
@@ -47,16 +52,16 @@ form#register {
 
   .form-field {
     max-width: 460px;
-    margin: auto auto 24px;
+    margin: auto auto 14px;
 
     label {
-      font: normal normal normal 26px/40px Heebo;
-      padding: 12px 24px;
+      font: normal normal normal 22px/40px Heebo;
+      padding: 4px 24px;
     }
 
     input {
       width: 100%;
-      padding: 32px;
+      padding: 24px;
       border-radius: 24px;
       font: normal normal normal 26px/40px Heebo;
       border: solid 1px black;
@@ -73,10 +78,11 @@ form#register {
 
   h2 {
     color: black;
-    font-size: 42px;
+    font-size: 38px;
     line-height: 130%;
     margin-bottom: 20px;
     text-align: center;
+    font-family: 'Secular One';
   }
 
   #sign-in-link,

@@ -3,7 +3,11 @@
 
 
 .madrasafree-registration_completed {
-    direction:ltr;
+    
+    *{
+      direction:ltr;
+      font-family: 'Heebo';
+      }
 
   .container {
     max-width: 700px;

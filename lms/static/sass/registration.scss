@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap');
 
 main {
-
+  *{
   font-family: 'Heebo';
+  }
 
   .login-register-content {
     background-color: #65C7EB;
-    padding: 40px 0;
+    padding: 40px 20px;
   }
 
   #login-and-registration-container {

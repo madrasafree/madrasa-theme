@@ -1,11 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap');
+
+
 .madrasafree-registration_completed {
+    direction:ltr!important;
 
   .container {
-    max-width: 651px;
+    max-width: 700px;
     margin: auto;
 
     h1 {
-      margin-bottom: 80px;
+      margin-bottom: 20px;
+      font-size:34px;
+      font-family: 'Secular One';
     }
 
     .annotate {
@@ -13,12 +20,12 @@
 
       p {
         display: inline-block;
-        padding: 5px;
-        margin: 40px auto;
+        padding: 5 20px;
+        margin: 20px auto;
         background-color: #57C2EA;
         color: white;
-        border-radius: 10px;
-        font-size: 32px;
+        border-radius: 12px;
+        font-size: 30px;
         line-height: 100%;
       }
     }
@@ -26,7 +33,7 @@
     .question {
       text-align: center;
       font-weight: bold;
-      margin: 40px auto 100px auto;
+      margin: 40px auto 40px auto;
     }
 
     .actions {
@@ -35,7 +42,9 @@
       flex-direction: column;
 
       .button {
-        padding: 10px 40px;
+        font-size:20px;
+        font-weight: bold;
+        padding: 8px 30px;
         background-image: none;
         background-color: #80CA20;
         color: black;
@@ -51,7 +60,7 @@
         }
 
         &.donate {
-          margin-bottom: 32px;
+          margin-bottom: 22px;
         }
 
         &.cancel {

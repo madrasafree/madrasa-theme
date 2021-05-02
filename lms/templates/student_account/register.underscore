@@ -18,7 +18,7 @@
             <div class="login-providers">
                 <div class="section-title lines">
                     <h3>
-                        <span class="text"><%- gettext("Create an account using") %></span>
+                        <span class="text">יצירת חשבון דרך</span>
                     </h3>
                 </div>
                 <%
@@ -42,11 +42,11 @@
                     </button>
                 <% } %>
             </div>
-            <div class="section-title lines">
-                <!-- <h3>
+            <!-- <div class="section-title lines">
+                <h3>
                     <span class="text"><%- gettext("or create a new one here") %></span>
-                </h3> -->
-            </div>
+                </h3>
+            </div> -->
         <% } else { %>
 
         <% } %>

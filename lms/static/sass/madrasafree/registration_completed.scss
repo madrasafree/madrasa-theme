@@ -3,13 +3,14 @@
 
 
 .madrasafree-registration_completed {
-    direction:ltr!important;
+    direction:ltr;
 
   .container {
     max-width: 700px;
     margin: auto;
 
     h1 {
+      direction: rtl;
       margin-bottom: 20px;
       font-size:34px;
       font-family: 'Secular One';
@@ -21,7 +22,7 @@
       p {
         display: inline-block;
         padding: 5 20px;
-        margin: 20px auto;
+        margin: 40px auto;
         background-color: #57C2EA;
         color: white;
         border-radius: 12px;
@@ -41,9 +42,12 @@
       align-items: center;
       flex-direction: column;
 
+      #donate-button{
+        font-weight: bold;
+      }
+
       .button {
         font-size:20px;
-        font-weight: bold;
         padding: 8px 30px;
         background-image: none;
         background-color: #80CA20;

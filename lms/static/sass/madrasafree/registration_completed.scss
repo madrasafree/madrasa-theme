@@ -4,20 +4,20 @@
 
 .madrasafree-registration_completed {
     
-    *{
+    *,  .content{
       direction:ltr;
       font-family: 'Heebo';
-      }
+    }
 
   .container {
     max-width: 700px;
     margin: auto;
-
+  
     h1 {
       direction: rtl;
       margin-bottom: 20px;
-      font-size:34px;
-      font-family: 'Secular One';
+      font-size:32px;
+      font-family: 'Secular One'!important;
     }
 
     .annotate {
@@ -30,8 +30,9 @@
         background-color: #57C2EA;
         color: white;
         border-radius: 12px;
-        font-size: 30px;
+        font-size: 28px;
         line-height: 100%;
+        font-family: 'Secular One'!important;
       }
     }
 
@@ -84,6 +85,9 @@
 
         .button {
           display: inline-block;
+          width:fit-content;
+          font-family: 'Heebo'!important;
+          font-weight: 600;
         }
       }
     }

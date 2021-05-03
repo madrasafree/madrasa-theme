@@ -9,9 +9,16 @@
     max-width: 800px;
 
     h1 {
-      font-size: 28px;
-      font-family: "Secular One";
+      font-size: 29px;
+      letter-spacing: 0.9;
+    }
+    p.sub, h1{
       text-align: center;
+      font-family: "Secular One" !important;
+      margin-bottom:20px;
+    }
+    .heart-icon{
+      font-size:20px;
     }
 
     h2 {
@@ -25,21 +32,28 @@
     .frequency {
       text-align: center;
       margin-bottom: 24px;
+      font-family: "Heebo";
+      h2{
+        margin-bottom:20px;
+      }
 
       select {
         appearance: auto;
         color: white;
         background: #f77424 !important;
-        padding: 15px !important;
+        padding:10px 30px 10px 0px!important;
         height: auto;
         border-radius: 10px;
         font-size: 120%;
         border: none !important;
+        font-family: "Secular One"!important;
+        cursor: pointer;
       }
     }
 
     #support-text {
       text-align: center;
+      font-family: "Heebo";
     }
 
     #amount {
@@ -49,6 +63,7 @@
       margin: auto;
       justify-content: center;
       align-items: stretch;
+      font-family: "Heebo";
 
       .select-amount {
         text-align: center;
@@ -61,12 +76,14 @@
         position: relative;
         font-style: normal;
         border: solid 1px #65c7eb;
+        font-family: "Heebo";
 
         &.selected,
         &:hover {
           cursor: pointer;
           color: white;
           background-color: #65c7eb;
+          
         }
       }
     }
@@ -74,9 +91,10 @@
     .actions {
       text-align: center;
       margin: 40px;
+      font-family: "Heebo";
 
       button {
-        padding: 10px 40px;
+        padding: 8px 30px;
         background-image: none;
         color: white;
         background-color: #80ca20;
@@ -85,7 +103,8 @@
         text-shadow: none;
         box-shadow: none;
         border-radius: 25px;
-        font-size: 24px;
+        font-size: 22px;
+        font-family: "Heebo";
       }
     }
 
@@ -93,6 +112,7 @@
       font-size: 32px;
       font-weight: bold;
       width: 100%;
+      font-family: "Heebo";
     }
 
     #custom-amount-section {
@@ -107,11 +127,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      font-family: "Heebo";
     }
 
     #cancel {
       font-size: 16px;
       margin-bottom: 20px;
+      font-family: "Heebo";
     }
 
     #amount input[type="radio"] {

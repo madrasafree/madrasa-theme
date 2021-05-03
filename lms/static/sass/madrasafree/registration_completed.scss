@@ -4,9 +4,10 @@
 
 .madrasafree-registration_completed {
     
-    *,  .content{
-      direction:ltr;
-      font-family: 'Heebo';
+    .content{
+      direction: ltr !important;;
+      font-family: 'Heebo' !important;
+      font-size: 20px;
     }
 
   .container {
@@ -26,7 +27,7 @@
       p {
         display: inline-block;
         padding: 5 20px;
-        margin: 40px auto;
+        margin: 15px 0 40px 0;
         background-color: #57C2EA;
         color: white;
         border-radius: 12px;

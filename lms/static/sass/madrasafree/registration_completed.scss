@@ -5,7 +5,6 @@
 .madrasafree-registration_completed {
     
     .content{
-      direction: ltr !important;
       font-family: 'Heebo' !important;
       font-size: 20px;
     }
@@ -42,12 +41,14 @@
       font-weight: bold;
       margin: 40px auto 40px auto;
       direction: ltr;
+      font-family: 'Heebo' !important;
     }
 
     .actions {
       display: flex;
       align-items: center;
       flex-direction: column;
+      font-family: 'Heebo' !important;
 
       #donate-button{
         font-weight: bold;
@@ -65,6 +66,7 @@
         box-shadow: none;
         border-radius: 25px;
         direction: ltr;
+        font-family: 'Heebo' !important;
 
         &:hover {
           background-image: none;

@@ -5,7 +5,7 @@
 .madrasafree-registration_completed {
     
     .content{
-      direction: ltr !important;;
+      direction: ltr !important;
       font-family: 'Heebo' !important;
       font-size: 20px;
     }
@@ -41,6 +41,7 @@
       text-align: center;
       font-weight: bold;
       margin: 40px auto 40px auto;
+      direction: ltr;
     }
 
     .actions {
@@ -63,6 +64,7 @@
         text-shadow: none;
         box-shadow: none;
         border-radius: 25px;
+        direction: ltr;
 
         &:hover {
           background-image: none;

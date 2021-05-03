@@ -1,7 +1,13 @@
-.madrasafree-donate_success {
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap');
 
+
+.madrasafree-donate_success {
+  direction: ltr;
+  font-family:'Heebo';
   h1 {
     text-align: center;
+    font-family:'Secular One';
+    font-weight: normal;
   }
 
   .actions {
@@ -9,7 +15,7 @@
     margin: 40px;
 
     .button {
-      padding: 10px 40px;
+      padding: 5px 30px;
       background-image: none;
       background-color: #80CA20;
       color: black;
@@ -18,6 +24,7 @@
       text-shadow: none;
       box-shadow: none;
       border-radius: 25px;
+      font-size: 22px;
 
       &:hover {
         background-image: none;

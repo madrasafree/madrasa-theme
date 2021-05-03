@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap');
 
+.fa-exclamation:before{
+  display: none;
+}
 main {
   *{
   font-family: 'Heebo';

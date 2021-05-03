@@ -1,15 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap');
 
-.form-field span{
-  font-family: 'Heebo';
-  font-size:20px;
-}
+
 
 
 main {
-  *{
-  font-family: 'Heebo';
+  .form-field span{
+    font-family: 'Heebo';
+    font-size:20px;
+  }
+  .toggle-form, .text, #personal-details-heading, .action-primary.action-update{
+    font-family: 'Heebo';
   }
 
   .fa, .fa *{
@@ -25,8 +26,11 @@ main {
     background-color: white;
     border-radius: 90px;
     width: 100%;
-    max-width: 850px;
+    max-width: 780px;
     height: 100%;
+    @media screen and (max-width: 600px) {
+      border-radius: 30px;
+    }
 
     .form-type {
       max-width: 630px;
@@ -75,7 +79,7 @@ form#register {
       padding: 20px;
       border-radius: 24px;
       font: normal normal normal 26px/40px Heebo;
-      border: solid 1px gray;
+      border: solid 1.5px gray;
 
       &:focus {
         outline: none;

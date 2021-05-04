@@ -10,7 +10,16 @@ main {
     font-size:20px;
   }
   .toggle-form, .text, #personal-details-heading, .action-primary.action-update{
-    font-family: 'Heebo';
+    font-family: 'Heebo' !important;
+  }
+  #sign-in-link{
+    text-decoration: none;
+    letter-spacing: 1.3;
+    font-weight: bold;
+
+  }
+  .login-providers .section-title{
+    margin-bottom:0;
   }
 
   .fa, .fa *{
@@ -117,7 +126,7 @@ form#register {
     display: block;
     margin: auto auto 10px auto;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    border: 1px solid #000000;
+    border: 1px solid gray;
   }
 
   button[type="submit"] {
@@ -151,7 +160,8 @@ form#register {
     text-align: center;
     font-weight:bold;
     font-size:26px;
-    margin:40px 0 20px 0;
+    margin:30px 0 8px 0;
+    font-family: 'Secular One';
 
     // display: flex;
     // width: 250px;

@@ -1,33 +1,35 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap");
 
 main {
-  .form-field span{
-    font-family: 'Heebo';
-    font-size:20px;
+  .form-field span.label-text {
+    font-family: "Heebo"!important;
+    font-size: 18px;
   }
-  .toggle-form, .text, #personal-details-heading, .action-primary.action-update{
-    font-family: 'Heebo' !important;
+  .toggle-form,
+  .text,
+  #personal-details-heading,
+  .action-primary.action-update {
+    font-family: "Heebo" !important;
   }
-  #sign-in-link{
-    text-decoration: none;
-    letter-spacing: 1.3;
-    font-weight: bold;
+  .toggle-form {
+    #sign-in-link {
+      text-decoration: none;
+      font-family: "Heebo" !important;
+      letter-spacing: 1.3;
+      font-weight: bold;
+    }
+  }
+  .login-providers .section-title {
+    margin-bottom: 0;
+  }
 
-  }
-  .login-providers .section-title{
-    margin-bottom:0;
-  }
-
-  .fa, .fa *{
-    font-family: 'FontAwesome'!important;
+  .fa,
+  .fa * {
+    font-family: "FontAwesome" !important;
   }
 
   .login-register-content {
-    background-color: #65C7EB;
+    background-color: #65c7eb;
     padding: 40px 20px;
   }
 
@@ -56,8 +58,8 @@ form#register {
 
     label {
       &:after {
-        content: '*';
-        color: #FC6464;
+        content: "*";
+        color: #fc6464;
         left: auto;
         top: 12%;
       }
@@ -76,7 +78,7 @@ form#register {
 
   .form-field {
     max-width: 400px;
-    margin: auto auto 14px;
+    margin: auto auto 8px;
 
     label {
       font: normal normal normal 22px/40px Heebo;
@@ -87,7 +89,7 @@ form#register {
       width: 100%;
       padding: 20px;
       border-radius: 24px;
-      font: normal normal normal 26px/40px Heebo;
+      font: normal normal normal 22px/40px Heebo;
       border: solid 1.5px gray;
 
       &:focus {
@@ -106,7 +108,7 @@ form#register {
     line-height: 130%;
     margin-bottom: 20px;
     text-align: center;
-    font-family: 'Secular One';
+    font-family: "Secular One";
   }
 
   #sign-in-link,
@@ -130,7 +132,7 @@ form#register {
   }
 
   button[type="submit"] {
-    background-color: #80CA20;
+    background-color: #80ca20;
     color: white;
     border: 0;
     font-size: 24px;
@@ -158,10 +160,10 @@ form#register {
 
   #personal-details-heading {
     text-align: center;
-    font-weight:bold;
-    font-size:26px;
-    margin:30px 0 8px 0;
-    font-family: 'Secular One';
+    font-weight: bold;
+    font-size: 26px;
+    margin: 30px 0 8px 0;
+    font-family: "Secular One";
 
     // display: flex;
     // width: 250px;
@@ -196,7 +198,7 @@ form#register {
   }
 
   #empty-fields-msg {
-    background-color: #F8D7DA;
+    background-color: #f8d7da;
     color: #975057;
     display: none;
     width: 250px;

@@ -42,15 +42,15 @@
       }
 
       select {
-        appearance: auto;
+        appearance: none;
         color: white;
-        background: #f77424 !important;
-        padding:10px 30px 10px 0px!important;
+        background: #f77424  url("https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/triangle.png") no-repeat 4% 50%!important;
+        padding:8px 14px 8px 24px !important;
         height: auto;
         border-radius: 10px;
-        font-size: 120%;
+        font-size: 18px;
         border: none !important;
-        font-family: "Secular One"!important;
+        font-family: "Heebo"!important;
         cursor: pointer;
       }
     }
@@ -84,7 +84,11 @@
         position: relative;
         font-style: normal;
         border: solid 1px #65c7eb;
-        font-family: "Heebo";
+        font-family: "Heebo"!important;
+        
+        &.custom-amount{
+          font-size:22px;
+        }
 
         &.selected,
         &:hover {

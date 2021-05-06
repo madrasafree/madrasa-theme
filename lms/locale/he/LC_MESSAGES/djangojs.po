@@ -4604,7 +4604,7 @@ msgstr "לא ניתן ליצור את החשבון שלך. "
 #: lms/static/js/student_account/views/RegisterView.js 
 #: lms/templates/student_account/register.underscore
 msgid "Create Account"
-msgstr "צור חשבון"
+msgstr "יצירת חשבון"
 
 #: lms/static/js/student_account/views/RegisterView.js
 msgid "(required)"

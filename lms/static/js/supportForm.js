@@ -1,7 +1,7 @@
 $(function() {
 
 // variables
-    let amount = $('input[name=amount]:checked').val() || 40;
+    let amount = 40;
     let isMonthly = true;
 
     $('.select-amount').click(function (e) {
@@ -15,7 +15,7 @@ $(function() {
     function setIframeData() {
         $("#empty-fields-msg").hide();
         $("#custom-amount-section").hide();
-        let json = createJson(isMonthly, amount);
+        let json = createJson(isMonthly, $('input[name=amount]:checked').val() || amount);
         setUrl(json);
     }//setIframeData
     window.setIframeData = setIframeData;

@@ -4,18 +4,12 @@ $(function() {
     let amount = 40;
     let isMonthly = true;
 
-    $('.select-amount').click(function (e) {
-        $('#custom-amount-section').hide();
-        $('.select-amount').removeClass('selected');
-        $(this).addClass('selected');
-    });
-
 // functions
 // set iframe data and show iframe
     function setIframeData() {
         $("#empty-fields-msg").hide();
         $("#custom-amount-section").hide();
-        let json = createJson(isMonthly, $('input[name=amount]:checked').val() || amount);
+        let json = createJson(isMonthly, amount);
         setUrl(json);
     }//setIframeData
     window.setIframeData = setIframeData;
@@ -79,19 +73,21 @@ $(function() {
 
     loginRegisterContainer.on('click', '#support-check', toggleSupportAmounts);
 
-    loginRegisterContainer.on('click', '.select-amount', function () {
-        amount = $('input[name=amount]:checked').val();
-        isMonthly = true;
-        setIframeData();
-    });
+    loginRegisterContainer.on('change', '[name=amount]', function () {
+        $('#custom-amount-section').hide();
+        $('.select-amount').removeClass('selected');
+        $(this).parent('.select-amount').addClass('selected');
 
-    loginRegisterContainer.on('click', '.custom-amount', function () {
-        $("#custom-amount-section").show();
+        if ($('input[name=amount]:checked').val() !== 'custom') {
+            amount = $(this).val();
+            setIframeData();
+        } else {
+            $("#custom-amount-section").show();
+        }
     });
 
     loginRegisterContainer.on('click', '#custom-amount-button', function () {
         amount = $("#custom-amount").val();
-        if ($('input[name=amount]:checked').val() == "one-time") isMonthly = false;
         setIframeData();
     });
 });

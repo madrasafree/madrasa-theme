@@ -79,17 +79,17 @@ form#register {
     }
   }
 
-  .checkbox-terms_of_service{
-
+  .form-field.checkbox-terms_of_service{
+    
     input{
       width:auto!important;
 
     }
     label{
-      padding:0;
-      font:normal normal normal 20px/24px Heebo;
+      padding:0!important;
+      font:normal normal normal 20px/24px Heebo!important;
     }
-
+    
   }
 
   .form-field.checkbox-optional_fields_toggle {

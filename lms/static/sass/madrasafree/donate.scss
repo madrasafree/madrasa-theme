@@ -22,6 +22,7 @@
       text-align: center;
       font-family: 'Heebo';
     }
+
     .heart-icon{
       font-size:20px;
     }
@@ -53,6 +54,9 @@
         border: none !important;
         font-family: "Heebo"!important;
         cursor: pointer;
+        option{
+          font-family: 'Heebo';
+        }
       }
     }
 

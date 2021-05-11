@@ -25,8 +25,11 @@
 
          //change term of service text to correct hebrew sentence
          $(function() {
-          $(".checkbox-terms_of_service .label-text").html('אני מסכים <a href="/tos" rel="noopener" target="_blank">לתנאי השימוש</a> במדרסה');
-         });
+            $(window).load(function() { 
+                $(".checkbox-terms_of_service .label-text").html('אני מסכים <a href="/tos" rel="noopener" target="_blank">לתנאי השימוש</a> במדרסה');
+            });
+        });
+         
     </script>
     <%static:require_module module_name="js/student_account/logistration_factory" class_name="LogistrationFactory">
         var options = ${data | n, dump_js_escaped_json};

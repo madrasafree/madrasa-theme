@@ -90,4 +90,7 @@ $(function() {
         amount = $("#custom-amount").val();
         setIframeData();
     });
+    
+    //change term of service text to correct hebrew sentence
+    $(".checkbox-terms_of_service .label-text").html('אני מסכים <a href="/tos" rel="noopener" target="_blank">לתנאי השימוש</a> במדרסה');
 });

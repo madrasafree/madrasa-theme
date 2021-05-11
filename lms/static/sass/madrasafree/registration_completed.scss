@@ -6,7 +6,10 @@
     
     .content{
       font-family: 'Heebo' !important;
-      font-size: 20px;
+      font-size: 18px;
+      &.strong{
+        font-weight: bold;
+      }
     }
 
   .container {
@@ -16,7 +19,7 @@
   
     h1 {
       direction: rtl;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       font-size:32px;
       font-family: 'Secular One'!important;
       letter-spacing:normal;
@@ -76,7 +79,7 @@
         }
 
         &.donate {
-          margin-bottom: 22px;
+          margin-bottom: 22px 0;
         }
 
         &.cancel {

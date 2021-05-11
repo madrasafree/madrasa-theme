@@ -1,6 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap");
 
 main {
+
+
+  .checkbox-terms_of_service{
+
+    input{
+      width:auto;
+
+    }
+    label{
+      padding:0;
+      font:normal normal normal 20px/24px Heebo;
+    }
+
+  }
   .form-field span.label-text {
     font-family: "Heebo"!important;
     font-size: 18px;
@@ -23,9 +37,21 @@ main {
     margin-bottom: 0;
   }
 
+  .label-required{
+    font-size:14px;
+    font-family: 'Heebo';
+  }
+  .error{
+    font-family: 'Heebo';
+  }
+
   .fa,
   .fa * {
     font-family: "FontAwesome" !important;
+  }
+
+  .fa-exclamation{
+    display: none;
   }
 
   .login-register-content {

@@ -3,7 +3,7 @@
 
 <form id="register" class="register-form" autocomplete="off" tabindex="-1" method="POST">
     <h2 id="main-form-title">
-        נרשמים למדרסה ומתחילים ללמוד ערבית מדוברת בחינם!
+       הרשמה למדרסה
     </h2>
 
     <% if (!context.syncLearnerProfileData) { %>
@@ -71,7 +71,10 @@
 
     <div class="actions">
         <button type="submit" class="action action-primary action-update js-register register-button">
-            <% if ( context.registerFormSubmitButtonText ) { %><%- context.registerFormSubmitButtonText %><% } else { %><%- gettext("Create Account") %><% } %>
+        המשך
+    
+            {% comment %} <% if ( context.registerFormSubmitButtonText ) { %><%- context.registerFormSubmitButtonText %><% } else { %><%- gettext("Create Account") %><% } %> {% endcomment %}
+            
         </button>
     </div>
 </form>

@@ -25,9 +25,14 @@
 
          //change term of service text to correct hebrew sentence
          $(function() {
-            $(window).load(function() { 
-                $(".checkbox-terms_of_service .label-text").html('אני מסכים <a href="/tos" rel="noopener" target="_blank">לתנאי השימוש</a> במדרסה');
-            });
+
+            function changeBtnText(){
+                 $(".checkbox-terms_of_service .label-text").html('הסכמה <a href="/tos" rel="noopener" target="_blank">לתנאי השימוש</a> במדרסה');
+            } 
+            $(window).load(changeBtnText);
+          
+
+        
         });
          
     </script>

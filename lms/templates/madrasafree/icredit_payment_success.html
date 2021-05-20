@@ -1,0 +1,9 @@
+<%page expression_filter="h"/>
+<%namespace name='static' file='../static_content.html'/>
+<%! from django.utils.translation import ugettext as _ %>
+
+<%block name="headextra">
+    <script type="text/javascript">
+        window.parent.location = '/madrasafree/donate_success/';
+    </script>
+</%block>

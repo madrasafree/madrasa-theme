@@ -41,7 +41,6 @@
 
     #share-buttons{
       padding-top:5px;
-      padding-bottom:30px;
       margin:auto;
       display:flex;
       justify-content:center;
@@ -95,35 +94,25 @@
         <section id="thank-for-support-section" class="container about line-height text-center">
                 <h1 id="title">
                         שֻכְּרַן!
-                    תודה שהצטרפת לקהילת התומכים של מדרסה! 
+                        תודה רבה על הרשמתך!
                     </h1>
-                    <!-- <p class="sub-title">
-                        מחכה לך גם מתנה! 3 מגנטים בחסות "הפולניה"!
-                         </p>
-                         <a style="background: #EB599B;color:white;padding:3px 16px;border-radius: 20px;font-size:24px;" href="https://forms.gle/ib7Kr428r87Lx9BEA">
-                                   לבחירת המגנטים 
-                         </a> -->
-                <p class="sub-title" style="margin-top:20px;">
-אנחנו נמצאים בקמפיין גדילה מאד משמעותי בימים אלה, ומגייסים את כל מי שמאמין בערבית מדוברת ככלי לשיפור התקשורת בחברה שלנו! 
-</p>
-<p class="sub-title">
+                <p class="sub-title" style="padding-bottom:60px;">
+                    אנו מאחלים לך בהצלחה רבה בלימודי הערבית.</p>
+<!-- <p class="sub-title">
 מכירים אנשים שזה יעניין אותם? נשמח אם תשתפו 🙏🏽💚💙
-                </p>
-                <!-- <p><a id="support-now-button" class="btn btn-warning my-2 my-sm-0" href="https://madrasafree.com/supportus">תמוך עכשיו
-                    <i class="fa fa-chevron-circle-left	
-                    "></i></a></p> -->
+                </p> -->
+              
    
-        <div class="container" id="share-buttons">
+        <!-- <div class="container" id="share-buttons">
                 <div class="share-button" id="facebook-button">
                     <span class="facebook-share" data-js="facebook-share"><i class="fa fa-facebook"></i> פייסבוק</span>
-                    <!-- <a href="#"><i class="fa fa-facebook"></i> פייסבוק -->
                 </a>
                     </div>
                    
             <div class="share-button" id="whatsapp-button">
               
 
-                    <a href="whatsapp://send?text=גם אני תמכתי במדרסה, אני מזמינ/ה אתכם לתמוך גם ולהצטרף למהפכה: https://madrasafree.com/supportus" data-action="share/whatsapp/share"
+                    <a href="whatsapp://send?text=תמכו במדרסה: https://madrasafree.com/supportus" data-action="share/whatsapp/share"
                     ><i class="fa fa-whatsapp"></i> וואטסאפ </a>
                
             </div>
@@ -133,15 +122,13 @@
                     ><i class="fa fa-envelope"></i> מייל </a>
             </div>
 
-         
-
-        </div>
+        </div> -->
     </section>
 	
 </main>
-	
+
 <!-- smooth scroll JS -->
-<script src="/static/marvel/js/smooth-scroll.js"></script>
+<!-- <script src="/static/marvel/js/smooth-scroll.js"></script>
 <script>
     var facebookShare = document.querySelector('[data-js="facebook-share"]');
 
@@ -152,61 +139,4 @@
         return false;
     }
 </script>
-<!-- Progress bar -->
-<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8.1/dist/polyfill.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0/dist/fetch.umd.min.js"></script>
-<script type="text/javascript">
-    function reportBuy(rawValue){
-        var reportObj = {content_name : rawValue, content_type : 'product'};
-        if (rawValue.indexOf("sub") > -1){
-            reportObj.sub = true;
-        }
-        var value = parseInt(rawValue.replace(/[^0-9\.]/g, ''));
-
-        console.log("value: "); //debug
-        console.log(value); //debug
-
-        if (value) {
-            reportObj.value = value;
-            reportObj.currency = "ILS";
-        }
-        console.dir(reportObj)
-        fbq('track', 'Purchase',
-            reportObj
-        // end parameter object data
-        );
-        if (gtag){
-            // tracker = ga.getAll()[0];
-            gtag('event', 'purchase', {
-                "transaction_id": new Date().getTime(),
-                "affiliation": "Madrasa Donation",
-                "value": value,
-                "currency": "ILS",
-                'event_label' : reportObj.sub ? 'subscription' : 'one-time',
-                "items" : [{
-                    "id" : rawValue,
-                    "name": reportObj.sub ? 'subscription' : 'one-time',
-                    "variant":  reportObj.sub ? 'subscription' : 'one-time',
-                    "category":  reportObj.sub ? 'subscription' : 'one-time',
-                    "list_name": reportObj.sub ? 'subscription' : 'one-time',
-                    "quantity": 1,
-                    "price": value
-                }]
-                });
-        }
-
-       
-        document.cookie = "dvalue= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
-
-
-    }
-    function getDValue(cname) {
-        var cookiestring=RegExp(""+cname+"[^;]+").exec(document.cookie);
-        return decodeURIComponent(!!cookiestring ? cookiestring.toString().replace(/^[^=]+./,"") : "");
-    }
-    var dvalue = getDValue("dvalue");
-    if (dvalue){
-        reportBuy(dvalue);
-    }
-    
-</script>
+	 -->

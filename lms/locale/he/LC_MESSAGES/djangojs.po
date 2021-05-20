@@ -4604,7 +4604,7 @@ msgstr "לא ניתן ליצור את החשבון שלך. "
 #: lms/static/js/student_account/views/RegisterView.js 
 #: lms/templates/student_account/register.underscore
 msgid "Create Account"
-msgstr "צור חשבון"
+msgstr "יצירת חשבון"
 
 #: lms/static/js/student_account/views/RegisterView.js
 msgid "(required)"
@@ -8230,7 +8230,7 @@ msgstr "עדיין לא רשום?"
 
 #: lms/templates/student_account/login.underscore
 msgid "Create an Account."
-msgstr "צור חשבון"
+msgstr "יצירת חשבון"
 
 #: lms/templates/student_account/login.underscore
 msgid "Sign in to continue learning as {email}"
@@ -8334,7 +8334,7 @@ msgstr "או צור אחד חדש כאן"
 
 #: lms/templates/student_account/register.underscore
 msgid "Create an Account"
-msgstr "צור חשבון"
+msgstr "יצירת חשבון"
 
 #: lms/templates/student_account/register.underscore
 msgid "Support education research by providing additional information"

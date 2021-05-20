@@ -41,6 +41,11 @@ h3{
 .v-list li {
 	position: relative;
 	list-style-type: none;
+	text-align: right;
+}
+.image-bar{
+	position: relative;
+	top:-50px;
 }
 
 .support-us-flex-item #donation-type {
@@ -52,7 +57,7 @@ h3{
 	border: 0 !important;
 	color: white !important;
 	font-size: 24px !important;
-	font-family: muliregular !important;
+	font-family: muliregular;
 }
 
 .support-us-body .support-us-body-wrap {
@@ -66,7 +71,7 @@ h3{
 	color: white !important;
 	background-color: #28A745;
 	padding: 8px 16px;
-	font-family: muliregular !important;
+	font-family: muliregular;
 }
 
 #donation-type option {
@@ -74,16 +79,26 @@ h3{
 	background-color: white !important;
 	height: 60px;
 }
-
+.v-list{
+	padding-right:60px!important;
+}
 .v-list li:before {
 	content: "" !important;
 	position: absolute;
 	width: 40px !important;
 	height: 100%;
 	right: -20px;
-	background-image: url("https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/vsign-list-icon.png");
 	background-repeat: no-repeat;
 }
+
+.v-sign-list li:before{
+	background-image: url("https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/vsign-list-icon.png");
+}
+.flag-sign-list li:before{
+	background-image: url("https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/flag.png");
+}
+
+
 
 .support-us-top .support-us-top-phrase-02 {
 	transform: rotate(-3deg) !important;
@@ -92,7 +107,7 @@ h3{
 }
 
 .reg-user-progress h2 {
-	font-size: 52px !important;
+	font-size: 38px !important;
 	margin-top: 10px;
 }
 
@@ -104,7 +119,15 @@ h3{
 .col-lg-6 h3 {
 	margin-top: 60px;
 }
-
+._2021-title ._2021-main{
+   font-size:30px;
+   display:inline-block;
+}
+._2021-title ._2021-sub{
+   margin-top:10px;
+   font-size:26px;
+   display:inline-block;
+}
 h1 {
 	margin-top: 8px;
 }
@@ -114,7 +137,7 @@ h1 {
 }
 
 .support-us-top-phrase {
-	font-family: muliregular !important;
+	font-family: muliregular;
 }
 
 .progress-bar-image {
@@ -179,6 +202,26 @@ h1 {
 	margin-bottom: 0;
 }
 
+#polaniya{
+	font-size:26px;
+}
+
+@media screen and (min-width:601px){
+    .mobile-only{
+		display:none;
+	}
+}
+@media screen and (max-width:600px){
+	.desktop-only{
+		display:none;
+	}
+	._2021-title ._2021-main{
+   font-size:37px;
+	}
+	._2021-title ._2021-sub{
+   font-size:20px;
+}
+}
 @media screen and (max-width: 600px) {
 	.support-us-flex-item {
 		width: 100%;
@@ -187,7 +230,9 @@ h1 {
 		display: flex;
 		flex-wrap: wrap;
 	}
+
 }
+
 
 @media screen and (min-width: 1400px) {
 	.progress-bar-image {
@@ -197,9 +242,6 @@ h1 {
 }
 
 @media screen and (max-width: 1000px) {
-	.only-mobile {
-		display: block;
-	}
 	h3 {
 		text-align: center !important;
 		
@@ -272,233 +314,234 @@ h1 {
 </script>
 
 <main id="main" aria-label="Content" tabindex="-1" class="content-wrapper">
-    <div class="content-wrapper">
+	<div class="content-wrapper">
+		<section class="support-us-top d-flex align-items-center">
+		   <div class="support-us-top-wrap flex-grow-1">
+			  <div class="row align-items-center flex-grow-1">
+				 <div class="col-lg-6 order-lg-2 pr-lg-5 py-4">
+					<div class="support-us-top-phrase support-us-top-phrase-01">
+					   מצטרפים עכשיו לתנועה החברתית של מדרסה
+					</div>
+					<div class="support-us-top-phrase support-us-top-phrase-02">
+					   מקדמים יחד חברה ישראלית מתקשרת ובריאה יותר
+					</div>
+				 </div>
+				 <div class="col-lg-6 order-lg-1">
+					<div class="embed-responsive embed-responsive-16by9">
+					   <iframe class="embed-responsive-item"
+						  src="//www.youtube.com/embed/LYK6Jr_fRK4?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=0&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false&amp;enablejsapi=0"
+						  allowfullscreen></iframe>
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</section>
+		<section class="support-us-body">
+		   <div class="support-us-body-wrap overflow-auto">
+			  <div class="support-us-flex-item float-md-left order-1">
+			  </div>
+			  <div class="support-us-flex-item float-md-right order-2">
+				 <!-- <h3 style="margin-bottom:-50px">מצטרפים למדרסה ומקדמים את המהפכה יחד</h3> -->
+				 <div class="reg-user-progress text-center text-md-left p-3">
+					 <div class="image-bar">
+					<img class="progress-bar-image"
+					   src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/support_us_people.png">
+					<div class="progress mt-3 ml-md-3">
+					   <div class="progress-bar progress-bar-striped bg-success" id="course-progress"
+						  role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+						  aria-valuemax="100"></div>
+					</div>
+			     	</div>
 
-        <section class="support-us-top d-flex align-items-center">
-            <div class="support-us-top-wrap flex-grow-1">
-                <div class="row align-items-center flex-grow-1">
-                    <div class="col-lg-6 order-lg-2 pr-lg-5 py-4">
-                        <div class="support-us-top-phrase support-us-top-phrase-01">
-                            מצטרפים עכשיו לתנועה החברתית של מדרסה
-                        </div>
-                        <div class="support-us-top-phrase support-us-top-phrase-02">
-                            מקדמים יחד חברה ישראלית מתקשרת ובריאה יותר
-                        </div>
-                        <!-- <div class="support-us-top-phrase support-us-top-phrase-03">
-                            צריכים אותך איתנו
-                        </div> -->
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item"
-                                src="//www.youtube.com/embed/LYK6Jr_fRK4?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=0&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false&amp;enablejsapi=0"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+					<!-- <h2 class="text-center"> <span id="raised"></span> שותפים ושותפות במדרסה</h2>
+					<p class="text-center purple" style="font-size:23px">
+					   תומכים באופן קבוע במיזם, מעצבים יחד את הפעילות, ומאפשרים למאות אלפי ישראלים ללמוד ולתרגל יחד ערבית מדוברת בחינם.
+					</p>
+					<p class="text-center purple" style="font-size:23px;font-weight:bold">
+					   השנה מגיעים ל-1500 שותפות ושותפים!
+					</p> -->
 
-        <section class="support-us-body">
-            <div class="support-us-body-wrap overflow-auto">
+					<h3 class="_2021-title" style="text-align: center;">
+						<span class="_2021-main">
+						 מגיעים ל1500 תומכות ותומכים במדרסה ב-2021
+					   </span>
+						<br>
+						<span class="_2021-sub">
+                              ומייצרים יחד פעילויות לקידום חברה מתקשרת
+						</span>
+					</h3>
 
-
-                <div class="support-us-flex-item float-md-left order-1">
-                    <!--
-                    <h3>התנועה החברתית של מדרסה</h3>
-					-->
-                   
-                </div>
-
-
-
-                <div class="support-us-flex-item float-md-right order-2">
-<!--
-                    <p class="text-center" style="margin-bottom:-40px">
-                        <strong>מאמינים שכולנו צריכים לדעת יותר ערבית?</strong>
-						הצטרפו עכשיו לתמיכה חודשית 
-						בפרוייקט ויחד נאפשר למאות אלפי אנשים ללמוד לתקשר בצורה נגישה מקצועית וחינמית
-						
-                    </p
-					-->
-                    <h3 style="margin-bottom:-50px">מצטרפים למדרסה ומקדמים את המהפכה יחד</h3>
-
-                    <div class="reg-user-progress text-center text-md-left p-3">
-                        <img class="progress-bar-image"
-                            src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/support_us_people.png">
-                        <div class="progress mt-3 ml-md-3">
-                            <div class="progress-bar progress-bar-striped bg-success" id="course-progress"
-                                role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                        <h2 class="text-center"> <span id="raised"></span> ₪</h2>
-                        <p class="text-center purple">מתוך <span id="target"></span> ₪ בתמיכות חודשיות</p>
-						<p class="text-center purple" style="font-size:23px">
-							לפיתוח והפעלת קורס ערבית מדוברת ייעודי עבור עובדי מדינה!
-						</p>
-
-
-
-						<!--
-                        <p class="text-center font-weight-bold">
-							לקראת פיתוח קורס ייחודי וחינמי לכתב הערבי 
-                        </p>
-                        <p class="text-center">
-							שישתלב בתהליך הלמידה במדרסה וייקדם תקשורת והיכרות טובה יותר עם המרחב.
-						</p>
-						-->
-
-
-
+					<ul class="flag-sign-list v-list">
+						<li>
+							אפליקציית מדרסה!
+						</li>
+						<li>
+							סביבה לימודית בערבית מדוברת לעובדי מדינה!
+						</li>
+						<li>״מדרדודס״ - סביבה לימודית לילדים והורים! 
+						</li>
+						<li>
+							פעילויות לתרגול משותף - מפגשים, סיורים, אחד על אחד ועוד
+						</li>
+						<li>
+							פודקאסט לימודי
+						</li>
 					
-
-
-						<p class="text-center purple" id="support-cta"><strong>אני רוצה להצטרף</strong></p>
-                    </div>
-
-
-				</div>
-				
-			
-
-                <div class="support-us-flex-item float-md-left order-4">
 					
-				    <h3>התנועה החברתית של מדרסה</h3>
-				
-					<p>שואלים אותנו המון - ״למה בחינם?! למה שלא תיקחו קצת כסף מכל תלמיד? איך אתם מתקיימים בלי זה??״
-                        התשובה שלנו ברורה - כי המטרה שלנו היא לתת לכל אחד ואחת הזדמנות ללמוד לתקשר בערבית, בלי חסמים
-                        מיותרים בדרך.</p>
-                    <p>
+					 </ul>
+					<p class="text-center purple" id="support-cta"><strong>אני רוצה להצטרף</strong></p>
+				 </div>
+			  </div>
+			  <div class="support-us-flex-item float-md-left order-4">
+				 <h3>התנועה החברתית של מדרסה</h3>
+				 <p>שואלים אותנו המון - ״למה בחינם?! למה שלא תיקחו קצת כסף מכל תלמיד? איך אתם מתקיימים בלי זה??״
+					התשובה שלנו ברורה - כי המטרה שלנו היא לתת לכל אחד ואחת הזדמנות ללמוד לתקשר בערבית, בלי חסמים
+					מיותרים בדרך.
+				 </p>
+				 <p>
 					זה לא מוצר, או תחביב, או טרנד חולף.  זו
 					<strong> 
 					מטרה חברתית משותפת.
 					</strong> 
-מדרסה היא 
-<strong> 
-תנועה חברתית
-</strong> 
- בה שותפים עשרות אלפי תלמידים ומאות חברים פעילים התומכים באופן קבוע בפעילות, כל אחד לפי רצונו ויכולתו. החברים של מדרסה הם הכוח שמניע את התנועה קדימה, ומאפשר לה להפוך את החזון הגדול הזה לתכנית עבודה יומיומית!
+					מדרסה היא 
+					<strong> 
+					תנועה חברתית
+					</strong> 
+					בה שותפים עשרות אלפי תלמידים ומאות חברים פעילים התומכים באופן קבוע בפעילות, כל אחד לפי רצונו ויכולתו. החברים של מדרסה הם הכוח שמניע את התנועה קדימה, ומאפשר לה להפוך את החזון הגדול הזה לתכנית עבודה יומיומית!
+				 </p>
+				 <h3>
+					 מה עשינו ב-2020 עם פחות מ-500 שותפים ושותפות?
+				 </h3>
+				 <ul class="v-sign-list v-list">
+					<li>מסלול למידה מיוחד לבידוד 
+					</li>
+					<li>קורס מקוון ייעודי לצוותים רפואיים 
+					</li>
+					<li>קורס הכתב הערבי 
+					</li>
+					<li>לפתח ולהפעיל תכנית לימודים לילדים 
+					</li>
+					<li>לייצר עשרות שיתופי פעולה חדשים עם ארגונים מכל המגזרים בישראל
+					</li>
+				 </ul>
+
+				 <div style="margin-top:80px">
+					<div style="text-align: center;">
+					   <span id="polaniya" style="margin:auto;display:block;width:fit-content;background: #55B9CA;color:white;padding:3px 16px;font-family: muliregular;">
+					   הפולנייה מפרגנת לשותפים של מדרסה!
+					   </span>
+					</div>
+					<div>
+					   <p style="text-align: center;font-size: 22px;margin-top: 30px;font-family:muliregular">
+						  מצטרפים לתמיכה קבועה במדרסה ומקבלים מתנה 3 מגנטים עם המשפטים הכי פולניים שיש - בתרגום לערבית מדוברת!
 					   </p>
-					   <!--
-					<p><strong>החברים של מדרסה הם הכח שמניע את הפרוייקט</strong></p>
-                    <p>
+					</div>
+					<div style="margin-top:40px;text-align:center">
+					   <iframe class="pvideo" style="max-width:320;width:100%" src="https://www.youtube.com/embed/8zm-6nb54kg" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+					</div>
+					<div style="margin-top:40px;text-align:center">
+					   <a style="background: #24A745;color:white;padding:4px 23px;border-radius: 20px;font-size:24px;font-family: muliregular;" href="#support-cta">
+					   אני רוצה להצטרף
+					   </a>
+					</div>
+					<div style="margin-top:40px;text-align: center;">
+					   <p>
+						  תודה ענקית ל- 
+						  <img height="50" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/polania.jpg" alt="הפולנייה">
+					   </p>
+					</div>
+				 </div>
 
-						מי שמאפשר לתנועה הזו לגדול, ולהפוך את המשימה החשובה הזו לתכנית עבודה ממשית - הם מאות התומכים שלנו, שבוחרים לתמוך באופן חודשי בכל סכום שמתאפשר. 
-                    </p>
-					-->
 
-                    <h3>בזכות התמיכה שלכם כבר הספקנו</h3>
-                    <ul class="v-list">
-                        <li>לשחרר גרסת מובייל לקורס המקוון שלנו - כדי שהלמידה לא תהייה מוגבלת לזמן או מקום.</li>
-                        <li>לקיים מפגשי שיח חינמיים בירושלים, תל אביב וחיפה ולאפשר למעל 200 אנשים לתרגל ולשוחח בערבית בחינם באופן שבועי! </li>
-                        <li>להשיק את קורס הממשיכים של מדרסה! ולקרב עוד אנשים לתקשר בערבית ברמה גבוהה בדרך אפקטיבית, מתקדמת ומהנה.</li>
-                        <li>לחשוף את את המיזם ואת לימודי הערבית למעל חצי מליון ישראלים בזכות תכנים לימודיים אקטואלים ויצירתיים - שמנגישים את הערבית באופן יום יומי  והופכים אותה לחלק בלתי נפרד ממרחב הישראלי.</li>
-                    </ul>
-                    <h3>וזו רק ההתחלה</h3>
-					<!--
-                    <p>היעד הבא - קורס ייחודי לכתב הערבי! שיעצים את היכולת לתקשר, ירחיב את המפגש עם הערבית בסביבה שלנו, וישדרג את הלמידה כולה.</p>
-					-->
-						
-						<div class="only-mobile text-center" style="font-size:25px;margin-top:20px;">
-							<a href="#support-cta">אני רוצה להצטרף!</a>
-						</div>
-
-				</div>
 				
-				<div class="support-us-form support-us-flex-item float-md-right order-3 pt-0">
-					
-                    <form id="donation-form">
-                        <div class="form-group text-center text-center">
-                            <select class="pb-2" id="donation-type">
-                                <option value="1">חברות חודשית</option>
-                                <option value="2">תרומה חד פעמית</option>
-                            </select>
-                        </div>
-                        <div class="form-group" id="amount2">
-                            <div class="support-us-form-radios row">
-                                <div class="custom-control col-6 col-lg-4">
-                                    <input class="support-us-form-input" id="sum-25-sub" name="sum" type="radio"
-                                        value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=407fcb6b-375b-4a00-b61f-aca2bc62ff6a">
-                                    <label class="support-us-form-label" for="sum-25-sub">
-                                         25 ₪
-                                    </label>
-                                </div>
 
-                                <div class="custom-control col-6 col-lg-4">
-                                    <input class="support-us-form-input" id="sum-50-sub" name="sum" type="radio"
-                                        value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=db976d37-2c9d-4247-8f6d-590727d2ced8"
-                                        checked>
-                                    <label class="support-us-form-label" for="sum-50-sub">
-                                         50 ₪
-                                    </label>
-                                </div>
-
-                                <div class="custom-control col-6 col-lg-4">
-                                    <input class="support-us-form-input" id="sum-100-sub" name="sum" type="radio"
-                                        value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=ca5cfd5b-1f99-45f5-acf6-68cd63026e26">
-                                    <label class="support-us-form-label" for="sum-100-sub">
-                                         100 ₪
-                                    </label>
-                                </div>
-                                <div class="custom-control col-6 col-lg-4">
-                                    <input class="support-us-form-input" id="sum-250-sub" name="sum" type="radio"
-                                        value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=22c9c896-0621-477b-868e-bd3939256283">
-                                    <label class="support-us-form-label" for="sum-250-sub">
-                                         250 ₪
-                                    </label>
-                                </div>
-
-                                <div  class="custom-control col-6 offset-3 col-lg-4">
-                                    <input class="support-us-form-input" id="sum-other-sub" name="sum" type="radio"
-                                        value="https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=c6b2764c-e4e7-4315-8c5d-c08190176c22">
-                                    <label style="font-size:24px!important;" class="support-us-form-label" for="sum-other-sub">
-                                        סכום אחר
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group" id="amount1">
-
-							<p class="p-0 m-0">
-								למעבר לבחירת סכום ותשלום מאובטח  
-							</p>
-							<p class="p-0 m-0">
-								<button id="one-time-donate" type="submit">לחצו כאן</button>
-							</p>
-
-							 <input hidden id="sum-other" name="sum" type="radio"
-                                        value="https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=d1ca29c9-740d-4f54-b5f8-eceaced09e1b">
-                            
-                           
-                        </div>
-
-                        <div class="form-group text-center text-lg-left">
-                            <div class="custom-control custom-checkbox mr-sm-2">
-                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing"
-                                    required>
-                                <label class="custom-control-label" for="customControlAutosizing"> קראתי ואני מאשר את <a
-                                        href="/tos" target="_blank">התקנון</a></label>
-                            </div>
-                        </div>
-                        <div class="support-us-btn-wrap">
-                            <button id="submit" type="submit" class="btn btn-warning"> תשלום מאובטח </button>
-						</div>
-						<p class="cancel-donation" class="p-4">
-							ניתן להפסיק את התמיכה בכל עת בלחיצה
-							<a href="/cancel-support 
-" target="_blank">כאן</a>
-						</p>
-                    </form>
-				</div>
-
+				 <div class="only-mobile text-center" style="font-size:25px;margin-top:20px;">
+					<a href="#support-cta">אני רוצה להצטרף!</a>
+				 </div>
+			  </div>
 			
-			
+			  <div class="support-us-form support-us-flex-item float-md-right order-3 pt-0">
+				 <form id="donation-form">
+					<div class="form-group text-center text-center">
+					   <select class="pb-2" id="donation-type">
+						  <option value="1">חברות חודשית</option>
+						  <option value="2">תרומה חד פעמית</option>
+					   </select>
+					</div>
+					<div class="form-group" id="amount2">
+					   <div class="support-us-form-radios row">
+						  <div class="custom-control col-6 col-lg-4">
+							 <input class="support-us-form-input" id="sum-25-sub" name="sum" type="radio"
+								value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=407fcb6b-375b-4a00-b61f-aca2bc62ff6a">
+							 <label class="support-us-form-label" for="sum-25-sub">
+							 25 ₪
+							 </label>
+						  </div>
+						  <div class="custom-control col-6 col-lg-4">
+							 <input class="support-us-form-input" id="sum-50-sub" name="sum" type="radio"
+								value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=db976d37-2c9d-4247-8f6d-590727d2ced8"
+								checked>
+							 <label class="support-us-form-label" for="sum-50-sub">
+							 50 ₪
+							 </label>
+						  </div>
+						  <div class="custom-control col-6 col-lg-4">
+							 <input class="support-us-form-input" id="sum-100-sub" name="sum" type="radio"
+								value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=ca5cfd5b-1f99-45f5-acf6-68cd63026e26">
+							 <label class="support-us-form-label" for="sum-100-sub">
+							 100 ₪
+							 </label>
+						  </div>
+						  <div class="custom-control col-6 col-lg-4">
+							 <input class="support-us-form-input" id="sum-250-sub" name="sum" type="radio"
+								value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=22c9c896-0621-477b-868e-bd3939256283">
+							 <label class="support-us-form-label" for="sum-250-sub">
+							 250 ₪
+							 </label>
+						  </div>
+						  <div  class="custom-control col-6 offset-3 col-lg-4">
+							 <input class="support-us-form-input" id="sum-other-sub" name="sum" type="radio"
+								value="https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=c6b2764c-e4e7-4315-8c5d-c08190176c22">
+							 <label style="font-size:24px!important;" class="support-us-form-label" for="sum-other-sub">
+							 סכום אחר
+							 </label>
+						  </div>
+					   </div>
+					</div>
+					<div class="form-group" id="amount1">
+					   <p class="p-0 m-0">
+						  למעבר לבחירת סכום ותשלום מאובטח  
+					   </p>
+					   <p class="p-0 m-0">
+						  <button id="one-time-donate" type="submit">לחצו כאן</button>
+					   </p>
+					   <input hidden id="sum-other" name="sum" type="radio"
+						  value="https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=d1ca29c9-740d-4f54-b5f8-eceaced09e1b">
+					</div>
+					<div class="form-group text-center text-lg-left">
+					   <div class="custom-control custom-checkbox mr-sm-2">
+						  <input type="checkbox" class="custom-control-input" id="customControlAutosizing"
+							 required>
+						  <label class="custom-control-label" for="customControlAutosizing"> קראתי ואני מאשר את <a
+							 href="/tos" target="_blank">התקנון</a></label>
+					   </div>
+					</div>
+					<div class="support-us-btn-wrap">
+					   <button id="submit" type="submit" class="btn btn-warning"> תשלום מאובטח </button>
+					</div>
+					<p class="cancel-donation p-4">
+					   ניתן להפסיק את התמיכה בכל עת בלחיצה
+					   <a href="/cancel-support 
+						  " target="_blank">כאן</a>
+					</p>
+				 </form>
 
-    </div>
-    </section>
+			  </div>
+		   </div>
+		   
 
-    </div>
+		</section>
+	 </div>
 
     <script>
 		$('#donation-type').on('change', function () {
@@ -567,5 +610,15 @@ h1 {
 				return false;
 			}
 		});
+	</script>
+
+	<script>
+		function makeSquare(){
+			$('.pvideo').each(function(i, el){
+				$(el).css({'height':$(el).width()+'px'});
+			});
+		}
+		window.addEventListener("resize", makeSquare);
+		makeSquare();
 	</script>
 </main>

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap');
+
+
+.madrasafree-donate_success {
+  direction: ltr;
+  font-family:'Heebo';
+  h1 {
+    text-align: center;
+    font-family:'Secular One' !important;
+    font-weight: normal;
+    font-size:32px;
+    letter-spacing: 1;
+    direction: rtl;
+    .heart-icon{
+      font-size:26px;
+    }
+  }
+
+  .actions {
+    text-align: center;
+    margin: 40px;
+
+    .button {
+      padding: 5px 30px;
+      background-image: none;
+      background-color: #80CA20;
+      color: black;
+      border: none;
+      outline: none;
+      text-shadow: none;
+      box-shadow: none;
+      border-radius: 25px;
+      font-size: 22px;
+      font-family:'Heebo';
+      font-weight: 600;
+
+      &:hover {
+        background-image: none;
+        color: black;
+      }
+    }
+
+  }
+
+}

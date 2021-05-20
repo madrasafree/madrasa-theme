@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap");
+
+.container{
+  padding-top:0;
+}
+
+.madrasafree-donate {
+  * {
+    font-family: "Heebo";
+  }
+
+  .container {
+    max-width: 800px;
+
+    h1 {
+      font-size: 29px;
+      letter-spacing: 0.4;
+      font-family: "Secular One" !important;
+      margin-bottom:20px;
+    }
+    p.sub, h1{
+      text-align: center;
+      font-family: 'Heebo';
+    }
+
+    .heart-icon{
+      font-size:20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      text-align: center;
+      font-family: "Heebo";
+    }
+  }
+
+  .support-container {
+    .frequency {
+      text-align: center;
+      margin-bottom: 24px;
+      font-family: "Heebo";
+     
+
+      select {
+        appearance: none;
+        color: white;
+        background: #f77424  url("https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/triangle.png") no-repeat 4% 50%!important;
+        padding:8px 14px 8px 24px !important;
+        height: auto;
+        border-radius: 10px;
+        font-size: 18px;
+        border: none !important;
+        font-family: "Heebo"!important;
+        cursor: pointer;
+        option{
+          font-family: 'Heebo';
+        }
+      }
+    }
+
+    #support-text, #payment-exp {
+      text-align: center;
+      font-family: "Heebo";
+    }
+
+    #payment-exp{
+      margin-top:20px;
+    }
+
+    #amount {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 540px;
+      margin: auto;
+      justify-content: center;
+      align-items: stretch;
+      font-family: "Heebo";
+
+      .select-amount {
+        text-align: center;
+        display: block;
+        border-radius: 7px;
+        width: 25%;
+        color: #65c7eb;
+        margin: 0 10px 10px 10px;
+        padding: 10px 15px;
+        position: relative;
+        font-style: normal;
+        border: solid 1px #65c7eb;
+        font-family: "Heebo"!important;
+        
+        &.custom-amount{
+          font-size:22px;
+        }
+
+        &.selected,
+        &:hover {
+          cursor: pointer;
+          color: white;
+          background-color: #65c7eb;
+          
+        }
+      }
+    }
+
+    .actions {
+      text-align: center;
+      margin: 20px;
+      font-family: "Heebo";
+
+      button {
+        padding: 8px 30px;
+        background-image: none;
+        color: white;
+        background-color: #80ca20;
+        border: none;
+        outline: none;
+        text-shadow: none;
+        box-shadow: none;
+        border-radius: 25px;
+        font-size: 22px;
+        font-family: "Heebo";
+      }
+    }
+
+    #amount .number {
+      font-size: 32px;
+      font-weight: bold;
+      width: 100%;
+      font-family: "Heebo";
+    }
+
+    #custom-amount-section {
+      display: none;
+      text-align: center;
+      margin: 20px;
+      font-family: "Heebo";
+    }
+
+    .other {
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Heebo";
+    }
+
+    #cancel {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-family: "Heebo";
+    }
+
+    #amount input[type="radio"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 1px;
+      opacity: 0;
+    }
+
+    #back-arrow {
+      font-size: 60px;
+      text-align: right;
+      cursor: pointer;
+    }
+
+    #paying-iframe {
+      display: none;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    #paying-iframe iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 1000px;
+      border: none;
+    }
+
+    #back-arrow {
+      display: none;
+    }
+  }
+}

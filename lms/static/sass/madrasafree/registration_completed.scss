@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap');
+
+
+.madrasafree-registration_completed {
+    
+    .content{
+      font-family: 'Heebo' !important;
+      font-size: 18px;
+      &.strong{
+        font-weight: bold;
+      }
+    }
+
+  .container {
+    max-width: 700px;
+    margin: auto;
+    padding-top:0;
+  
+    h1 {
+      direction: rtl;
+      margin-bottom: 40px;
+      font-size:32px;
+      font-family: 'Secular One'!important;
+      letter-spacing:normal;
+    }
+
+    .annotate {
+      text-align: center;
+
+      p {
+        display: inline-block;
+        padding: 5 20px;
+        margin: 15px 0 40px 0;
+        background-color: #57C2EA;
+        color: white;
+        border-radius: 12px;
+        font-size: 28px;
+        line-height: 100%;
+        font-family: 'Secular One'!important;
+      }
+    }
+
+    .question {
+      text-align: center;
+      font-weight: bold;
+      margin: 40px auto 40px auto;
+      direction: ltr;
+      font-family: 'Heebo' !important;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Heebo' !important;
+
+      #donate-button{
+        font-weight: bold;
+      }
+
+      .button {
+        font-size:20px;
+        padding: 8px 30px;
+        background-image: none;
+        background-color: #80CA20;
+        color: black;
+        border: none;
+        outline: none;
+        text-shadow: none;
+        box-shadow: none;
+        border-radius: 25px;
+        direction: ltr;
+        font-family: 'Heebo' !important;
+
+        &:hover {
+          background-image: none;
+          color: black;
+        }
+
+        &.donate {
+          margin: 22px 0;
+        }
+
+        &.cancel {
+          background: none;
+          border-bottom: solid 1px black;
+          border-radius: 0;
+          padding: 0;
+        }
+      }
+
+      #cancel-pity {
+        text-align: center;
+        font-family: 'Heebo'!important;
+        direction: ltr;
+
+        .button {
+          display: inline-block;
+          width:fit-content;
+          font-family: 'Heebo'!important;
+          font-weight: 600;
+        }
+        p{
+          font-family: 'Heebo'!important;
+        }
+      }
+    }
+
+  }
+
+}

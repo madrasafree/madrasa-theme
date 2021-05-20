@@ -10783,7 +10783,7 @@ msgstr "מספר נסיונות חיבור רב מדי. אנא נסה מאוחר
 
 #: openedx/core/djangoapps/user_authn/views/login_form.py
 msgid "Create Account"
-msgstr "צור חשבון"
+msgstr "יצירת חשבון"
 
 #: openedx/core/djangoapps/user_authn/views/register.py
 msgid "Registration using {provider} has timed out."
@@ -13021,7 +13021,7 @@ msgstr "אני מסכים {link_start}לקוד האתי{link_end}"
 #: lms/templates/register-form.html lms/templates/signup_modal.html
 #: themes/stanford-style/lms/templates/register-form.html
 msgid "Create My Account"
-msgstr "צור חשבון"
+msgstr "יצירת חשבון"
 
 #: lms/templates/register-shib.html
 #: themes/stanford-style/lms/templates/register-shib.html

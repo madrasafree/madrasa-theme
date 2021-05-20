@@ -1,0 +1,23 @@
+<%page expression_filter="h"/>
+<%namespace name='static' file='../static_content.html'/>
+<%!
+    from django.utils.translation import ugettext as _
+%>
+
+<%inherit file="../main.html" />
+
+<%block name="headextra">
+    <link rel="stylesheet" type="text/css" href="${static.url('css/madrasafree/donate_success.css')}">
+</%block>
+
+<section class="madrasafree-donate_success">
+    <div class="container">
+        <h1> 
+          אין כמוך! כיף גדול שהצטרפת אלינו ותודה מכל הלב
+          <span class="heart-icon">💚</span>
+        </h1>
+        <div class="actions">
+            <a href="/dashboard/" class="button">!יאללה ללימודים</a>
+        </div>
+    </div>
+</section>

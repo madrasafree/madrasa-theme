@@ -1,7 +1,7 @@
 $(function() {
 
 // variables
-    let amount = 40;
+    let amount = 15;
     let isMonthly = true;
 
 // functions

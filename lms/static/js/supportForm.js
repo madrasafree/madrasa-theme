@@ -33,6 +33,8 @@ $(function() {
 
 //set iframe url from the server by the purchese object
     function setUrl(json) {
+        console.log("Json sent to icredit");
+        console.log(json);
         $.post("/madrasafree/icredit_get_url/", json, function (response) {
             $("#paying-iframe iframe").attr('src', response);
         });
@@ -68,6 +70,8 @@ $(function() {
 
     loginRegisterContainer.on('change', '#monthly', function (e) {
         isMonthly = Boolean(e.target.value === '1');
+        
+        console.log("monthly: " + isMonthly);
         setIframeData();
     });
 

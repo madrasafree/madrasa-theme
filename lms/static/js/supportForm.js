@@ -2,6 +2,8 @@ $(function () {
   // variables
   let amount = 15;
   let isMonthly = true;
+  $("#monthly option[value=1]").prop("selected", true);
+
 
   // functions
   // set iframe data and show iframe

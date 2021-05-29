@@ -4604,7 +4604,7 @@ msgstr "לא ניתן ליצור את החשבון שלך. "
 #: lms/static/js/student_account/views/RegisterView.js 
 #: lms/templates/student_account/register.underscore
 msgid "Create Account"
-msgstr "יצירת חשבון"
+msgstr "להרשמה"
 
 #: lms/static/js/student_account/views/RegisterView.js
 msgid "(required)"
@@ -8187,7 +8187,7 @@ msgstr "שכחת סיסמה?"
 #: lms/templates/student_account/hinted_login.underscore 
 #: lms/templates/student_account/login.underscore
 msgid "Sign in"
-msgstr "התחבר"
+msgstr "התחברות"
 
 #: lms/templates/student_account/hinted_login.underscore
 #, python-format
@@ -8226,11 +8226,11 @@ msgstr "הירשם דרך edX"
 
 #: lms/templates/student_account/login.underscore
 msgid "First time here?"
-msgstr "עדיין לא רשום?"
+msgstr "עוד לא נרשמת?"
 
 #: lms/templates/student_account/login.underscore
 msgid "Create an Account."
-msgstr "יצירת חשבון"
+msgstr "להרשמה"
 
 #: lms/templates/student_account/login.underscore
 msgid "Sign in to continue learning as {email}"
@@ -8263,7 +8263,7 @@ msgstr ""
 
 #: lms/templates/student_account/login.underscore
 msgid "Sign In"
-msgstr "התחבר"
+msgstr "התחברות"
 
 #: lms/templates/student_account/login.underscore
 msgid ""
@@ -8283,7 +8283,7 @@ msgstr "אם אין לך חשבון עדיין  השתמש בלחצן למטה �
 
 #: lms/templates/student_account/login.underscore
 msgid "or sign in with"
-msgstr "או התחבר עם"
+msgstr "התחברות עם"
 
 #: lms/templates/student_account/login.underscore
 #, python-format
@@ -8317,7 +8317,7 @@ msgstr "כבר יש לך חשבון?"
 
 #: lms/templates/student_account/register.underscore
 msgid "Sign in."
-msgstr "התחבר"
+msgstr "התחברות"
 
 #: lms/templates/student_account/register.underscore
 msgid "Create an account using"
@@ -8334,7 +8334,7 @@ msgstr "או צור אחד חדש כאן"
 
 #: lms/templates/student_account/register.underscore
 msgid "Create an Account"
-msgstr "יצירת חשבון"
+msgstr "להרשמה"
 
 #: lms/templates/student_account/register.underscore
 msgid "Support education research by providing additional information"

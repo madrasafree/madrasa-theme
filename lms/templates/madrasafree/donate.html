@@ -9,83 +9,79 @@
 <%block name="headextra">
     <link rel="stylesheet" type="text/css" href="${static.url('css/madrasafree/donate.css')}">
     <script type="text/javascript" src="${static.url('js/supportForm.js')}"></script>
-    <script type="text/javascript">
-        function showIframe() {
-            window.setIframeData();
-            $("#paying-iframe").show();
-            $('.actions').hide();
-        }
-    </script>
 </%block>
 
-<section class="madrasafree-donate">
-    <div class="container">
-        <h1>שֻכְּרַן כְּתִיר!  <span class="heart-icon">💚</span> עכשיו נשאר רק לבחור את אופן וסכום התמיכה</h1>
-        <!--
-        <p class="sub">כאן אפשר לבחור את סוג התמיכה והסכום</p>
-        -->
+ <section class="madrasafree-donate">
+      <div class="container">
+        <h1>
+          שֻכְּרַן כְּתִיר! <span class="heart-icon">💚</span> עכשיו נשאר רק
+          לבחור את אופן וסכום התמיכה
+        </h1>
 
         <div class="support-container">
-            <div class="frequency">
-                <h2>סוג תמיכה</h2>
-                <select name="monthly" id="monthly">
-                    <option value="0">לתמיכה חד פעמית</option>
-                    <option value="1" selected="selected">חברות חודשית</option>
-                </select>
+          <div class="frequency">
+            <h2>סוג תמיכה</h2>
+            <select name="monthly" id="monthly">
+              <option value="0">לתמיכה חד פעמית</option>
+              <option value="1" selected="selected">חברות חודשית</option>
+            </select>
+          </div>
+
+          <p id="support-text">סכום השתתפות בשקלים</p>
+       
+          <div id="support">
+            <div id="amount-container">
+              <div id="amount">
+                <label class="select-amount">
+                  <input name="amount" type="radio" value="10" />
+                  <div class="number">10</div>
+                </label>
+                <label class="select-amount selected">
+                  <input name="amount" type="radio" value="15" checked />
+                  <div class="number">15</div>
+                </label>
+                <label class="select-amount">
+                  <input name="amount" type="radio" value="30" />
+                  <div class="number">30</div>
+                </label>
+                <label class="select-amount">
+                  <input name="amount" type="radio" value="50" />
+                  <div class="number">50</div>
+                </label>
+                <label class="select-amount">
+                  <input name="amount" type="radio" value="100" />
+                  <div class="number">100</div>
+                </label>
+                <label class="select-amount custom-amount">
+                  <input name="amount" type="radio" value="custom" />
+                  <div>סכום אחר</div>
+                </label>
+              </div>
             </div>
 
-            <p id="support-text">
-                סכום השתתפות בשקלים
-            </p>
+            <!-- setting custom amount -->
+            <div id="custom-amount-section">
+              <p>בכמה תרצו להשתתף?</p>
 
-            <div id="support">
-                <div id="amount">
-                    <label class="select-amount">
-                        <input name="amount" type="radio" value="10">
-                        <div class="number">10</div>
-                    </label>
-                    <label class="select-amount selected">
-                        <input name="amount" type="radio" value="15" checked>
-                        <div class="number">15</div>
-                    </label>
-                    <label class="select-amount">
-                        <input name="amount" type="radio" value="30">
-                        <div class="number">30</div>
-                    </label>
-                    <label class="select-amount">
-                        <input name="amount" type="radio" value="50">
-                        <div class="number">50</div>
-                    </label>
-                    <label class="select-amount">
-                        <input name="amount" type="radio" value="100">
-                        <div class="number">100</div>
-                    </label>
-                    <label class="select-amount custom-amount">
-                        <input name="amount" type="radio" value="custom">
-                        <div>
-                            סכום אחר
-                        </div>
-                    </label>
-                </div>
-                <!-- setting custom amount -->
-                <div id="custom-amount-section">
-                    <label>בחרו סכום: <input id="custom-amount" type="number"></label>
-                    <button id="custom-amount-button">הזינו סכום</button>
-                </div>
+              <input id="custom-amount" type="number" placeholder="סכום"/>
+              ש"ח
             </div>
+          </div>
 
-            <p id="payment-exp">
-                בלחיצה על הכפתור ייפתח דף תשלום מאובטח
-            </p>
+          <p id="payment-exp">בלחיצה על הכפתור ייפתח דף תשלום מאובטח</p>
 
-            <div class="actions">
-                <button class="display-iframe" onclick="showIframe();">לתשלום מאובטח</button>
-            </div>
+          <div class="actions">
+             <span id="error" style="display:none;color:red;text-align:center;font-size:14px;padding:0;position:relative;top:-10px;">אנא הזינו סכום לתמיכה</span><br>
 
-            <div id="paying-iframe">
-                <p id="supporter-details"></p>
-                <iframe src="about:blank"></iframe>
-            </div>
+            <button class="display-iframe" onclick="window.setIframeData();">
+              לתשלום מאובטח
+            </button>
+          </div>
+
+          <div id="paying-iframe">
+            <p id="supporter-details"></p>
+            <iframe src="about:blank"></iframe>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>

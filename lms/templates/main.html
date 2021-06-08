@@ -81,6 +81,9 @@ from pipeline_mako import render_require_js_path_overrides
     }
   </script>
   % endif
+  <script type="text/javascript" src="${static.url(jsi18n_path)}"></script>
+  <script type="text/javascript" src="${static.url(ie11_fix_path)}"></script>
+
   <link rel="icon" type="image/x-icon" href="${static.url(static.get_value('favicon_path', settings.FAVICON_PATH))}" />
   <link rel="apple-touch-icon" href="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/android_icon.png">
 
@@ -118,6 +121,21 @@ from pipeline_mako import render_require_js_path_overrides
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   % endif
 
+
+
+
+  <script>
+    window.baseUrl = "${settings.STATIC_URL | n, js_escaped_string}";
+    (function (require) {
+      require.config({
+        baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="${static.url("lms/js/require-config.js")}"></script>
+  <%block name="js_overrides">
+    ${render_require_js_path_overrides(settings.REQUIRE_JS_PATH_OVERRIDES) | n, decode.utf8}
+  </%block>
 
   <%block name="headextra"/>
   <%block name="head_extra"/>
@@ -232,21 +250,6 @@ from pipeline_mako import render_require_js_path_overrides
 % if not disable_window_wrap:
   </div>
 % endif
-
-  <script type="text/javascript" src="${static.url(jsi18n_path)}"></script>
-  <script type="text/javascript" src="${static.url(ie11_fix_path)}"></script>
-  <script>
-    window.baseUrl = "${settings.STATIC_URL | n, js_escaped_string}";
-    (function (require) {
-      require.config({
-        baseUrl: window.baseUrl
-      });
-    }).call(this, require || RequireJS.require);
-  </script>
-  <script type="text/javascript" src="${static.url("lms/js/require-config.js")}"></script>
-  <%block name="js_overrides">
-    ${render_require_js_path_overrides(settings.REQUIRE_JS_PATH_OVERRIDES) | n, decode.utf8}
-  </%block>
 
   <%block name="footer_extra"/>
   <%block name="js_extra"/>

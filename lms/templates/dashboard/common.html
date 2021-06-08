@@ -138,6 +138,92 @@ from django.utils.translation import ugettext as _
           padding: 20px;
         }
       }
+
+       .sikui-strip {
+        background-image: url("https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/sikui/sikui-bg.jpeg");
+      }
+
+      .sikui-strip-items {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+      }
+      .sikui-strip-item {
+        width: 25%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .image-container {
+        background-color: white;
+        min-height: 170px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        padding:15px;
+      }
+
+      
+
+      .image-container img {
+        width: 100%; 
+        height:200px;
+        object-fit:cover;
+        display: block;
+        overflow:hidden;
+      }
+
+      .sikui-strip h2,
+      .sikui-strip p {
+        color: white;
+        text-align: center;
+        font-family: "Segoe UI";
+        font-weight: 400;
+      }
+
+      .sikui-strip h2 {
+        padding-top: 40px;
+        font-size: 32px;
+        margin:0 20px;
+      }
+
+      .sikui-strip p {
+        font-size: 18px;
+        margin:20px;
+      }
+
+      .sikui-strip .btn {
+        display: flex;
+        justify-content: center;
+      }
+
+      .sikui-strip .btn a {
+        background-color: #54c1ea;
+        color: black;
+        text-align: center;
+        font-family: "Segoe UI";
+        font-weight: bold;
+        font-size: 22px;
+        text-decoration: none;
+        padding: 6px 20px;
+        border-radius: 10px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .sikui-strip-items {
+          display: block;
+          width: 100%;
+          margin: auto;
+        }
+
+        .sikui-strip-item {
+          width: 80%;
+          margin: 20px auto;
+          padding: 10px 20px;
+        }
+      }
 </style>
 <p class="text-center" style="font-size:26px;margin-bottom:40px">להרשמה לקורסים נוספים - יש ללחוץ <a href="/courses">כאן</a>
   </p>
@@ -176,6 +262,64 @@ from django.utils.translation import ugettext as _
   
   
 </div>
+
+    <section class="sikui-strip">
+      <h2>הגיע הזמן ללמוד ערבית כמו שצריך!</h2>
+      <p>
+        יצאנו לקמפיין משותף עם עמותת סיכוי לקידום לימודי ערבית מדוברת בבתי ספר
+        <br />הצטרפו לפעילות ועיזרו לנו לייצר מציאות אחרת כבר משנת הלימודים
+        הבאה!
+      </p>
+      <div class="sikui-strip-items">
+        <div class="sikui-strip-item">
+          <div class="image-container">
+            <img
+              src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/sikui/sikui-send.jpeg"
+              alt=""
+            />
+          </div>
+          <p>שילחו מייל למשרד החינוך</p>
+          <div class="btn">
+            <a href="https://www.drove.com/campaign/607fdbae656f9b85844086a4" target="_blank">לשליחה</a
+            >
+          </div>
+        </div>
+        <div class="sikui-strip-item">
+          <div class="image-container">
+            <img
+              src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/sikui/sikui-send.png"
+              alt=""
+            />
+          </div>
+          <p>
+            התחילו בתהליך לימוד והטמעת ערבית
+          
+            בארגון או בקהילה שלכם!
+          </p>
+          <div class="btn">
+            <a href="http://courses.madrasafree.com/courses" target="_blank">לפרטים</a>
+          </div>
+        </div>
+        <div class="sikui-strip-item">
+          <div class="image-container">
+            <img
+              src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/sikui/sikui-print.png"
+              alt=""
+            />
+          </div>
+          <p>
+            הורידו והדפיסו את השלטים
+            שלנו לקידום תקשורת בעבודה
+          </p>
+          <div class="btn">
+            <a
+              href="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/sikui.pdf"
+              target="_blank">להורדה</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
 <section class="features-icons bg-light text-center d-flex align-items-center">
   <div class="container">

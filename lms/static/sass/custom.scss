@@ -34,6 +34,12 @@
 // remove?
 $baseline: 1.2rem;
 
+.problem, .problem-header, .problem-progress, .xmodule_HtmlModule{
+  font-family: 'muliregular'!important;
+  direction: rtl!important;
+}
+
+
 html,
 body {
   font-family: "muliregular", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;

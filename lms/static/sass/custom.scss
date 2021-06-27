@@ -34,8 +34,11 @@
 // remove?
 $baseline: 1.2rem;
 
-.problem, .problem-header, .problem-progress, .xmodule_HtmlModule, .problem .field{
+.problem, .problem-header, .problem-progress, .xmodule_HtmlModule, .problem{
   font-family: 'muliregular'!important;
+  p, label, div {
+    font-family: 'muliregular'!important;
+  }
 }
 .xmodule_HtmlModule{
   direction: rtl;

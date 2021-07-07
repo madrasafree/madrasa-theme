@@ -18,8 +18,9 @@ const showCurrentState = function () {
     if (getUrlParameter('payment') === '1' && localStorage.getItem('donateURL')) {
         const donateURL = localStorage.getItem('donateURL');
         $('.window-wrap').html('<div id="paying-iframe">' +
-            ' <a href="/madrasafree/donate/" class="button">חזור</a>' +
-            ' <iframe width="100%" height="100%" src="' + donateURL + '"></iframe>' +
+            '<div><img src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/logo.png" width="200"></div>' +
+            ' <a href="/madrasafree/donate/" class="button">🡺חזרה לבחירת סכום</a>' +
+            ' <iframe width="100%" height="1400" src="' + donateURL + '"></iframe>' +
             '</div>');
     } else {
         history.replaceState({payment: '0'}, document.title, '/madrasafree/donate/');

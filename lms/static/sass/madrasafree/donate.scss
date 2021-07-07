@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap");
 
 .loader {
-  margin-top:20px;
+ 
   margin: auto;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #8dc046;
   border-bottom: 16px solid #56c1e9;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -213,6 +213,7 @@
 
   a.button {
     padding: 8px 30px;
+    margin-bottom:20px;
     background-image: none;
     color: white;
     background-color: #80ca20;

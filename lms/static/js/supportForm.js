@@ -20,7 +20,7 @@ const frameLoaded = function(){
 
 const showCurrentState = function () {
     if (getUrlParameter('payment') === '1' && localStorage.getItem('donateURL')) {
-        document.documentElement.scrollTop = 0;
+        window.scrollTo(0, 0);
         const donateURL = localStorage.getItem('donateURL');
         $('.window-wrap').html('<div id="paying-iframe">' +
             '<div><img src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/logo.png" width="200"></div>' +

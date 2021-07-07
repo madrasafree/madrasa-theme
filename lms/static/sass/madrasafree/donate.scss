@@ -1,5 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap");
 
+.loader {
+  margin: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #8dc046;
+  border-bottom: 16px solid #56c1e9;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .container {
   padding-top: 0;
 }
@@ -19,9 +49,10 @@
       margin-bottom: 20px;
     }
 
-    p.sub, h1 {
+    p.sub,
+    h1 {
       text-align: center;
-      font-family: 'Heebo';
+      font-family: "Heebo";
     }
 
     .heart-icon {
@@ -41,11 +72,12 @@
       margin-bottom: 24px;
       font-family: "Heebo";
 
-
       select {
         appearance: none;
         color: white;
-        background: #f77424 url("https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/triangle.png") no-repeat 4% 50% !important;
+        background: #f77424
+          url("https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/triangle.png")
+          no-repeat 4% 50% !important;
         padding: 8px 14px 8px 24px !important;
         height: auto;
         border-radius: 10px;
@@ -55,12 +87,13 @@
         cursor: pointer;
 
         option {
-          font-family: 'Heebo';
+          font-family: "Heebo";
         }
       }
     }
 
-    #support-text, #payment-exp {
+    #support-text,
+    #payment-exp {
       text-align: center;
       font-family: "Heebo";
     }
@@ -100,7 +133,6 @@
           cursor: pointer;
           color: white;
           background-color: #65c7eb;
-
         }
       }
     }

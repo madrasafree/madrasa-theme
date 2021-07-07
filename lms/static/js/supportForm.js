@@ -23,10 +23,10 @@ const showCurrentState = function () {
         window.scrollTo(0, 0);
         const donateURL = localStorage.getItem('donateURL');
         $('.window-wrap').html('<div id="paying-iframe">' +
-            '<div><img src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/logo.png" width="200"></div>' +
-            ' <a href="/madrasafree/donate/" class="button">🡺חזרה לבחירת סכום</a>' +
+            '<div><img src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/logo.png" width="200"></div>'  +
             '<div class="loader"></div>' +
-            ' <iframe width="100%" height="1400" onload="frameLoaded()" src="' + donateURL + '"></iframe>' +
+            ' <iframe width="100%" onload="frameLoaded()" src="' + donateURL + '"></iframe>' +
+            // '<a href="/madrasafree/donate/" class="button">🡺חזרה לבחירת סכום</a>' +
             '</div>');
     } else {
         history.replaceState({payment: '0'}, document.title, '/madrasafree/donate/');

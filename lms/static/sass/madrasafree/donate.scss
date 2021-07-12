@@ -31,10 +31,6 @@
   }
 }
 
-.container {
-  padding-top: 0;
-}
-
 .madrasafree-donate {
   * {
     font-family: "Heebo";
@@ -42,6 +38,7 @@
 
   .container {
     max-width: 800px;
+    padding-top: 0;
 
     h1 {
       font-size: 29px;
@@ -127,6 +124,7 @@
 
         &.custom-amount {
           font-size: 22px;
+          padding:10px 0;
         }
 
         &.selected,

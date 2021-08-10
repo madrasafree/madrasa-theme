@@ -36,12 +36,16 @@ $baseline: 1.2rem;
 
 .problem, .problem-header, .problem-progress, .xmodule_HtmlModule, .problem{
   font-family: 'muliregular'!important;
+  direction: rtl;
   p, label, div {
     font-family: 'muliregular'!important;
     direction: rtl;
   }
 }
 
+.problem .problem-progress{
+  display:none;
+}
 
 html,
 body {

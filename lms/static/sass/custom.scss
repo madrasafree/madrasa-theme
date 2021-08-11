@@ -37,13 +37,13 @@ $baseline: 1.2rem;
 .problem, .problem-header, .problem-progress, .xmodule_HtmlModule, .problem{
   font-family: 'muliregular'!important;
   direction: rtl;
-  p, label, div {
+  p, label, div, td, li, span {
     font-family: 'muliregular'!important;
     direction: rtl;
   }
 }
 
-.xblock .problem-progress{
+.xmodule_display.xmodule_CapaModule div.problem-progress{
   display:none;
 }
 

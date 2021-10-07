@@ -34,6 +34,15 @@
 // remove?
 $baseline: 1.2rem;
 
+.find-courses .course-info{
+  height:auto;
+  .course-date{
+      display:none;
+  }
+}
+
+
+
 .problem, .problem-header, .problem-progress, .xmodule_HtmlModule, .problem{
   font-family: 'muliregular'!important;
   direction: rtl;

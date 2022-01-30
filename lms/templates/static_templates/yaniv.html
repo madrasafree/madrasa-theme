@@ -1,8 +1,5 @@
-<%page expression_filter="h"/>
-<%! from django.utils.translation import ugettext as _ %>
-<%inherit file="../main.html" />
 
-<%block name="pagetitle">תמכו במהפכה | Join the Revolution </%block>
+<%block name="pagetitle"> האיזור הלימודי של מדרסה </%block>
 <%block name="headextra">
 
 <!-- viewport -->
@@ -11,14 +8,15 @@
 <meta name="description" content="מדרסה קיים בזכות שותפים כמוך. יחד אנחנו יוצרים חברה מתקשרת וטובה יותר. הצטרפו עכשיו!">
 <meta name="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
 <!-- Schema.org for Google -->
-<meta itemprop="name" content=" תמכו במהפכה | Join the Revolution">
+<meta itemprop="name" content=" האיזור הלימודי של מדרסה">
 <meta itemprop="description" content="מדרסה קיים בזכות שותפים כמוך. יחד אנחנו יוצרים חברה מתקשרת וטובה יותר. הצטרפו עכשיו!">
 <meta itemprop="image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
 <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-<meta name="og:title" content=" תמכו במהפכה | Join the Revolution">
+<meta name="og:title" content=" האיזור הלימודי של מדרסה">
 <meta name="og:description" content="מדרסה קיים בזכות שותפים כמוך. יחד אנחנו יוצרים חברה מתקשרת וטובה יותר. הצטרפו עכשיו!">
 <meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
 <!-- style -->
+
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap");
  body {
@@ -198,9 +196,6 @@
 	
 </style>
 
-</%block>
-
-
 <script>
 
 $(function() {
@@ -291,8 +286,10 @@ unenrolledCourses.forEach(function (course) {
 
 
 </script>
+</%block>
 
-<main>
+<main id="main" aria-label="Content" tabindex="-1" class="content-wrapper">
+
 	<section id="banner">
 		<div class="text">
 		  <h1>מרחבא yanivg!</h1>
@@ -365,3 +362,5 @@ unenrolledCourses.forEach(function (course) {
 		<a href="courses.madrasafree.com/library">לספריית התכנים</a>
 	  </section>
 </main>
+
+

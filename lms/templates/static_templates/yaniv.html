@@ -20,604 +20,348 @@
 <meta name="og:image" content="https://s3.eu-west-3.amazonaws.com/madrasa-site-images/LogoMadrasaConv1.jpg">
 <!-- style -->
 <style>
-.support-us-body .support-us-body-wrap p.purple{
-	color:#402F6D;
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap");
+ body {
+	 margin: 0;
+	 font-family: "Heebo", sans-serif;
 }
-h3{
-	font-size:33px!important;
+ h1, h2, h3, .subtitle, button {
+	 font-family: "Secular One", sans-serif;
 }
-	.support-us-flex-item li {
-	line-height: 34px;
+ #banner {
+	 position: relative;
 }
-
-.v-list li::before {
-	content: "";
+ #banner .background {
+	 background-image: url("https://courses.madrasafree.com/wp-content/uploads/2022/01/homepage_bigbanner_fixed2-01-1.svg");
+	 background-size: contain;
+	 background-repeat: no-repeat;
+	 width: 100%;
+	 height: 0;
+	 padding-top: 56%;
 }
-
-.only-mobile {
-	display: none;
-}
-
-.v-list li {
-	position: relative;
-	list-style-type: none;
-	text-align: right;
-}
-.image-bar{
-	position: relative;
-	top:-50px;
-}
-
-.support-us-flex-item #donation-type {
-	border-radius: 0;
-	font-weight: bold;
-	height: 44px;
-	width: 200px;
-	background-color: #FEA007 !important;
-	border: 0 !important;
-	color: white !important;
-	font-size: 24px !important;
-	font-family: muliregular !important;
-}
-
-.support-us-body .support-us-body-wrap {
-	padding-right: 20px !important;
-	padding-left: 20px !important;
-}
-
-.only-mobile a {
-	font-size: 24px;
-	font-weight: bold;
-	color: white !important;
-	background-color: #28A745;
-	padding: 8px 16px;
-	font-family: muliregular !important;
-}
-
-#donation-type option {
-	color: black !important;
-	background-color: white !important;
-	height: 60px;
-}
-.v-list{
-	padding-right:60px!important;
-}
-.v-list li:before {
-	content: "" !important;
-	position: absolute;
-	width: 40px !important;
-	height: 100%;
-	right: -20px;
-	background-repeat: no-repeat;
-}
-
-.v-sign-list li:before{
-	background-image: url("https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/vsign-list-icon.png");
-}
-.flag-sign-list li:before{
-	background-image: url("https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/flag.png");
-}
-
-
-
-.support-us-top .support-us-top-phrase-02 {
-	transform: rotate(-3deg) !important;
-	margin-right: 0 !important;
-	margin-top: 20px !important;
-}
-
-.reg-user-progress h2 {
-	font-size: 38px !important;
-	margin-top: 10px;
-}
-
-.reg-user-progress {
-	padding: 0 !important;
-	margin-bottom: 60px;
-}
-
-.col-lg-6 h3 {
-	margin-top: 60px;
-}
-._2021-title ._2021-main{
-   font-size:30px;
-   display:inline-block;
-}
-._2021-title ._2021-sub{
-   margin-top:10px;
-   font-size:26px;
-   display:inline-block;
-}
-h1 {
-	margin-top: 8px;
-}
-
-.support-us-body .support-us-body-wrap .support-us-form {
-	box-shadow: none !important;
-}
-
-.support-us-top-phrase {
-	font-family: muliregular !important;
-}
-
-.progress-bar-image {
-	width: 500px;
-	position: relative;
-	bottom: -50px;
-}
-
-.support-us-flex-item {
-	width: 50%;
-}
-
-.form-group .support-us-form-input+.support-us-form-label {
-	border-radius: 0 !important;
-	line-height: 60px !important;
-	width: 150px !important;
-	height: 60px !important;
-	font-size: 28px !important;
-	margin: 5px !important;
-	padding: 0 !important;
-}
-
-.form-group .support-us-form-input:not(:checked)+.support-us-form-label {
-	background-color: #28A745 !important;
-}
-
-:checked+.support-us-form-label {
-	background-color: #124c12 !important;
-}
-
-#amount1,
-#amount2 {
-	margin: 40px 0;
-}
-
-#one-time-donate {
-	background: none;
-	border: none;
-	box-shadow: none !important;
-	color: #85c559 !important;
-	text-shadow: none !important;
-	font-weight: bold;
-	font-size: 36px;
-	padding-bottom: 0 !important;
-}
-
-.cancel-donation {
-	margin-top: 30px;
-}
-
-#support-cta {
-	font-size: 32px !important;
-	margin: 0;
-}
-
-#donation-form {
-	box-shadow: none;
-	padding-top: 0;
-}
-
-.reg-user-progress {
-	margin-bottom: 0;
-}
-
-#polaniya{
-	font-size:26px;
-}
-
-@media screen and (min-width:601px){
-    .mobile-only{
-		display:none;
+ @media (max-width: 480px) {
+	 #banner .background {
+		 background-image: url("https://courses.madrasafree.com/wp-content/uploads/2022/01/homepage_banner_mobile.svg");
+		 padding-top: 67%;
 	}
 }
-@media screen and (max-width:600px){
-	.desktop-only{
-		display:none;
-	}
-	._2021-title ._2021-main{
-   font-size:37px;
-	}
-	._2021-title ._2021-sub{
-   font-size:20px;
+ #banner h1 {
+	 font-size: 4.6vw;
+	 text-shadow: 2px 2px 2px grey;
 }
-}
-@media screen and (max-width: 600px) {
-	.support-us-flex-item {
-		width: 100%;
-	}
-	.support-us-body-wrap {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-}
-
-
-@media screen and (min-width: 1400px) {
-	.progress-bar-image {
-		width: 580px;
-		bottom: -67px;
+ @media (max-width: 480px) {
+	 #banner h1 {
+		 font-size: 7vw;
 	}
 }
-
-@media screen and (max-width: 1000px) {
-	h3 {
-		text-align: center !important;
-		
-	}
-	.support-us-body p,
-	.support-us-body li {
-		font-size: 18px !important;
-		line-height: 28px !important;
-	}
-	.support-us-body #small-text {
-		font-size: 15px !important;
-	}
-	.progress-bar-image {
-		width: 280px;
-		bottom: -40px;
-	}
-	.cancel-donation {
-		font-size: 16px;
-	}
-	.support-us-top .support-us-top-phrase-02 {
-		margin-top: 10px !important;
-	}
-	.support-us-top-phrase {
-		font-size: 15px !important;
-	}
-	.form-group .support-us-form-input+.support-us-form-label {
-		width: 100% !important;
+ #banner h1, #banner p {
+	 color: white;
+	 text-align: center;
+	 margin: 0;
+}
+ #banner p {
+	 text-shadow: 2px 2px 2px grey;
+	 font-size: 3.6vw;
+}
+ @media (max-width: 480px) {
+	 #banner p {
+		 font-size: 5vw;
 	}
 }
-
-@media screen and (min-width: 900px) {
-	.support-us-flex-item {
-		padding: 0 30px !important;
+ #banner .text {
+	 position: absolute;
+	 top: 14%;
+	 width: 100%;
+}
+ @media (max-width: 480px) {
+	 #banner .text {
+		 top: 10%;
 	}
 }
+ #dashboard h2 {
+	 text-align: center;
+	 font-size: 40px;
+}
+ #dashboard .courses {
+	 display: grid;
+	 grid-template-columns: repeat(4, 1fr);
+	 column-gap: 10px;
+	 row-gap: 40px;
+	 margin: 0 20px;
+}
+ @media (max-width: 480px) {
+	 #dashboard .courses {
+		 display: block;
+		 margin: 0;
+	}
+}
+ #dashboard .courses .course {
+	 position: relative;
+	 padding: 10px;
+	 padding-bottom: 40px;
+	 text-align: center;
+	 border: 1px solid lightgray;
+	 margin: 10px;
+	 box-shadow: 2px 2px 2px lightgray;
+	 transition: all 0.2s ease-in-out;
+	 cursor: pointer;
+}
+ #dashboard .courses .course:hover {
+	 transform: scale(1.1);
+}
+ @media (max-width: 480px) {
+	 #dashboard .courses .course {
+		 width: 100%;
+		 margin-right: 0;
+		 margin-left: 0;
+	}
+}
+ #dashboard .courses .course img {
+	 width: 100%;
+}
+ #dashboard .courses .course .course-link {
+	 display: block;
+	 font-family: "Secular One";
+	 font-size: 20px;
+	 margin: auto;
+	 width: fit-content;
+	 border-radius: 20px;
+	 padding: 4px 30px;
+	 cursor: pointer;
+	 margin-bottom: 10px;
+	 margin-top: 10px;
+	 box-shadow: 2px 2px 3px black;
+	 position: absolute;
+	 bottom: 4px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 left: 0;
+	 right: 0;
+	 color: white;
+	 text-decoration: none;
+	 background: #70d2d5;
+}
+ #dashboard .courses .course .course-link.enrolled-link {
+	 background: #7ec900;
+}
+ #dashboard .courses .course h3 {
+	 font-size: 24px;
+}
+ #social {
+	 background: #afdee0;
+}
+ #social h2 {
+	 text-align: center;
+	 font-size: 40px;
+}
+ #social p {
+	 text-align: center;
+	 font-size: 20px;
+}
+ #social .social-flex {
+	 display: flex;
+}
+ #social .social-flex div {
+	 flex: 1;
+}
+ #library h2 {
+	 text-align: center;
+	 font-size: 40px;
+}
+ #library p {
+	 text-align: center;
+	 font-size: 20px;
+}
+ #library a {
+	 display: block;
+	 font-family: "Secular One";
+	 font-size: 26px;
+	 margin: auto;
+	 width: fit-content;
+	 border-radius: 20px;
+	 padding: 4px 30px;
+	 cursor: pointer;
+	 margin-bottom: 10px;
+	 margin-top: 10px;
+	 box-shadow: 3px 3px 4px grey;
+	 margin: auto;
+	 color: white;
+	 text-decoration: none;
+	 background: #70d2d5;
+	 margin-bottom: 40px;
+}
+ #dashboard, #social div, #library {
+	 max-width: 960px;
+	 margin: auto;
+}
+ 
 	
 </style>
 
 </%block>
 
-<!-- Progress bar -->
-<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8.1/dist/polyfill.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0/dist/fetch.umd.min.js"></script>
-<script>
-	!function (e, t) { "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define("GetSheetDone", [], t) : "object" == typeof exports ? exports.GetSheetDone = t() : e.GetSheetDone = t() }(this, function () { return function (e) { function t(r) { if (n[r]) return n[r].exports; var o = n[r] = { i: r, l: !1, exports: {} }; return e[r].call(o.exports, o, o.exports, t), o.l = !0, o.exports } var n = {}; return t.m = e, t.c = n, t.d = function (e, n, r) { t.o(e, n) || Object.defineProperty(e, n, { configurable: !1, enumerable: !0, get: r }) }, t.n = function (e) { var n = e && e.__esModule ? function () { return e.default } : function () { return e }; return t.d(n, "a", n), n }, t.o = function (e, t) { return Object.prototype.hasOwnProperty.call(e, t) }, t.p = "", t(t.s = 0) }([function (e, t, n) { "use strict"; function r(e, t, n) { return "https://spreadsheets.google.com/feeds/" + n + "/" + e + "/" + t + "/public/values?alt=json" } function o(e, t, n, o) { if (0 === e.length) return Promise.reject(new Error("empty id")); var u = r(e, t, n); return new Promise(function (e, t) { fetch(u).then(function (e) { return e.json() }).then(function (t) { var n = o(t.feed.entry), r = { title: t.feed.title.$t, updated: t.feed.updated.$t, data: n }; e(r) }).catch(function (e) { t(e) }) }) } function u(e) { var t = []; return e.forEach(function (e) { var n = parseInt(e.gs$cell.row, 10) - 1, r = parseInt(e.gs$cell.col, 10) - 1, o = e.gs$cell.$t; void 0 === t[n] && (t[n] = []), t[n][r] = o }), t } function l(e) { var t = {}; return Object.keys(e).forEach(function (n) { if (0 === n.indexOf("gsx$")) { var r = n.substr(4); t[r] = e[n].$t } }), t } function i(e) { return e.map(function (e) { return l(e) }) } function c(e) { var t = e.split(", "), n = {}, r = null; return t.forEach(function (e, t) { var o = e.split(": "); 2 === o.length ? (n[o[0]] = o[1], r = o[0]) : 1 === o.length && r && (n[r] = n[r] + ", " + o[0]) }), n } function f(e) { var t = {}; return e.forEach(function (e) { t[e.title.$t] = c(e.content.$t) }), t } function s(e) { return o(e, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1, "cells", u) } function a(e) { return o(e, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1, "list", i) } function d(e) { return o(e, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1, "list", f) } Object.defineProperty(t, "__esModule", { value: !0 }), t.buildUrl = r, t.parseRawCells = u, t.parseLabeledCols = i, t.parseLabeledRowsCols = f, t.raw = s, t.labeledCols = a, t.labeledColsRows = d, t.default = { raw: s, labeledCols: a, labeledColsRows: d } }]).default });
-</script>
-<!-- <script src="GetSheetDone.js?0.1.4"></script> -->
 
 <script>
-	GetSheetDone.labeledCols('1gB-A3BoqMjEY4pbAmN7iyyXLBcC1X1BtjeSc_NCtNz0', 2)
-		.then((data) => {
-			if (data && data.data && data.data[0] && data.data[0].donated && data.data[0].target) {
-				let dataObj = data.data[0];
-				setProgress((dataObj.donated / dataObj.target) * 100)
-				//   document.getElementById('joined').textContent = dataObj.numdonators;
-				document.getElementById('raised').textContent = dataObj.donated;
-				document.getElementById('target').textContent = dataObj.target;
-			}
-			else {
-				setProgress(70)
-			}
-		}).catch(err => {
-			console.log('Error');
-			console.error(err);
-		});
-	function setProgress(value) {
-		var bar = document.getElementById('course-progress');
-		bar.style.width = value + "%";
-	}
+
+$(function() {
+	function getEnrolledCourses() {
+  var domain = "https://madrasafree.com";
+  var data = $.ajax({
+    url: domain + "api/enrollment/v1/enrollment",
+    type: "GET",
+    dataType: "json",
+    async: false,
+    xhrFields: {
+      withCredentials: true,
+    },
+  }).responseJSON;
+  return data;
+}
+
+function getCatalog() {
+  var domain = "https://madrasafree.com/";
+  var data = $.ajax({
+    url: domain + "api/courses/v1/courses",
+    type: "GET",
+    dataType: "json",
+    async: false,
+    xhrFields: {
+      withCredentials: true,
+    },
+  }).responseJSON.results;
+  data = data.map(function (course) {
+    return {
+      url: `${domain}/courses/${course.id}`,
+      image: course.media.image.raw,
+      name: course.name,
+      id: course.id,
+    };
+  });
+  return data;
+}
+
+function createCourseBlock(name, imageURL, url, isEnrolled = false) {
+  let course = $(`<div onclick="location.href='${url}'" class="course">`);
+  let image = $(`<img src="${imageURL}" alt="${name}">`);
+  let title = $(`<h3>${name}</h3>`);
+  let link;
+  if (isEnrolled) {
+    link = $(
+      `<a class="course-link enrolled-link" href="${url}">המשיכו ללמוד</a>`
+    );
+  } else {
+    link = $(`<a class="course-link" href="${url}">הרשמה לקורס</a>`);
+  }
+  course.append(image).append(title).append(link);
+  return course;
+}
+
+let enrolledCourses = [
+  {
+    id: "course-v1:madrasa+course2+2019_1",
+    name: "ערבית מדוברת - ממשיכים",
+    image:
+      "https://madrasafree.com/asset-v1:madrasa+maayan2+2020+type@asset+block@intermediate.png",
+    url: "https://madrasafree.com/courses/course-v1:madrasa+course2+2019_1/course/",
+  },
+];
+
+let catalog = getCatalog();
+
+let unenrolledCourses = catalog.filter(function (course) {
+  let enrolledIds = enrolledCourses.map((course) => course.id);
+  return !enrolledIds.includes(course.id);
+});
+
+if (false) {
+} else {
+  enrolledCourses.forEach(function (course) {
+    $(".courses").append(
+      createCourseBlock(course.name, course.image, course.url, true)
+    );
+  });
+}
+
+unenrolledCourses.forEach(function (course) {
+  $(".courses").append(
+    createCourseBlock(course.name, course.image, course.url)
+  );
+});
+});
+
+
 </script>
 
-<main id="main" aria-label="Content" tabindex="-1" class="content-wrapper">
-	<div class="content-wrapper">
-		<section class="support-us-top d-flex align-items-center">
-		   <div class="support-us-top-wrap flex-grow-1">
-			  <div class="row align-items-center flex-grow-1">
-				 <div class="col-lg-6 order-lg-2 pr-lg-5 py-4">
-					<div class="support-us-top-phrase support-us-top-phrase-01">
-					   מצטרפים עכשיו לתנועה החברתית של מדרסה
-					</div>
-					<div class="support-us-top-phrase support-us-top-phrase-02">
-					   מקדמים יחד חברה ישראלית מתקשרת ובריאה יותר
-					</div>
-				 </div>
-				 <div class="col-lg-6 order-lg-1">
-					<div class="embed-responsive embed-responsive-16by9">
-					   <iframe class="embed-responsive-item"
-						  src="//www.youtube.com/embed/LYK6Jr_fRK4?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=0&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false&amp;enablejsapi=0"
-						  allowfullscreen></iframe>
-					</div>
-				 </div>
-			  </div>
-		   </div>
-		</section>
-		<section class="support-us-body">
-		   <div class="support-us-body-wrap overflow-auto">
-			  <div class="support-us-flex-item float-md-left order-1">
-			  </div>
-			  <div class="support-us-flex-item float-md-right order-2">
-				 <!-- <h3 style="margin-bottom:-50px">מצטרפים למדרסה ומקדמים את המהפכה יחד</h3> -->
-				 <div class="reg-user-progress text-center text-md-left p-3">
-					 <div class="image-bar">
-					<img class="progress-bar-image"
-					   src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/support_us_people.png">
-					<div class="progress mt-3 ml-md-3">
-					   <div class="progress-bar progress-bar-striped bg-success" id="course-progress"
-						  role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
-						  aria-valuemax="100"></div>
-					</div>
-			     	</div>
-
-					<!-- <h2 class="text-center"> <span id="raised"></span> שותפים ושותפות במדרסה</h2>
-					<p class="text-center purple" style="font-size:23px">
-					   תומכים באופן קבוע במיזם, מעצבים יחד את הפעילות, ומאפשרים למאות אלפי ישראלים ללמוד ולתרגל יחד ערבית מדוברת בחינם.
-					</p>
-					<p class="text-center purple" style="font-size:23px;font-weight:bold">
-					   השנה מגיעים ל-1500 שותפות ושותפים!
-					</p> -->
-
-					<h3 class="_2021-title" style="text-align: center;">
-						<span class="_2021-main">
-						 מגיעים ל1500 תומכות ותומכים במדרסה ב-2021
-					   </span>
-						<br>
-						<span class="_2021-sub">
-                              ומייצרים יחד פעילויות לקידום חברה מתקשרת
-						</span>
-					</h3>
-
-					<ul class="flag-sign-list v-list">
-						<li>
-							סביבה לימודית בערבית מדוברת לעובדי מדינה!
-						</li>
-						<li>״מדרדודס״ - סביבה לימודית לילדים והורים! 
-						</li>
-						<li>
-							פעילויות לתרגול משותף - מפגשים, סיורים, אחד על אחד ועוד
-						</li>
-						<li>
-							פודקאסט לימודי
-						</li>
-						<li>
-							אפליקציית מדרסה!
-						</li>
-					
-					 </ul>
-					<p class="text-center purple" id="support-cta"><strong>אני רוצה להצטרף</strong></p>
-				 </div>
-			  </div>
-			  <div class="support-us-flex-item float-md-left order-4">
-				 <h3>התנועה החברתית של מדרסה</h3>
-				 <p>שואלים אותנו המון - ״למה בחינם?! למה שלא תיקחו קצת כסף מכל תלמיד? איך אתם מתקיימים בלי זה??״
-					התשובה שלנו ברורה - כי המטרה שלנו היא לתת לכל אחד ואחת הזדמנות ללמוד לתקשר בערבית, בלי חסמים
-					מיותרים בדרך.
-				 </p>
-				 <p>
-					זה לא מוצר, או תחביב, או טרנד חולף.  זו
-					<strong> 
-					מטרה חברתית משותפת.
-					</strong> 
-					מדרסה היא 
-					<strong> 
-					תנועה חברתית
-					</strong> 
-					בה שותפים עשרות אלפי תלמידים ומאות חברים פעילים התומכים באופן קבוע בפעילות, כל אחד לפי רצונו ויכולתו. החברים של מדרסה הם הכוח שמניע את התנועה קדימה, ומאפשר לה להפוך את החזון הגדול הזה לתכנית עבודה יומיומית!
-				 </p>
-				 <h3>
-					 מה עשינו ב-2020 עם פחות מ-500 שותפים ושותפות?
-				 </h3>
-				 <ul class="v-sign-list v-list">
-					<li>מסלול למידה מיוחד לבידוד 
-					</li>
-					<li>קורס מקוון ייעודי לצוותים רפואיים 
-					</li>
-					<li>קורס הכתב הערבי 
-					</li>
-					<li>לפתח ולהפעיל תכנית לימודים לילדים 
-					</li>
-					<li>לייצר עשרות שיתופי פעולה חדשים עם ארגונים מכל המגזרים בישראל
-					</li>
-				 </ul>
-
-				 <div style="margin-top:80px">
-					<div style="text-align: center;">
-					   <span id="polaniya" style="margin:auto;display:block;width:fit-content;background: #55B9CA;color:white;padding:3px 16px;font-family: muliregular;">
-					   הפולנייה מפרגנת לשותפים של מדרסה!
-					   </span>
-					</div>
-					<div>
-					   <p style="text-align: center;font-size: 22px;margin-top: 30px;font-family:muliregular">
-						  מצטרפים לתמיכה קבועה במדרסה ומקבלים מתנה 3 מגנטים עם המשפטים הכי פולניים שיש - בתרגום לערבית מדוברת!
-					   </p>
-					</div>
-					<div style="margin-top:40px;text-align:center">
-					   <iframe class="pvideo" style="max-width:320;width:100%" src="https://www.youtube.com/embed/8zm-6nb54kg" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-					</div>
-					<div style="margin-top:40px;text-align:center">
-					   <a style="background: #24A745;color:white;padding:4px 23px;border-radius: 20px;font-size:24px;font-family: muliregular;" href="#support-cta">
-					   אני רוצה להצטרף
-					   </a>
-					</div>
-					<div style="margin-top:40px;text-align: center;">
-					   <p>
-						  תודה ענקית ל- 
-						  <img height="50" src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/support-us/polania.jpg" alt="הפולנייה">
-					   </p>
-					</div>
-				 </div>
-
-
-				
-
-				 <div class="only-mobile text-center" style="font-size:25px;margin-top:20px;">
-					<a href="#support-cta">אני רוצה להצטרף!</a>
-				 </div>
-			  </div>
-			
-			  <div class="support-us-form support-us-flex-item float-md-right order-3 pt-0">
-				 <form id="donation-form">
-					<div class="form-group text-center text-center">
-					   <select class="pb-2" id="donation-type">
-						  <option value="1">חברות חודשית</option>
-						  <option value="2">תרומה חד פעמית</option>
-					   </select>
-					</div>
-					<div class="form-group" id="amount2">
-					   <div class="support-us-form-radios row">
-						  <div class="custom-control col-6 col-lg-4">
-							 <input class="support-us-form-input" id="sum-25-sub" name="sum" type="radio"
-								value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=407fcb6b-375b-4a00-b61f-aca2bc62ff6a">
-							 <label class="support-us-form-label" for="sum-25-sub">
-							 25 ₪
-							 </label>
-						  </div>
-						  <div class="custom-control col-6 col-lg-4">
-							 <input class="support-us-form-input" id="sum-50-sub" name="sum" type="radio"
-								value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=db976d37-2c9d-4247-8f6d-590727d2ced8"
-								checked>
-							 <label class="support-us-form-label" for="sum-50-sub">
-							 50 ₪
-							 </label>
-						  </div>
-						  <div class="custom-control col-6 col-lg-4">
-							 <input class="support-us-form-input" id="sum-100-sub" name="sum" type="radio"
-								value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=ca5cfd5b-1f99-45f5-acf6-68cd63026e26">
-							 <label class="support-us-form-label" for="sum-100-sub">
-							 100 ₪
-							 </label>
-						  </div>
-						  <div class="custom-control col-6 col-lg-4">
-							 <input class="support-us-form-input" id="sum-250-sub" name="sum" type="radio"
-								value="https://icredit.rivhit.co.il/payment/PaymentFullPage.aspx?GroupId=22c9c896-0621-477b-868e-bd3939256283">
-							 <label class="support-us-form-label" for="sum-250-sub">
-							 250 ₪
-							 </label>
-						  </div>
-						  <div  class="custom-control col-6 offset-3 col-lg-4">
-							 <input class="support-us-form-input" id="sum-other-sub" name="sum" type="radio"
-								value="https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=c6b2764c-e4e7-4315-8c5d-c08190176c22">
-							 <label style="font-size:24px!important;" class="support-us-form-label" for="sum-other-sub">
-							 סכום אחר
-							 </label>
-						  </div>
-					   </div>
-					</div>
-					<div class="form-group" id="amount1">
-					   <p class="p-0 m-0">
-						  למעבר לבחירת סכום ותשלום מאובטח  
-					   </p>
-					   <p class="p-0 m-0">
-						  <button id="one-time-donate" type="submit">לחצו כאן</button>
-					   </p>
-					   <input hidden id="sum-other" name="sum" type="radio"
-						  value="https://icredit.rivhit.co.il/payment/DonationPage.aspx?GroupId=d1ca29c9-740d-4f54-b5f8-eceaced09e1b">
-					</div>
-					<div class="form-group text-center text-lg-left">
-					   <div class="custom-control custom-checkbox mr-sm-2">
-						  <input type="checkbox" class="custom-control-input" id="customControlAutosizing"
-							 required>
-						  <label class="custom-control-label" for="customControlAutosizing"> קראתי ואני מאשר את <a
-							 href="/tos" target="_blank">התקנון</a></label>
-					   </div>
-					</div>
-					<div class="support-us-btn-wrap">
-					   <button id="submit" type="submit" class="btn btn-warning"> תשלום מאובטח </button>
-					</div>
-					<p class="cancel-donation p-4">
-					   ניתן להפסיק את התמיכה בכל עת בלחיצה
-					   <a href="/cancel-support 
-						  " target="_blank">כאן</a>
-					</p>
-				 </form>
-
-			  </div>
-		   </div>
-		   
-
-		</section>
-	 </div>
-
-    <script>
-		$('#donation-type').on('change', function () {
-			if (this.value == '1') {
-				$('#amount2').show();
-				$('#amount1').hide();
-				$('#submit').show();
-                $("#sum-other").prop("checked", false);
-
-			}
-			else {
-				$('#amount1').show();
-				$('#amount2').hide();
-				$('#submit').hide();
-				$("#sum-other").prop("checked", true);
-
-			}
-		});
-
-
-		$('[type=submit]').on('click', function (event) {
-			var isvalidate = $("#donation-form")[0].checkValidity();
-			if (isvalidate) {
-				event.preventDefault();
-				var val = $('input[name=sum]:checked').val();
-				document.cookie = "dvalue=" + $('input[name=sum]:checked').attr('id');
-				document.cookie = "dvalue=" + $('input[name=sum]:checked').attr('id') + " ;Domain=www.madrasafree.com"
-
-				if (gtag){
-					reportObj = {}
-					var rawValue = $('input[name=sum]:checked').attr('id')
-					if (rawValue.indexOf("sub") > -1){
-						reportObj.sub = true;
-					}
-					var value = parseInt(rawValue.replace(/[^0-9\.]/g, ''));
-					if (value) {
-						reportObj.value = value;
-						reportObj.currency = "ILS";
-					}
-
-					gtag('event', 'add_to_cart', {
-						'event_label' : reportObj.sub ? 'subscription' : 'one-time',
-						"items": [
-							{
-							"id": rawValue,
-							"name": rawValue,
-							"brand": "Madrasa",
-							"category": "Donation",
-							"quantity": 1,
-							"price": reportObj.value
-							}
-						]
-						});
-				}
-
-
-                console.log("cookie: "); //debug
-				console.log(document.cookie); //debug
-
-				$("#donation-form").action = val; 
-
-				console.log("link: "); //debug
-				console.log(val); //debug
-
-				window.open(val, '_blank');
-				return false;
-			}
-		});
-	</script>
-
-	<script>
-		function makeSquare(){
-			$('.pvideo').each(function(i, el){
-				$(el).css({'height':$(el).width()+'px'});
-			});
-		}
-		window.addEventListener("resize", makeSquare);
-		makeSquare();
-	</script>
+<main>
+	<section id="banner">
+		<div class="text">
+		  <h1>מרחבא yanivg!</h1>
+		  <p class="subtitle">כיף שהגעת לכיתה</p>
+		</div>
+		<div class="background"></div>
+	  </section>
+	  <section id="dashboard">
+		<h2>המשך למידה בקורסים שלי</h2>
+		<div class="courses"></div>
+	  </section>
+	  <section id="social">
+		<div>
+		  <div id="wave"></div>
+		  <h2>לומדים יחד ערבית מדוברת</h2>
+		  <p>
+			שומרים על מומנטום של למידה והתמדה בערוצי התוכן החינמיים של מדרסה,
+			ומקבלים בכל שבוע חידות, אתגרים והמלצות בערבית מדוברת ישירות לנייד!
+		  </p>
+		  <div class="social-flex">
+			<div>
+			  <a
+				><img
+				  src="https://courses.madrasafree.com/wp-content/uploads/2022/01/fb_icon.svg"
+				  width="200"
+			  /></a>
+			  <p>עמוד הפייסבוק</p>
+			</div>
+			<div>
+			  <a
+				><img
+				  src="https://courses.madrasafree.com/wp-content/uploads/2022/01/fb_icon.svg"
+				  width="200"
+			  /></a>
+			  <p>עמוד הפייסבוק</p>
+			</div>
+			<div>
+			  <a
+				><img
+				  src="https://courses.madrasafree.com/wp-content/uploads/2022/01/fb_icon.svg"
+				  width="200"
+			  /></a>
+			  <p>עמוד הפייסבוק</p>
+			</div>
+			<div>
+			  <a
+				><img
+				  src="https://courses.madrasafree.com/wp-content/uploads/2022/01/fb_icon.svg"
+				  width="200"
+			  /></a>
+			  <p>עמוד הפייסבוק</p>
+			</div>
+			<div>
+			  <a
+				><img
+				  src="https://courses.madrasafree.com/wp-content/uploads/2022/01/fb_icon.svg"
+				  width="200"
+			  /></a>
+			  <p>עמוד הפייסבוק</p>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  <section id="library">
+		<h2>ספריית התכנים של מדרסה</h2>
+		<p>
+		  מאגר התוכן הגדול בישראל לערבית מדוברת עם סרטונים, פינות העשרה, טבלאות
+		  אוצר מילים, קטעי שמע, שיעורים בלייב ועוד ועוד!
+		</p>
+		<a href="courses.madrasafree.com/library">לספריית התכנים</a>
+	  </section>
 </main>

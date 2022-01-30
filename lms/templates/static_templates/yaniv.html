@@ -1,5 +1,9 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
 
 <%block name="pagetitle"> האיזור הלימודי של מדרסה </%block>
+
 <%block name="headextra">
 
 <!-- viewport -->
@@ -192,10 +196,8 @@
 	 max-width: 960px;
 	 margin: auto;
 }
- 
-	
+ 	
 </style>
-
 <script src="/static/madrasa_theme/js/dashboard.js"></script>
 </%block>
 

@@ -2,7 +2,7 @@ $(function () {
   // get the enrolled courses of the current user
   function getEnrolledCourses() {
     var data = $.ajax({
-      url: domain + "/api/enrollment/v1/enrollment",
+      url: `${domain}/api/enrollment/v1/enrollment`,
       type: "GET",
       dataType: "json",
       async: false,
@@ -13,7 +13,7 @@ $(function () {
     data = data.map(function (course) {
       return {
         url: `${domain}/courses/${course.course_details.course_id}`,
-        image: "#",
+        image: "",
         name: course.course_details.course_name,
         id: course.course_details.course_id,
       };
@@ -24,7 +24,7 @@ $(function () {
   // get the public Madrasa's catalog
   function getCatalog() {
     var data = $.ajax({
-      url: domain + "/api/courses/v1/courses",
+      url: `${domain}/api/courses/v1/courses`,
       type: "GET",
       dataType: "json",
       async: false,
@@ -42,7 +42,7 @@ $(function () {
     });
     return data;
   }
- 
+
   // build UI of course block
   function createCourseBlock(name, imageURL, url, isEnrolled = false) {
     let course = $(`<div onclick="location.href='${url}'" class="course">`);
@@ -59,12 +59,52 @@ $(function () {
     course.append(image).append(title).append(link);
     return course;
   }
-  
+
   //get the current domain
   var domain = `https://${document.location.hostname}`;
+  var username = $.ajax({
+    url: `${domain}/api/user/v1/me`,
+    type: "GET",
+    dataType: "json",
+    async: false,
+    xhrFields: {
+      withCredentials: true,
+    },
+  }).responseJSON.username;
 
-  let enrolledCourses = getEnrolledCourses() || [];
-  let catalog = getCatalog() || [];
+  let enrolledCourses = [];
+  try {
+    enrolledCourses = getEnrolledCourses();
+  } catch (err) {
+    console.log("Error: " + err.message);
+  }
+
+  enrolledCourses.forEach(function (course) {
+    var data = [];
+    try {
+      data = $.ajax({
+        url: `${domain}/api/courses/v1/courses/${course.id}?username=${username}`,
+        type: "GET",
+        dataType: "json",
+        async: false,
+        xhrFields: {
+          withCredentials: true,
+        },
+        success: function (data) {
+          course.image = data.media.image.raw;
+        },
+      });
+    } catch (err) {
+      console.log("Error: " + err.message);
+    }
+  });
+
+  let catalog = [];
+  try {
+    catalog = getCatalog();
+  } catch (err) {
+    console.log("Error: " + err.message);
+  }
 
   // filter unenrolled courses
   let unenrolledCourses = catalog.filter(function (course) {

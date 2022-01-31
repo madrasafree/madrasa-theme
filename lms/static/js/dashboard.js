@@ -1,7 +1,7 @@
 $(function () {
   function getEnrolledCourses() {
     var data = $.ajax({
-      url: domain + "api/enrollment/v1/enrollment",
+      url: domain + "/api/enrollment/v1/enrollment",
       type: "GET",
       dataType: "json",
       async: false,
@@ -11,7 +11,7 @@ $(function () {
     }).responseJSON;
     data = data.map(function (course) {
       return {
-        url: `${domain}courses/${course.course_details.course_id}`,
+        url: `${domain}/courses/${course.course_details.course_id}`,
         image: "#",
         name: course.course_details.course_name,
         id: course.course_details.course_id,
@@ -22,7 +22,7 @@ $(function () {
 
   function getCatalog() {
     var data = $.ajax({
-      url: domain + "api/courses/v1/courses",
+      url: domain + "/api/courses/v1/courses",
       type: "GET",
       dataType: "json",
       async: false,
@@ -32,7 +32,7 @@ $(function () {
     }).responseJSON.results;
     data = data.map(function (course) {
       return {
-        url: `${domain}courses/${course.id}`,
+        url: `${domain}/courses/${course.id}`,
         image: course.media.image.raw,
         name: course.name,
         id: course.id,
@@ -57,7 +57,7 @@ $(function () {
     return course;
   }
 
-  var domain = `https://${document.location.hostname}/`;
+  var domain = `https://${document.location.hostname}`;
 
   let enrolledCourses = getEnrolledCourses() || [];
   enrolledCourses = [
@@ -77,7 +77,7 @@ $(function () {
     return !enrolledIds.includes(course.id);
   });
 
-  if (false) {
+  if (enrolledCourses.length != 0) {
   } else {
     enrolledCourses.forEach(function (course) {
       $(".courses").append(
@@ -85,10 +85,11 @@ $(function () {
       );
     });
   }
-
-  unenrolledCourses.forEach(function (course) {
-    $(".courses").append(
-      createCourseBlock(course.name, course.image, course.url)
-    );
-  });
+  if (enrolledCourses.length != 0) {
+    unenrolledCourses.forEach(function (course) {
+      $(".courses").append(
+        createCourseBlock(course.name, course.image, course.url)
+      );
+    });
+  }
 });

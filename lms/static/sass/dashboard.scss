@@ -138,16 +138,14 @@ main.dashboard-main {
   #social {
       padding:20px;
     background: #afdee0;
-    a {
-      transition: all 0.2s ease-in-out;
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
+
     h2 {
       text-align: center;
       font-size: 40px;
+    }
+    p{
+    text-align: center;
+
     }
     .social-flex {
       p {
@@ -163,6 +161,10 @@ main.dashboard-main {
       display: flex;
       div {
         flex: 1;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
         img {
           width: 150px;
           display: block;

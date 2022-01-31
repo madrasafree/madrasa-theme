@@ -1,6 +1,5 @@
 $(function () {
   function getEnrolledCourses() {
-    var domain = "https://madrasafree.com";
     var data = $.ajax({
       url: domain + "api/enrollment/v1/enrollment",
       type: "GET",
@@ -14,7 +13,6 @@ $(function () {
   }
 
   function getCatalog() {
-    var domain = "https://madrasafree.com/";
     var data = $.ajax({
       url: domain + "api/courses/v1/courses",
       type: "GET",
@@ -50,6 +48,9 @@ $(function () {
     course.append(image).append(title).append(link);
     return course;
   }
+
+  var domain = "https://" + hostname;
+
 
   let enrolledCourses = [
     {

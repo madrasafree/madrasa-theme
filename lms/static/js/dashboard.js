@@ -32,7 +32,7 @@ $(function () {
     }).responseJSON.results;
     data = data.map(function (course) {
       return {
-        url: `${domain}/courses/${course.id}`,
+        url: `${domain}courses/${course.id}`,
         image: course.media.image.raw,
         name: course.name,
         id: course.id,

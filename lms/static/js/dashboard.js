@@ -62,6 +62,8 @@ $(function () {
 
   //get the current domain
   var domain = `https://${document.location.hostname}`;
+
+  //get current username
   var username = $.ajax({
     url: `${domain}/api/user/v1/me`,
     type: "GET",
@@ -79,6 +81,7 @@ $(function () {
     console.log("Error: " + err.message);
   }
 
+  //get course images
   enrolledCourses.forEach(function (course) {
     var data = [];
     try {

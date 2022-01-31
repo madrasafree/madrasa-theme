@@ -151,6 +151,9 @@ main.dashboard-main {
 
     p {
       text-align: center;
+      :first-child{
+        margin-bottom:-50px;
+      }
     }
 
     .social-flex {

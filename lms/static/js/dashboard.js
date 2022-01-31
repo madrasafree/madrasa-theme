@@ -9,6 +9,14 @@ $(function () {
         withCredentials: true,
       },
     }).responseJSON;
+    data = data.map(function (course) {
+      return {
+        url: `${domain}courses/${course.course_details.course_id}`,
+        image: "#",
+        name: course.course_details.course_name,
+        id: course.course_details.course_id,
+      };
+    });
     return data;
   }
 
@@ -51,8 +59,7 @@ $(function () {
 
   var domain = `https://${document.location.hostname}/`;
 
-  let enrolledCourses = [];
-  // enrolledCourses = getEnrolledCourses();
+  let enrolledCourses = getEnrolledCourses() || [];
   enrolledCourses = [
     {
       id: "course-v1:madrasa+course2+2019_1",
@@ -63,7 +70,7 @@ $(function () {
     },
   ];
 
-  let catalog = getCatalog();
+  let catalog = getCatalog() || [];
 
   let unenrolledCourses = catalog.filter(function (course) {
     let enrolledIds = enrolledCourses.map((course) => course.id);

@@ -106,9 +106,9 @@ main.dashboard-main {
           margin-left: 0;
         }
         img {
-          display: none;
           width: 100%;
           margin-bottom: 20px;
+          max-height:120px;
         }
         .course-link {
           display: block;
@@ -169,6 +169,7 @@ main.dashboard-main {
       div {
         @media screen and (max-width: 480px) {
           width: 50%;
+          margin-bottom:-60px;
         }
         flex: 1;
         @media screen and (min-width: 480px) {

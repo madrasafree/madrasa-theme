@@ -112,6 +112,8 @@ $(function () {
     return !enrolledIds.includes(course.id);
   });
 
+  console.log(enrolledCourses);
+
   // add enrolled courses to courses section
   if (enrolledCourses.length != 0) {
     enrolledCourses.forEach(function (course) {

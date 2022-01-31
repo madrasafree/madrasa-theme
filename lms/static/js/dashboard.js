@@ -1,4 +1,5 @@
 $(function () {
+  // get the enrolled courses of the current user
   function getEnrolledCourses() {
     var data = $.ajax({
       url: domain + "/api/enrollment/v1/enrollment",
@@ -20,6 +21,7 @@ $(function () {
     return data;
   }
 
+  // get the public Madrasa's catalog
   function getCatalog() {
     var data = $.ajax({
       url: domain + "/api/courses/v1/courses",
@@ -40,7 +42,8 @@ $(function () {
     });
     return data;
   }
-
+ 
+  // build UI of course block
   function createCourseBlock(name, imageURL, url, isEnrolled = false) {
     let course = $(`<div onclick="location.href='${url}'" class="course">`);
     let image = $(`<img src="${imageURL}" alt="${name}">`);
@@ -56,36 +59,28 @@ $(function () {
     course.append(image).append(title).append(link);
     return course;
   }
-
+  
+  //get the current domain
   var domain = `https://${document.location.hostname}`;
 
   let enrolledCourses = getEnrolledCourses() || [];
-  
-  // enrolledCourses = [
-  //   {
-  //     id: "course-v1:madrasa+course2+2019_1",
-  //     name: "ערבית מדוברת - ממשיכים",
-  //     image:
-  //       "https://madrasafree.com/asset-v1:madrasa+maayan2+2020+type@asset+block@intermediate.png",
-  //     url: "https://madrasafree.com/courses/course-v1:madrasa+course2+2019_1/course/",
-  //   },
-  // ];
-
   let catalog = getCatalog() || [];
 
+  // filter unenrolled courses
   let unenrolledCourses = catalog.filter(function (course) {
     let enrolledIds = enrolledCourses.map((course) => course.id);
     return !enrolledIds.includes(course.id);
   });
 
+  // add enrolled courses to courses section
   if (enrolledCourses.length != 0) {
-  } else {
     enrolledCourses.forEach(function (course) {
       $(".courses").append(
         createCourseBlock(course.name, course.image, course.url, true)
       );
     });
   }
+  // add unenrolled courses to courses section
   if (unenrolledCourses.length != 0) {
     unenrolledCourses.forEach(function (course) {
       $(".courses").append(

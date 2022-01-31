@@ -60,15 +60,16 @@ $(function () {
   var domain = `https://${document.location.hostname}`;
 
   let enrolledCourses = getEnrolledCourses() || [];
-  enrolledCourses = [
-    {
-      id: "course-v1:madrasa+course2+2019_1",
-      name: "ערבית מדוברת - ממשיכים",
-      image:
-        "https://madrasafree.com/asset-v1:madrasa+maayan2+2020+type@asset+block@intermediate.png",
-      url: "https://madrasafree.com/courses/course-v1:madrasa+course2+2019_1/course/",
-    },
-  ];
+  
+  // enrolledCourses = [
+  //   {
+  //     id: "course-v1:madrasa+course2+2019_1",
+  //     name: "ערבית מדוברת - ממשיכים",
+  //     image:
+  //       "https://madrasafree.com/asset-v1:madrasa+maayan2+2020+type@asset+block@intermediate.png",
+  //     url: "https://madrasafree.com/courses/course-v1:madrasa+course2+2019_1/course/",
+  //   },
+  // ];
 
   let catalog = getCatalog() || [];
 
@@ -85,7 +86,7 @@ $(function () {
       );
     });
   }
-  if (enrolledCourses.length != 0) {
+  if (unenrolledCourses.length != 0) {
     unenrolledCourses.forEach(function (course) {
       $(".courses").append(
         createCourseBlock(course.name, course.image, course.url)

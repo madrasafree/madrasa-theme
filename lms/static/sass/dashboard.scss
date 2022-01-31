@@ -2,19 +2,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap");
 
-main.dashboard-main{
-  font-family:"Heebo";
-  margin-top:0;
+main.dashboard-main {
+  font-family: "Heebo";
+  margin-top: 0;
   h1,
   h2,
   h3,
-  .subtitle{
+  .subtitle {
     font-family: "Secular One", sans-serif;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  p{
-      font-family:"Heebo"
+  p {
+    font-family: "Heebo";
   }
   button {
     font-family: "Secular One", sans-serif;
@@ -99,7 +99,7 @@ main.dashboard-main{
         }
         img {
           width: 100%;
-          margin-bottom:20px;
+          margin-bottom: 20px;
         }
         .course-link {
           display: block;
@@ -136,34 +136,37 @@ main.dashboard-main{
   }
 
   #social {
+      padding:20px;
     background: #afdee0;
-    a{
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
-        &:hover {
-          transform: scale(1.1);
-        }
+    a {
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
     h2 {
       text-align: center;
       font-size: 40px;
     }
-    p {
-      text-align: center;
-      font-size: 20px;
-      position:relative;
-      top:-20px;
-      right:-3px;
-      font-family:"muliregular";
+    .social-flex {
+      p {
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        top: -20px;
+        right: -3px;
+        font-family: "muliregular";
+      }
     }
     .social-flex {
       display: flex;
       div {
         flex: 1;
-        img{
-            width:150px;
-            display: block;
-            margin:auto;
+        img {
+          width: 150px;
+          display: block;
+          margin: auto;
         }
       }
     }
@@ -203,7 +206,7 @@ main.dashboard-main{
   #library {
     max-width: 1000px;
     margin: auto;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }

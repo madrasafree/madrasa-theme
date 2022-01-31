@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Secular+One&display=swap");
 
 main.dashboard-main{
+  font-family:"Heebo";
   margin-top:0;
   h1,
   h2,
@@ -11,6 +12,9 @@ main.dashboard-main{
     font-family: "Secular One", sans-serif;
     margin-top:20px;
     margin-bottom:20px;
+  }
+  p{
+      font-family:"Heebo"
   }
   button {
     font-family: "Secular One", sans-serif;
@@ -80,7 +84,7 @@ main.dashboard-main{
         padding-bottom: 60px;
         text-align: center;
         border: 1px solid lightgray;
-        margin: 10px;
+        margin: 2px;
         box-shadow: 2px 2px 2px lightgray;
         transition: all 0.2s ease-in-out;
         cursor: pointer;
@@ -133,6 +137,13 @@ main.dashboard-main{
 
   #social {
     background: #afdee0;
+    a{
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+        }
+    }
     h2 {
       text-align: center;
       font-size: 40px;
@@ -190,7 +201,7 @@ main.dashboard-main{
   #dashboard,
   #social div,
   #library {
-    max-width: 960px;
+    max-width: 1000px;
     margin: auto;
     margin-top:20px;
     margin-bottom:20px;

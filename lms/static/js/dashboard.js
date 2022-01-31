@@ -49,7 +49,7 @@ $(function () {
     return course;
   }
 
-  var domain = "https://" + hostname;
+  var domain = "https://" + document.hostname;
 
 
   let enrolledCourses = [

@@ -67,6 +67,10 @@ main.dashboard-main {
     h2 {
       text-align: center;
       font-size: 40px;
+      @media screen and (max-width:480px){
+        font-size: 30px;
+          
+      }
     }
     .courses {
       display: grid;
@@ -86,10 +90,12 @@ main.dashboard-main {
         border: 1px solid lightgray;
         margin: 2px;
         box-shadow: 2px 2px 2px lightgray;
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
-        &:hover {
-          transform: scale(1.1);
+        @media screen and (min-width: 480px) {
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.1);
+          }
         }
 
         @media (max-width: 480px) {
@@ -136,18 +142,22 @@ main.dashboard-main {
   }
 
   #social {
-      padding:20px;
+    padding: 20px;
     background: #afdee0;
 
     h2 {
       text-align: center;
       font-size: 40px;
     }
-    p{
-    text-align: center;
-
+    p {
+      text-align: center;
     }
+
     .social-flex {
+      display: flex;
+      @media screen and (max-width: 480px) {
+        flex-wrap: wrap;
+      }
       p {
         text-align: center;
         font-size: 20px;
@@ -156,19 +166,25 @@ main.dashboard-main {
         right: -3px;
         font-family: "muliregular";
       }
-    }
-    .social-flex {
-      display: flex;
       div {
-        flex: 1;
-        transition: all 0.2s ease-in-out;
-        &:hover {
-          transform: scale(1.1);
+        @media screen and (max-width: 480px) {
+          width: 50%;
         }
+        flex: 1;
+        @media screen and (min-width: 480px) {
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+
         img {
           width: 150px;
           display: block;
           margin: auto;
+          @media screen and (max-width:480px){
+              width:200px;
+          }
         }
       }
     }
@@ -200,6 +216,12 @@ main.dashboard-main {
       text-decoration: none;
       background: #70d2d5;
       margin-bottom: 40px;
+      @media screen and (min-width: 480px) {
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
     }
   }
 

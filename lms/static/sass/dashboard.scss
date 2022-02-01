@@ -194,6 +194,23 @@ main.dashboard-main {
   }
 
   #library {
+    @media screen and(min-width:480px){
+      display:flex;
+    }
+    div.image{
+      @media screen and(min-width:480px){
+        flex: 1;
+        position:relative;
+        top:-30px;
+        right:-30px;
+      }
+    }
+    div.text{
+      @media screen and(min-width:480px){
+        flex: 2;
+      }
+      margin-top:40px;
+    }
  
     p {
       text-align: center;
@@ -232,21 +249,6 @@ main.dashboard-main {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    @media screen and(min-width:480px){
-      display:flex;
-    }
-    div.image{
-      @media screen and(min-width:480px){
-        flex: 1;
-        position:relative;
-        top:-30px;
-        right:-30px;
-      }
-    }
-    div.text{
-      @media screen and(min-width:480px){
-        flex: 2;
-      }
-    }
+
   }
 }

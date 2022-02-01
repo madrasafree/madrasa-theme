@@ -72,7 +72,14 @@ $(function () {
     xhrFields: {
       withCredentials: true,
     },
+    statusCode: {
+         401:function() { 
+           location.href = `${domain}/login`;
+      }   
+    },
   }).responseJSON.username;
+
+ 
 
   let enrolledCourses = [];
   try {

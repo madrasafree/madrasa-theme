@@ -198,18 +198,20 @@ main.dashboard-main {
       display:flex;
     }
     div.image{
+      position:relative;
+      top:-30px;
+      left:-10px;
       @media screen and(min-width:480px){
         flex: 1;
-        position:relative;
         top:-30px;
-        right:-30px;
+        left:-30px;
       }
     }
     div.text{
       @media screen and(min-width:480px){
         flex: 2;
       }
-      margin-top:40px;
+      padding-top:20px;
     }
  
     p {

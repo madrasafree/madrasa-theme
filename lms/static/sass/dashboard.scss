@@ -73,8 +73,7 @@ main.dashboard-main {
   }
 
   #dashboard {
-  
-    .courses {
+      .courses {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       column-gap: 10px;
@@ -102,13 +101,16 @@ main.dashboard-main {
 
         @media (max-width: 480px) {
           width: 100%;
-          margin-right: 0;
-          margin-left: 0;
+          margin:10px;
         }
         img {
           width: 100%;
           margin-bottom: 20px;
           max-height:120px;
+          object-fit:cover;
+          @media (max-width: 480px) {
+            max-height:200px;
+          }
         }
         .course-link {
           display: block;
@@ -140,9 +142,7 @@ main.dashboard-main {
         h3 {
           font-size: 20px;
         }
-        h2{
-          display:none;
-        }
+      
       }
     }
   }
@@ -240,16 +240,16 @@ main.dashboard-main {
   }
 
   .loader {
-    border: 16px solid #f3f3f3;
+    border: 8px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #8DD5F0;
-    border-right: 16px solid #85C559;
-    border-bottom: 16px solid #8DD5F0;
-    border-left: 16px solid #85C559;
+    border-top: 8px solid #8DD5F0;
+    border-right: 8px solid #85C559;
+    border-bottom: 8px solid #8DD5F0;
+    border-left: 8px solid #85C559;
     width: 60px;
     height: 60px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
     margin:auto;
   }
   
@@ -262,5 +262,5 @@ main.dashboard-main {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-  
+
 }

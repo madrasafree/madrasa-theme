@@ -115,7 +115,8 @@ $(function () {
     return !enrolledIds.includes(course.id);
   });
 
-  console.log(enrolledCourses);
+  $(".loader").hide();
+  $(".dashboard h2").show();
 
   // add enrolled courses to courses section
   if (enrolledCourses.length != 0) {

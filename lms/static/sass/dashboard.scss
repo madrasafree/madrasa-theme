@@ -100,8 +100,7 @@ main.dashboard-main {
         }
 
         @media (max-width: 480px) {
-          width: 100%;
-          margin:10px;
+          margin:15px;
         }
         img {
           width: 100%;
@@ -131,12 +130,8 @@ main.dashboard-main {
           left: 0;
           right: 0;
           color: white;
-
           text-decoration: none;
           background: #70d2d5;
-          &.enrolled-link {
-            background: #7ec900;
-          }
         }
 
         h3 {
@@ -237,30 +232,21 @@ main.dashboard-main {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    @media screen and(min-width:480px){
+      display:flex;
+    }
+    div.image{
+      @media screen and(min-width:480px){
+        flex: 1;
+        position:relative;
+        top:-30px;
+        right:-30px;
+      }
+    }
+    div.text{
+      @media screen and(min-width:480px){
+        flex: 2;
+      }
+    }
   }
-
-  .loader {
-    border: 8px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 8px solid #8DD5F0;
-    border-right: 8px solid #85C559;
-    border-bottom: 8px solid #8DD5F0;
-    border-left: 8px solid #85C559;
-    width: 60px;
-    height: 60px;
-    -webkit-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
-    margin:auto;
-  }
-  
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
 }

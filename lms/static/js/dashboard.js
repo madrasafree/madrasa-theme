@@ -74,7 +74,7 @@ $(function () {
     },
     statusCode: {
          401:function() { 
-           location.href = `${domain}/login`;
+           location.href = `${domain}/login?next=/yaniv`;
       }   
     },
   }).responseJSON.username;

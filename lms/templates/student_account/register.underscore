@@ -1,17 +1,19 @@
 <div class="js-form-feedback" aria-live="assertive" tabindex="-1">
 </div>
 
+<% if (!context.syncLearnerProfileData) { %>
+        <div class="toggle-form">
+            <span class="text">כבר יש לך חשבון במדרסה?</span>
+            <a id="sign-in-link" href="#login" class="form-toggle" data-type="login">לכניסה</a>
+        </div>
+<% } %>
+
+
 <form id="register" class="register-form" autocomplete="off" tabindex="-1" method="POST">
     <h2 id="main-form-title">
        הרשמה למדרסה
     </h2>
 
-    <% if (!context.syncLearnerProfileData) { %>
-        <div class="toggle-form">
-            <span class="text">כבר יש לך חשבון במדרסה?</span>
-            <a id="sign-in-link" href="#login" class="form-toggle" data-type="login">לכניסה</a>
-        </div>
-    <% } %>
 
     <% if (!context.currentProvider) { %>
         <% if (context.providers.length > 0 || context.hasSecondaryProviders) { %>

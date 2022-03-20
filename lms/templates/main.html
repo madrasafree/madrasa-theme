@@ -13,6 +13,7 @@
 <%namespace name='static' file='static_content.html'/>
 <% online_help_token = self.online_help_token() if hasattr(self, 'online_help_token') else None %>
 <%!
+import six
 from lms.djangoapps.branding import api as branding_api
 from django.urls import reverse
 from django.utils.http import urlquote_plus

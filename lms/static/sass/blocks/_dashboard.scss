@@ -31,6 +31,7 @@
 		border: 1px solid $theme-btn-white-border;
 		text-transform: uppercase;
 		border-radius: 0 !important;
+		margin-top:0px;
 		&:active,
 		&:focus {
 			background: $theme-btn-white-bg !important;
@@ -45,6 +46,7 @@
 	}
 
 	.wrapper-course-details {
+		display: block;
 
 		.course-info,
 		.wrapper-course-actions {
@@ -60,6 +62,7 @@
 }
 
 .wrapper-action-more button.action-more {
+	display:none;
 	border: 1px solid $theme-btn-white-border !important;
 	&:hover {
 		background: $theme-btn-white-bg-hover !important;
@@ -103,17 +106,21 @@
             padding: 20px 0;
         }
     }
-    .dashboard-search-bar {
-        margin-left: 0;
-        width: auto;
-        float: none;
-        padding: 0 10px;
-        @media all and (min-width: 860px){
-            margin-left: 2.35765%;
-            width: 23.23176%;
-            float: right;
-            width: 23.23176%;
-            padding: 20px 0;
-        }
-    }
+    // .dashboard-search-bar {
+    //     margin-left: 0;
+    //     width: auto;
+    //     float: none;
+    //     padding: 0 10px;
+    //     @media all and (min-width: 860px){
+    //         margin-left: 2.35765%;
+    //         width: 23.23176%;
+    //         float: right;
+    //         width: 23.23176%;
+    //         padding: 20px 0;
+    //     }
+    // }
+
+	#dashboard-search-results .result-type{
+       display:none;
+	}
 }

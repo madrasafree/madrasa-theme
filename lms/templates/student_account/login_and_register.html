@@ -33,7 +33,14 @@ $('.form-field.text-name').hide();
 })
 
 
+
      }, false)
+     $(window).on("load", function() {
+        $('a.form-toggle')[0].addEventListener('click',function(){
+
+$('.form-field.text-name').hide();
+})
+     })
 
     
      </script>

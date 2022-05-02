@@ -28,18 +28,23 @@
     window.addEventListener('load', function() {
         $('.form-field.text-name').hide();
         $('a.form-toggle')[0].addEventListener('click',function(){
-
-$('.form-field.text-name').hide();
+        $('.form-field.text-name').hide();
 })
 
 
 
      }, false)
-     $(window).on("load", function() {
-        $('a.form-toggle')[0].addEventListener('click',function(){
+     function hideName() {
+        $('.form-field.text-name').hide();
+        setTimeout(function(){
+        $('.form-field.text-name').hide();
+        },500)
 
-$('.form-field.text-name').hide();
-})
+     }
+     $(window).on("load", function() {
+        $('a.form-toggle').each(function(){
+            $(this).addEventListener('click',hideName)
+        })
      })
 
     

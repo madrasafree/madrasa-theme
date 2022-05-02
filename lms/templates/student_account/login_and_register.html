@@ -43,7 +43,7 @@
      }
      $(window).on("load", function() {
         $('a.form-toggle').each(function(){
-            $(this).addEventListener('click',hideName)
+            $(this).bind('click',hideName)
         })
      })
 

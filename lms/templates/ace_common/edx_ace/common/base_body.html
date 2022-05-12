@@ -23,7 +23,7 @@
 <!-- TEST RED THEME MARKER: Do not remove this comment, it is used by the tests to tell if this theme was used -->
 
 {% for image_src in channel.tracker_image_sources %}
-    <img src="{image_src}" alt="" width="100" role="presentation" aria-hidden="true" />
+    <img src="{image_src}" alt="" role="presentation" aria-hidden="true" />
 {% endfor %}
 
 {% google_analytics_tracking_pixel %}
@@ -63,8 +63,7 @@
                     <tr>
                         <td width="70">
                             <a href="{% with_link_tracking homepage_url %}"><img
-                                    src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/logo.png"
-                                    alt="{% filter force_escape %} {% blocktrans %}Go to {{ platform_name }} Home Page{% endblocktrans %} {% endfilter %}"/></a>
+                                    src="https://madrasa-site-images.s3.eu-west-3.amazonaws.com/images/logo.png" width="100" alt="{% filter force_escape %} {% blocktrans %}Go to {{ platform_name }} Home Page{% endblocktrans %} {% endfilter %}"/></a>
                         </td>
                         <td align="right" style="text-align: {{ LANGUAGE_BIDI|yesno:"left,right" }};">
                             <a class="login" href="{% with_link_tracking dashboard_url %}" style="color: #0FC8D4;">{%  trans "Sign In" %}</a>
@@ -172,9 +171,6 @@
                         <!-- COPYRIGHT -->
                         <td>
                             &copy; {% now "Y" %} {{ platform_name }}, {% trans "All rights reserved" as tmsg %}{{ tmsg | force_escape }}.<br/>
-                            <br/>
-                            {% trans "Our mailing address is" as tmsg %}{{ tmsg | force_escape }}:<br/>
-                            {{ contact_mailing_address }}
                         </td>
                     </tr>
                 </table>

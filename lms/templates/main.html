@@ -177,11 +177,21 @@ from common.djangoapps.pipeline_mako import render_require_js_path_overrides
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
-<script>
+<!--<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-120793822-1');
+</script> -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PEFBP00SFW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PEFBP00SFW');
 </script>
 
 <meta name="facebook-domain-verification" content="cwbxn84qcqs6jv5egwhbu1ow0i6zzn" />

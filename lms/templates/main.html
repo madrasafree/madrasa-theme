@@ -244,15 +244,24 @@ from common.djangoapps.pipeline_mako import render_require_js_path_overrides
     % endif
   % endif
   
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PEFBP00SFW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PEFBP00SFW');
-</script>
+  <script>
+    if (!window.location.href.includes('xblock')) {
+      var script1 = document.createElement('script');
+      script1.async = true;
+      script1.src = "https://www.googletagmanager.com/gtag/js?id=G-PEFBP00SFW";
+      document.head.appendChild(script1);
+  
+      var script2 = document.createElement('script');
+      script2.textContent = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PEFBP00SFW');
+      `;
+      document.head.appendChild(script2);
+    }
+  </script>
+  
 
 </body>
 </html>

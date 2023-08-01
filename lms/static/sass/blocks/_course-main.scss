@@ -224,6 +224,9 @@ div.info-wrapper section.handouts ol li .wrapper-course-material .course-tabs .t
 						min-height: 150px;
 					}
 				}
+				.video-player > div{
+					height:initial;
+				}
 
 				.video-player-pre,
 				.video-player-post {

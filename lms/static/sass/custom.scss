@@ -44,7 +44,15 @@ $baseline: 1.2rem;
   }
 }
 
-
+.xmodule_display.xmodule_VideoBlock {
+  .video {
+    .video-wrapper {
+      .video-player > div {
+        height:initial;
+      }
+    }
+  }
+}
 
 .problem, .problem-header, .problem-progress, .xmodule_HtmlModule, .problem{
   font-family: 'muliregular'!important;
